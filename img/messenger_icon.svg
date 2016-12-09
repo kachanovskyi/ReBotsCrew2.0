@@ -1,0 +1,12 @@
+<svg width="40" height="40" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>&#39;fb messenger&#39; icon</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="matrix(2 0 0 2 1826 -6360)" figma:type="canvas">
+<g id="&#39;fb messenger&#39; icon" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(-913 3180)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 10 0C 4.47826 0 0 4.14815 0 9.25926C 0 12.1728 1.45342 14.7716 3.72671 16.4691L 3.72671 20L 7.13043 18.1296C 8.03727 18.3827 9 18.5185 10 18.5185C 15.5217 18.5185 20 14.3704 20 9.25926C 20 4.14815 15.5217 0 10 0ZM 10.9938 12.4691L 8.4472 9.75309L 3.47826 12.4691L 8.9441 6.66667L 11.5528 9.38272L 16.4596 6.66667L 10.9938 12.4691Z"/>
+</defs>
+</svg>

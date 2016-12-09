@@ -1,0 +1,126 @@
+body {
+    padding-top: 5vh;
+}
+
+h1, h2, p, a {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.top {
+    text-align: center;
+}
+.top h1 {
+    font-size: 42px;
+    color: #333333;
+}
+
+#middle {
+    text-align: left;
+    margin-bottom: 60px;
+}
+
+.article {
+    display: inline-block;
+    height: auto;
+    /*height: 600px;*/
+    /*width: 98%;*/
+    margin: 10px auto;
+    padding: 20px 33px;
+}
+.article h2 {
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 0.0166px;
+    color: #4F4F4F;
+}
+.article p, .article a {
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.0166px;
+}
+
+.article p {
+    color: #828282;
+}
+.article .read-more {
+    color: #2F80ED;
+}
+
+.article .preview-img {
+    display: block;
+    height: 300px;
+    width: 100%;
+    border-radius: 4px;
+    background-size: cover;
+}
+.article .preview-text {
+    display: block;
+    height: 40%;
+    width: 100%;
+}
+
+.article.article-5 .preview-img {
+    background: url("../img/musement_contract.jpg");
+}
+.article.article-4 .preview-img {
+    background: url("../img/messengerForBusiness.jpg");
+}
+.article.article-3 .preview-img {
+    background: url("../img/image1.jpg");
+    background-size: cover;
+}
+.article.article-2 .preview-img {
+    background: url("../img/whatAreChatbots1.jpeg");
+}
+.article.article-1 .preview-img {
+    background: url("../img/blog_6_1.jpg");
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .article {
+        margin: 40px auto;
+    }
+    #footer {
+        margin-top: 44px;
+    }
+}
+
+@media (min-width: 992px) {
+    .article.article-4 .preview-img, .article.article-3 .preview-img,
+    .article.article-2 .preview-img, .article.article-1 .preview-img {
+        background-position: center;
+    }
+}
+
+@media (max-width: 991px) {
+    #middle {
+        margin-top: 30px;
+    }
+    .article {
+        padding: 0 33px;
+    }
+    .article.article-4 .preview-img, .article.article-3 .preview-img,
+    .article.article-2 .preview-img, .article.article-1 .preview-img {
+        background-size: cover;
+    }
+}
+
+@media (max-width: 515px) {
+    .article {
+        height: auto;
+    }
+    .article .preview-img {
+        display: none;
+    }
+    .article .preview-text {
+        height: 100%;
+    }
+}
+
+@media (max-height: 371px) {
+    body {
+        padding-top: 15vh;
+    }
+}

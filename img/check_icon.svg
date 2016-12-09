@@ -1,0 +1,37 @@
+<svg width="56" height="56" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>&#39;check&#39; icon</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="matrix(2 0 0 2 3064 -1250)" figma:type="canvas">
+<g id="&#39;check&#39; icon" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Ellipse 4" style="mix-blend-mode:normal;" figma:type="ellipse">
+<g filter="url(#filter0_i)" figma:type="fill">
+<use xlink:href="#path0_fill" transform="translate(-1532 625)" fill="#FAFAFA" style="mix-blend-mode:normal;"/>
+</g>
+<mask id="mask0_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(-1532 625)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(-1532 625)" fill="#2F80ED" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Vector 3" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path2_stroke" transform="translate(-1523 634)" fill="#2F80ED" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_i" filterUnits="userSpaceOnUse" x="-1532" y="625" width="28" height="28" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<desc>type="innerShadow" x="0" y="-4" size="0" spread="0" color="0,0,0,0.05" blend="normal"</desc>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0" result="hardAlpha"/>
+<feOffset dx="0" dy="-4"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow"/>
+</filter>
+<path id="path0_fill" d="M 28 14C 28 21.732 21.732 28 14 28C 6.26801 28 0 21.732 0 14C 0 6.26801 6.26801 0 14 0C 21.732 0 28 6.26801 28 14Z"/>
+<path id="path1_stroke_2x" d="M 27 14C 27 21.1797 21.1797 27 14 27L 14 29C 22.2843 29 29 22.2843 29 14L 27 14ZM 14 27C 6.8203 27 1 21.1797 1 14L -1 14C -1 22.2843 5.71573 29 14 29L 14 27ZM 1 14C 1 6.8203 6.8203 1 14 1L 14 -1C 5.71573 -1 -1 5.71573 -1 14L 1 14ZM 14 1C 21.1797 1 27 6.8203 27 14L 29 14C 29 5.71573 22.2843 -1 14 -1L 14 1Z"/>
+<path id="path2_stroke" d="M 0.390434 4.68765C 0.21793 4.47202 -0.0967166 4.43706 -0.312348 4.60957C -0.527978 4.78207 -0.562939 5.09672 -0.390434 5.31235L 0.390434 4.68765ZM 10.4287 0.257248C 10.5708 0.0204577 10.494 -0.286672 10.2572 -0.428746C 10.0205 -0.570821 9.71333 -0.494038 9.57125 -0.257248L 10.4287 0.257248ZM 4.73994 8.76677L 5.16868 9.02402L 4.73994 8.76677ZM -0.390434 5.31235L 2.71114 9.18932L 3.49201 8.56462L 0.390434 4.68765L -0.390434 5.31235ZM 5.16868 9.02402L 10.4287 0.257248L 9.57125 -0.257248L 4.31119 8.50952L 5.16868 9.02402ZM 2.71114 9.18932C 3.36414 10.0056 4.63088 9.92037 5.16868 9.02402L 4.31119 8.50952C 4.13192 8.80831 3.70968 8.83671 3.49201 8.56462L 2.71114 9.18932Z"/>
+</defs>
+</svg>

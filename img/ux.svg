@@ -1,0 +1,82 @@
+<svg width="92" height="62" viewBox="0 0 92 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>image</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-425 -348)" figma:type="canvas">
+<g id="image" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Ellipse" style="mix-blend-mode:normal;" figma:type="ellipse">
+<g filter="url(#filter0_i)" figma:type="fill">
+<use xlink:href="#path0_fill" transform="translate(476 359.079)" fill="#FAFAFA" style="mix-blend-mode:normal;"/>
+</g>
+<use xlink:href="#path1_stroke" transform="translate(476 359.079)" fill="#2F80ED" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="ellipse">
+<use xlink:href="#path2_fill" transform="translate(487.333 373.745)" fill="#2F80ED" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="ellipse">
+<use xlink:href="#path2_fill" transform="translate(502 373.745)" fill="#2F80ED" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="ellipse">
+<use xlink:href="#path3_fill" transform="translate(501.333 377.745)" fill="#EDEDED" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="ellipse">
+<use xlink:href="#path3_fill" transform="translate(485.333 377.745)" fill="#EDEDED" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 3" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path4_stroke" transform="translate(492 378.079)" fill="#2F80ED" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse" style="mix-blend-mode:normal;" figma:type="ellipse">
+<g filter="url(#filter1_i)" figma:type="fill">
+<use xlink:href="#path5_fill" transform="translate(426 349.079)" fill="#FAFAFA" style="mix-blend-mode:normal;"/>
+</g>
+<use xlink:href="#path6_stroke" transform="translate(426 349.079)" fill="#2F80ED" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="ellipse">
+<use xlink:href="#path7_fill" transform="translate(443 371.079)" fill="#2F80ED" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="ellipse">
+<use xlink:href="#path7_fill" transform="translate(465 371.079)" fill="#2F80ED" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="ellipse">
+<use xlink:href="#path8_fill" transform="translate(464 377.079)" fill="#EDEDED" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="ellipse">
+<use xlink:href="#path8_fill" transform="translate(440 377.079)" fill="#EDEDED" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path9_stroke" transform="translate(451 379.079)" fill="#2F80ED" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_i" filterUnits="userSpaceOnUse" x="475" y="358" width="42" height="42" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<desc>type="innerShadow" x="0" y="-4" size="0" spread="0" color="0,0,0,0.05" blend="normal"</desc>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0" result="hardAlpha"/>
+<feOffset dx="0" dy="-4"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow"/>
+</filter>
+<filter id="filter1_i" filterUnits="userSpaceOnUse" x="425" y="348" width="62" height="62" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<desc>type="innerShadow" x="0" y="-4" size="0" spread="0" color="0,0,0,0.05" blend="normal"</desc>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0" result="hardAlpha"/>
+<feOffset dx="0" dy="-4"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow"/>
+</filter>
+<path id="path0_fill" d="M 40 20C 40 31.0457 31.0457 40 20 40C 8.9543 40 0 31.0457 0 20C 0 8.9543 8.9543 0 20 0C 31.0457 0 40 8.9543 40 20Z"/>
+<path id="path1_stroke" d="M 39.5 20C 39.5 30.7696 30.7696 39.5 20 39.5L 20 40.5C 31.3218 40.5 40.5 31.3218 40.5 20L 39.5 20ZM 20 39.5C 9.23045 39.5 0.5 30.7696 0.5 20L -0.5 20C -0.5 31.3218 8.67816 40.5 20 40.5L 20 39.5ZM 0.5 20C 0.5 9.23045 9.23045 0.5 20 0.5L 20 -0.5C 8.67816 -0.5 -0.5 8.67816 -0.5 20L 0.5 20ZM 20 0.5C 30.7696 0.5 39.5 9.23045 39.5 20L 40.5 20C 40.5 8.67816 31.3218 -0.5 20 -0.5L 20 0.5Z"/>
+<path id="path2_fill" d="M 2.66667 1.33333C 2.66667 2.06971 2.06971 2.66667 1.33333 2.66667C 0.596954 2.66667 0 2.06971 0 1.33333C 0 0.596954 0.596954 0 1.33333 0C 2.06971 0 2.66667 0.596954 2.66667 1.33333Z"/>
+<path id="path3_fill" d="M 5.33333 1.33333C 5.33333 2.06971 4.13943 2.66667 2.66667 2.66667C 1.19391 2.66667 0 2.06971 0 1.33333C 0 0.596954 1.19391 0 2.66667 0C 4.13943 0 5.33333 0.596954 5.33333 1.33333Z"/>
+<path id="path4_stroke" d="M 8 0L 8.5 0C 8.5 -0.276142 8.27614 -0.5 8 -0.5L 8 0ZM 0 0L 0 -0.5C -0.276142 -0.5 -0.5 -0.276142 -0.5 1.11022e-16L 0 0ZM 7.5 0C 7.5 1.933 5.933 3.5 4 3.5L 4 4.5C 6.48528 4.5 8.5 2.48528 8.5 0L 7.5 0ZM 4 3.5C 2.067 3.5 0.5 1.933 0.5 0L -0.5 0C -0.5 2.48528 1.51472 4.5 4 4.5L 4 3.5ZM 0 0.5L 8 0.5L 8 -0.5L 0 -0.5L 0 0.5Z"/>
+<path id="path5_fill" d="M 60 30C 60 46.5685 46.5685 60 30 60C 13.4315 60 0 46.5685 0 30C 0 13.4315 13.4315 0 30 0C 46.5685 0 60 13.4315 60 30Z"/>
+<path id="path6_stroke" d="M 59.5 30C 59.5 46.2924 46.2924 59.5 30 59.5L 30 60.5C 46.8447 60.5 60.5 46.8447 60.5 30L 59.5 30ZM 30 59.5C 13.7076 59.5 0.5 46.2924 0.5 30L -0.5 30C -0.5 46.8447 13.1553 60.5 30 60.5L 30 59.5ZM 0.5 30C 0.5 13.7076 13.7076 0.5 30 0.5L 30 -0.5C 13.1553 -0.5 -0.5 13.1553 -0.5 30L 0.5 30ZM 30 0.5C 46.2924 0.5 59.5 13.7076 59.5 30L 60.5 30C 60.5 13.1553 46.8447 -0.5 30 -0.5L 30 0.5Z"/>
+<path id="path7_fill" d="M 4 2C 4 3.10457 3.10457 4 2 4C 0.895431 4 0 3.10457 0 2C 0 0.895431 0.895431 0 2 0C 3.10457 0 4 0.895431 4 2Z"/>
+<path id="path8_fill" d="M 8 2C 8 3.10457 6.20914 4 4 4C 1.79086 4 0 3.10457 0 2C 0 0.895431 1.79086 0 4 0C 6.20914 0 8 0.895431 8 2Z"/>
+<path id="path9_stroke" d="M 0.347329 -0.35967C 0.148688 -0.551495 -0.167846 -0.545969 -0.35967 -0.347329C -0.551495 -0.148688 -0.545969 0.167846 -0.347329 0.35967L 0.347329 -0.35967ZM 10.3473 0.35967C 10.546 0.167846 10.5515 -0.148688 10.3597 -0.347329C 10.1678 -0.545969 9.85131 -0.551495 9.65267 -0.35967L 10.3473 0.35967ZM -0.347329 0.35967C 2.60785 3.21344 7.39215 3.21344 10.3473 0.35967L 9.65267 -0.35967C 7.085 2.11989 2.915 2.11989 0.347329 -0.35967L -0.347329 0.35967Z"/>
+</defs>
+</svg>

@@ -1,0 +1,67 @@
+body {
+    padding-top: 5vh;
+}
+
+h1, h2, p, a {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.top {
+    text-align: center;
+}
+.top h1 {
+    font-size: 42px;
+    color: #333333;
+}
+
+.vacancy {
+    display: block;
+    padding: 20px 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #C4C4C4;
+}
+.vacancy:last-child {
+    border: none;
+}
+.vacancy h2 {
+    font-size: 28px;
+    letter-spacing: 0.0166px;
+    color: #2F80ED;
+}
+.vacancy p {
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0.0166px;
+    color: #828282;
+}
+.vacancy p>b {
+    color: #000000;
+}
+
+.vacancy .description {
+    margin-top: 20px;
+}
+.vacancy .demands, .vacancy .offers {
+    padding-top: 33px;
+}
+.vacancy .offers {
+    margin-bottom: 44px;
+}
+
+.vacancy .demands .heading, .vacancy .offers .heading {
+    padding-left: 0;
+}
+
+@media (min-width: 575px) {
+    .vacancy .demands p, .vacancy .offers p {
+        padding-left: 66px;
+    }
+}
+
+@media (max-height: 371px) {
+    body {
+        padding-top: 15vh;
+    }
+}

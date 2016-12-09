@@ -1,0 +1,233 @@
+h2 {
+    font-size: 28px;
+    letter-spacing: 0.0166px;
+    color: #4F4F4F;
+}
+
+p, li {
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0.0166px;
+    color: #828282;
+}
+
+.standard-menu-item {
+    color: #333 !important;
+}
+.icon-bar.white {
+    background-color: #FFFFFF !important;
+}
+
+.learn-more-link {
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0.0166px;
+    color: #2F80ED;
+}
+.learn-more-link:hover, .learn-more-link:visited {
+    color: #2F80ED;
+}
+
+.bot-btn.white {
+    border: 1px solid #FFFFFF;
+    color:#FFFFFF!important
+}
+.bot-btn.white:hover {
+    background-color:transparent!important;
+}
+
+.top {
+    background-position: center;
+    background-size: cover;
+    display: block;
+    float: left;
+    width: 100%;
+    height: 100vh;
+    padding-right: 0;
+    padding-left: 0;
+    text-align: center;
+}
+
+.top>h1 {
+    font-size: 42px;
+    color: #FFFFFF;
+    margin: auto;
+    margin-top: 50vh;
+    width: 77%;
+}
+
+.content {
+    text-align: left;
+    margin-top: 44px;
+}
+.content p {
+    padding: 20px 0;
+}
+.content .img-full {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.footer-fixed {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    min-height: 8vh;
+    display: block;
+    float: left;
+    border-top: 1px solid #CCCCCC;
+}
+.footer-fixed .background {
+    width:100%;
+    height:8vh;
+    background: #FFFFFF;
+    opacity: .9;
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -ms-filter: blur(1px);
+    -o-filter: blur(1px);
+    filter: blur(1px);
+}
+.footer-fixed .inner {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.footer-fixed .inner>div, .social-share>div {
+    height: 100%;
+    display: inline-block;
+}
+.footer-fixed .inner .text, .social-share .text {
+    font-size: 18px;
+    color: #2F80ED;
+    padding-bottom: 10px;
+}
+
+.footer-fixed .inner .fb, .footer-fixed .inner .in, .footer-fixed .inner .tw {
+    margin-left: 6px;
+}
+.footer-fixed .inner img, .social-share>div img {
+    padding-top: 12px;
+    width: 100%;
+}
+
+.social-share {
+    text-align: center;
+}
+
+.social-share .fb, .social-share .in, .social-share .tw {
+    margin-left: 8px;
+}
+
+.article {
+    display: inline-block;
+    height: auto;
+    /*height: 600px;*/
+    /*width: 98%;*/
+    margin: 10px auto;
+    padding: 20px 33px;
+    text-align: left;
+}
+.article h2 {
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 0.0166px;
+    color: #4F4F4F;
+}
+.article p, .article a {
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.0166px;
+}
+
+.article p {
+    color: #828282;
+}
+.article a {
+    color: #2F80ED;
+}
+
+.article .preview-img {
+    display: block;
+    height: 300px;
+    width: 100%;
+    border-radius: 4px;
+    background-size: cover;
+}
+.article .preview-text {
+    display: block;
+    height: 40%;
+    width: 100%;
+}
+
+.article.article-5 .preview-img {
+    background: url("../img/musement_contract.jpg");
+}
+.article.article-4 .preview-img {
+    background: url("../img/messengerForBusiness.jpg");
+}
+.article.article-3 .preview-img {
+    background: url("../img/image1.jpg");
+    background-size: cover;
+}
+.article.article-2 .preview-img {
+    background: url("../img/whatAreChatbots1.jpeg");
+}
+.article.article-1 .preview-img {
+    background: url("../img/blog_6_1.jpg");
+}
+
+.recent p{
+    font-size: 18px;color: #828282;
+    float: left;
+    padding: 0 32px;
+    margin-bottom: 0;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .article {
+        margin: 40px auto;
+    }
+    #footer {
+        margin-top: 44px;
+    }
+}
+
+@media (min-width: 992px) {
+    .article.article-4 .preview-img, .article.article-3 .preview-img,
+    .article.article-2 .preview-img, .article.article-1 .preview-img {
+        background-position: center;
+    }
+}
+
+@media (max-width: 991px) {
+        .article {
+        padding: 0 33px;
+    }
+    .article.article-4 .preview-img, .article.article-3 .preview-img,
+    .article.article-2 .preview-img, .article.article-1 .preview-img {
+        background-size: cover;
+    }
+}
+
+@media (max-width: 515px) {
+    .article {
+        height: auto;
+    }
+    .article .preview-img {
+        display: none;
+    }
+    .article .preview-text {
+        height: 100%;
+    }
+
+    .social-share {
+        margin-bottom: 33px;
+    }
+    /*.social-share .text {*/
+        /*display: none;*/
+    /*}*/
+}

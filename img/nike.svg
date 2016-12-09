@@ -1,0 +1,12 @@
+<svg width="224" height="80" viewBox="0 0 224 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>nike</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="matrix(2 0 0 2 1966 -7236)" figma:type="canvas">
+<g id="nike" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(-983 3618)" fill="#BDBDBD" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 14.2647 1.74134C 7.02262 10.227 0.0731523 20.7609 0 28.6614C 0 31.5875 0.95098 34.221 3.2187 36.1961C 6.51056 39.049 10.095 40 13.6795 40C 18.8733 40 24.0671 37.8786 28.1636 36.2692C 35.04 33.5626 110.679 0.644052 110.679 0.644052C 111.411 0.27829 111.265 -0.160624 110.387 0.0588333C 109.948 0.131986 27.9442 22.3703 27.9442 22.3703C 26.3348 22.8092 24.7255 23.0287 23.1893 23.0287C 16.8982 23.1018 11.2655 19.5905 11.3386 12.2021C 11.2655 9.34918 12.2164 5.83787 14.2647 1.74134Z"/>
+</defs>
+</svg>

@@ -1,0 +1,12 @@
+<svg width="8" height="11" viewBox="0 0 8 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>arrow</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-2153 -139)" figma:type="canvas">
+<g id="arrow" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="matrix(6.12323e-17 -1 1 6.12323e-17 2153 149.5)" fill="#2F80ED" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 5 8L 10 0L 0 0L 5 8Z"/>
+</defs>
+</svg>

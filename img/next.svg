@@ -1,0 +1,12 @@
+<svg width="48" height="48" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>right arrow</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-595 -1496)" figma:type="canvas">
+<g id="right arrow" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="matrix(-1 0 0 1 643 1496)" fill="#E0E0E0" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 24 48C 37.2549 48 48 37.2548 48 24C 48 10.7452 37.2549 0 24 0C 10.7451 0 0 10.7452 0 24C 0 37.2548 10.7451 48 24 48ZM 27.8485 15.2485C 28.3172 14.7799 28.3172 14.0201 27.8485 13.5515C 27.3799 13.0828 26.6201 13.0828 26.1515 13.5515L 16.9757 22.7272C 16.2728 23.4301 16.2728 24.5699 16.9757 25.2728L 26.1515 34.4485C 26.6201 34.9171 27.3799 34.9171 27.8485 34.4485C 28.3172 33.9799 28.3172 33.2201 27.8485 32.7515L 19.097 24L 27.8485 15.2485Z"/>
+</defs>
+</svg>

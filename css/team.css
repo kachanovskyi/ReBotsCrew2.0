@@ -1,0 +1,129 @@
+h2 {
+    font-size: 28px;
+    letter-spacing: 0.0166px;
+    color: #4F4F4F;
+}
+
+p {
+    font-size: 18px;line-height: 140%;letter-spacing: 0.0166px;color: #828282;
+}
+
+.standard-menu-item {
+    color: #333 !important;
+}
+.icon-bar.white {
+    background-color: #FFFFFF !important;
+}
+
+.learn-more-link {
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0.0166px;
+    color: #2F80ED;
+}
+.learn-more-link:hover, .learn-more-link:visited {
+    color: #2F80ED;
+}
+
+.bot-btn.white {
+    border: 1px solid #FFFFFF;
+    color:#FFFFFF!important
+}
+.bot-btn.white:hover {
+    background-color:transparent!important;
+}
+
+.top {
+    background: url("../img/team_top_image.png");
+    background-size: cover;
+    background-position: center;
+    display: block;
+    float: left;
+    width: 100%;
+    height: 100vh;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.top>h1 {
+    font-size: 42px;
+    color: #FFFFFF;
+    margin-top: 50vh;
+}
+
+.content {
+    text-align: left;
+    margin-top: 44px;
+}
+.content h2 {
+    margin-top: 24px;
+}
+.content .article {
+    padding-top: 6px;
+}
+
+.members {
+    margin-top: 33px !important;
+}
+.member-card {
+    /*width: 32.3%;*/
+    /*display: inline-block;*/
+    text-align: center;
+}
+.member-card .name {
+    margin-top: 8px;
+    margin-bottom: 2px;
+}
+
+.bottom {
+    margin-top: 60px;
+    position: relative;
+}
+.bottom .follow {
+    background: #FFFFFF;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    color: #2F80ED;
+    padding: 0 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /*z-index: 2;*/
+}
+.bottom .follow:hover {
+    cursor: pointer;
+    border: 1px solid #2F80ED;
+}
+.bottom .follow>img {
+    padding-bottom: 2px;
+}
+.bottom .block {
+    padding-left: 0;
+    padding-right: 0;
+}
+.bottom .block>img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 991px) {
+    .bottom .follow {
+        transform: translate(-50%, 0);
+        margin-top: 22%;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-default {
+        border-bottom:1px solid #E5E5E5
+    }
+}
+
+@media (max-width: 540px) {
+
+}

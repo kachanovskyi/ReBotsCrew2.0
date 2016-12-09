@@ -1,0 +1,55 @@
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+#middle {
+    display: block;
+    float: left;
+    min-height: 74vh;
+    width: 100%;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    letter-spacing: 0.0166px;
+    color: #333333;
+}
+
+.top {
+    margin-top: 15vh;
+}
+
+.content .error-pic{
+    display: block;
+    width: 300px;
+    margin: 24px auto;
+    background: #2F80ED;
+    border-radius: 100px;
+    height: 122px;
+    padding: 12px 25px;
+}
+.content .error-pic .item {
+    display: block;
+    float: left;
+    padding: 0 2px;
+}
+.content .error-pic .item>img {
+    width: 100%;
+}
+.content .error-pic .item.middle {
+    width: 100px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+}
+
+@media (max-width: 575px) {
+    .top {
+        margin-top: 10vh;
+    }
+}
