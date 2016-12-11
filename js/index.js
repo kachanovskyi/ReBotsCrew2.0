@@ -1,5 +1,6 @@
 $(document).ready(function () {
     $("#head-title").typed({
+        // strings: ["Chatbots^1000", "AI powered^1000", "Unique^1000", "24/7 for hire^1000"]
         strings: ["Chatbots^1000"]
         , typeSpeed: 100
         , loop: true
@@ -65,13 +66,6 @@ $(document).ready(function () {
         lastScrollTop = st;
     }
 
-    // function setHeight() {
-    //     var height = $('.slide-2 .right').outerHeight();
-    //     $('.slide-2 .bot-preview-block').height(height);
-    // }
-    // setHeight();
-    // $(window).resize(setHeight);
-
 
     //.bot-example scripts
     var phrases = [
@@ -136,13 +130,16 @@ $(document).ready(function () {
 
 
     var progressBarInit = function () {
+        var listItem = $('.slide-4 .bottom ul>li');
         var listItemLink = $('.slide-4 .bottom ul>li>a');
         addMessages();
 
         $($('.slide-4 .bottom ul>li .progressbar-container')[0]).remove();
         $($('.slide-4 .bottom ul>li')[progressSlide]).append('<div class="progressbar-container"></div>');
         listItemLink.removeClass('active');
+        listItem.removeClass('active');
         $(listItemLink[progressSlide]).addClass('active');
+        $($(listItemLink[progressSlide]).parent()).addClass('active');
         bar = new ProgressBar.Line('.progressbar-container', {
             strokeWidth: 1,
             duration: 7000,
@@ -174,8 +171,10 @@ $(document).ready(function () {
         var item = $('#botUsesCard .item');
         var listItemLink = $('.slide-4 .bottom ul>li>a');
 
+        $(listItemLink.parent()).removeClass('active');
         listItemLink.removeClass('active');
         $(this).addClass('active');
+        $($(this).parent()).addClass('active');
         bar.stop();
         bar.set(0.0);
         $('.bot-example').children().remove();
@@ -186,7 +185,9 @@ $(document).ready(function () {
         progressBarInit();
     });
 
-    var targetOffset = ($('.slide-3').offset().top + $(window).height());
+    var middleBotAdvantage = $('.slide-3 .bots-advantages.middle');
+    var targetOffset = (middleBotAdvantage.offset().top);
+    console.log(targetOffset);
     var $w = $(window).scroll(function() {
         var slide5 = $('.slide-5');
         if ( !barInitialized && ($w.scrollTop() > targetOffset) && ($w.scrollTop() < slide5.offset().top) ) {

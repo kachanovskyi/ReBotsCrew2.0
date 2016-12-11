@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="icon" type="image/png" href="img/logo.png">
   <style>
-    body,html{width:100%;overflow-x:hidden}h1,h2,p,a{font-family:"Montserrat",sans-serif;font-style:normal;font-weight:400;mix-blend-mode:normal}p,a{font-family:"Open Sans",sans-serif;}a,a:hover,a:visited,a:active{text-decoration:none!important}.header{width:100%;height:12vh}.nav-up{top:-201px}.navbar{padding-top:0!important;border:none;background-color:#FFF;transition:top .3s ease-in-out}.navbar-nav{margin-top:0;margin-bottom:0;padding:24px}.navbar-nav>li:last-child{padding-right:100px}.navbar-default{border-color:#E5E5E5;border-bottom:1px solid #E5E5E5}.navbar-brand{padding:0;display:flex;align-items:center;padding-left:100px;margin:24px}.navbar-brand>img{height:50px;padding:7px 14px;width:auto}.menu-item{font-family:"Montserrat",sans-serif;font-size:18px;line-height:100%;color:#4F4F4F!important}.bot-btn{border:1px solid #2F80ED;border-radius:4px;transition-duration:.2s;padding:14px 23px}.bot-btn:hover{transition-duration:.5s;text-decoration:none}.bot-btn:active{box-shadow:0 10px 20px rgba(0,0,0,0.1),inset 0 4px 0 rgba(0,0,0,0.05)}.bot-btn.white-blue{color:#2F80ED!important}.bot-btn.white-blue:hover{background-color:#2F80ED!important;color:#FFF!important}.logo{width:64px!important}.play-img{display:inline-block;background:url(img/play.svg);background-size:cover;width:14px;height:16px;margin-bottom:-1px;transition-duration:.2s}#middle{font-size:48px;line-height:100%;letter-spacing:.0166px;color:#4F4F4F;text-align:center;width:100%}.slide-1{width:100%;min-height:88vh;padding-top:12%;padding-bottom:14%;display:block;float:left}.bot-emoji{height:55px;padding-bottom:12px}.row{margin:0!important}
+    body,html{width:100%;overflow-x:hidden}h1,h2,p,a{font-family:"Roboto","Montserrat", sans-serif;font-style:normal;font-weight:400;mix-blend-mode:normal}p,a{font-family:"Roboto", "Open Sans",sans-serif;}a,a:hover,a:visited,a:active{text-decoration:none!important}.header{width:100%;height:12vh}.nav-up{top:-201px}.navbar{padding-top:0!important;border:none;background-color:#FFF;transition:top .3s ease-in-out}.navbar-nav{margin-top:0;margin-bottom:0;padding:24px}.navbar-nav>li:last-child{padding-right:100px}.navbar-default{border-color:#E5E5E5;border-bottom:1px solid #E5E5E5}.navbar-brand{padding:0;display:flex;align-items:center;padding-left:100px;margin:24px}.navbar-brand>img{height:50px;padding:7px 14px;width:auto}.menu-item{font-family:"Roboto","Montserrat",sans-serif;font-size:18px;line-height:100%;color:#4F4F4F!important}.bot-btn{border:1px solid #2F80ED;border-radius:4px;transition-duration:.2s;padding:14px 23px}.bot-btn:hover{transition-duration:.5s;text-decoration:none}.bot-btn:active{box-shadow:0 10px 20px rgba(0,0,0,0.1),inset 0 4px 0 rgba(0,0,0,0.05)}.bot-btn.white-blue{color:#2F80ED!important}.bot-btn.white-blue:hover{background-color:#2F80ED!important;color:#FFF!important}.logo{width:64px!important}.play-img{display:inline-block;background:url(img/play.svg);background-size:cover;width:14px;height:16px;margin-bottom:-1px;transition-duration:.2s}#middle{font-size:48px;line-height:100%;letter-spacing:.0166px;color:#4F4F4F;text-align:center;width:100%}.slide-1{width:100%;min-height:88vh;padding-top:12%;padding-bottom:14%;display:block;float:left}.bot-emoji{height:55px;padding-bottom:12px}.row{margin:0!important}
   </style>
 </head>
 <body>
@@ -48,7 +48,7 @@
     <div id="middle">
       <div class="slide-1 container-fluid">
         <h1 class="first">WE CREATE</h1>
-        <h1><span id="head-title"></span></h1>
+        <h1 class="sub-heading"><span id="head-title"></span></h1>
         <!--<a href="" class="menu-item bot-btn white-blue video"><div class="play-img"></div> Watch video</a>-->
 
       </div>
@@ -56,16 +56,16 @@
       <div class="slide-2 container-fluid" >
         <div class="row">
           <div class="content" id="introduction">
-            <div class="cos-xs-12 col-sm-5 col-md-5 col-lg-5 bot-preview-block" style="overflow: hidden; height:638px !important;">
-              <div style="position: relative; height: 544px; margin-top: 102px; background: url('img/musement.png') no-repeat center">
+            <div class="cos-xs-12 col-sm-6 bot-preview-block" style="">
+              <div style="position: relative; width: auto; height: 88%; margin: 6% auto; background: url('img/iphone6full.png') center no-repeat; background-size: contain;">
                 <!--<img src="img/musement.png" class="iphone-image" style="">-->
-                <video width="256" autoplay="" loop="" muted style="position: absolute; bottom: 0; left: 50%; transform: translate(-50%, 0);">
+                <video width="236" autoplay="" loop="" muted style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
                   <source src="video/MusementBot.mp4" type="video/mp4">
                   <source src="video/Avel.ogg" type="video/ogg"> Your browser does not support the video tag.
                 </video>
               </div>
             </div>
-            <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 right">
+            <div class="col-xs-12 col-sm-6 right">
               <div class="description col-xs-offset-1 col-sm-offset-2 col-md-offset-2 col-lg-offset-2 col-xs-10 col-sm-8 col-md-8 col-lg-8">
                 <h2>What are chatbots?</h2>
                 <p>A Chatbot is a virtual assistant powered by rules and algorithms that lets your customers interact with your business through several messaging platforms. These Chatbots are intuitive to use and can be implemented into several fields of business such as e-commerce, entertainment, news, customer support, delivery services or corporate information exchange.</p>
@@ -78,108 +78,92 @@
 
       <div class="slide-3 container-fluid">
         <div class="row">
-          <div class="top col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">
+          <div class="top col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-3 col-md-6">
             <h2 class="text-center">Chatbots are the new black</h2>
-            <p class="text-center">A Chatbot is a virtual assistant powered by rules and algorithms that lets your customers interact with your business through several messaging platforms</p>
+            <p class="text-center">Chatbots are the new era of human&computer communication. Now everyone can talk to your business in their favorite messenger</p>
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-5 col-lg-offset-1 col-lg-5">
-            <ul class="advantages-list">
-              <li>You have a business or want to have one. But you have a simple aim - get as many customers as possible</li>
-              <li>Make it more friendly! It’s easy! Create a chat bot and make your customer fill like he is chatting with a friend</li>
-              <li>Feel the growth! Now you have 3 billions of potential customers! How great is that? Third string, Carl!</li>
-            </ul>
+          <div class="col-xs-12 col-sm-offset-1 col-sm-3 bots-advantages">
+            <img src="img/rectangle-mock.png">
+            <p>You have a business or want to have one. But you have a simple aim - get as many customers as possible</p>
           </div>
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 right">
-            <p><span class="navy-blue-text">Messaging Apps</span> vs <span class="light-blue-text">Networking Apps</span></p>
-            <p>Statistics from Buffer and Business Insider</p>
-            <img src="img/graphic.png" class="graphic-img">
+          <div class="col-xs-12 col-sm-4 bots-advantages middle">
+            <img src="img/rectangle-mock.png">
+            <p>Make it more friendly! It’s easy! Create a chat bot and make your customer fill like he is chatting with a friend</p>
+          </div>
+          <div class="col-xs-12 col-sm-3 bots-advantages">
+            <img src="img/rectangle-mock.png">
+            <p>Feel the growth! Now you have 3 billions of potential customers! How great is that? Third string, Carl!</p>
           </div>
         </div>
       </div>
 
       <div class="slide-4 container-fluid nopadding">
-        <div class="top">
-          <h2>Where you can use chatbots</h2>
-          <p>A Chatbot is a virtual assistant powered by rules and algorithms that lets your customers interact with your business through several messaging platforms</p>
-        </div>
         <div class="middle col-xs-12 col-md-12">
           <div id="botUsesCard" class="carousel slide" data-ride="carousel" data-interval="false">
             <div class="carousel-inner" role="listbox">
               <div class="item active">
-                <div class="col-xs-12 col-sm-6 left">
-                  <div class="col-sm-12 col-md-offset-2 col-md-10">
-                    <h2>Effective title string</h2>
-                    <p>A Chatbot is a virtual assistant powered by rules and algorithms that lets your customers interact with your business through several messaging platforms. These Chatbots are intuitive to use and can be implemented into several fields of business such as e-commerce, entertainment, news, customer support, delivery services or corporate information exchange.</p>
-                  </div>
+                <div class="col-xs-12 col-sm-offset-1 col-sm-5 text-left">
+                  <h2>Let customers talk to you!</h2>
+                  <p>Every good business want their customers to be satisfied and to feel special. Chatbot for hospitality fits here the best! Reach your customer before he even use your service, make conversations personilised, take adventages of knowing the tastes of your client and provide them with amazing service at the moment they really need it. And yes, there is no need for a 24/7 person to sit in the office. Chatbot will do that for you.</p>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-5 right">
+                <div class="col-xs-12 col-sm-offset-1 col-sm-4 right">
                   <div class="col-xs-12 bot-example">
                     <!--<img src="img/chat.png">-->
                   </div>
                 </div>
               </div>
               <div class="item">
-                <div class="col-xs-12 col-sm-6 left">
-                  <div class="col-sm-12 col-md-offset-2 col-md-10">
-                    <h2>Effective title string</h2>
-                    <p>A Chatbot is a virtual assistant powered by rules and algorithms that lets your customers interact with your business through several messaging platforms. These Chatbots are intuitive to use and can be implemented into several fields of business such as e-commerce, entertainment, news, customer support, delivery services or corporate information exchange.</p>
-                  </div>
+                <div class="col-xs-12 col-sm-offset-1 col-sm-5 text-left">
+                  <h2>Let customers talk to you!</h2>
+                  <p>Every good business want their customers to be satisfied and to feel special. Chatbot for hospitality fits here the best! Reach your customer before he even use your service, make conversations personilised, take adventages of knowing the tastes of your client and provide them with amazing service at the moment they really need it. And yes, there is no need for a 24/7 person to sit in the office. Chatbot will do that for you.</p>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-5 right">
+                <div class="col-xs-12 col-sm-offset-1 col-sm-4 right">
                   <div class="col-xs-12 bot-example">
                     <!--<img src="img/chat.png">-->
                   </div>
                 </div>
               </div>
               <div class="item">
-                <div class="col-xs-12 col-sm-6 left">
-                  <div class="col-sm-12 col-md-offset-2 col-md-10">
-                    <h2>Effective title string</h2>
-                    <p>A Chatbot is a virtual assistant powered by rules and algorithms that lets your customers interact with your business through several messaging platforms. These Chatbots are intuitive to use and can be implemented into several fields of business such as e-commerce, entertainment, news, customer support, delivery services or corporate information exchange.</p>
-                  </div>
+                <div class="col-xs-12 col-sm-offset-1 col-sm-5 text-left">
+                  <h2>Let customers talk to you!</h2>
+                  <p>Every good business want their customers to be satisfied and to feel special. Chatbot for hospitality fits here the best! Reach your customer before he even use your service, make conversations personilised, take adventages of knowing the tastes of your client and provide them with amazing service at the moment they really need it. And yes, there is no need for a 24/7 person to sit in the office. Chatbot will do that for you.</p>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-5 right">
+                <div class="col-xs-12 col-sm-offset-1 col-sm-4 right">
                   <div class="col-xs-12 bot-example">
                     <!--<img src="img/chat.png">-->
                   </div>
                 </div>
               </div>
               <div class="item">
-                <div class="col-xs-12 col-sm-6 left">
-                  <div class="col-sm-12 col-md-offset-2 col-md-10">
-                    <h2>Effective title string</h2>
-                    <p>A Chatbot is a virtual assistant powered by rules and algorithms that lets your customers interact with your business through several messaging platforms. These Chatbots are intuitive to use and can be implemented into several fields of business such as e-commerce, entertainment, news, customer support, delivery services or corporate information exchange.</p>
-                  </div>
+                <div class="col-xs-12 col-sm-offset-1 col-sm-5 text-left">
+                  <h2>Let customers talk to you!</h2>
+                  <p>Every good business want their customers to be satisfied and to feel special. Chatbot for hospitality fits here the best! Reach your customer before he even use your service, make conversations personilised, take adventages of knowing the tastes of your client and provide them with amazing service at the moment they really need it. And yes, there is no need for a 24/7 person to sit in the office. Chatbot will do that for you.</p>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-5 right">
+                <div class="col-xs-12 col-sm-offset-1 col-sm-4 right">
                   <div class="col-xs-12 bot-example">
                     <!--<img src="img/chat.png">-->
                   </div>
                 </div>
               </div>
               <div class="item">
-                <div class="col-xs-12 col-sm-6 left">
-                  <div class="col-sm-12 col-md-offset-2 col-md-10">
-                    <h2>Effective title string</h2>
-                    <p>A Chatbot is a virtual assistant powered by rules and algorithms that lets your customers interact with your business through several messaging platforms. These Chatbots are intuitive to use and can be implemented into several fields of business such as e-commerce, entertainment, news, customer support, delivery services or corporate information exchange.</p>
-                  </div>
+                <div class="col-xs-12 col-sm-offset-1 col-sm-5 text-left">
+                  <h2>Let customers talk to you!</h2>
+                  <p>Every good business want their customers to be satisfied and to feel special. Chatbot for hospitality fits here the best! Reach your customer before he even use your service, make conversations personilised, take adventages of knowing the tastes of your client and provide them with amazing service at the moment they really need it. And yes, there is no need for a 24/7 person to sit in the office. Chatbot will do that for you.</p>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-5 right">
+                <div class="col-xs-12 col-sm-offset-1 col-sm-4 right">
                   <div class="col-xs-12 bot-example">
                     <!--<img src="img/chat.png">-->
                   </div>
                 </div>
               </div>
               <div class="item">
-                <div class="col-xs-12 col-sm-6 left">
-                  <div class="col-sm-12 col-md-offset-2 col-md-10">
-                    <h2>Effective title string</h2>
-                    <p>A Chatbot is a virtual assistant powered by rules and algorithms that lets your customers interact with your business through several messaging platforms. These Chatbots are intuitive to use and can be implemented into several fields of business such as e-commerce, entertainment, news, customer support, delivery services or corporate information exchange.</p>
-                  </div>
+                <div class="col-xs-12 col-sm-offset-1 col-sm-5 text-left">
+                  <h2>Let customers talk to you!</h2>
+                  <p>Every good business want their customers to be satisfied and to feel special. Chatbot for hospitality fits here the best! Reach your customer before he even use your service, make conversations personilised, take adventages of knowing the tastes of your client and provide them with amazing service at the moment they really need it. And yes, there is no need for a 24/7 person to sit in the office. Chatbot will do that for you.</p>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-5 right">
+                <div class="col-xs-12 col-sm-offset-1 col-sm-4 right">
                   <div class="col-xs-12 bot-example">
                     <!--<img src="img/chat.png">-->
                   </div>
@@ -257,7 +241,13 @@
                       <a href="#" class="menu-item bot-btn blue-dark-blue messenger"><img src="img/messenger_icon.svg" class="fb-messenger-img"> <span class="text">Open in messenger</span></a>
                     </div>
                     <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-6 col-md-pull-5 musement">
-                      <img src="img/musement.png">
+                      <div style="position: relative; margin-bottom: -66px; height: 600px; background: url('img/iphone6full.png') no-repeat center">
+                        <!--<img src="img/musement.png" class="iphone-image" style="">-->
+                        <video width="252" autoplay="" loop="" muted style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                          <source src="video/MusementBot.mp4" type="video/mp4">
+                          <source src="video/Avel.ogg" type="video/ogg"> Your browser does not support the video tag.
+                        </video>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -266,12 +256,18 @@
                 <div class="bot-card">
                   <div class="row">
                     <div class="col-xs-12 col-sm-offset-3 col-sm-6 col-md-offset-0 col-md-6 col-md-push-6 col-lg-6 col-lg-push-6 musement">
-                      <h2>Musement</h2>
+                      <h2>Avel</h2>
                       <p class="description">Travel Assistant for activities, tours, attractions, tickets, city passes and more. Musement helps travellers get the best from destinations by providing a great choice of local tours and attractions bookable on multiple devices. </p>
                       <a href="#" class="menu-item bot-btn blue-dark-blue messenger"><img src="img/messenger_icon.svg" class="fb-messenger-img"> <span class="text">Open in messenger</span></a>
                     </div>
-                    <div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-0 col-md-10 col-md-pull-1 col-lg-4 col-lg-pull-4 musement">
-                      <img src="img/musement.png">
+                    <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-6 col-md-pull-5 musement">
+                      <div style="position: relative; margin-bottom: -66px; height: 600px; background: url('img/iphone6full.png') no-repeat center">
+                        <!--<img src="img/musement.png" class="iphone-image" style="">-->
+                        <video width="254" autoplay="" loop="" muted style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                          <source src="video/Avel.mp4" type="video/mp4">
+                          <source src="video/Avel.ogg" type="video/ogg"> Your browser does not support the video tag.
+                        </video>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -295,35 +291,6 @@
           </div>
           </div>
         </div>
-
-        <!--<div class="col-xs-12 col-sm-10 col-md-offset-1 col-md-10 col-lg-10">-->
-          <!--<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">-->
-            <!--&lt;!&ndash; Wrapper for slides &ndash;&gt;-->
-            <!--<div class="carousel-inner">-->
-              <!--<div class="item active" style="min-height: 88vh;">-->
-                <!--<div class="row musement-block">-->
-                  <!--<div class="col-xs-11 col-sm-offset-1 col-sm-11 col-lg-5 col-lg-push-5 musement">-->
-                    <!--<h2>Musement</h2>-->
-                    <!--<p class="description">Travel Assistant for activities, tours, attractions, tickets, city passes and more. Musement helps travellers get the best from destinations by providing a great choice of local tours and attractions bookable on multiple devices. </p>-->
-                    <!--<a href="#" class="menu-item bot-btn blue-dark-blue messenger"><img src="img/messenger_icon.svg" class="fb-messenger-img"> Open in messenger</a>-->
-                  <!--</div>-->
-                  <!--<div class="col-xs-8 col-lg-offset-1 col-lg-4 col-lg-pull-7 musement-phone-block" style="height: 300px;">-->
-                    <!--<img src="img/musement.png" class="iphone-image" style="position:absolute; bottom: 0">-->
-                  <!--</div>-->
-                <!--</div>-->
-              <!--</div>-->
-            <!--</div>-->
-
-            <!--&lt;!&ndash; Controls &ndash;&gt;-->
-            <!--<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">-->
-              <!--<span class="glyphicon glyphicon-chevron-left"></span>-->
-            <!--</a>-->
-            <!--<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">-->
-              <!--<span class="glyphicon glyphicon-chevron-right"></span>-->
-            <!--</a>-->
-          <!--</div>-->
-        <!--</div>-->
-
       </div>
 
       <div class="slide-7 container-fluid nopadding">
@@ -392,7 +359,7 @@
             <div class="block">
               <p class="title"><b>Enterprise</b></p>
               <div class="top-subblock">
-                <p>Custom price</p>
+                <p>Let`s Talk</p>
               </div>
               <div class="middle-subblock">
                 <p>Fully customized chatbot with a strong NLP skills, working with third party API`s with analytics, admin panel etc. Developed with a chatbot builder prototype bot just to check the conversion. It does not include any NLP</p>
@@ -512,9 +479,10 @@
   </footer>
 
 
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
   <script src="js/jquery-1.11.3.min.js"></script>
   <script src="js/typed.js"></script>
   <script src="js/bootstrap.min.js"></script>
