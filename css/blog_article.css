@@ -227,7 +227,15 @@ p, li {
     .social-share {
         margin-bottom: 33px;
     }
-    /*.social-share .text {*/
-        /*display: none;*/
-    /*}*/
+
+    .social-share .text {
+        display: block;
+    }
+}
+
+@media (max-height: 555px) {
+    .top>h1 {
+        margin-top: 50vh;
+        font-size: 36px;
+    }
 }

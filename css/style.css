@@ -822,11 +822,12 @@ nav ul>li.careers {
     margin: 4% 5%;
 }
 .slide-10 .social-icon:hover {
-    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    /*box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);*/
 }
 
-.slide-10 .social-icon .left {
-    margin-left: -15% !important;
+.slide-10 .social-icon.right {
+    width: 48px;
+    margin: 4% 5% 2% 5%
 }
 
 #footer {
@@ -1254,6 +1255,10 @@ nav ul>li.careers {
 }
 
 @media (max-width: 575px) {
+    #head-title {
+        font-size: 88px;
+    }
+
     .slide-3 .bots-advantages {
         padding: 12px;
         padding-bottom: 24px;
@@ -1496,10 +1501,6 @@ nav ul>li.careers {
         padding: 44px 2px 0 2px;
     }
 
-    #head-title {
-        font-size: 88px;
-    }
-
     .menu-item.bot-btn.blue-dark-blue.messenger {
         padding: 14px 12px;
     }
@@ -1541,10 +1542,10 @@ nav ul>li.careers {
 
 @media (max-width: 414px) {
     .typed-cursor {
-        padding: 26px 2px 0 2px;
+        padding: 22px 2px 0 2px;
     }
     #head-title {
-        font-size: 66px;
+        font-size: 64px;
     }
 
     .bot-btn.blue-dark-blue.join {
