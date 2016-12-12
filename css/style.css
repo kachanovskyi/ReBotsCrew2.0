@@ -2,7 +2,7 @@ nav ul>li.careers {
     margin-right: 15px;
 }
 
-.typed-cursor{opacity:1;padding:92px 2px 6px 2px;background:#3c3c3c;margin:20px;-webkit-animation:blink 0.5s linear infinite;animation:blink 0.5s linear infinite;}
+.typed-cursor{opacity:1;padding:92px 2px 6px 2px;background:#e5e5e5;margin:20px;-webkit-animation:blink 0.5s linear infinite;animation:blink 0.5s linear infinite;}
 
 @keyframes blink{
     0% { opacity:1; }
@@ -35,7 +35,7 @@ nav ul>li.careers {
 #head-title {
     font-family: "Roboto";
     font-weight: 500;
-    font-size: 160px;
+    font-size: 144px;
     background: -webkit-linear-gradient(135deg, #1464D0 0%, #4D99FF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -327,9 +327,14 @@ nav ul>li.careers {
 
 .slide-4 .right {
     height: 288px;
-    position: relative;
+    /*position: relative;*/
     overflow: hidden;
     margin-bottom: 88px;
+}
+
+.slide-4 .bot-example-wrapper {
+    height: 100%;
+    position: relative;
 }
 
 .slide-4 .bot-example {
@@ -337,7 +342,7 @@ nav ul>li.careers {
     position: absolute;
     bottom: 0;
     overflow-y: scroll;
-    margin-left: 6px;
+    width: 108%;
 }
 
 .slide-4 .middle {
@@ -347,7 +352,7 @@ nav ul>li.careers {
 }
 
 .phrase-box {
-    max-width: 66%;
+    max-width: 64%;
     width: auto;
     border-radius: 35px;
     font-family: "Open Sans", sans-serif;
@@ -358,7 +363,7 @@ nav ul>li.careers {
 }
 .phrase-box.person {
     margin-bottom: 10px;
-    margin-left: 40%;
+    margin-left: 33%;
     background: #205EB4;
     color: #FFF;
 }
@@ -559,7 +564,7 @@ nav ul>li.careers {
 }
 .slide-8 .pricing .block .top-subblock {
     width:100%;
-    background: #2F80ED;
+    background: #65A7FF;
     text-align: center;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -567,6 +572,7 @@ nav ul>li.careers {
 .slide-8 .pricing.center .block .top-subblock {
     height: 98px;
     padding-top: 18px;
+    background: #2F80ED;
 }
 .slide-8 .pricing .block .top-subblock p {
     color: #FFFFFF;
@@ -617,7 +623,7 @@ nav ul>li.careers {
 
 .slide-8 .pricing.center .block .top-subblock p {
     margin: 20px auto;
-    letter-spacing: 5px;
+    letter-spacing: 1px;
     font-size: 20px;
 }
 
@@ -885,7 +891,7 @@ nav ul>li.careers {
 
     .bot-btn.select-side, .bot-btn.select {
         margin-top: 200px !important;
-        padding: 15px 99px !important;
+        padding: 15px 88px !important;
     }
 
     .slide-2 .description {
@@ -896,8 +902,11 @@ nav ul>li.careers {
         width: 55%;
     }
 
-    .slide-6 .musement>img {
-        /*margin-top: -345px;*/
+    .slide-8 .pricing .block .middle-subblock {
+        min-height: 220px;
+    }
+    .slide-8 .pricing.center .block .middle-subblock {
+        min-height: 246px;
     }
 }
 

@@ -1,7 +1,6 @@
 $(document).ready(function () {
     $("#head-title").typed({
-        // strings: ["Chatbots^1000", "AI powered^1000", "Unique^1000", "24/7 for hire^1000"]
-        strings: ["Chatbots^1000"]
+        strings: ["Chatbots^1000", "Personal assistants^1000", "Future^1000", "AI and NLP^1000", "Conversation^1000", "Business^1000"]
         , typeSpeed: 100
         , loop: true
         , startDelay: 100
@@ -54,12 +53,12 @@ $(document).ready(function () {
             //     console.log('removed', example.children()[0]);
             // }
             if(current < 8) {
-                timer = setTimeout(message, 800);
+                timer = setTimeout(message, 2000);
             } else {
                 current = 0;
             }
 
-        }, 200);
+        }, 400);
     };
 
     var removeFirstElement = function(phraseObj) {
@@ -94,7 +93,7 @@ $(document).ready(function () {
         $($(listItemLink[progressSlide]).parent()).addClass('active');
         bar = new ProgressBar.Line('.progressbar-container', {
             strokeWidth: 1,
-            duration: 7000,
+            duration: 16000,
             color: '#2F80ED',
             trailColor: '#DFDFDF',
             trailWidth: 6,
