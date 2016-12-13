@@ -4,13 +4,6 @@ var evenPricingHeights = function () {
 };
 
 $(document).ready(function () {
-    $("#head-title").typed({
-        strings: ["Chatbots^1000", "Personal assistants^1000", "Future^1000", "AI and NLP^1000", "Conversation^1000", "Business^1000"]
-        , typeSpeed: 100
-        , loop: true
-        , startDelay: 100
-    });
-
     var barInitialized = false;
     var bar;
     var timer;
