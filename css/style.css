@@ -42,7 +42,7 @@ nav ul>li.careers {
 }
 
 .slide-1 .sub-heading {
-    /*min-height: 176px;*/
+    min-height: 176px;
     display: inline-flex;
 }
 
@@ -111,12 +111,22 @@ nav ul>li.careers {
     padding-bottom: 5px;
 }
 
-.bot-btn.select {
-    padding: 15px 180px !important;
-    margin-left: 7px;
-}
+/*.bot-btn.select {*/
+    /*padding: 15px 180px;*/
+    /*margin-left: 7px;*/
+/*}*/
 .bot-btn.select-side {
-    padding: 14px 127px !important;
+    padding: 14px;
+    display: block;
+    width: 92%;
+    margin: auto;
+}
+.bot-btn.select-side.center {
+    background: #2F80ED;
+    color: #FFF !important;
+}
+.bot-btn.select-side.center:hover {
+    background: #2374C4 !important;
 }
 
 .customer-img {
@@ -612,8 +622,8 @@ nav ul>li.careers {
     border-bottom: 1px solid #F2F2F2;
 }
 .slide-8 .pricing.center .block .middle-subblock {
-    height: auto;
-    padding-bottom: 12px;
+    /*height: auto;*/
+    /*padding-bottom: 12px;*/
 }
 .slide-8 .pricing .block .middle-subblock p {
     width: 80%;
@@ -624,15 +634,15 @@ nav ul>li.careers {
 }
 .slide-8 .pricing.center .block .middle-subblock p {
     /*padding-top: 10px;*/
-    width: 60%;
-    line-height: 120%;
-    min-height: 166px;
+    /*width: 60%;*/
+    /*line-height: 120%;*/
+    /*min-height: 166px;*/
 }
 
 .slide-8 .pricing .block .bottom-subblock {
     height:70px;
     margin-bottom: 33px;
-    padding-top: 26px;
+    padding-top: 11px;
 }
 .slide-8 .pricing.center .block .bottom-subblock {
     margin-bottom: 33px;
@@ -813,7 +823,7 @@ nav ul>li.careers {
     mix-blend-mode: normal;
 }
 #contact-form select option.background{
-background: #2374C4;
+background: #205EB4;
 }
 #contact-form textarea {
     padding-top: 22px;
@@ -886,11 +896,11 @@ background: #2374C4;
         padding: 15px 155px !important;
     }
     .bot-btn.select-side {
-        padding: 15px 111px !important;
+        /*padding: 15px 111px !important;*/
     }
 
     .bot-btn.select, .bot-btn.select-side {
-        margin-top: 200px !important;
+        /*margin-top: 200px !important;*/
     }
 }
 
@@ -915,8 +925,8 @@ background: #2374C4;
     }
 
     .bot-btn.select-side, .bot-btn.select {
-        margin-top: 200px !important;
-        padding: 15px 88px !important;
+        /*margin-top: 200px !important;*/
+        /*padding: 15px 88px !important;*/
     }
 
     .slide-2 .description {
@@ -928,7 +938,7 @@ background: #2374C4;
     }
 
     .slide-8 .pricing .block .middle-subblock {
-        min-height: 220px;
+        min-height: 180px;
     }
     .slide-8 .pricing.center .block .middle-subblock {
         min-height: 246px;
@@ -967,6 +977,10 @@ background: #2374C4;
 }
 
 @media (min-width: 992px) {
+    .slide-1 .sub-heading {
+        min-height: 176px;
+    }
+
     .slide-6 .bot-card p, .slide-6 .bot-card h2 {
         text-align: left;
     }
@@ -1071,12 +1085,6 @@ background: #2374C4;
     }
 }
 
-@media (max-width: 991px) and (min-width: 768px) {
-    .slide-8 .pricing.center .block .middle-subblock p {
-        width: 100%;
-    }
-}
-
 @media (max-width: 968px) and (min-width: 768px) {
     .bot-card {
         margin-top: -50px;
@@ -1141,9 +1149,9 @@ background: #2374C4;
         padding-right: 0;
     }
 
-    .slide-1 {
-        transform: translate(0, 12%);
-    }
+    /*.slide-1 {*/
+        /*transform: translate(0, 12%);*/
+    /*}*/
     .slide-1 .second {
         margin-top: -10px;
     }
@@ -1254,8 +1262,8 @@ background: #2374C4;
         width: 10%;
     }
 
-    .slide-5 .left, .slide-5 .center, .slide-5 .right {
-        margin-top: 20px;
+    .slide-5 .center, .slide-5 .right {
+        margin-top: 44px;
     }
 
     .musement-block {
@@ -1321,7 +1329,7 @@ background: #2374C4;
         width: 33px;
     }
     .bot-btn.select, .bot-btn.select-side {
-        padding: 14px 144px !important;
+        /*padding: 14px 144px !important;*/
     }
 
     .navbar-default .navbar-nav>li {
@@ -1515,7 +1523,7 @@ background: #2374C4;
     }
 
     .bot-btn.select, .bot-btn.select-side {
-        padding: 14px 100px !important;
+        /*padding: 14px 100px !important;*/
     }
 
     .carousel-inner .bot-card .left {
