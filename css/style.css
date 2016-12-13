@@ -36,14 +36,18 @@ nav ul>li.careers {
 .slide-1 .first {
     font-family: "Roboto";
     font-weight: 300;
+	padding-left: 7%;
     font-size: 28px;
     letter-spacing: 0.2px;
     color: #4F4F4F;
+	text-align: left;
 }
 
 .slide-1 .sub-heading {
     min-height: 176px;
     display: inline-flex;
+	float: left;
+	margin-left: 6.5%;
 }
 
 #head-title {
@@ -53,6 +57,8 @@ nav ul>li.careers {
     background: -webkit-linear-gradient(135deg, #1464D0 0%, #4D99FF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+	text-align: left;
+	float: left;
 }
 
 .carousel-control > img {
@@ -152,12 +158,13 @@ nav ul>li.careers {
     border-top: 1px solid #CCCCCC;
     border-bottom: 1px solid #CCCCCC;
     position: relative;
+	
 }
 
 .slide-2 .bot-preview-block {
     padding-left: 0;
     padding-right: 0;
-    background: linear-gradient(135deg, #1464D0 0%, #4D99FF 100%);opacity: 1.00;
+    background: linear-gradient(90deg, #1464D0 0%, #4D99FF 100%);opacity: 1.00;
     overflow: hidden;
     height:638px !important;
 }
@@ -198,12 +205,13 @@ nav ul>li.careers {
 }
 
 .slide-2 p {
-    font-size: 18px;
+    font-size: 19px;
     line-height: 140%;
     letter-spacing: 0.0166px;
     color: #828282;
     text-align: left;
     margin-top: 20px;
+	font-weight: 300;
 }
 
 .slide-2, .slide-3 {
@@ -290,11 +298,13 @@ nav ul>li.careers {
 }
 
 .slide-4 p {
-    font-size: 18px;
+    font-size: 19px;
     line-height: 140%;
     letter-spacing: 0.0166px;
     color: #E0E0E0;
     margin-top: 20px;
+	font-weight: 300;
+
 }
 
 .slide-4 .bottom {
@@ -315,7 +325,7 @@ nav ul>li.careers {
     padding: 10px 15px;
     width: 16.66%;
     height: 100%;
-    border: 1px solid #909499;
+    border: 1px solid #e0e0e0;
     border-left: none;
     border-bottom: none;
     display: block;
@@ -341,7 +351,7 @@ nav ul>li.careers {
 .slide-4 .bottom ul>li a {
     font-size: 18px;
     line-height: 100%;
-    color: #afaeae;
+    color: #e0e0e0;
     text-align: center;
 }
 
@@ -404,8 +414,8 @@ nav ul>li.careers {
     width: 100%;
     /*min-height: 72vh;*/
     border-bottom: 1px solid #CCCCCC;
-    padding-top: 33px;
-    padding-bottom: 55px;
+    padding-top: 73px;
+    padding-bottom: 105px;
 }
 
 .slide-5 p {
@@ -427,7 +437,7 @@ nav ul>li.careers {
 }
 
 .slide-5 .top {
-    margin-bottom: 50px;
+    margin-bottom: 90px;
 }
 
 .slide-5 .top p {
@@ -437,8 +447,9 @@ nav ul>li.careers {
 }
 
 .slide-5 .using-description {
-    width: 75%;
+    width: 85%;
     margin: auto;
+	font-weight: 300;
 }
 
 .slide-5 .using-description-title {
@@ -488,6 +499,7 @@ nav ul>li.careers {
 
 .slide-6 .bot-card p.description {
     width: 48%;
+	font-weight: 300;
 }
 
 .musement .inner {
