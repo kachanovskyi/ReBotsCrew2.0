@@ -30,6 +30,7 @@ nav ul>li.careers {
 
 .slide-1 .sub-heading {
     /*min-height: 176px;*/
+    display: flex;
 }
 
 #head-title {
