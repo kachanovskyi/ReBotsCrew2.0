@@ -29,7 +29,7 @@ nav ul>li.careers {
 }
 
 .slide-1 .sub-heading {
-    min-height: 176px;
+    /*min-height: 176px;*/
 }
 
 #head-title {
@@ -342,7 +342,7 @@ nav ul>li.careers {
     position: absolute;
     bottom: 0;
     overflow-y: scroll;
-    width: 108%;
+    width: 109%;
 }
 
 .slide-4 .middle {
@@ -464,6 +464,14 @@ nav ul>li.careers {
 
 .slide-6 .bot-card p.description {
     width: 48%;
+}
+
+.musement .inner {
+    position: relative; margin-bottom: -66px; height: 600px; background: url('../img/iphone6full.png') no-repeat center;
+}
+
+.bot-video {
+    width: 254px;
 }
 
 .progressbar-container {
@@ -601,7 +609,7 @@ nav ul>li.careers {
     color: #828282;
 }
 .slide-8 .pricing.center .block .middle-subblock p {
-    padding-top: 10px;
+    /*padding-top: 10px;*/
     width: 60%;
     line-height: 120%;
     min-height: 166px;
@@ -1039,6 +1047,12 @@ nav ul>li.careers {
     .slide-6 .top h2 {
         text-align: left;
         margin-left: 12%;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .slide-8 .pricing.center .block .middle-subblock p {
+        width: 100%;
     }
 }
 
@@ -1521,6 +1535,22 @@ nav ul>li.careers {
         width: 44px;
     }
 
+    .musement.demo{
+        margin-top: 0;
+        height: 400px;
+    }
+    .musement .inner {
+        width: 200px;
+        background-size: contain;
+        height: 400px;
+        /*margin-top: -144px;*/
+        bottom: -44px;
+        margin: 0 auto;
+    }
+
+    .bot-video {
+        width: 168px;
+    }
 }
 
 @media (max-width: 432px) {
@@ -1554,7 +1584,7 @@ nav ul>li.careers {
         padding: 22px 2px 0 2px;
     }
     #head-title {
-        font-size: 64px;
+        font-size: 62px;
     }
 
     .bot-btn.blue-dark-blue.join {
@@ -1583,6 +1613,10 @@ nav ul>li.careers {
 
     .slide-6 .col-lg-1>a .carousel-control {
         margin-top: -200px;
+    }
+
+    .carousel-control.left, .carousel-control.right {
+        padding-top: 500px;
     }
 }
 
@@ -1635,6 +1669,10 @@ nav ul>li.careers {
     .navbar-default .navbar-nav>li {
         margin: 0 2.3%;
         display: inline-block;
+    }
+
+    .carousel-control > img {
+        width: 32px;
     }
 }
 

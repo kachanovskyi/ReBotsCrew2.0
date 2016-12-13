@@ -1,3 +1,8 @@
+var evenPricingHeights = function () {
+    var pricingBlock = $('.slide-8 .pricing .block .middle-subblock p');
+    $(pricingBlock[2]).height($(pricingBlock[1]).height());
+};
+
 $(document).ready(function () {
     $("#head-title").typed({
         strings: ["Chatbots^1000", "Personal assistants^1000", "Future^1000", "AI and NLP^1000", "Conversation^1000", "Business^1000"]
@@ -170,7 +175,9 @@ $(document).ready(function () {
             middle.css('max-height', (maxHeight * 2));
             console.log('window less than 767');
         }
-        console.log(middle.css('max-height'));
+
+        //pricing blocks height scripts
+        evenPricingHeights();
     });
 
     var counter = 0;
@@ -202,5 +209,6 @@ $(document).ready(function () {
         return false;
     });
 
+    evenPricingHeights();
     autosize($('textarea'));
 });
