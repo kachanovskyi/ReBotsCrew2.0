@@ -311,7 +311,7 @@ nav ul>li.careers {
     display: block;
     float: left;
     position: relative;
-    background-color: #212933;
+    background-color: #205EB4;
 }
 .slide-4 .bottom ul>li.active {
     background: #448EEF;
@@ -331,7 +331,7 @@ nav ul>li.careers {
 .slide-4 .bottom ul>li a {
     font-size: 18px;
     line-height: 100%;
-    color: #828282;
+    color: #afaeae;
     text-align: center;
 }
 
@@ -392,9 +392,10 @@ nav ul>li.careers {
     display: block;
     float: left;
     width: 100%;
-    min-height: 72vh;
+    /*min-height: 72vh;*/
     border-bottom: 1px solid #CCCCCC;
-    padding-bottom: 20px;
+    padding-top: 33px;
+    padding-bottom: 55px;
 }
 
 .slide-5 p {
@@ -416,8 +417,7 @@ nav ul>li.careers {
 }
 
 .slide-5 .top {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .slide-5 .top p {
@@ -681,7 +681,7 @@ nav ul>li.careers {
 .slide-8 .middle {
     padding-top: 30px;
     /*min-height: 45vh;*/
-    background-color: #2F80ED;
+    background: linear-gradient(116.57deg, #1464D0 0%, #4D99FF 100%);
     padding-bottom: 64px;
     text-align: center;
 }
@@ -754,7 +754,7 @@ nav ul>li.careers {
     min-height: 100vh;
     display: block;
     float: left;
-    background: #2F80ED;
+    background: linear-gradient(116.57deg, #1464D0 0%, #4D99FF 100%);
     margin-top: -10%;
 }
 
@@ -800,7 +800,7 @@ nav ul>li.careers {
 {
     width: 100%;
     height: 60px;
-    background: #2F80ED;
+    background: transparent;
     border: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     margin: auto;
@@ -811,6 +811,9 @@ nav ul>li.careers {
     line-height: 100%;
     color: #FFFFFF;
     mix-blend-mode: normal;
+}
+#contact-form select option.background{
+background: #2374C4;
 }
 #contact-form textarea {
     padding-top: 22px;
