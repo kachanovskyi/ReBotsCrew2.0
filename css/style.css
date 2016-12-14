@@ -148,12 +148,6 @@ nav ul>li.careers {
 
 
 
-.slide-2 {
-    width: 100%;
-    display: block;
-    float: left;
-    text-align: left;
-}
 .slide-2 .right {
     border-top: 1px solid #CCCCCC;
     border-bottom: 1px solid #CCCCCC;
@@ -164,9 +158,9 @@ nav ul>li.careers {
 .slide-2 .bot-preview-block {
     padding-left: 0;
     padding-right: 0;
-    background: linear-gradient(90deg, #1464D0 0%, #4D99FF 100%);opacity: 1.00;
+    background: linear-gradient(90deg, #1464D0 0%, #4D99FF 100%);
+	opacity: 1.00;
     overflow: hidden;
-    height:638px !important;
 }
 
 .iphone-image {
