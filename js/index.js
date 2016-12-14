@@ -60,8 +60,19 @@ $(document).ready(function () {
     };
 
     var removeFirstElement = function(phraseObj) {
-        $(phraseObj).fadeIn("slow");
+        $(phraseObj).show();
         var example = $('.bot-example');
+        console.log(example.css('bottom'));
+        if(example.css('bottom') < "0px") {
+            example.animate({
+                bottom: "+=" + ($(phraseObj).outerHeight() + 10)
+            }, 244);
+            console.log('example.bottom < 0');
+        }
+        console.log(phraseObj);
+        console.log($(phraseObj).outerHeight(), 'outerHeight');
+        console.log($(phraseObj).height(), 'height');
+        console.log(example.css('bottom'), 'bottom');
         example.scrollTop(example[progressSlide].scrollHeight);
 
         // var exampleHeight = $(example[progressSlide]).outerHeight();
