@@ -161,6 +161,7 @@ nav ul>li.careers {
     background: linear-gradient(90deg, #1464D0 0%, #4D99FF 100%);
 	opacity: 1.00;
     overflow: hidden;
+    height:638px !important;
 }
 
 .iphone-image {
