@@ -1036,7 +1036,6 @@ background: #205EB4;
         height: 350px;
     }
     .slide-4 .bot-example {
-        max-height: 350px;
         margin-top: 66px;
     }
 
@@ -1090,6 +1089,12 @@ background: #205EB4;
     .slide-6 .top h2 {
         text-align: left;
         margin-left: 12%;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+    .slide-4 .bot-example {
+        width: 115%;
     }
 }
 
@@ -1610,6 +1615,10 @@ background: #205EB4;
     .slide-2 .bot-btn {
         margin-top: 10px;
         margin-bottom: 0;
+    }
+
+    .slide-4 .bot-example {
+        width: 114%;
     }
 }
 

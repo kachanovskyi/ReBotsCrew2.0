@@ -27,26 +27,28 @@ $(document).ready(function () {
         { type: 'person', phrase: '7.Can you book a table in one of the nearest 5-stars rated pizzerias?' },
         { type: 'bot', phrase: '8.Sure! Let\'s find the best one for You' }
     ];
-
+    var messengerHeights = [];
     var current;
-    var addMessages = function() {
-        console.log(progressSlide);
-        current = 0;
-        clearTimeout(timer);
-        for (var index = 0; index < phrases.length; index++) {
-            var example = $($('.bot-example')[progressSlide]);
+
+    console.log(($('.slide-4 .bottom ul>li').length - 1));
+    for (i = 0; i < ($('.slide-4 .bottom ul>li').length - 1); i++) {
+        for (var j = 0; j < phrases.length; j++) {
+            var example = $($('.bot-example')[i]);
             var div = document.createElement('div');
-            div.className = "phrase-box " + phrases[index].type;
-            div.innerHTML = phrases[index].phrase;
+            div.className = "phrase-box " + phrases[j].type;
+            div.innerHTML = phrases[j].phrase;
             $(div).appendTo(example);
         }
+    }
+
+    var addMessages = function() {
+        current = 0;
+        clearTimeout(timer);
 
         var example = $($('.bot-example')[progressSlide]);
         var bottom = example.outerHeight();
         example.css('bottom', -bottom);
-        console.log(bottom, 'bottom');
-        console.log(example);
-        console.log(example.css('bottom'));
+
         timer = setTimeout(function message() {
             if ( ($w.scrollTop() > $('.slide-5').offset().top) ) {
                 clearTimeout(timer);
@@ -78,13 +80,13 @@ $(document).ready(function () {
 
 
     var progressBarInit = function () {
-        console.log('progressBar init');
+        // console.log('progressBar init');
         var listItem = $('.slide-4 .bottom ul>li');
         var listItemLink = $('.slide-4 .bottom ul>li>a');
         addMessages();
 
         $($('.slide-4 .bottom ul>li .progressbar-container')[0]).remove();
-        $($('.slide-4 .bottom ul>li')[progressSlide]).append('<div class="progressbar-container"></div>');
+        $(listItem[progressSlide]).append('<div class="progressbar-container"></div>');
         listItemLink.removeClass('active');
         listItem.removeClass('active');
         $(listItemLink[progressSlide]).addClass('active');
@@ -111,26 +113,18 @@ $(document).ready(function () {
             if(progressSlide === 6) {
                 progressSlide = 0;
             }
-            // example.children().remove();
             progressBarInit();
         });
     };
 
     $('.slide-4 .bottom ul>li>a').click(function () {
-        var item = $('#botUsesCard .item');
+        $('#botUsesCard').carousel(+$(this).attr('data-id'));
         var listItemLink = $('.slide-4 .bottom ul>li>a');
 
-        $(listItemLink.parent()).removeClass('active');
         listItemLink.removeClass('active');
-        $(this).addClass('active');
-        $($(this).parent()).addClass('active');
         bar.stop();
         bar.set(0.0);
-        // $('.bot-example').children().remove();
         progressSlide = listItemLink.index(this);
-
-        $($('.slide-4 .bottom ul>li .progressbar-container')[0]).remove();
-        $($('.slide-4 .bottom ul>li')[progressSlide]).append('<div class="progressbar-container"></div>');
         progressBarInit();
     });
 
@@ -147,7 +141,6 @@ $(document).ready(function () {
             clearTimeout(timer);
             bar.stop();
             bar.set(0.0);
-            // $($('.bot-example')[progressSlide]).children().remove();
             barInitialized = false;
         }
     });
@@ -167,7 +160,6 @@ $(document).ready(function () {
             middle.css('max-height', (maxHeight * 2));
         }
 
-        //pricing blocks height scripts
         evenPricingHeights();
     });
 
@@ -178,18 +170,13 @@ $(document).ready(function () {
             counter = 0;
             for(var i = 0; i < listElem.length - 1; i ++) {
                 $(listElem[i]).css('display', 'none');
-                // console.log($(listElem[listElem.length - 2]).css('display'), 'loop ' + i);
                 if(i < displayAmount) {
-                    // console.log(displayAmount, 'i < displayAmount');
                     $(listElem[i]).css('display', 'block');
-                    // console.log($(listElem[i]).css('display'), 'reloading');
                 }
             }
         } else {
             $(listElem[counter]).css('display', 'none');
-            // console.log($(listElem[counter]).css('display'), 'display counter');
             $(listElem[counter + displayAmount]).css('display', 'block');
-            // console.log($(listElem[counter + displayAmount]).css('display'), 'display counter+2');
             counter++;
         }
     };
