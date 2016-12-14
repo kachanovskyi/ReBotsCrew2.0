@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b84ffc62-3f88-4b9b-862e-881918df00ee" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/index.js" afterPath="$PROJECT_DIR$/js/index.js" />
     </list>
     <ignored path="botscrew 2.0.iws" />
@@ -66,16 +64,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="careers.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/careers.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="105" column="66" selection-start-line="105" selection-start-column="66" selection-end-line="105" selection-end-column="66" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="chatbots-got-payments.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chatbots-got-payments.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -119,8 +107,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+            <state relative-caret-position="282">
+              <caret line="59" column="81" selection-start-line="59" selection-start-column="81" selection-end-line="59" selection-end-column="81" />
               <folding />
             </state>
           </provider>
@@ -129,10 +117,10 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="393" column="24" selection-start-line="393" selection-start-column="24" selection-end-line="393" selection-end-column="24" />
+            <state relative-caret-position="227">
+              <caret line="370" column="17" selection-start-line="370" selection-start-column="17" selection-end-line="370" selection-end-column="17" />
               <folding>
-                <marker date="1481719136448" expanded="true" signature="702:765" placeholder="{...}" />
+                <marker date="1481722868250" expanded="true" signature="702:765" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -417,12 +405,12 @@
       <workItem from="1481527345093" duration="659000" />
       <workItem from="1481554622695" duration="3742000" />
       <workItem from="1481608841705" duration="22554000" />
-      <workItem from="1481698077721" duration="7848000" />
+      <workItem from="1481698077721" duration="9746000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="572265000" />
+    <option name="totallyTimeSpent" value="574163000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -464,16 +452,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1481719136448" expanded="true" signature="702:765" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -486,7 +464,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1481719136448" expanded="true" signature="702:765" placeholder="{...}" />
+            <marker date="1481722868250" expanded="true" signature="702:765" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -503,7 +481,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1481719136448" expanded="true" signature="702:765" placeholder="{...}" />
+            <marker date="1481722868250" expanded="true" signature="702:765" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -520,7 +498,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1481719136448" expanded="true" signature="702:765" placeholder="{...}" />
+            <marker date="1481722868250" expanded="true" signature="702:765" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -537,7 +515,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1481719136448" expanded="true" signature="702:765" placeholder="{...}" />
+            <marker date="1481722868250" expanded="true" signature="702:765" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -554,7 +532,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1481719136448" expanded="true" signature="702:765" placeholder="{...}" />
+            <marker date="1481722868250" expanded="true" signature="702:765" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -571,7 +549,7 @@
         <state relative-caret-position="1275">
           <caret line="75" column="26" selection-start-line="75" selection-start-column="26" selection-end-line="75" selection-end-column="26" />
           <folding>
-            <marker date="1481719136448" expanded="true" signature="702:765" placeholder="{...}" />
+            <marker date="1481722868250" expanded="true" signature="702:765" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -811,20 +789,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="4649" column="0" selection-start-line="4649" selection-start-column="0" selection-end-line="4649" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="393" column="24" selection-start-line="393" selection-start-column="24" selection-end-line="393" selection-end-column="24" />
+        <state relative-caret-position="227">
+          <caret line="370" column="17" selection-start-line="370" selection-start-column="17" selection-end-line="370" selection-end-column="17" />
           <folding>
-            <marker date="1481719136448" expanded="true" signature="702:765" placeholder="{...}" />
+            <marker date="1481722868250" expanded="true" signature="702:765" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+        <state relative-caret-position="282">
+          <caret line="59" column="81" selection-start-line="59" selection-start-column="81" selection-end-line="59" selection-end-column="81" />
           <folding />
         </state>
       </provider>

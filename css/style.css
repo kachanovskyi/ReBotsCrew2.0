@@ -367,9 +367,9 @@ nav ul>li.careers {
 }
 
 .slide-4 .bot-example {
-    height: 288px;
+    /*height: 288px;*/
     position: absolute;
-    bottom: -288px;
+    /*bottom: -288px;*/
     overflow-y: scroll;
     width: 109%;
 }

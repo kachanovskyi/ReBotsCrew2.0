@@ -32,19 +32,34 @@ $(document).ready(function () {
     var addMessages = function() {
         current = 0;
         clearTimeout(timer);
+        for (var index = 0; index < phrases.length; index++) {
+            console.log('for looop');
+            var example = $($('.bot-example')[progressSlide]);
+            var div = document.createElement('div');
+            div.className = "phrase-box " + phrases[current].type;
+            div.innerHTML = phrases[current].phrase;
+            $(div).appendTo(example);
+        }
+
+        var example = $($('.bot-example')[progressSlide]);
+        var bottom = example.outerHeight();
+        example.css('bottom', -bottom);
+        console.log(bottom, 'bottom');
+        console.log(example.css('bottom'), 'example.bottom');
         timer = setTimeout(function message() {
             if ( ($w.scrollTop() > $('.slide-5').offset().top) ) {
                 clearTimeout(timer);
             }
 
             var example = $($('.bot-example')[progressSlide]);
-            var div = document.createElement('div');
-            div.className = "phrase-box " + phrases[current].type;
-            div.innerHTML = phrases[current].phrase;
-            $(div).appendTo(example).fadeOut(0);
+            // var div = document.createElement('div');
+            // div.className = "phrase-box " + phrases[current].type;
+            // div.innerHTML = phrases[current].phrase;
+            // $(div).appendTo(example).fadeOut(0);
             // console.log(div);
-            removeFirstElement(example.children()[current]);
+            displayOne($($($('.bot-example')[progressSlide]).children()[current]));
             current++;
+            console.log(current);
             // if(current > 4) {
             //     // $(example.children()[0]).remove();
             //     example = $($('.bot-example')[progressSlide])
@@ -52,6 +67,7 @@ $(document).ready(function () {
             // }
             if(current < 8) {
                 timer = setTimeout(message, 2000);
+                console.log('timer');
             } else {
                 current = 0;
             }
@@ -59,8 +75,9 @@ $(document).ready(function () {
         }, 400);
     };
 
-    var removeFirstElement = function(phraseObj) {
-        $(phraseObj).show();
+    var displayOne = function(phraseObj) {
+        // $(phraseObj).show();
+        console.log(phraseObj);
         var example = $('.bot-example');
         console.log(example.css('bottom'));
         if(example.css('bottom') < "0px") {
@@ -69,11 +86,7 @@ $(document).ready(function () {
             }, 244);
             console.log('example.bottom < 0');
         }
-        console.log(phraseObj);
-        console.log($(phraseObj).outerHeight(), 'outerHeight');
-        console.log($(phraseObj).height(), 'height');
-        console.log(example.css('bottom'), 'bottom');
-        example.scrollTop(example[progressSlide].scrollHeight);
+        // example.scrollTop(example[progressSlide].scrollHeight);
 
         // var exampleHeight = $(example[progressSlide]).outerHeight();
         // for(var i = 0; i < example.children().length; i++) {
