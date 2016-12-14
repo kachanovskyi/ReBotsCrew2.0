@@ -72,7 +72,8 @@ nav ul>li.careers {
 
 /*above-the-fold styles end*/
 .nopadding {
-    padding: 0 !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important
 }
 
 .bot-btn.white-snow {

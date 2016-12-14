@@ -30,14 +30,14 @@ $(document).ready(function () {
 
     var current;
     var addMessages = function() {
+        console.log(progressSlide);
         current = 0;
         clearTimeout(timer);
         for (var index = 0; index < phrases.length; index++) {
-            console.log('for looop');
             var example = $($('.bot-example')[progressSlide]);
             var div = document.createElement('div');
-            div.className = "phrase-box " + phrases[current].type;
-            div.innerHTML = phrases[current].phrase;
+            div.className = "phrase-box " + phrases[index].type;
+            div.innerHTML = phrases[index].phrase;
             $(div).appendTo(example);
         }
 
@@ -45,29 +45,19 @@ $(document).ready(function () {
         var bottom = example.outerHeight();
         example.css('bottom', -bottom);
         console.log(bottom, 'bottom');
-        console.log(example.css('bottom'), 'example.bottom');
+        console.log(example);
+        console.log(example.css('bottom'));
         timer = setTimeout(function message() {
             if ( ($w.scrollTop() > $('.slide-5').offset().top) ) {
                 clearTimeout(timer);
             }
 
             var example = $($('.bot-example')[progressSlide]);
-            // var div = document.createElement('div');
-            // div.className = "phrase-box " + phrases[current].type;
-            // div.innerHTML = phrases[current].phrase;
-            // $(div).appendTo(example).fadeOut(0);
-            // console.log(div);
-            displayOne($($($('.bot-example')[progressSlide]).children()[current]));
+            displayOne(example.children()[current]);
+
             current++;
-            console.log(current);
-            // if(current > 4) {
-            //     // $(example.children()[0]).remove();
-            //     example = $($('.bot-example')[progressSlide])
-            //     console.log('removed', example.children()[0]);
-            // }
             if(current < 8) {
                 timer = setTimeout(message, 2000);
-                console.log('timer');
             } else {
                 current = 0;
             }
@@ -76,33 +66,19 @@ $(document).ready(function () {
     };
 
     var displayOne = function(phraseObj) {
-        // $(phraseObj).show();
-        console.log(phraseObj);
-        var example = $('.bot-example');
-        console.log(example.css('bottom'));
+        var example = $($('.bot-example')[progressSlide]);
         if(example.css('bottom') < "0px") {
             example.animate({
                 bottom: "+=" + ($(phraseObj).outerHeight() + 10)
             }, 244);
-            console.log('example.bottom < 0');
         }
         // example.scrollTop(example[progressSlide].scrollHeight);
-
-        // var exampleHeight = $(example[progressSlide]).outerHeight();
-        // for(var i = 0; i < example.children().length; i++) {
-        //     console.log(example.children()[i]);
-        // }
-        // if(example.children().length > 4) {
-        //     // var example = $($('.bot-example')[progressSlide]);
-        //     // $(example.children()[0]).css('display', 'none');
-        //     // console.log('removed ' + example.children().length);
-        //     // example.find('div').eq(0).remove();
-        // }
     };
 
 
 
     var progressBarInit = function () {
+        console.log('progressBar init');
         var listItem = $('.slide-4 .bottom ul>li');
         var listItemLink = $('.slide-4 .bottom ul>li>a');
         addMessages();
@@ -135,7 +111,7 @@ $(document).ready(function () {
             if(progressSlide === 6) {
                 progressSlide = 0;
             }
-            example.children().remove();
+            // example.children().remove();
             progressBarInit();
         });
     };
@@ -150,7 +126,7 @@ $(document).ready(function () {
         $($(this).parent()).addClass('active');
         bar.stop();
         bar.set(0.0);
-        $('.bot-example').children().remove();
+        // $('.bot-example').children().remove();
         progressSlide = listItemLink.index(this);
 
         $($('.slide-4 .bottom ul>li .progressbar-container')[0]).remove();
@@ -171,14 +147,13 @@ $(document).ready(function () {
             clearTimeout(timer);
             bar.stop();
             bar.set(0.0);
-            $($('.bot-example')[progressSlide]).children().remove();
+            // $($('.bot-example')[progressSlide]).children().remove();
             barInitialized = false;
         }
     });
 
 
     var $rw = $(window).resize(function(){
-        console.log('resized');
         var listElem = $('.slide-4 .bottom ul>li');
         displayAmount = 0;
         for (var i = 0; i < listElem.length - 1; i++) {
@@ -190,7 +165,6 @@ $(document).ready(function () {
         var maxHeight = middle.height();
         if($(window).width() < 767) {
             middle.css('max-height', (maxHeight * 2));
-            console.log('window less than 767');
         }
 
         //pricing blocks height scripts
@@ -199,29 +173,27 @@ $(document).ready(function () {
 
     var counter = 0;
     var listScrollNext = function () {
-        console.log(displayAmount, 'displayAmount');
         var listElem = $('.slide-4 .bottom ul>li');
         if($(listElem[listElem.length - 2]).css('display') == 'block') {
             counter = 0;
             for(var i = 0; i < listElem.length - 1; i ++) {
                 $(listElem[i]).css('display', 'none');
-                console.log($(listElem[listElem.length - 2]).css('display'), 'loop ' + i);
+                // console.log($(listElem[listElem.length - 2]).css('display'), 'loop ' + i);
                 if(i < displayAmount) {
-                    console.log(displayAmount, 'i < displayAmount');
+                    // console.log(displayAmount, 'i < displayAmount');
                     $(listElem[i]).css('display', 'block');
-                    console.log($(listElem[i]).css('display'), 'reloading');
+                    // console.log($(listElem[i]).css('display'), 'reloading');
                 }
             }
         } else {
             $(listElem[counter]).css('display', 'none');
-            console.log($(listElem[counter]).css('display'), 'display counter');
+            // console.log($(listElem[counter]).css('display'), 'display counter');
             $(listElem[counter + displayAmount]).css('display', 'block');
-            console.log($(listElem[counter + displayAmount]).css('display'), 'display counter+2');
+            // console.log($(listElem[counter + displayAmount]).css('display'), 'display counter+2');
             counter++;
         }
     };
     $('#listScrollNext').click(function (e) {
-        console.log('worked');
         listScrollNext();
         return false;
     });
