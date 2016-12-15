@@ -33,8 +33,8 @@ nav ul>li.careers {
     transform: translateY(-50%);
 }
 
-.slide-1 .first {
-    font-family: "Roboto", sans-serif;
+.slide-1 .heading {
+    /*font-family: "Roboto", sans-serif;*/
     font-weight: 300;
 	padding-left: 7%;
     font-size: 28px;
@@ -44,7 +44,7 @@ nav ul>li.careers {
 }
 
 .slide-1 .sub-heading {
-    min-height: 176px;
+    /*min-height: 176px;*/
     display: inline-flex;
 	float: left;
 	margin-left: 6.5%;
@@ -69,17 +69,18 @@ nav ul>li.careers {
     background: none;
     padding-top: 200px;
 }
-
 /*above-the-fold styles end*/
+
+
 .nopadding {
     padding-right: 0 !important;
-    padding-left: 0 !important
+    padding-left: 0 !important;
 }
 
 .bot-btn.white-snow {
     background: #FFFFFF;
-    color: #2F80ED !important;
-    border: none !important;
+    color: #2F80ED;
+    border: none;
     border-radius: 4px;
     margin: 7px;
     padding: 15px 23px;
@@ -96,7 +97,7 @@ nav ul>li.careers {
 
 .bot-btn.blue-dark-blue {
     background: #2F80ED;
-    color: #FFF !important;
+    color: #FFF;
     border: 1px solid #2F80ED;
     border-radius: 4px;
     margin: 7px;
@@ -107,7 +108,7 @@ nav ul>li.careers {
     border-color: #FFF;
 }
 .bot-btn.blue-dark-blue:hover {
-    background: #2374C4 !important;
+    background: #2374C4;
     transition-duration: 0.5s;
     text-decoration: none;
 }
@@ -130,10 +131,10 @@ nav ul>li.careers {
 }
 .bot-btn.select-side.center {
     background: #2F80ED;
-    color: #FFF !important;
+    color: #FFF;
 }
 .bot-btn.select-side.center:hover {
-    background: #2374C4 !important;
+    background: #2374C4;
 }
 
 .customer-img {
@@ -162,7 +163,7 @@ nav ul>li.careers {
     background: linear-gradient(90deg, #1464D0 0%, #4D99FF 100%);
 	opacity: 1.00;
     overflow: hidden;
-    height:638px !important;
+    height:638px;
 }
 
 .iphone-image {
@@ -174,10 +175,6 @@ nav ul>li.careers {
     background: url("../img/musement.png");
     display: block;
     bottom: 0;
-    /*left: 50%;*/
-    /*transform: translate(-50%, 0);*/
-    /*max-height: 100%;*/
-    /*width: 100%;*/
     height: 100%;
     width: auto;
 }
@@ -185,10 +182,8 @@ nav ul>li.careers {
 .slide-2 .description {
     position: absolute;
     top: 50%;
-    /*left: 50%;*/
     transform: translateY(-50%);
     text-align: left;
-    /*padding: 111px 0 30px 0;*/
     padding-bottom: 30px;
 }
 
@@ -217,10 +212,8 @@ nav ul>li.careers {
 
 .slide-3 {
     width: 100%;
-    /*min-height: 100vh;*/
     display: block;
     float: left;
-    /*margin-bottom: 30px;*/
     padding-bottom: 33px;
 }
 
@@ -277,14 +270,13 @@ nav ul>li.careers {
     display: block;
     float: left;
     width: 100%;
-    /*min-height: 100vh;*/
     background: linear-gradient(116.57deg, #1464D0 0%, #4D99FF 100%);
     position: relative;
 }
 
 .slide-4 {
-    padding-top: 133px !important;
-    padding-bottom: 66px !important;
+    padding-top: 133px;
+    padding-bottom: 66px;
 }
 
 .slide-4 h2 {
@@ -357,7 +349,6 @@ nav ul>li.careers {
 
 .slide-4 .right {
     height: 288px;
-    /*position: relative;*/
     overflow: hidden;
     margin-bottom: 88px;
 }
@@ -368,15 +359,12 @@ nav ul>li.careers {
 }
 
 .slide-4 .bot-example {
-    /*height: 288px;*/
     position: absolute;
-    /*bottom: -288px;*/
     overflow-y: scroll;
     width: 109%;
 }
 
 .slide-4 .middle {
-    /*max-height: 350px;*/
     overflow: hidden;
     margin-bottom: 88px;
 }
@@ -408,7 +396,6 @@ nav ul>li.careers {
     display: block;
     float: left;
     width: 100%;
-    /*min-height: 72vh;*/
     border-bottom: 1px solid #CCCCCC;
     padding-top: 73px;
     padding-bottom: 105px;
@@ -518,8 +505,7 @@ nav ul>li.careers {
 .slide-7 {
     display: block;
     float: left;
-    max-width: 100%;
-    min-height: 100vh;
+    width: 100%;
     border: 1px solid #CCCCCC;
     border-left: none;
     border-right: none;
@@ -580,7 +566,6 @@ nav ul>li.careers {
 
 .slide-8 {
     max-width: 100%;
-    /*min-height: 100vh;*/
     display: block;
     float: left;
     padding-left: 0;
@@ -671,7 +656,6 @@ nav ul>li.careers {
     display: block;
     float: left;
     width: 100%;
-    /*min-height: 100vh;*/
     background-color: #FAFAFA;
     margin-bottom: 44px;
 }
@@ -698,7 +682,6 @@ nav ul>li.careers {
 
 .slide-8 .middle {
     padding-top: 30px;
-    /*min-height: 45vh;*/
     background: linear-gradient(116.57deg, #1464D0 0%, #4D99FF 100%);
     padding-bottom: 64px;
     text-align: center;
@@ -713,9 +696,8 @@ nav ul>li.careers {
 
 .slide-8 .middle p {
     width: 36%;
-    padding: 1% 0;
+    padding: 1% 0 30px 0;
     margin: 0 auto;
-    padding-bottom: 30px;
 }
 
 .slide-8 .bottom p {
@@ -758,7 +740,7 @@ nav ul>li.careers {
 }
 
 .slide-9 .bottom {
-    min-height: 55vh;
+    /*min-height: 55vh;*/
     margin: 50px auto;
 }
 
@@ -769,7 +751,6 @@ nav ul>li.careers {
 
 .slide-10 {
     width: 100%;
-    min-height: 100vh;
     display: block;
     float: left;
     background: linear-gradient(116.57deg, #1464D0 0%, #4D99FF 100%);
@@ -803,7 +784,6 @@ nav ul>li.careers {
 .fb-messenger-img {
     padding-bottom: 3px;
     height: 22px;
-    width:auto !important;
 }
 
 #contact-form {
@@ -823,12 +803,9 @@ nav ul>li.careers {
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     margin: auto;
     font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
     line-height: 100%;
     color: #FFFFFF;
-    mix-blend-mode: normal;
 }
 #contact-form select option.background{
 background: #205EB4;
@@ -870,9 +847,6 @@ background: #205EB4;
     display: inline-block;
     margin: 4% 5%;
 }
-.slide-10 .social-icon:hover {
-    /*box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);*/
-}
 
 .slide-10 .social-icon.right {
     width: 48px;
@@ -903,13 +877,6 @@ background: #205EB4;
     .bot-btn.select {
         padding: 15px 155px !important;
     }
-    .bot-btn.select-side {
-        /*padding: 15px 111px !important;*/
-    }
-
-    .bot-btn.select, .bot-btn.select-side {
-        /*margin-top: 200px !important;*/
-    }
 }
 
 @media (max-width: 1199px) {
@@ -930,11 +897,6 @@ background: #205EB4;
 
     .slide-3 .advantages-list {
         margin-top: 40px;
-    }
-
-    .bot-btn.select-side, .bot-btn.select {
-        /*margin-top: 200px !important;*/
-        /*padding: 15px 88px !important;*/
     }
 
     .slide-2 .description {
@@ -998,8 +960,11 @@ background: #205EB4;
     }
 }
 @media (max-width: 991px) {
+    .slide-1 .heading {
+        font-size: 26px;
+    }
     #head-title {
-        font-size: 122px;
+        font-size: 116px;
     }
 
     .navbar-brand {
@@ -1129,20 +1094,6 @@ background: #205EB4;
         margin-bottom: 20px;
         text-align: center;
     }
-
-    #carouselBotCard {
-        /*padding-top: 30px;*/
-    }
-
-    .fb-messenger-img {
-        width:auto !important;
-    }
-}
-
-@media (max-width: 816px) and (min-width: 767px) {
-    .slide-4 .middle {
-        /*max-height: 377px;*/
-    }
 }
 
 @media (max-width: 799px) and (min-width: 768px) {
@@ -1152,6 +1103,9 @@ background: #205EB4;
 }
 
 @media (max-width: 767px) {
+    .slide-1 .heading {
+        font-size: 24px;
+    }
     #head-title {
         font-size: 102px;
     }
@@ -1162,9 +1116,6 @@ background: #205EB4;
         padding-right: 0;
     }
 
-    /*.slide-1 {*/
-        /*transform: translate(0, 12%);*/
-    /*}*/
     .slide-1 .second {
         margin-top: -10px;
     }
@@ -1199,8 +1150,7 @@ background: #205EB4;
     }
 
     .slide-1 {
-        /*margin-top: 8%;*/
-        min-height: 72vh;
+        /*min-height: 72vh;*/
     }
 
     .slide-2 {
@@ -1231,8 +1181,7 @@ background: #205EB4;
     }
 
     .slide-3 .bots-advantages {
-        padding: 12px;
-        padding-bottom: 24px;
+        padding: 12px 12px 24px 12px;
     }
     .slide-3 .bots-advantages p {
         margin: 22px 66px 6px 66px;
@@ -1309,6 +1258,9 @@ background: #205EB4;
 }
 
 @media (max-width: 666px) {
+    .slide-1 .heading {
+        font-size: 22px;
+    }
     #head-title {
         font-size: 94px;
     }
@@ -1323,8 +1275,11 @@ background: #205EB4;
 }
 
 @media (max-width: 575px) {
+    .slide-1 .heading {
+        font-size: 20px;
+    }
     #head-title {
-        font-size: 66px;
+        font-size: 64px;
     }
 
     .slide-3 .bots-advantages {
@@ -1340,9 +1295,6 @@ background: #205EB4;
 
     .slide-6 .col-lg-1>a .carousel-control {
         width: 33px;
-    }
-    .bot-btn.select, .bot-btn.select-side {
-        /*padding: 14px 144px !important;*/
     }
 
     .navbar-default .navbar-nav>li {
@@ -1566,7 +1518,7 @@ background: #205EB4;
 
 @media (max-width: 467px) {
     .typed-cursor {
-        padding: 44px 2px 0 2px;
+        padding: 48px 2px 0 2px;
     }
 
     .menu-item.bot-btn.blue-dark-blue.messenger {
@@ -1631,6 +1583,9 @@ background: #205EB4;
 @media (max-width: 414px) {
     .typed-cursor {
         padding: 22px 2px 0 2px;
+    }
+    .slide-1 .heading {
+        font-size: 18px;
     }
     #head-title {
         font-size: 48px;

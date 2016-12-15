@@ -19,7 +19,6 @@
     h2,
     p,
     a {
-        font-family: "Roboto", sans-serif;
         font-weight: 400;
     }
 
@@ -27,7 +26,7 @@
     a:hover,
     a:visited,
     a:active {
-        text-decoration: none !important;
+        text-decoration: none;
     }
 
     .header {
@@ -52,12 +51,12 @@
     }
 
     .navbar-nav>li:last-child {
-        padding-right: 100px
+        padding-right: 100px;
     }
 
     .navbar-default {
         border-color: #E5E5E5;
-        border-bottom: 1px solid #E5E5E5
+        border-bottom: 1px solid #E5E5E5;
     }
 
     .navbar-brand {
@@ -72,14 +71,24 @@
         padding: 7px 14px;
     }
 
-    .menu-item {
-        font-family: "Roboto", sans-serif;
+    .nav.navbar-nav.navbar-right>li>a.menu-item {
         font-size: 18px;
         line-height: 100%;
-        color: #4F4F4F!important;
+        color: #4F4F4F;
+        text-decoration: none
+    }
+    .nav.navbar-nav.navbar-right>li>a.menu-item:link,
+    .nav.navbar-nav.navbar-right>li>a.menu-item:hover,
+    .nav.navbar-nav.navbar-right>li>a.menu-item:visited,
+    .nav.navbar-nav.navbar-right>li>a.menu-item:active
+    {
+      text-decoration: none
     }
 
     .bot-btn {
+        font-size: 18px;
+        line-height: 100%;
+        color: #4F4F4F;
         border: 1px solid #2F80ED;
         border-radius: 4px;
         transition-duration: .2s;
@@ -88,25 +97,28 @@
 
     .bot-btn:hover {
         transition-duration: .5s;
-        text-decoration: none
+        text-decoration: none;
     }
 
     .bot-btn:active {
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), inset 0 4px 0 rgba(0, 0, 0, 0.05)
     }
 
-    /*.navbar-default .navbar-nav>li>a.menu-item.bot-btn.white-blue {*/
-      /*color: #2F80ED;*/
-    /*}*/
+    .bot-btn:link,
+    .bot-btn:hover,
+    .bot-btn:visited,
+    .bot-btn:active
+    {
+      text-decoration: none;
+    }
 
-    /*.bot-btn.white-blue importants are needed*/
     .bot-btn.white-blue {
-      color: #2F80ED !important;
+      color: #2F80ED;
     }
 
     .bot-btn.white-blue:hover {
-        background-color: #2F80ED!important;
-        color: #FFF!important
+        background-color: #2F80ED;
+        color: #FFF;
     }
 
     .logo {
@@ -131,7 +143,7 @@
     }
 
     .row {
-        margin: 0!important
+        /*margin: 0!important*/
     }
   </style>
 </head>
@@ -150,7 +162,6 @@
                 <span class = "icon-bar"></span>
               </button>
               <a class="navbar-brand" href="index.html"><img class="logo" src="img/logo.svg" alt="BotsCrew logo"><span class="menu-item">BotsCrew</span></a>
-              <!--<a href="#" class="menu-item bot-btn white-blue contact">Contact</a>-->
             </div>
             <div id="navbar" class="collapse navbar-collapse">
               <ul class="nav navbar-nav navbar-right">
@@ -172,7 +183,7 @@
     <div id="middle">
       <div class="slide-1 container-fluid">
         <div class="inner">
-          <h1 class="first">WE CREATE</h1>
+          <h1 class="heading">WE CREATE</h1>
           <h1 class="sub-heading"><span id="head-title"></span></h1>
         </div>
       </div>
@@ -182,7 +193,6 @@
           <div class="content" id="introduction">
             <div class="cos-xs-12 col-sm-6 bot-preview-block" style="">
               <div style="position: relative; width: auto; height: 88%; margin: 6% auto; background: url('img/iphone6full.png') center no-repeat; background-size: contain;">
-                <!--<img src="img/musement.png" class="iphone-image" style="">-->
                 <video width="236" autoplay="" loop="" muted style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
                   <source src="video/MusementBot.mp4" type="video/mp4">
                   <source src="video/Avel.ogg" type="video/ogg"> Your browser does not support the video tag.
