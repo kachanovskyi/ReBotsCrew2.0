@@ -154,7 +154,6 @@ nav ul>li.careers {
     border-top: 1px solid #CCCCCC;
     border-bottom: 1px solid #CCCCCC;
     position: relative;
-
 }
 
 .slide-2 .bot-preview-block {
@@ -1173,6 +1172,10 @@ background: #205EB4;
 
     .slide-2 .description {
         padding-bottom: 88px;
+        margin-left: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .slide-2 .bot-btn {
@@ -1690,13 +1693,6 @@ background: #205EB4;
 }
 
 @media (max-width: 320px) {
-    /*.slide-2 .bot-btn {*/
-        /*left: 53%;*/
-    /*}*/
-    /*.slide-2 .description {*/
-        /*padding-left: 20px;*/
-    /*}*/
-
     .menu-item.bot-btn.blue-dark-blue.messenger {
         padding: 14px 2px;
     }
