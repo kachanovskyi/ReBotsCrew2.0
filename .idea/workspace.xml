@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b84ffc62-3f88-4b9b-862e-881918df00ee" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="botscrew 2.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,10 +56,10 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="1281" column="21" selection-start-line="1281" selection-start-column="21" selection-end-line="1281" selection-end-column="21" />
+            <state relative-caret-position="244">
+              <caret line="968" column="33" selection-start-line="968" selection-start-column="33" selection-end-line="968" selection-end-column="33" />
               <folding>
-                <marker date="1481795814063" expanded="true" signature="704:771" placeholder="{...}" />
+                <marker date="1481796066115" expanded="true" signature="704:771" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -347,12 +345,12 @@
       <workItem from="1481554622695" duration="3742000" />
       <workItem from="1481608841705" duration="22554000" />
       <workItem from="1481698077721" duration="25243000" />
-      <workItem from="1481777175558" duration="5164000" />
+      <workItem from="1481777175558" duration="5416000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="594824000" />
+    <option name="totallyTimeSpent" value="595076000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -406,7 +404,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1481795814063" expanded="true" signature="704:771" placeholder="{...}" />
+            <marker date="1481796066115" expanded="true" signature="704:771" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -423,7 +421,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1481795814063" expanded="true" signature="704:771" placeholder="{...}" />
+            <marker date="1481796066115" expanded="true" signature="704:771" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -440,7 +438,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1481795814063" expanded="true" signature="704:771" placeholder="{...}" />
+            <marker date="1481796066115" expanded="true" signature="704:771" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -457,7 +455,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1481795814063" expanded="true" signature="704:771" placeholder="{...}" />
+            <marker date="1481796066115" expanded="true" signature="704:771" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -474,7 +472,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1481795814063" expanded="true" signature="704:771" placeholder="{...}" />
+            <marker date="1481796066115" expanded="true" signature="704:771" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -491,7 +489,7 @@
         <state relative-caret-position="1275">
           <caret line="75" column="26" selection-start-line="75" selection-start-column="26" selection-end-line="75" selection-end-column="26" />
           <folding>
-            <marker date="1481795814063" expanded="true" signature="704:771" placeholder="{...}" />
+            <marker date="1481796066115" expanded="true" signature="704:771" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -739,10 +737,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="1281" column="21" selection-start-line="1281" selection-start-column="21" selection-end-line="1281" selection-end-column="21" />
+        <state relative-caret-position="244">
+          <caret line="968" column="33" selection-start-line="968" selection-start-column="33" selection-end-line="968" selection-end-column="33" />
           <folding>
-            <marker date="1481795814063" expanded="true" signature="704:771" placeholder="{...}" />
+            <marker date="1481796066115" expanded="true" signature="704:771" placeholder="{...}" />
           </folding>
         </state>
       </provider>
