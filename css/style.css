@@ -1690,12 +1690,12 @@ background: #205EB4;
 }
 
 @media (max-width: 320px) {
-    .slide-2 .bot-btn {
-        left: 53%;
-    }
-    .slide-2 .description {
-        padding-left: 20px;
-    }
+    /*.slide-2 .bot-btn {*/
+        /*left: 53%;*/
+    /*}*/
+    /*.slide-2 .description {*/
+        /*padding-left: 20px;*/
+    /*}*/
 
     .menu-item.bot-btn.blue-dark-blue.messenger {
         padding: 14px 2px;
