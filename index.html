@@ -141,9 +141,65 @@
         display: block;
     }
 
-    /*.row {*/
-        /*!*margin: 0!important*!*/
-    /*}*/
+    nav ul>li.careers {
+      margin-right: 15px;
+    }
+
+    .typed-cursor{opacity:1;padding:66px 2px 0 2px;background:#e5e5e5;margin:8px 14px;-webkit-animation:blink 0.5s linear infinite;animation:blink 0.5s linear infinite;}
+
+    @keyframes blink{
+      0% { opacity:1; }
+      50% { opacity:0; }
+      100% { opacity:1; }
+    }
+    @-webkit-keyframes blink{
+      0% { opacity:1; }
+      50% { opacity:0; }
+      100% { opacity:1; }
+    }
+    @-moz-keyframes blink{
+      0% { opacity:1; }
+      50% { opacity:0; }
+      100% { opacity:1; }
+    }
+
+    .slide-1 {
+      position: relative;
+    }
+
+    .slide-1 .inner {
+      display: block;
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .slide-1 .heading {
+      font-weight: 300;
+      padding-left: 7%;
+      font-size: 28px;
+      letter-spacing: 0.2px;
+      color: #4F4F4F;
+      text-align: left;
+    }
+
+    .slide-1 .sub-heading {
+      display: inline-flex;
+      float: left;
+      margin-left: 6.5%;
+    }
+
+    #head-title {
+      font-weight: 500;
+      font-size: 144px;
+      background: -webkit-linear-gradient(135deg, #1464D0 0%, #4D99FF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: left;
+      float: left;
+    }
   </style>
 </head>
 <body>
