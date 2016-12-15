@@ -213,7 +213,17 @@ p, li {
     }
 }
 
+@media (max-width: 767px) {
+    .top>h1 {
+        margin-top: 44vh;
+    }
+}
+
 @media (max-width: 515px) {
+    .top>h1 {
+        margin-top: 38vh;
+    }
+
     .article {
         height: auto;
     }
@@ -233,9 +243,21 @@ p, li {
     }
 }
 
-@media (max-height: 555px) {
+@media (max-width: 399px) {
     .top>h1 {
-        margin-top: 50vh;
-        font-size: 36px;
+        margin-top: 33vh;
     }
 }
+
+@media (max-width: 320px) {
+    .top>h1 {
+        margin-top: 27vh;
+    }
+}
+
+/*@media (max-height: 555px) {*/
+    /*.top>h1 {*/
+        /*margin-top: 50vh;*/
+        /*font-size: 36px;*/
+    /*}*/
+/*}*/
