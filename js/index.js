@@ -1,6 +1,12 @@
-var evenPricingHeights = function () {
-    var pricingBlock = $('.slide-8 .pricing .block .middle-subblock p');
-    $(pricingBlock[2]).height($(pricingBlock[1]).height());
+var alignPricingBlocks = function () {
+    if ($(window).width() > 767) {
+        var centerPricingBlock = $('.slide-8 .pricing.center .block');
+        var pricingBlock = $('.slide-8 .pricing .block');
+        var diff = centerPricingBlock.outerHeight() - $(pricingBlock[1]).outerHeight();
+        for (var i = 1; i < pricingBlock.length; i++) {
+            $(pricingBlock[i]).css('margin-top', (diff / 2));
+        }
+    }
 };
 
 $(document).ready(function () {
@@ -30,7 +36,6 @@ $(document).ready(function () {
     var messengerHeights = [];
     var current;
 
-    console.log(($('.slide-4 .bottom ul>li').length - 1));
     for (i = 0; i < ($('.slide-4 .bottom ul>li').length - 1); i++) {
         for (var j = 0; j < phrases.length; j++) {
             var example = $($('.bot-example')[i]);
@@ -160,7 +165,7 @@ $(document).ready(function () {
             middle.css('max-height', (maxHeight * 2));
         }
 
-        evenPricingHeights();
+        alignPricingBlocks();
     });
 
     var counter = 0;
@@ -185,6 +190,6 @@ $(document).ready(function () {
         return false;
     });
 
-    evenPricingHeights();
+    alignPricingBlocks();
     autosize($('textarea'));
 });

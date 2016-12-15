@@ -125,8 +125,6 @@ p, li {
 .article {
     display: inline-block;
     height: auto;
-    /*height: 600px;*/
-    /*width: 98%;*/
     margin: 10px auto;
     padding: 20px 33px;
     text-align: left;
