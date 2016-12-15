@@ -29,12 +29,12 @@
     color: #FFF;
     border: 1px solid #2F80ED;
     border-radius: 4px;
-    margin: 7px;
-    margin-left: 0;
+    margin: 7px 7px 7px 0;
     padding: 14px 23px;
 }
 .bot-btn.blue-dark-blue.contact {
     border-color: #FFF;
+    background: transparent;
 }
 .bot-btn.blue-dark-blue:hover {
     background: #2374C4;
@@ -731,10 +731,12 @@
     font-family: "Roboto", sans-serif;
     font-size: 18px;
     line-height: 100%;
+    font-weight: 300;
     color: #FFFFFF;
 }
 #contact-form select option.background{
 background: #205EB4;
+    font-weight: 300;
 }
 #contact-form textarea {
     padding-top: 22px;
