@@ -1,7 +1,6 @@
 nav ul>li.careers{margin-right:15px}
 /*above-the-fold styles end*/
 
-
 .nopadding {
     padding-right: 0 !important;
     padding-left: 0 !important;
@@ -155,6 +154,11 @@ nav ul>li.careers{margin-right:15px}
     padding-bottom: 22px;
 }
 
+.slide-3 h3 {
+    color: #828282;
+    font-size: 22px;
+}
+
 .slide-3 p {
     font-size: 18px;
     line-height: 140%;
@@ -273,25 +277,27 @@ nav ul>li.careers{margin-right:15px}
 }
 
 .slide-4 .right {
-    height: 288px;
-    overflow: hidden;
-    margin-bottom: 88px;
+    height: 290px;
+    /*overflow: hidden;*/
+    /*margin-bottom: 88px;*/
 }
 
 .slide-4 .bot-example-wrapper {
     height: 100%;
-    position: relative;
+    /*position: relative;*/
+    border: 1px solid red;
 }
 
 .slide-4 .bot-example {
     position: absolute;
-    overflow-y: scroll;
-    width: 109%;
+    /*overflow-y: scroll;*/
+    width: 100%;
+    visibility: hidden;
 }
 
 .slide-4 .middle {
     overflow: hidden;
-    margin-bottom: 88px;
+    margin-bottom: 160px;
 }
 
 .phrase-box {
@@ -997,12 +1003,6 @@ background: #205EB4;
     }
 }
 
-@media (max-width: 1199px) and (min-width: 768px) {
-    .slide-4 .bot-example {
-        width: 115%;
-    }
-}
-
 @media (max-width: 968px) and (min-width: 768px) {
     .bot-card {
         margin-top: -50px;
@@ -1136,7 +1136,6 @@ background: #205EB4;
 
     .slide-4 h2 {
         text-align: left;
-        margin-left: 5%;
     }
 
     .slide-4 .top {
@@ -1172,6 +1171,10 @@ background: #205EB4;
         margin-top: 44px;
     }
 
+    .slide-5 .top p {
+        width: 80%;
+    }
+
     .musement-block {
         position: relative;
     }
@@ -1197,6 +1200,11 @@ background: #205EB4;
     }
 
     .slide-8 .pricing.center {
+        box-shadow: none;
+    }
+
+    .slide-8 .pricing .block {
+        border: 1px solid #F2F2F2;
         box-shadow: none;
     }
 
@@ -1235,10 +1243,14 @@ background: #205EB4;
         padding-bottom: 24px;
     }
     .slide-3 .bots-advantages p {
-        margin: 22px 10px 6px 10px;
+        margin: 22px 24px 6px 24px;
     }
     .slide-3 .bots-advantages.middle p {
         margin: 22px 10px 6px 10px;
+    }
+
+    .slide-5 .top p {
+        width: 90%;
     }
 
     .slide-6 .col-lg-1>a .carousel-control {
@@ -1310,7 +1322,7 @@ background: #205EB4;
     }
     .slide-3 .top p {
         margin-top: 20px;
-        width: 95%;
+        width: 90%;
     }
 
     .slide-3 .right {
@@ -1511,10 +1523,6 @@ background: #205EB4;
     .slide-2 .bot-btn {
         margin-top: 10px;
         margin-bottom: 0;
-    }
-
-    .slide-4 .bot-example {
-        width: 114%;
     }
 }
 

@@ -47,10 +47,15 @@ $(document).ready(function () {
     }
 
     var addMessages = function() {
+        var counter;
         current = 0;
         clearTimeout(timer);
 
         var example = $($('.bot-example')[progressSlide]);
+        for (counter = 0; counter < phrases.length; counter++) {
+            $(example.children()[counter]).css('visibility', 'visible');
+        }
+        example.css('visibility', 'visible');
         var bottom = example.outerHeight();
         example.css('bottom', -bottom);
 
@@ -73,11 +78,18 @@ $(document).ready(function () {
     };
 
     var displayOne = function(phraseObj) {
+        // console.log($('.bot-example-wrapper').offset().top);
         var example = $($('.bot-example')[progressSlide]);
         if(example.css('bottom') < "0px") {
             example.animate({
                 bottom: "+=" + ($(phraseObj).outerHeight() + 10)
-            }, 244);
+            }, 244, function () {
+                for (var counter = 0; counter < phrases.length; counter++) {
+                    if ($(example.children()[counter]).offset().top <= $($('.bot-example-wrapper')[progressSlide]).offset().top) {
+                        $(example.children()[counter]).css('visibility', 'hidden');
+                    }
+                }
+            });
         }
         // example.scrollTop(example[progressSlide].scrollHeight);
     };
@@ -122,7 +134,7 @@ $(document).ready(function () {
         });
     };
 
-    $('.slide-4 .bottom ul>li>a').click(function () {
+    $('.slide-4 .bottom ul>li>a').click(function (e) {
         $('#botUsesCard').carousel(+$(this).attr('data-id'));
         var listItemLink = $('.slide-4 .bottom ul>li>a');
 
@@ -131,6 +143,7 @@ $(document).ready(function () {
         bar.set(0.0);
         progressSlide = listItemLink.index(this);
         progressBarInit();
+        return false;
     });
 
     var middleBotAdvantage = $('.slide-3 .bots-advantages.middle');
