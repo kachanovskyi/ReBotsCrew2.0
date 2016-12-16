@@ -161,6 +161,10 @@ p, li {
     width: 100%;
 }
 
+.article .read-more {
+    color: #2F80ED;
+}
+
 .article.article-5 .preview-img {
     background: url("../img/musement_contract.jpg");
 }
@@ -183,6 +187,7 @@ p, li {
     float: left;
     padding: 0 32px;
     margin-bottom: 0;
+    font-weight: 400;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
