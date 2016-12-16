@@ -118,6 +118,7 @@ $(document).ready(function () {
         });
 
         bar.animate(1.0, function() {
+            var listItem = $('.slide-4 .bottom ul>li');
             var example = $('.bot-example');
             if(progressSlide < 6) {
                 progressSlide++;
@@ -125,10 +126,14 @@ $(document).ready(function () {
             } else {
                 progressSlide = 0;
                 $('.slide-4 .bottom ul>li .progressbar-container').remove();
-                $($('.slide-4 .bottom ul>li')[progressSlide]).append('<div class="progressbar-container"></div>');
+                $(listItem[progressSlide]).append('<div class="progressbar-container"></div>');
             }
             if(progressSlide === 6) {
                 progressSlide = 0;
+            }
+            if($(listItem[progressSlide]).css('display') !== 'block') {
+                console.log('block called');
+                listScrollNext();
             }
             progressBarInit();
         });
@@ -185,17 +190,33 @@ $(document).ready(function () {
     var listScrollNext = function () {
         var listElem = $('.slide-4 .bottom ul>li');
         if($(listElem[listElem.length - 2]).css('display') == 'block') {
-            counter = 0;
+            progressSlide = counter = 0;
             for(var i = 0; i < listElem.length - 1; i ++) {
                 $(listElem[i]).css('display', 'none');
                 if(i < displayAmount) {
                     $(listElem[i]).css('display', 'block');
                 }
             }
+            bar.stop();
+            bar.set(0.0);
+            progressBarInit();
         } else {
             $(listElem[counter]).css('display', 'none');
             $(listElem[counter + displayAmount]).css('display', 'block');
             counter++;
+
+            for (i = 0; i < listElem.length; i++) {
+                if($(listElem[i]).css('display') == 'block') {
+                    // console.log('progress bar activated');
+                    if(progressSlide < i) {
+                        progressSlide = i;
+                    }
+                    bar.stop();
+                    bar.set(0.0);
+                    progressBarInit();
+                    break;
+                }
+            }
         }
     };
     $('#listScrollNext').click(function (e) {
