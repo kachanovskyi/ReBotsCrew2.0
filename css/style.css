@@ -824,10 +824,6 @@ background: #205EB4;
         padding-right: 50px;
     }
 
-    .slide-2, .slide-2 .right {
-        min-height: 92vh;
-    }
-
     .slide-4 .bottom ul>li:nth-child(2), .slide-4 .bottom ul>li:nth-child(6) {
         padding: 10px 0;
     }
@@ -925,7 +921,7 @@ background: #205EB4;
     }
 
     .slide-2, .slide-2 .right, .bot-preview-block {
-        min-height: 75vh;
+        /*min-height: 75vh;*/
     }
 
     .slide-2 p {
@@ -940,6 +936,13 @@ background: #205EB4;
     .slide-2 .iphone-image {
         height: 92%;
         width: auto;
+    }
+
+    .slide-3 .bots-advantages.middle p {
+        margin: 44px 44px 12px 44px;
+    }
+    .slide-3 .bots-advantages p {
+        margin: 44px 6px 12px 6px;
     }
 
     .slide-4 .right {
