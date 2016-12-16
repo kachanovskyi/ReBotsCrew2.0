@@ -13,10 +13,10 @@ $(document).ready(function () {
     var barInitialized = false;
     var bar;
     var timer;
-    var progressSlide = 0;
+    var progressSlide = 1;
     var listElem = $('.slide-4 .bottom ul>li');
     var displayAmount = 0;
-    for (var i = 0; i < listElem.length - 1; i++) {
+    for (var i = 1; i < listElem.length - 1; i++) {
         if($(listElem[i]).css('display') === 'block') {
             displayAmount++;
         }
@@ -33,12 +33,13 @@ $(document).ready(function () {
         { type: 'person', phrase: '7.Can you book a table in one of the nearest 5-stars rated pizzerias?' },
         { type: 'bot', phrase: '8.Sure! Let\'s find the best one for You' }
     ];
-    var messengerHeights = [];
+    // var messengerHeights = [];
     var current;
 
-    for (i = 0; i < ($('.slide-4 .bottom ul>li').length - 1); i++) {
+    for (i = 1; i < ($('.slide-4 .bottom ul>li').length - 1); i++) {
         for (var j = 0; j < phrases.length; j++) {
-            var example = $($('.bot-example')[i]);
+            console.log('bot-example should have number ' + (i-1));
+            var example = $($('.bot-example')[i - 1]);
             var div = document.createElement('div');
             div.className = "phrase-box " + phrases[j].type;
             div.innerHTML = phrases[j].phrase;
@@ -51,7 +52,8 @@ $(document).ready(function () {
         current = 0;
         clearTimeout(timer);
 
-        var example = $($('.bot-example')[progressSlide]);
+        var example = $($('.bot-example')[progressSlide-1]);
+        console.log(example, progressSlide);
         for (counter = 0; counter < phrases.length; counter++) {
             $(example.children()[counter]).css('visibility', 'visible');
         }
@@ -64,7 +66,7 @@ $(document).ready(function () {
                 clearTimeout(timer);
             }
 
-            var example = $($('.bot-example')[progressSlide]);
+            var example = $($('.bot-example')[progressSlide-1]);
             displayOne(example.children()[current]);
 
             current++;
@@ -79,13 +81,13 @@ $(document).ready(function () {
 
     var displayOne = function(phraseObj) {
         // console.log($('.bot-example-wrapper').offset().top);
-        var example = $($('.bot-example')[progressSlide]);
+        var example = $($('.bot-example')[progressSlide-1]);
         if(example.css('bottom') < "0px") {
             example.animate({
                 bottom: "+=" + ($(phraseObj).outerHeight() + 10)
             }, 244, function () {
                 for (var counter = 0; counter < phrases.length; counter++) {
-                    if ($(example.children()[counter]).offset().top <= $($('.bot-example-wrapper')[progressSlide]).offset().top) {
+                    if ($(example.children()[counter]).offset().top <= $($('.bot-example-wrapper')[progressSlide-1]).offset().top) {
                         $(example.children()[counter]).css('visibility', 'hidden');
                     }
                 }
@@ -119,20 +121,20 @@ $(document).ready(function () {
 
         bar.animate(1.0, function() {
             var listItem = $('.slide-4 .bottom ul>li');
-            var example = $('.bot-example');
-            if(progressSlide < 6) {
+            // var example = $('.bot-example');
+            if(progressSlide < 7) {
                 progressSlide++;
                 $('#botUsesCard').carousel('next');
             } else {
-                progressSlide = 0;
+                progressSlide = 1;
                 $('.slide-4 .bottom ul>li .progressbar-container').remove();
                 $(listItem[progressSlide]).append('<div class="progressbar-container"></div>');
             }
-            if(progressSlide === 6) {
-                progressSlide = 0;
+            if(progressSlide === 7) {
+                progressSlide = 1;
             }
             if($(listItem[progressSlide]).css('display') !== 'block') {
-                console.log('block called');
+                // console.log('block called');
                 listScrollNext();
             }
             progressBarInit();
@@ -143,11 +145,14 @@ $(document).ready(function () {
         $('#botUsesCard').carousel(+$(this).attr('data-id'));
         var listItemLink = $('.slide-4 .bottom ul>li>a');
 
+        console.log(progressSlide);
         listItemLink.removeClass('active');
         bar.stop();
         bar.set(0.0);
-        progressSlide = listItemLink.index(this);
+        progressSlide = (listItemLink.index(this));
+        console.log(progressSlide);
         progressBarInit();
+
         return false;
     });
 
@@ -172,7 +177,7 @@ $(document).ready(function () {
     var $rw = $(window).resize(function(){
         var listElem = $('.slide-4 .bottom ul>li');
         displayAmount = 0;
-        for (var i = 0; i < listElem.length - 1; i++) {
+        for (var i = 1; i < listElem.length - 1; i++) {
             if($(listElem[i]).css('display') === 'block') {
                 displayAmount++;
             }
@@ -186,14 +191,14 @@ $(document).ready(function () {
         alignPricingBlocks();
     });
 
-    var counter = 0;
+    var counter = 1;
     var listScrollNext = function () {
         var listElem = $('.slide-4 .bottom ul>li');
         if($(listElem[listElem.length - 2]).css('display') == 'block') {
-            progressSlide = counter = 0;
-            for(var i = 0; i < listElem.length - 1; i ++) {
+            progressSlide = counter = 1;
+            for(var i = 1; i < listElem.length - 1; i++) {
                 $(listElem[i]).css('display', 'none');
-                if(i < displayAmount) {
+                if(i <= displayAmount) {
                     $(listElem[i]).css('display', 'block');
                 }
             }
@@ -205,7 +210,7 @@ $(document).ready(function () {
             $(listElem[counter + displayAmount]).css('display', 'block');
             counter++;
 
-            for (i = 0; i < listElem.length; i++) {
+            for (i = 1; i < listElem.length; i++) {
                 if($(listElem[i]).css('display') == 'block') {
                     // console.log('progress bar activated');
                     if(progressSlide < i) {
