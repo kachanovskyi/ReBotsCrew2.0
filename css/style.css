@@ -79,6 +79,7 @@ nav ul>li.careers{margin-right:15px}
     border-top: 1px solid #CCCCCC;
     border-bottom: 1px solid #CCCCCC;
     position: relative;
+    min-height: 333px;
 }
 
 .slide-2 .bot-preview-block {
