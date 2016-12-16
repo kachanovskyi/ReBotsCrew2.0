@@ -285,7 +285,7 @@ nav ul>li.careers{margin-right:15px}
 .slide-4 .bot-example-wrapper {
     height: 100%;
     /*position: relative;*/
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 .slide-4 .bot-example {
@@ -304,7 +304,6 @@ nav ul>li.careers{margin-right:15px}
     max-width: 64%;
     width: auto;
     border-radius: 35px;
-    font-family: "Roboto", sans-serif;
     font-size: 18px;
     line-height: 100%;
     padding: 13px 20px;
@@ -909,7 +908,7 @@ background: #205EB4;
     .slide-1 .heading {
         font-size: 26px;
     }
-    #head-title {
+    .type-it {
         font-size: 116px;
     }
 
@@ -1046,7 +1045,7 @@ background: #205EB4;
     .slide-1 .heading {
         font-size: 24px;
     }
-    #head-title {
+    #type-it {
         font-size: 102px;
     }
 
@@ -1087,10 +1086,6 @@ background: #205EB4;
     }
     .navbar li>.menu-item.bot-btn:hover {
         background: transparent !important;
-    }
-
-    .slide-1 {
-        /*min-height: 72vh;*/
     }
 
     .slide-2 {
@@ -1217,8 +1212,8 @@ background: #205EB4;
     .slide-1 .heading {
         font-size: 22px;
     }
-    #head-title {
-        font-size: 94px;
+    .type-it {
+        font-size: 82px;
     }
 }
 
@@ -1234,7 +1229,7 @@ background: #205EB4;
     .slide-1 .heading {
         font-size: 20px;
     }
-    #head-title {
+    .type-it {
         font-size: 64px;
     }
 
@@ -1286,7 +1281,6 @@ background: #205EB4;
     }
 
     .slide-1 {
-        /*margin-top: 10%;*/
         min-height: 88vh;
         margin-bottom: 14%;
     }
@@ -1443,10 +1437,6 @@ background: #205EB4;
         margin-left: 12px;
     }
 
-    .bot-btn.select, .bot-btn.select-side {
-        /*padding: 14px 100px !important;*/
-    }
-
     .carousel-inner .bot-card .left {
         padding-left: 100px;
     }
@@ -1539,8 +1529,8 @@ background: #205EB4;
     .slide-1 .heading {
         font-size: 18px;
     }
-    #head-title {
-        font-size: 48px;
+    .type-it {
+        font-size: 46px;
     }
 
     .bot-btn.blue-dark-blue.join {
@@ -1577,18 +1567,11 @@ background: #205EB4;
 }
 
 @media (max-width: 384px) {
-    .navbar-default .navbar-nav>li>a {
-        /*margin-left: 0;*/
-    }
     .nav>li>a {
         padding: 0;
     }
     .navbar li>.menu-item.bot-btn {
         padding-left: 33%;
-    }
-
-    .slide-6 .musement>img {
-        /*margin-left: 2%;*/
     }
 }
 @media (max-width: 379px) {

@@ -151,23 +151,23 @@
       margin-right: 15px;
     }
 
-    .typed-cursor{opacity:1;padding:66px 2px 0 2px;background:#e5e5e5;margin:8px 14px;-webkit-animation:blink 0.5s linear infinite;animation:blink 0.5s linear infinite;}
+    /*.typed-cursor{opacity:1;padding:66px 2px 0 2px;background:#e5e5e5;margin:8px 14px;-webkit-animation:blink 0.5s linear infinite;animation:blink 0.5s linear infinite;}*/
 
-    @keyframes blink{
-      0% { opacity:1; }
-      50% { opacity:0; }
-      100% { opacity:1; }
-    }
-    @-webkit-keyframes blink{
-      0% { opacity:1; }
-      50% { opacity:0; }
-      100% { opacity:1; }
-    }
-    @-moz-keyframes blink{
-      0% { opacity:1; }
-      50% { opacity:0; }
-      100% { opacity:1; }
-    }
+    /*@keyframes blink{*/
+      /*0% { opacity:1; }*/
+      /*50% { opacity:0; }*/
+      /*100% { opacity:1; }*/
+    /*}*/
+    /*@-webkit-keyframes blink{*/
+      /*0% { opacity:1; }*/
+      /*50% { opacity:0; }*/
+      /*100% { opacity:1; }*/
+    /*}*/
+    /*@-moz-keyframes blink{*/
+      /*0% { opacity:1; }*/
+      /*50% { opacity:0; }*/
+      /*100% { opacity:1; }*/
+    /*}*/
 
     .slide-1 {
       position: relative;
@@ -197,15 +197,18 @@
       margin-left: 6.5%;
     }
 
-    #head-title {
+    .type-it {
       font-weight: 500;
       font-size: 144px;
-      background: -webkit-linear-gradient(135deg, #1464D0 0%, #4D99FF 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
       text-align: left;
       float: left;
+      -webkit-text-fill-color: #2F80ED;
+      /*background: -webkit-linear-gradient(135deg, #1464D0 0%, #4D99FF 100%);*/
+      /*-webkit-background-clip: text;*/
+      /*-webkit-text-fill-color: transparent;*/
     }
+
+    .ti-cursor {color:#e5e5e5 !important;}
   </style>
 </head>
 <body>
@@ -245,7 +248,7 @@
       <div class="slide-1 container-fluid">
         <div class="inner">
           <h1 class="heading">WE CREATE</h1>
-          <h1 class="sub-heading"><span id="head-title"></span></h1>
+          <h1 class="sub-heading"><span class="type-it">Chatbots</span></h1>
         </div>
       </div>
 
@@ -700,14 +703,46 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/jquery-1.11.3.min.js"></script>
-  <script src="js/typed.js"></script>
-  <script defer>
-    $("#head-title").typed({
-      strings: ["Chatbots^1000", "Personal assistants^1000", "Future^1000", "AI and NLP^1000", "Conversation^1000", "Business^1000"]
-      , typeSpeed: 100
-      , loop: true
-      , startDelay: 100
-    });
+  <!--<script src="js/typed.js"></script>-->
+  <!--<script defer>-->
+    <!--$("#head-title").typed({-->
+      <!--strings: ["Chatbots^1000", "Personal assistants^1000", "Future^1000", "AI and NLP^1000", "Conversation^1000", "Business^1000"]-->
+      <!--, typeSpeed: 100-->
+      <!--, loop: true-->
+      <!--, startDelay: 100-->
+    <!--});-->
+  <!--</script>-->
+  <script src="js/typeit.js"></script>
+  <script type="text/javascript" src="js/jquery.measurer.js"></script>
+  <script type="text/javascript" src="js/jquery.gradienttext.js"></script>
+  <script>
+    $('.type-it').typeIt({
+              speed: 155,
+              deleteSpeed: 133,
+              startDelay: 2000,
+              startDelete: true,
+              autoStart: false,
+              loop: true,
+              loopDelay: 2000
+            })
+            .tiType('Personal')
+            .tiBreak()
+            .tiType('assistants')
+            .tiPause(2000)
+            .tiDelete()
+            .tiType('Future')
+            .tiPause(2000)
+            .tiDelete()
+            .tiType('AI and NLP')
+            .tiPause(2000)
+            .tiDelete()
+            .tiType('Conversation')
+            .tiPause(2000)
+            .tiDelete()
+            .tiType('Business')
+            .tiPause(2000)
+            .tiDelete()
+            .tiType('Chatbots');
   </script>
   <script defer src="js/hiding_header.js"></script>
   <script src="js/bootstrap.min.js"></script>
