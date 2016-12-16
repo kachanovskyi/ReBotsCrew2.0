@@ -1234,6 +1234,10 @@ background: #205EB4;
         font-size: 64px;
     }
 
+    .slide-2 .right {
+        height: 444px;
+    }
+
     .slide-3 .bots-advantages {
         padding: 12px;
         padding-bottom: 24px;
