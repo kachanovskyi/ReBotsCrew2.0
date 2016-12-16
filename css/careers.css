@@ -2,12 +2,6 @@ body {
     padding-top: 5vh;
 }
 
-h1, h2, p, a {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-}
-
 .top {
     text-align: center;
 }

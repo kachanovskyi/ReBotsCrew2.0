@@ -16,11 +16,13 @@
     }
 
     h1,
-    h2,
+    h2 {
+      font-weight: 400;
+    }
+
     p,
     a {
-        font-family: "Roboto", sans-serif;
-        font-weight: 400;
+      font-weight: 300;
     }
 
     a,
@@ -52,12 +54,12 @@
     }
 
     .navbar-nav>li:last-child {
-        padding-right: 100px
+        padding-right: 100px;
     }
 
     .navbar-default {
         border-color: #E5E5E5;
-        border-bottom: 1px solid #E5E5E5
+        border-bottom: 1px solid #E5E5E5;
     }
 
     .navbar-brand {
@@ -65,6 +67,7 @@
         display: flex;
         align-items: center;
         margin: 24px;
+        font-weight: 400;
     }
 
     .navbar-brand>img {
@@ -72,14 +75,26 @@
         padding: 7px 14px;
     }
 
-    .menu-item {
-        font-family: "Roboto", sans-serif;
+    .nav.navbar-nav.navbar-right>li>a.menu-item {
         font-size: 18px;
         line-height: 100%;
-        color: #4F4F4F!important;
+        font-weight: 400;
+        color: #4F4F4F;
+        text-decoration: none
+    }
+    .nav.navbar-nav.navbar-right>li>a.menu-item:link,
+    .nav.navbar-nav.navbar-right>li>a.menu-item:hover,
+    .nav.navbar-nav.navbar-right>li>a.menu-item:visited,
+    .nav.navbar-nav.navbar-right>li>a.menu-item:active
+    {
+      text-decoration: none
     }
 
     .bot-btn {
+        font-size: 18px;
+        line-height: 100%;
+        font-weight: 400;
+        color: #4F4F4F;
         border: 1px solid #2F80ED;
         border-radius: 4px;
         transition-duration: .2s;
@@ -88,25 +103,28 @@
 
     .bot-btn:hover {
         transition-duration: .5s;
-        text-decoration: none
+        text-decoration: none;
     }
 
     .bot-btn:active {
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), inset 0 4px 0 rgba(0, 0, 0, 0.05)
     }
 
-    /*.navbar-default .navbar-nav>li>a.menu-item.bot-btn.white-blue {*/
-      /*color: #2F80ED;*/
-    /*}*/
+    .bot-btn:link,
+    .bot-btn:hover,
+    .bot-btn:visited,
+    .bot-btn:active
+    {
+      text-decoration: none;
+    }
 
-    /*.bot-btn.white-blue importants are needed*/
     .bot-btn.white-blue {
       color: #2F80ED !important;
     }
 
     .bot-btn.white-blue:hover {
-        background-color: #2F80ED!important;
-        color: #FFF!important
+        background-color: #2F80ED !important;
+        color: #FFF !important;
     }
 
     .logo {
@@ -127,11 +145,66 @@
         min-height: 600px;
         height: 88vh;
         display: block;
-        float: left
     }
 
-    .row {
-        margin: 0!important
+    nav ul>li.careers {
+      margin-right: 15px;
+    }
+
+    .typed-cursor{opacity:1;padding:66px 2px 0 2px;background:#e5e5e5;margin:8px 14px;-webkit-animation:blink 0.5s linear infinite;animation:blink 0.5s linear infinite;}
+
+    @keyframes blink{
+      0% { opacity:1; }
+      50% { opacity:0; }
+      100% { opacity:1; }
+    }
+    @-webkit-keyframes blink{
+      0% { opacity:1; }
+      50% { opacity:0; }
+      100% { opacity:1; }
+    }
+    @-moz-keyframes blink{
+      0% { opacity:1; }
+      50% { opacity:0; }
+      100% { opacity:1; }
+    }
+
+    .slide-1 {
+      position: relative;
+    }
+
+    .slide-1 .inner {
+      display: block;
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .slide-1 .heading {
+      font-weight: 300;
+      padding-left: 7%;
+      font-size: 28px;
+      letter-spacing: 0.2px;
+      color: #4F4F4F;
+      text-align: left;
+    }
+
+    .slide-1 .sub-heading {
+      display: inline-flex;
+      float: left;
+      margin-left: 6.5%;
+    }
+
+    #head-title {
+      font-weight: 500;
+      font-size: 144px;
+      background: -webkit-linear-gradient(135deg, #1464D0 0%, #4D99FF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: left;
+      float: left;
     }
   </style>
 </head>
@@ -150,7 +223,6 @@
                 <span class = "icon-bar"></span>
               </button>
               <a class="navbar-brand" href="index.html"><img class="logo" src="img/logo.svg" alt="BotsCrew logo"><span class="menu-item">BotsCrew</span></a>
-              <!--<a href="#" class="menu-item bot-btn white-blue contact">Contact</a>-->
             </div>
             <div id="navbar" class="collapse navbar-collapse">
               <ul class="nav navbar-nav navbar-right">
@@ -172,7 +244,7 @@
     <div id="middle">
       <div class="slide-1 container-fluid">
         <div class="inner">
-          <h1 class="first">WE CREATE</h1>
+          <h1 class="heading">WE CREATE</h1>
           <h1 class="sub-heading"><span id="head-title"></span></h1>
         </div>
       </div>
@@ -182,7 +254,6 @@
           <div class="content" id="introduction">
             <div class="cos-xs-12 col-sm-6 bot-preview-block" style="">
               <div style="position: relative; width: auto; height: 88%; margin: 6% auto; background: url('img/iphone6full.png') center no-repeat; background-size: contain;">
-                <!--<img src="img/musement.png" class="iphone-image" style="">-->
                 <video width="236" autoplay="" loop="" muted style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
                   <source src="video/MusementBot.mp4" type="video/mp4">
                   <source src="video/Avel.ogg" type="video/ogg"> Your browser does not support the video tag.
@@ -311,16 +382,16 @@
         <div class="bottom col-lg-12">
           <ul>
             <li  class="bottom-list-item">
-              <a href="#botUsesCard" data-slide-to="0" class="active">Hospitality</a>
+              <a href="#botUsesCard" data-id="0" class="active">Hospitality</a>
               <!--<div class="progressbar-container"></div>-->
             </li>
             <li class="bottom-list-item">
-              <a href="#botUsesCard" data-slide-to="1">Customer Service</a>
+              <a href="#botUsesCard" data-id="1">Customer Service</a>
             </li>
-            <li class="bottom-list-item"><a href="#botUsesCard" data-slide-to="2">Finance</a></li>
-            <li class="bottom-list-item"><a href="#botUsesCard" data-slide-to="3">E-Commerce</a></li>
-            <li class="bottom-list-item"><a href="#botUsesCard" data-slide-to="4">Entertainment</a></li>
-            <li class="bottom-list-item"><a href="#botUsesCard" data-slide-to="5">Concierge service</a></li>
+            <li class="bottom-list-item"><a href="#botUsesCard" data-id="2">Finance</a></li>
+            <li class="bottom-list-item"><a href="#botUsesCard" data-id="3">E-Commerce</a></li>
+            <li class="bottom-list-item"><a href="#botUsesCard" data-id="4">Entertainment</a></li>
+            <li class="bottom-list-item"><a href="#botUsesCard" data-id="5">Concierge service</a></li>
             <li id="listScrollNext" class="bottom-list-item"><img src="img/arrow.png"></li>
           </ul>
         </div>
@@ -347,14 +418,14 @@
               <img src="img/platform.svg">
             </div>
             <p class="using-description-title"><b>Diversity of platforms</b></p>
-            <p class="using-description">We are using wit.ai and api.ai for human text  and  voice speech understanding</p>
+            <p class="using-description">We build for every modern messaging platform that allows chatbots.</p>
           </div>
           <div class="col-sm-4 right">
             <div class="we-do-img">
               <img src="img/ux.svg">
             </div>
             <p class="using-description-title"><b>Friendly UX</b></p>
-            <p class="using-description">We are using wit.ai and api.ai for human text  and  voice speech understanding</p>
+            <p class="using-description">We care about our users and want the conversation with a bot to be as natural as possible</p>
           </div>
         </div>
         <!--<div class="col-lg-1"></div>-->
@@ -363,7 +434,7 @@
       <div class="slide-6">
         <div class="top col-sm-offset-1 col-sm-10">
           <h2 class="text-center">We're proud of our bots</h2>
-          <p id="discover-our-bots">A Chatbot is a virtual assistant powered by rules and algorithms that lets your customers interact with your business through several messaging platforms</p>
+          <p id="discover-our-bots">We learn from each chatbot we developed to make the future ones even better and  never stop until all the users are satisfied </p>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 carousel-block" style="bottom: 0">
           <div class="row">
@@ -373,14 +444,13 @@
               <div class="item active">
                 <div class="bot-card">
                   <div class="row">
-                    <div class="col-xs-12 col-sm-offset-3 col-sm-6 col-md-offset-0 col-md-6 col-md-push-6 musement">
+                    <div class="col-xs-offset-1 col-xs-10 col-sm-offset-3 col-sm-6 col-md-offset-0 col-md-6 col-md-push-6 musement">
                       <h2>Musement</h2>
                       <p class="description">Travel Assistant for activities, tours, attractions, tickets, city passes and more. Musement helps travellers get the best from destinations by providing a great choice of local tours and attractions bookable on multiple devices. </p>
                       <a href="#" class="menu-item bot-btn blue-dark-blue messenger"><img src="img/messenger_icon.svg" class="fb-messenger-img"> <span class="text">Open in messenger</span></a>
                     </div>
                     <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-6 col-md-pull-5 musement demo">
                       <div class="inner">
-                        <!--<img src="img/musement.png" class="iphone-image" style="">-->
                         <video class="bot-video" autoplay="" loop="" muted style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
                           <source src="video/MusementBot.mp4" type="video/mp4">
                           <source src="video/Avel.ogg" type="video/ogg"> Your browser does not support the video tag.
@@ -393,15 +463,14 @@
               <div class="item">
                 <div class="bot-card">
                   <div class="row">
-                    <div class="col-xs-12 col-sm-offset-3 col-sm-6 col-md-offset-0 col-md-6 col-md-push-6 col-lg-6 col-lg-push-6 musement">
+                    <div class="col-xs-offset-1 col-xs-10 col-sm-offset-3 col-sm-6 col-md-offset-0 col-md-6 col-md-push-6 musement">
                       <h2>Avel</h2>
                       <p class="description">Travel Assistant for activities, tours, attractions, tickets, city passes and more. Musement helps travellers get the best from destinations by providing a great choice of local tours and attractions bookable on multiple devices. </p>
                       <a href="#" class="menu-item bot-btn blue-dark-blue messenger"><img src="img/messenger_icon.svg" class="fb-messenger-img"> <span class="text">Open in messenger</span></a>
                     </div>
-                    <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-6 col-md-pull-5 musement">
-                      <div style="position: relative; margin-bottom: -66px; height: 600px; background: url('img/iphone6full.png') no-repeat center">
-                        <!--<img src="img/musement.png" class="iphone-image" style="">-->
-                        <video width="254" autoplay="" loop="" muted style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                    <div class="col-xs-offset-1 col-xs-10 col-md-offset-0 col-md-6 col-md-pull-5 musement demo">
+                      <div class="inner">
+                        <video class="bot-video" autoplay="" loop="" muted style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
                           <source src="video/Avel.mp4" type="video/mp4">
                           <source src="video/Avel.ogg" type="video/ogg"> Your browser does not support the video tag.
                         </video>
@@ -492,17 +561,19 @@
       <div class="slide-8 container-fluid">
         <div class="top">
           <h2 class="text-center">How much does it cost?</h2>
-          <p class="text-center">A Chatbot is a virtual assistant powered by rules and algorithms that lets your customers interact with your business through several messaging platforms</p>
+          <p class="text-center top-text">Our prices are the best mix of quality and price and we understand the needs of every customer.</p>
           <div class="content col-xs-12 col-sm-offset-1 col-sm-10">
             <div class="pricing-wrapper" style="display: block; margin: auto; width: 90%;">
               <div class="col-xs-12 col-sm-4 col-sm-push-4 pricing center">
                 <div class="block">
-                  <p class="title"><b>Enterprise</b></p>
+                  <div class="title-block">
+                    <p><b>Enterprise</b></p>
+                  </div>
                   <div class="top-subblock">
                     <p>Let`s &nbsp Talk</p>
                   </div>
                   <div class="middle-subblock">
-                    <p>Fully customized chatbot with a strong NLP skills, working with third party API`s with analytics, admin panel etc. Developed with a chatbot builder prototype bot just to check the conversion. It does not include any NLP</p>
+                    <p>Fully customized chatbot with a strong NLP skills, working with third party API`s, with customized analytics, admin panel, broadcasting, payments, personalization of answers, conversational UI design and many more.</p>
                   </div>
                   <div class="bottom-subblock">
                     <a href="#" class="menu-item bot-btn white-blue select-side center">Select</a>
@@ -512,10 +583,12 @@
 
               <div class="col-xs-12 col-sm-4 col-sm-pull-4 pricing">
                 <div class="block">
-                  <p class="title"><b>Prototype</b></p>
+                  <div class="title-block">
+                    <p><b>Prototype</b></p>
+                  </div>
                   <div class="top-subblock">
                     <p>from</p>
-                    <h2>$720</h2>
+                    <h2>$999</h2>
                   </div>
                   <div class="middle-subblock">
                     <p>Developed with a chatbot builder prototype bot just to check the conversion. It does not include any NLP and understands only answers for questions were made by him.</p>
@@ -528,13 +601,15 @@
 
               <div class="col-xs-12 col-sm-4 pricing">
                 <div class="block">
-                  <p class="title"><b>Startup</b></p>
+                  <div class="title-block">
+                    <p><b>Startup</b></p>
+                  </div>
                   <div class="top-subblock">
                     <p>from</p>
-                    <h2>$4200</h2>
+                    <h2>$5500</h2>
                   </div>
                   <div class="middle-subblock">
-                    <p>MVP for a startup with a bit of NLP. Ready to go, working with some third party API if needed. Developed with a chatbot builder prototype bot just to check the conversion</p>
+                    <p>MVP for a startup with a bit of NLP. Ready to go, working with some third party API if needed. Developed professionally, easy to scale. Includes coversation UI expertise.</p>
                   </div>
                   <div class="bottom-subblock">
                     <a href="#" class="menu-item bot-btn white-blue select-side">Select</a>
@@ -548,7 +623,7 @@
         <div class="row">
           <div class="middle">
             <h2 class="text-center">Ready to get own bot?</h2>
-            <p class="text-center">A Chatbot is a virtual assistant powered by rules and algorithms that lets your customers interact with your business through several messaging platforms</p>
+            <p class="text-center">Catch the wave now! Become the early adopter and be one of the first from your competitors who has ability to talk to the customers directly. And make them happy ;)</p>
             <a href="#" class="menu-item bot-btn white-snow">Get Started</a>
           </div>
         </div>
@@ -562,7 +637,7 @@
         <div class="top"></div>
         <div class="middle text-center">
           <h2>Meet our team</h2>
-          <p>A Chatbot is a virtual assistant powered by rules and algorithms that lets your customers interact with your business through several messaging platforms</p>
+          <p>We are a team of chatbots professionals and believe in what we do. Each of our team members is working for customer`s success.</p>
           <a href="#" class="menu-item bot-btn blue-dark-blue join">Join our team</a>
           <a href="#" class="menu-item bot-btn white-blue more-about">More about us</a>
         </div>
@@ -622,8 +697,6 @@
 
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <!--<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">-->
-  <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">-->
   <script src="js/jquery-1.11.3.min.js"></script>
   <script src="js/typed.js"></script>
   <script defer>
