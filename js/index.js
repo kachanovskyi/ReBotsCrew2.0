@@ -152,7 +152,8 @@ $(document).ready(function () {
         listItemLink.removeClass('active');
         bar.stop();
         bar.set(0.0);
-        progressSlide = (listItemLink.index(this));
+        counter = (listItemLink.index(this));
+        progressSlide = counter - 1;
         console.log(progressSlide);
         progressBarInit();
 
