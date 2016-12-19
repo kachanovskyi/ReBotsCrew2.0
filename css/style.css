@@ -813,6 +813,10 @@ background: #205EB4;
     margin: 20px auto;
 }
 
+.botscrew-color {
+    color: #2F80ED;
+}
+
 @media (max-width: 1311px) {
     .bot-btn.select {
         padding: 15px 155px !important;

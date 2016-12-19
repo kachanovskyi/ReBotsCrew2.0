@@ -52,7 +52,6 @@ $(document).ready(function () {
         clearTimeout(timer);
 
         var example = $($('.bot-example')[progressSlide]);
-        // console.log(example, progressSlide);
         for (var i = 0; i < phrases.length; i++) {
             $(example.children()[i]).css('visibility', 'visible');
         }
@@ -79,7 +78,6 @@ $(document).ready(function () {
     };
 
     var displayOne = function(phraseObj) {
-        // console.log($('.bot-example-wrapper').offset().top);
         var example = $($('.bot-example')[progressSlide]);
         if(example.css('bottom') < "0px") {
             example.animate({
@@ -119,26 +117,6 @@ $(document).ready(function () {
         });
 
         bar.animate(1.0, function() {
-            var listItem = $('.slide-4 .bottom ul>li');
-            // var example = $('.bot-example');
-            // if(counter < 7) {
-            //     counter++;
-            //     progressSlide = counter - 1;
-            //     $('#botUsesCard').carousel('next');
-            // } else {
-            //     counter = 1;
-            //     progressSlide = counter - 1;
-            //     // $('.slide-4 .bottom ul>li .progressbar-container').remove();
-            //     // $(listItem[counter]).append('<div class="progressbar-container"></div>');
-            // }
-            // if(counter === 7) {
-            //     counter = 1;
-            //     progressSlide = counter - 1;
-            // }
-            // if($(listItem[progressSlide]).css('display') !== 'block') {
-            //     // console.log('block called');
-            //     listScroll("next");
-            // }
             listScroll("next");
             progressBarInit();
         });
@@ -221,37 +199,6 @@ $(document).ready(function () {
             $('.slide-4 .bottom ul>li .progressbar-container').remove();
             $(listElem[counter]).append('<div class="progressbar-container"></div>');
             progressBarInit();
-
-            // if($(listElem[listElem.length - 2]).css('display') == 'block') {
-            //     // console.log('1.counter', counter);
-            //     progressSlide = counter = 1;
-            //     $('#botUsesCard').carousel(progressSlide);
-            //     for(var i = 1; i < listElem.length - 1; i++) {
-            //         $(listElem[i]).css('display', 'none');
-            //         if(i <= displayAmount) {
-            //             $(listElem[i]).css('display', 'block');
-            //         }
-            //     }
-            //     bar.stop();
-            //     bar.set(0.0);
-            //     progressBarInit();
-            // } else {
-            //     // console.log('2.counter', counter);
-            //     $(listElem[counter]).css('display', 'none');
-            //     $(listElem[counter + displayAmount]).css('display', 'block');
-            //     counter++;
-            //
-            //     for (i = 1; i < listElem.length; i++) {
-            //         if($(listElem[i]).css('display') == 'block') {
-            //             progressSlide = i;
-            //             $('#botUsesCard').carousel(progressSlide-1);
-            //             bar.stop();
-            //             bar.set(0.0);
-            //             progressBarInit();
-            //             break;
-            //         }
-            //     }
-            // }
         } else {
             counter--;
             console.log('this is counter ', counter);
@@ -273,45 +220,6 @@ $(document).ready(function () {
             bar.stop();
             bar.set(0.0);
             progressBarInit();
-            // if($(listElem[1]).css('display') == 'block') {
-            //     var displayedAmount = 0;
-            //     // console.log('if case');
-            //     // console.log(listElem[1]);
-            //     counter = (listElem.length - 2);
-            //     progressSlide = counter;
-            //     // console.log('3.counter', counter);
-            //     // console.log(progressSlide, 'progressSlide');
-            //     $('#botUsesCard').carousel(progressSlide-1);
-            //     for(i = listElem.length - 2; i > 0 ; i--) {
-            //         if(displayedAmount < displayAmount) {
-            //             $(listElem[i]).css('display', 'block');
-            //             displayedAmount++;
-            //         } else {
-            //             $(listElem[i]).css('display', 'none');
-            //         }
-            //     }
-            //     bar.stop();
-            //     bar.set(0.0);
-            //     progressBarInit();
-            // } else {
-            //     // console.log('progressSlide_1_' + progressSlide);
-            //     // console.log('4.counter', counter);
-            //     $(listElem[counter]).css('display', 'none');
-            //     $(listElem[counter - displayAmount]).css('display', 'block');
-            //     counter--;
-            //
-            //     for (i = listElem.length - 2; i > 0 ; i--) {
-            //         if($(listElem[i]).css('display') == 'block') {
-            //             progressSlide = i;
-            //             $('#botUsesCard').carousel(progressSlide-1);
-            //             // console.log(progressSlide);
-            //             bar.stop();
-            //             bar.set(0.0);
-            //             progressBarInit();
-            //             break;
-            //         }
-            //     }
-            // }
         }
     };
 
