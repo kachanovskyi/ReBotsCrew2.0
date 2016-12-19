@@ -121,20 +121,20 @@ $(document).ready(function () {
         bar.animate(1.0, function() {
             var listItem = $('.slide-4 .bottom ul>li');
             // var example = $('.bot-example');
-            if(counter < 7) {
-                counter++;
-                progressSlide = counter - 1;
-                $('#botUsesCard').carousel('next');
-            } else {
-                counter = 1;
-                progressSlide = counter - 1;
-                $('.slide-4 .bottom ul>li .progressbar-container').remove();
-                $(listItem[counter]).append('<div class="progressbar-container"></div>');
-            }
-            if(counter === 7) {
-                counter = 1;
-                progressSlide = counter - 1;
-            }
+            // if(counter < 7) {
+            //     counter++;
+            //     progressSlide = counter - 1;
+            //     $('#botUsesCard').carousel('next');
+            // } else {
+            //     counter = 1;
+            //     progressSlide = counter - 1;
+            //     // $('.slide-4 .bottom ul>li .progressbar-container').remove();
+            //     // $(listItem[counter]).append('<div class="progressbar-container"></div>');
+            // }
+            // if(counter === 7) {
+            //     counter = 1;
+            //     progressSlide = counter - 1;
+            // }
             // if($(listItem[progressSlide]).css('display') !== 'block') {
             //     // console.log('block called');
             //     listScroll("next");
@@ -218,6 +218,8 @@ $(document).ready(function () {
             }
             bar.stop();
             bar.set(0.0);
+            $('.slide-4 .bottom ul>li .progressbar-container').remove();
+            $(listElem[counter]).append('<div class="progressbar-container"></div>');
             progressBarInit();
 
             // if($(listElem[listElem.length - 2]).css('display') == 'block') {
