@@ -258,10 +258,12 @@ nav ul>li.careers{margin-right:15px}
 .slide-4 .bottom ul>li:last-child {
     border-right: none;
 }
+.slide-4 .bottom ul>li:first-child:hover,
 .slide-4 .bottom ul>li:last-child:hover {
     cursor: pointer;
 }
 
+.slide-4 .bottom ul>li:first-child>img,
 .slide-4 .bottom ul>li:last-child>img {
     padding-top: 16px;
 }
