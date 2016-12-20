@@ -171,7 +171,7 @@ $(document).ready(function () {
         var listElem = $('.slide-4 .bottom ul>li');
         var windowWidth = $(window).width();
         var scrollBarWidth = getScrollBarWidth();
-        
+
         $(listElem[0]).css('display', 'block');
         $(listElem[listElem.length - 1]).css('display', 'block');
 
@@ -269,7 +269,7 @@ $(document).ready(function () {
                 console.log('counter = 6!!!');
             }
             progressSlide = counter - 1;
-            $('#listScrollPrev').each(function (){
+            $('#listScrollPrev').each(function () {
                 this.style.pointerEvents = 'none';
                 console.log('disabled click');
             });
@@ -289,7 +289,7 @@ $(document).ready(function () {
                         $(listElem[i]).css('display', 'block');
                     }
                 } else {
-                    for(i = counter - displayAmount - 1; i < (counter); i++) {
+                    for(i = (counter - displayAmount + 1); i <= (counter); i++) {
                         $(listElem[i]).css('display', 'block');
                     }
                 }

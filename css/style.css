@@ -59,7 +59,7 @@ nav ul>li.careers{margin-right:15px}
     color: #FFF !important;
 }
 .bot-btn.select-side.center:hover {
-    background: #2374C4;
+    background: #2374C4 !important;
 }
 
 .customer-img {
@@ -1129,6 +1129,12 @@ background: #205EB4;
         margin-left: 20px;
     }
 
+    .slide-3 h3 {
+        display: block;
+        margin: 0 auto 22px auto;
+        width: 90%;
+    }
+
     .slide-3 .bots-advantages {
         padding: 12px 12px 24px 12px;
     }
@@ -1211,6 +1217,18 @@ background: #205EB4;
     .slide-8 .pricing .block {
         border: 1px solid #F2F2F2;
         box-shadow: none;
+    }
+
+    .slide-8 .pricing .block .top-subblock {
+        background: #2F80ED;
+    }
+
+    .bot-btn.select-side {
+        background: #2F80ED;
+        color: #FFF !important;
+    }
+    .bot-btn.select-side:hover {
+        background: #2374C4 !important;
     }
 
     .bot-btn.blue-dark-blue.request {
