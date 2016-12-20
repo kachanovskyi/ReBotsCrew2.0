@@ -16,6 +16,17 @@ var getScrollBarWidth = function () {
     return 100 - widthWithScroll;
 };
 
+var initBarObj = function () {
+    return new ProgressBar.Line('.progressbar-container', {
+        strokeWidth: 1,
+        duration: 16000,
+        color: '#2F80ED',
+        trailColor: '#DFDFDF',
+        trailWidth: 6,
+        svgStyle: {width: '100%', height: '100%'}
+    });
+};
+
 $(document).ready(function () {
     var barInitialized = false;
     var bar;
@@ -103,7 +114,6 @@ $(document).ready(function () {
 
 
     var progressBarInit = function () {
-        // console.log('progressBar init ' + progressSlide);
         var listItem = $('.slide-4 .bottom ul>li');
         var listItemLink = $('.slide-4 .bottom ul>li>a');
         addMessages();
@@ -114,14 +124,7 @@ $(document).ready(function () {
         listItem.removeClass('active');
         $(listItemLink[counter]).addClass('active');
         $($(listItemLink[counter]).parent()).addClass('active');
-        bar = new ProgressBar.Line('.progressbar-container', {
-            strokeWidth: 1,
-            duration: 16000,
-            color: '#2F80ED',
-            trailColor: '#DFDFDF',
-            trailWidth: 6,
-            svgStyle: {width: '100%', height: '100%'}
-        });
+        bar = initBarObj();
 
         bar.animate(1.0, function() {
             listScroll("next");
@@ -139,7 +142,8 @@ $(document).ready(function () {
         bar.set(0.0);
         counter = (listItemLink.index(this));
         progressSlide = counter - 1;
-        console.log(progressSlide);
+        // console.log(progressSlide);
+        bar = initBarObj();
         progressBarInit();
 
         return false;
@@ -167,6 +171,9 @@ $(document).ready(function () {
         var listElem = $('.slide-4 .bottom ul>li');
         var windowWidth = $(window).width();
         var scrollBarWidth = getScrollBarWidth();
+        
+        $(listElem[0]).css('display', 'block');
+        $(listElem[listElem.length - 1]).css('display', 'block');
 
         if(windowWidth <= (379 - scrollBarWidth)) {
             displayAmount = 1;
@@ -178,6 +185,8 @@ $(document).ready(function () {
             displayAmount = 4;
         } else if(windowWidth > (999 - scrollBarWidth)) {
             displayAmount = 6;
+            $(listElem[0]).css('display', 'none');
+            $(listElem[listElem.length - 1]).css('display', 'none');
         }
 
         for (var i = 1; i < listElem.length - 1; i++) {
@@ -195,6 +204,7 @@ $(document).ready(function () {
         bar.set(0.0);
         $('.slide-4 .bottom ul>li .progressbar-container').remove();
         $(listElem[counter]).append('<div class="progressbar-container"></div>');
+        bar = initBarObj();
         progressBarInit();
 
         var middle = $('.slide-4 .middle');
@@ -249,6 +259,7 @@ $(document).ready(function () {
             bar.set(0.0);
             $('.slide-4 .bottom ul>li .progressbar-container').remove();
             $(listElem[counter]).append('<div class="progressbar-container"></div>');
+            bar = initBarObj();
             progressBarInit();
         } else {
             counter--;
@@ -285,6 +296,7 @@ $(document).ready(function () {
             }
             bar.stop();
             bar.set(0.0);
+            bar = initBarObj();
             progressBarInit();
         }
     };
