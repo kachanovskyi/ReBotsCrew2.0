@@ -9,6 +9,13 @@ var alignPricingBlocks = function () {
     }
 };
 
+var getScrollBarWidth = function () {
+    var $outer = $('<div>').css({visibility: 'hidden', width: 100, overflow: 'scroll'}).appendTo('body'),
+        widthWithScroll = $('<div>').css({width: '100%'}).appendTo($outer).outerWidth();
+    $outer.remove();
+    return 100 - widthWithScroll;
+};
+
 $(document).ready(function () {
     var barInitialized = false;
     var bar;
@@ -158,12 +165,38 @@ $(document).ready(function () {
 
     var $rw = $(window).resize(function(){
         var listElem = $('.slide-4 .bottom ul>li');
-        displayAmount = 0;
+        var windowWidth = $(window).width();
+        var scrollBarWidth = getScrollBarWidth();
+
+        if(windowWidth <= (379 - scrollBarWidth)) {
+            displayAmount = 1;
+        } else if(windowWidth <= (575 - scrollBarWidth)) {
+            displayAmount = 2;
+        } else if(windowWidth <= (767 - scrollBarWidth)) {
+            displayAmount = 3;
+        } else if(windowWidth <= (999 - scrollBarWidth)) {
+            displayAmount = 4;
+        } else if(windowWidth > (999 - scrollBarWidth)) {
+            displayAmount = 6;
+        }
+
         for (var i = 1; i < listElem.length - 1; i++) {
-            if($(listElem[i]).css('display') === 'block') {
-                displayAmount++;
+            if(i <= displayAmount) {
+                $(listElem[i]).css('display', 'block');
+            } else {
+                $(listElem[i]).css('display', 'none');
             }
         }
+
+        counter = 1;
+        progressSlide = counter - 1;
+        $('#botUsesCard').carousel(progressSlide);
+        bar.stop();
+        bar.set(0.0);
+        $('.slide-4 .bottom ul>li .progressbar-container').remove();
+        $(listElem[counter]).append('<div class="progressbar-container"></div>');
+        progressBarInit();
+
         var middle = $('.slide-4 .middle');
         var maxHeight = middle.height();
         if($(window).width() < 767) {
@@ -176,6 +209,13 @@ $(document).ready(function () {
     var listScroll = function (param) {
         var i;
         var listElem = $('.slide-4 .bottom ul>li');
+        var botCarousel = $('#botUsesCard');
+
+        botCarousel.bind('slid.bs.carousel', function (e) {
+            $('#listScrollPrev, #listScrollNext').each(function (){
+                this.style.pointerEvents = 'auto';
+            });
+        });
         if(param == "next") {
             counter++;
             console.log('this is counter ', counter);
@@ -184,14 +224,25 @@ $(document).ready(function () {
                 console.log('counter = 1!!!');
             }
             progressSlide = counter - 1;
-            $('#botUsesCard').carousel(progressSlide);
+            $('#listScrollNext').each(function (){
+                this.style.pointerEvents = 'none';
+                console.log('disabled click');
+            });
+            botCarousel.carousel(progressSlide);
 
             if($(listElem[counter]).css('display') == 'none') {
                 for(i = 1; i < listElem.length - 1; i++) {
                     $(listElem[i]).css('display', 'none');
                 }
-                for(i = counter; i < (counter + displayAmount);i++) {
-                    $(listElem[i]).css('display', 'block');
+
+                if(displayAmount === 4) {
+                    for(i = counter - 2; i < (counter + displayAmount); i++) {
+                        $(listElem[i]).css('display', 'block');
+                    }
+                } else {
+                    for(i = counter; i < (counter + displayAmount);i++) {
+                        $(listElem[i]).css('display', 'block');
+                    }
                 }
             }
             bar.stop();
@@ -207,14 +258,29 @@ $(document).ready(function () {
                 console.log('counter = 6!!!');
             }
             progressSlide = counter - 1;
-            $('#botUsesCard').carousel(progressSlide);
+            $('#listScrollPrev').each(function (){
+                this.style.pointerEvents = 'none';
+                console.log('disabled click');
+            });
+            botCarousel.carousel(progressSlide);
 
             if($(listElem[counter]).css('display') == 'none') {
                 for(i = 1; i < listElem.length - 1; i++) {
                     $(listElem[i]).css('display', 'none');
                 }
-                for(i = counter - displayAmount + 1; i < (counter + 1); i++) {
-                    $(listElem[i]).css('display', 'block');
+
+                if(displayAmount === 4 && counter === 6) {
+                    for(i = counter - 3; i < (counter + displayAmount); i++) {
+                        $(listElem[i]).css('display', 'block');
+                    }
+                } else if(displayAmount === 4) {
+                    for(i = counter - 1; i < (counter + displayAmount - 1); i++) {
+                        $(listElem[i]).css('display', 'block');
+                    }
+                } else {
+                    for(i = counter - displayAmount - 1; i < (counter); i++) {
+                        $(listElem[i]).css('display', 'block');
+                    }
                 }
             }
             bar.stop();
