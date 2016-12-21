@@ -203,15 +203,15 @@ $(document).ready(function () {
             $(listElem[listElem.length - 1]).css('display', 'none');
         }
 
-        for (var i = 1; i < listElem.length - 1; i++) {
-            if(i <= displayAmount) {
-                $(listElem[i]).css('display', 'block');
-            } else {
-                $(listElem[i]).css('display', 'none');
-            }
-        }
-
         if(windowWidth > 767) {
+            for (var i = 1; i < listElem.length - 1; i++) {
+                if(i <= displayAmount) {
+                    $(listElem[i]).css('display', 'block');
+                } else {
+                    $(listElem[i]).css('display', 'none');
+                }
+            }
+            
             counter = 1;
             progressSlide = counter - 1;
             $('#botUsesCard').carousel(progressSlide);
