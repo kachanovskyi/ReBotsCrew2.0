@@ -211,7 +211,7 @@
     /*.ti-cursor {color:#e5e5e5 !important;}*/
   </style>
 </head>
-<body onresize="resizing()">
+<body>
   <header class="header">
     <div id="headerInner">
       <div class="container">
@@ -701,10 +701,6 @@
   <script src="js/jquery-1.11.3.min.js"></script>
   <script src="js/typed.js"></script>
   <script defer>
-    $(document).bind("mobileinit", function() {
-      $.mobile.ajaxEnabled = false;
-    });
-
     $(".type-it").typed({
       strings: ["Chatbots^1000", "Personal assistants^1000", "Future^1000", "AI and NLP^1000", "Conversation^1000", "Business^1000"]
       , typeSpeed: 100

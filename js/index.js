@@ -21,10 +21,6 @@ var alignMessengerTextHeight = function () {
     }
 };
 
-function resizing() {
-    console.log('onresize resized');
-};
-
 var getScrollBarWidth = function () {
     var $outer = $('<div>').css({visibility: 'hidden', width: 100, overflow: 'scroll'}).appendTo('body'),
         widthWithScroll = $('<div>').css({width: '100%'}).appendTo($outer).outerWidth();
@@ -328,7 +324,9 @@ $(document).ready(function () {
         return false;
     });
 
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    if( true ) {
+        console.log('here we are');
+
         addJS_Node (null, "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js", null, fireAfterLoad);
 
         function fireAfterLoad () {
@@ -345,6 +343,7 @@ $(document).ready(function () {
 
         //-- addJS_Node is a standard(ish) function
         function addJS_Node (text, s_URL, funcToRun, runOnLoad) {
+            $.mobile.ajaxEnabled = false;
             var D = document;
             var scriptNode = D.createElement ('script');
             if(runOnLoad) {
@@ -364,48 +363,3 @@ $(document).ready(function () {
     alignPricingBlocks();
     autosize($('textarea'));
 });
-
-// if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-// setTimeout(function() {
-//     $( document ).on( "mobileinit", function() {
-//         $.mobile.autoInitializePage = false; // This one does the job
-//     });
-//     (window.jQuery && alignPricingBlocks()) || loadScript("http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js", function() {
-//         alert('script loaded');
-//         $('#botUsesCard').on( "swipeleft", function() {
-//             // $.mobile.changePage( next + ".html", { transition: "slide" });
-//             alert('swipe left is working');
-//             listScroll("prev");
-//             return false;
-//         });
-//         $('#botUsesCard').on( "swiperight", function() {
-//             // $.mobile.changePage( next + ".html", { transition: "slide" });
-//             alert('swipe right is working');
-//             listScroll("next");
-//             return false;
-//         });
-//     });
-// }, 1000);
-
-// function loadScript(url, callback) {
-//
-//     var script = document.createElement("script");
-//     script.type = "text/javascript";
-//
-//     if (script.readyState) { //IE
-//         script.onreadystatechange = function() {
-//             if (script.readyState == "loaded" || script.readyState == "complete") {
-//                 script.onreadystatechange = null;
-//                 callback();
-//             }
-//         };
-//     } else { //Others
-//         script.onload = function() {
-//             callback();
-//         };
-//     }
-//
-//     script.src = url;
-//     document.getElementsByTagName("head")[0].appendChild(script);
-// }
-// }
