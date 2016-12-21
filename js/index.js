@@ -76,10 +76,13 @@ $(document).ready(function () {
         }
     }
 
-    //if mobile include jquery.mobile and add swipe for mssenger carousel
+    //if mobile include jquery.mobile and add swipe for messenger carousel
+    // setTimeout(function() {
+    //     (window.jQuery && swipeInit()) || loadScript("js/jquery.mobile-events.min.js", swipeInit);
+    // }, 1000);
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         setTimeout(function() {
-            (window.jQuery && init()) || loadScript("js/jquery.mobile-events.min.js", swipeInit);
+            (window.jQuery && swipeInit()) || loadScript("js/jquery.mobile-events.min.js", swipeInit);
         }, 1000);
     }
 
