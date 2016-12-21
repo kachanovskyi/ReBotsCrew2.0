@@ -8,6 +8,18 @@ var alignPricingBlocks = function () {
         }
     }
 };
+var alignMessengerTextHeight = function () {
+    var textElem = $('.slide-4 p');
+    var maxHeight = $(textElem).height();
+    for (var i = 0; i < textElem.length; i++) {
+        if($(textElem[i]).height() > maxHeight) {
+            maxHeight = $(textElem[i]).height();
+        }
+    }
+    for (i = 0; i < textElem.length; i++) {
+        $(textElem[i]).height(maxHeight);
+    }
+};
 
 var getScrollBarWidth = function () {
     var $outer = $('<div>').css({visibility: 'hidden', width: 100, overflow: 'scroll'}).appendTo('body'),
@@ -55,7 +67,7 @@ $(document).ready(function () {
     ];
     var current;
 
-    for (i = 1; i < ($('.slide-4 .bottom ul>li').length - 1); i++) {
+    for (i = 1; i < (listElem.length - 1); i++) {
         for (var j = 0; j < phrases.length; j++) {
             // console.log('bot-example should have number ' + (i-1));
             var example = $($('.bot-example')[i - 1]);
@@ -126,7 +138,6 @@ $(document).ready(function () {
         $(listItemLink[counter]).addClass('active');
         $($(listItemLink[counter]).parent()).addClass('active');
         if(bar) {
-            console.log('progress bar existst');
             bar.stop();
             bar.set(0.0);
         }
@@ -229,7 +240,6 @@ $(document).ready(function () {
         });
         if(param == "next") {
             counter++;
-            console.log('this is counter ', counter);
             if(counter > 6) {
                 counter = 1;
                 console.log('counter = 1!!!');
@@ -237,7 +247,6 @@ $(document).ready(function () {
             progressSlide = counter - 1;
             $('#listScrollNext').each(function (){
                 this.style.pointerEvents = 'none';
-                console.log('disabled click');
             });
             botCarousel.carousel(progressSlide);
 
@@ -262,7 +271,6 @@ $(document).ready(function () {
             progressBarInit();
         } else {
             counter--;
-            console.log('this is counter ', counter);
             if(counter < 1) {
                 counter = 6;
                 console.log('counter = 6!!!');
@@ -270,7 +278,6 @@ $(document).ready(function () {
             progressSlide = counter - 1;
             $('#listScrollPrev').each(function () {
                 this.style.pointerEvents = 'none';
-                console.log('disabled click');
             });
             botCarousel.carousel(progressSlide);
 
@@ -318,6 +325,7 @@ $(document).ready(function () {
         });
     }
 
+    alignMessengerTextHeight();
     alignPricingBlocks();
     autosize($('textarea'));
 });
