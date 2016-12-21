@@ -21,6 +21,10 @@ var alignMessengerTextHeight = function () {
     }
 };
 
+function resizing() {
+    console.log('onresize resized');
+};
+
 var getScrollBarWidth = function () {
     var $outer = $('<div>').css({visibility: 'hidden', width: 100, overflow: 'scroll'}).appendTo('body'),
         widthWithScroll = $('<div>').css({width: '100%'}).appendTo($outer).outerWidth();
@@ -182,6 +186,7 @@ $(document).ready(function () {
 
 
     var $rw = $(window).resize(function(){
+        console.log('resized');
         var listElem = $('.slide-4 .bottom ul>li');
         var windowWidth = $(window).width();
         var scrollBarWidth = getScrollBarWidth();
@@ -203,21 +208,42 @@ $(document).ready(function () {
             $(listElem[listElem.length - 1]).css('display', 'none');
         }
 
-        if(windowWidth > 767) {
+        // if(counter > displayAmount) {
+        //     for (var i = 1; i < listElem.length - 1; i++) {
+        //         $(listElem[i]).css('display', 'none');
+        //     }
+        //     for (i = counter - displayAmount; i <= counter; i++) {
+        //         $(listElem[i]).css('display', 'block');
+        //     }
+        // } else {
+        //     for (i = 1; i < listElem.length - 1; i++) {
+        //         $(listElem[i]).css('display', 'none');
+        //     }
+        //     for (i = counter; i < counter + displayAmount; i++) {
+        //         $(listElem[i]).css('display', 'block');
+        //     }
+        // }
+
+        if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.orientation) {
+            alert('changed');
             for (var i = 1; i < listElem.length - 1; i++) {
-                if(i <= displayAmount) {
+                if (i <= displayAmount) {
                     $(listElem[i]).css('display', 'block');
                 } else {
                     $(listElem[i]).css('display', 'none');
                 }
             }
-            
+
             counter = 1;
             progressSlide = counter - 1;
             $('#botUsesCard').carousel(progressSlide);
             $('.slide-4 .bottom ul>li .progressbar-container').remove();
             $(listElem[counter]).append('<div class="progressbar-container"></div>');
         }
+
+        // window.orientation = function () {
+        //     alert('window orientation changed');
+        // };
 
         progressBarInit();
 
