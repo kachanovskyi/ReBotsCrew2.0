@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b84ffc62-3f88-4b9b-862e-881918df00ee" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="botscrew 2.0.iws" />
@@ -27,8 +26,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="750" column="85" selection-start-line="750" selection-start-column="85" selection-end-line="750" selection-end-column="85" />
+            <state relative-caret-position="6">
+              <caret line="761" column="22" selection-start-line="761" selection-start-column="22" selection-end-line="761" selection-end-column="22" />
               <folding>
                 <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -42,8 +41,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="387" column="68" selection-start-line="370" selection-start-column="7" selection-end-line="387" selection-end-column="68" />
+            <state relative-caret-position="304">
+              <caret line="338" column="11" selection-start-line="331" selection-start-column="8" selection-end-line="338" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -366,12 +365,12 @@
       <workItem from="1482212795696" duration="11366000" />
       <workItem from="1482300716793" duration="4673000" />
       <workItem from="1482311225315" duration="1205000" />
-      <workItem from="1482313984924" duration="6838000" />
+      <workItem from="1482313984924" duration="7066000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="681396000" />
+    <option name="totallyTimeSpent" value="681624000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -722,16 +721,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="387" column="68" selection-start-line="370" selection-start-column="7" selection-end-line="387" selection-end-column="68" />
+        <state relative-caret-position="304">
+          <caret line="338" column="11" selection-start-line="331" selection-start-column="8" selection-end-line="338" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="750" column="85" selection-start-line="750" selection-start-column="85" selection-end-line="750" selection-end-column="85" />
+        <state relative-caret-position="6">
+          <caret line="761" column="22" selection-start-line="761" selection-start-column="22" selection-end-line="761" selection-end-column="22" />
           <folding>
             <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
