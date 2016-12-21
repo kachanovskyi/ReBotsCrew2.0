@@ -127,14 +127,14 @@ $(document).ready(function () {
 
 
     var progressBarInit = function () {
-        // var listItem = $('.slide-4 .bottom ul>li');
-        var listItemLink = $('.slide-4 .bottom>a');
+        var listItem = $('.slide-4 .bottom ul>li');
+        var listItemLink = $('.slide-4 .bottom ul>li>a');
         addMessages();
 
-        $($('.slide-4 .bottom>a .progressbar-container')[0]).remove();
-        $(listItemLink[counter]).append('<div class="progressbar-container"></div>');
+        $($('.slide-4 .bottom ul>li .progressbar-container')[0]).remove();
+        $(listItem[counter]).append('<div class="progressbar-container"></div>');
         listItemLink.removeClass('active');
-        listItemLink.removeClass('active');
+        listItem.removeClass('active');
         $(listItemLink[counter]).addClass('active');
         $($(listItemLink[counter]).parent()).addClass('active');
         if(bar) {
@@ -149,9 +149,9 @@ $(document).ready(function () {
         });
     };
 
-    $('.slide-4 .bottom>a').click(function (e) {
+    $('.slide-4 .bottom ul>li>a').click(function (e) {
         $('#botUsesCard').carousel(+$(this).attr('data-id'));
-        var listItemLink = $('.slide-4 .bottom>a');
+        var listItemLink = $('.slide-4 .bottom ul>li>a');
 
         console.log(progressSlide);
         listItemLink.removeClass('active');
@@ -160,6 +160,11 @@ $(document).ready(function () {
 
         progressBarInit();
 
+        return false;
+    });
+
+    $('.bottom-list-item').click(function (e) {
+        $($(this).find('a')).trigger("click");
         return false;
     });
 
@@ -192,7 +197,7 @@ $(document).ready(function () {
         counter = 1;
         progressSlide = counter - 1;
         $('#botUsesCard').carousel(progressSlide);
-        $('.slide-4 .bottom>a .progressbar-container').remove();
+        $('.slide-4 .bottom ul>li .progressbar-container').remove();
         $(listElem[counter]).append('<div class="progressbar-container"></div>');
         progressBarInit();
     };
@@ -204,7 +209,7 @@ $(document).ready(function () {
 
     var $rw = $(window).resize(function(){
         console.log('resized');
-        var listElem = $('.slide-4 .bottom>a');
+        var listElem = $('.slide-4 .bottom ul>li');
         var windowWidth = $(window).width();
         var scrollBarWidth = getScrollBarWidth();
 
@@ -240,7 +245,7 @@ $(document).ready(function () {
 
     var listScroll = function (param) {
         var i;
-        var listElem = $('.slide-4 .bottom>a');
+        var listElem = $('.slide-4 .bottom ul>li');
         var botCarousel = $('#botUsesCard');
 
         botCarousel.bind('slid.bs.carousel', function (e) {
@@ -275,7 +280,7 @@ $(document).ready(function () {
                     }
                 }
             }
-            $('.slide-4 .bottom>a .progressbar-container').remove();
+            $('.slide-4 .bottom ul>li .progressbar-container').remove();
             $(listElem[counter]).append('<div class="progressbar-container"></div>');
 
             progressBarInit();
