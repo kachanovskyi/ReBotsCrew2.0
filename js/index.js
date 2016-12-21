@@ -34,6 +34,7 @@ $(document).ready(function () {
     var progressSlide = 0;
     var counter = 1;
     var listElem = $('.slide-4 .bottom ul>li');
+    var botCarousel = $('#botUsesCard');
     var displayAmount = 0;
     for (var i = 1; i < listElem.length - 1; i++) {
         if($(listElem[i]).css('display') === 'block') {
@@ -143,12 +144,9 @@ $(document).ready(function () {
 
         console.log(progressSlide);
         listItemLink.removeClass('active');
-        // bar.stop();
-        // bar.set(0.0);
         counter = (listItemLink.index(this));
         progressSlide = counter - 1;
-        // console.log(progressSlide);
-        // bar = initBarObj();
+
         progressBarInit();
 
         return false;
@@ -205,11 +203,9 @@ $(document).ready(function () {
         counter = 1;
         progressSlide = counter - 1;
         $('#botUsesCard').carousel(progressSlide);
-        // bar.stop();
-        // bar.set(0.0);
         $('.slide-4 .bottom ul>li .progressbar-container').remove();
         $(listElem[counter]).append('<div class="progressbar-container"></div>');
-        // bar = initBarObj();
+
         progressBarInit();
 
         var middle = $('.slide-4 .middle');
@@ -260,11 +256,9 @@ $(document).ready(function () {
                     }
                 }
             }
-            // bar.stop();
-            // bar.set(0.0);
             $('.slide-4 .bottom ul>li .progressbar-container').remove();
             $(listElem[counter]).append('<div class="progressbar-container"></div>');
-            // bar = initBarObj();
+
             progressBarInit();
         } else {
             counter--;
@@ -299,9 +293,7 @@ $(document).ready(function () {
                     }
                 }
             }
-            // bar.stop();
-            // bar.set(0.0);
-            // bar = initBarObj();
+            
             progressBarInit();
         }
     };
@@ -315,64 +307,62 @@ $(document).ready(function () {
         return false;
     });
 
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        botCarousel.on( "swipeleft", function() {
+            listScroll("next");
+            return false;
+        });
+        botCarousel.on( "swiperight", function() {
+            listScroll("prev");
+            return false;
+        });
+    }
+
     alignPricingBlocks();
     autosize($('textarea'));
-
-    $('#botUsesCard').on( "swipeleft", function() {
-        // $.mobile.changePage( next + ".html", { transition: "slide" });
-        alert('swipe left is working');
-        listScroll("prev");
-        return false;
-    });
-    $('#botUsesCard').on( "swiperight", function() {
-        // $.mobile.changePage( next + ".html", { transition: "slide" });
-        alert('swipe right is working');
-        listScroll("next");
-        return false;
-    });
-
-    // if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    // setTimeout(function() {
-    //     $( document ).on( "mobileinit", function() {
-    //         $.mobile.autoInitializePage = false; // This one does the job
-    //     });
-    //     (window.jQuery && alignPricingBlocks()) || loadScript("http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js", function() {
-    //         alert('script loaded');
-    //         $('#botUsesCard').on( "swipeleft", function() {
-    //             // $.mobile.changePage( next + ".html", { transition: "slide" });
-    //             alert('swipe left is working');
-    //             listScroll("prev");
-    //             return false;
-    //         });
-    //         $('#botUsesCard').on( "swiperight", function() {
-    //             // $.mobile.changePage( next + ".html", { transition: "slide" });
-    //             alert('swipe right is working');
-    //             listScroll("next");
-    //             return false;
-    //         });
-    //     });
-    // }, 1000);
-
-    function loadScript(url, callback) {
-
-        var script = document.createElement("script");
-        script.type = "text/javascript";
-
-        if (script.readyState) { //IE
-            script.onreadystatechange = function() {
-                if (script.readyState == "loaded" || script.readyState == "complete") {
-                    script.onreadystatechange = null;
-                    callback();
-                }
-            };
-        } else { //Others
-            script.onload = function() {
-                callback();
-            };
-        }
-
-        script.src = url;
-        document.getElementsByTagName("head")[0].appendChild(script);
-    }
-    // }
 });
+
+// if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+// setTimeout(function() {
+//     $( document ).on( "mobileinit", function() {
+//         $.mobile.autoInitializePage = false; // This one does the job
+//     });
+//     (window.jQuery && alignPricingBlocks()) || loadScript("http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js", function() {
+//         alert('script loaded');
+//         $('#botUsesCard').on( "swipeleft", function() {
+//             // $.mobile.changePage( next + ".html", { transition: "slide" });
+//             alert('swipe left is working');
+//             listScroll("prev");
+//             return false;
+//         });
+//         $('#botUsesCard').on( "swiperight", function() {
+//             // $.mobile.changePage( next + ".html", { transition: "slide" });
+//             alert('swipe right is working');
+//             listScroll("next");
+//             return false;
+//         });
+//     });
+// }, 1000);
+
+// function loadScript(url, callback) {
+//
+//     var script = document.createElement("script");
+//     script.type = "text/javascript";
+//
+//     if (script.readyState) { //IE
+//         script.onreadystatechange = function() {
+//             if (script.readyState == "loaded" || script.readyState == "complete") {
+//                 script.onreadystatechange = null;
+//                 callback();
+//             }
+//         };
+//     } else { //Others
+//         script.onload = function() {
+//             callback();
+//         };
+//     }
+//
+//     script.src = url;
+//     document.getElementsByTagName("head")[0].appendChild(script);
+// }
+// }
