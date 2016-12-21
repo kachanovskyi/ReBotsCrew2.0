@@ -211,11 +211,13 @@ $(document).ready(function () {
             }
         }
 
-        counter = 1;
-        progressSlide = counter - 1;
-        $('#botUsesCard').carousel(progressSlide);
-        $('.slide-4 .bottom ul>li .progressbar-container').remove();
-        $(listElem[counter]).append('<div class="progressbar-container"></div>');
+        if(windowWidth > 767) {
+            counter = 1;
+            progressSlide = counter - 1;
+            $('#botUsesCard').carousel(progressSlide);
+            $('.slide-4 .bottom ul>li .progressbar-container').remove();
+            $(listElem[counter]).append('<div class="progressbar-container"></div>');
+        }
 
         progressBarInit();
 
