@@ -44,6 +44,7 @@ $(document).ready(function () {
     //if mobile include jquery.mobile and add swipe for mssenger carousel
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         var botCarousel = $('#botUsesCard');
+        $.event.special.swipe.horizontalDistanceThreshold = 10;
         botCarousel.on( "swipeleft", function(e) {
             alert('it worked');
             listScroll("next");
