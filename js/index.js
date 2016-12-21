@@ -41,6 +41,21 @@ $(document).ready(function () {
         }
     }
 
+    //if mobile include jquery.mobile and add swipe for mssenger carousel
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        var botCarousel = $('#botUsesCard');
+        botCarousel.on( "swipeleft", function(e) {
+            alert('it worked');
+            listScroll("next");
+            return false;
+        });
+        botCarousel.on( "swiperight", function(e) {
+            alert('it worked');
+            listScroll("prev");
+            return false;
+        });
+    }
+
     //.bot-example scripts
     var phrases = [
         { type: 'person', phrase: '1.You dude!' },
@@ -143,14 +158,10 @@ $(document).ready(function () {
 
         console.log(progressSlide);
         listItemLink.removeClass('active');
-        // bar.stop();
-        // bar.set(0.0);
         counter = (listItemLink.index(this));
         progressSlide = counter - 1;
-        // console.log(progressSlide);
-        // bar = initBarObj();
-        progressBarInit();
 
+        progressBarInit();
         return false;
     });
 
@@ -205,11 +216,9 @@ $(document).ready(function () {
         counter = 1;
         progressSlide = counter - 1;
         $('#botUsesCard').carousel(progressSlide);
-        // bar.stop();
-        // bar.set(0.0);
         $('.slide-4 .bottom ul>li .progressbar-container').remove();
         $(listElem[counter]).append('<div class="progressbar-container"></div>');
-        // bar = initBarObj();
+
         progressBarInit();
 
         var middle = $('.slide-4 .middle');
@@ -260,11 +269,9 @@ $(document).ready(function () {
                     }
                 }
             }
-            // bar.stop();
-            // bar.set(0.0);
             $('.slide-4 .bottom ul>li .progressbar-container').remove();
             $(listElem[counter]).append('<div class="progressbar-container"></div>');
-            // bar = initBarObj();
+
             progressBarInit();
         } else {
             counter--;
@@ -299,9 +306,7 @@ $(document).ready(function () {
                     }
                 }
             }
-            // bar.stop();
-            // bar.set(0.0);
-            // bar = initBarObj();
+
             progressBarInit();
         }
     };
