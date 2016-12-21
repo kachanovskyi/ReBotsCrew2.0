@@ -184,6 +184,27 @@ $(document).ready(function () {
         }
     });
 
+    var messengerListResize = function () {
+        for (var i = 1; i < listElem.length - 1; i++) {
+            if (i <= displayAmount) {
+                $(listElem[i]).css('display', 'block');
+            } else {
+                $(listElem[i]).css('display', 'none');
+            }
+        }
+
+        counter = 1;
+        progressSlide = counter - 1;
+        $('#botUsesCard').carousel(progressSlide);
+        $('.slide-4 .bottom ul>li .progressbar-container').remove();
+        $(listElem[counter]).append('<div class="progressbar-container"></div>');
+        progressBarInit();
+    };
+
+    $(window).on("orientationchange",function(){
+        messengerListResize();
+    });
+
 
     var $rw = $(window).resize(function(){
         console.log('resized');
@@ -208,47 +229,9 @@ $(document).ready(function () {
             $(listElem[listElem.length - 1]).css('display', 'none');
         }
 
-        // if(counter > displayAmount) {
-        //     for (var i = 1; i < listElem.length - 1; i++) {
-        //         $(listElem[i]).css('display', 'none');
-        //     }
-        //     for (i = counter - displayAmount; i <= counter; i++) {
-        //         $(listElem[i]).css('display', 'block');
-        //     }
-        // } else {
-        //     for (i = 1; i < listElem.length - 1; i++) {
-        //         $(listElem[i]).css('display', 'none');
-        //     }
-        //     for (i = counter; i < counter + displayAmount; i++) {
-        //         $(listElem[i]).css('display', 'block');
-        //     }
-        // }
-
         if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            for (var i = 1; i < listElem.length - 1; i++) {
-                if (i <= displayAmount) {
-                    $(listElem[i]).css('display', 'block');
-                } else {
-                    $(listElem[i]).css('display', 'none');
-                }
-            }
-
-            counter = 1;
-            progressSlide = counter - 1;
-            $('#botUsesCard').carousel(progressSlide);
-            $('.slide-4 .bottom ul>li .progressbar-container').remove();
-            $(listElem[counter]).append('<div class="progressbar-container"></div>');
+            messengerListResize();
         }
-
-        $(window).on("orientationchange",function(){
-            alert("The orientation has changed!");
-        });
-
-        // window.orientation = function () {
-        //     alert('window orientation changed');
-        // };
-
-        progressBarInit();
 
         var middle = $('.slide-4 .middle');
         var maxHeight = middle.height();
