@@ -82,7 +82,7 @@ $(document).ready(function () {
     // }, 1000);
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         setTimeout(function() {
-            (window.jQuery && swipeInit()) || loadScript("js/jquery.mobile-events.min.js", swipeInit);
+            (window.jQuery && swipeInit()) || loadScript("https://cdnjs.cloudflare.com/ajax/libs/jquery-touch-events/1.0.5/jquery.mobile-events.js", swipeInit);
         }, 1000);
     }
 
