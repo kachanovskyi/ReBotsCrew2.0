@@ -224,8 +224,7 @@ $(document).ready(function () {
         //     }
         // }
 
-        if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.orientation) {
-            alert('changed');
+        if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             for (var i = 1; i < listElem.length - 1; i++) {
                 if (i <= displayAmount) {
                     $(listElem[i]).css('display', 'block');
@@ -240,6 +239,10 @@ $(document).ready(function () {
             $('.slide-4 .bottom ul>li .progressbar-container').remove();
             $(listElem[counter]).append('<div class="progressbar-container"></div>');
         }
+
+        $(window).on("orientationchange",function(){
+            alert("The orientation has changed!");
+        });
 
         // window.orientation = function () {
         //     alert('window orientation changed');
