@@ -332,15 +332,12 @@ $(document).ready(function () {
         addJS_Node (null, "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js", null, fireAfterLoad);
 
         function fireAfterLoad () {
-            alert('mobile loaded');
             var botCarousel = $('#botUsesCard');
             botCarousel.on( "swipeleft", function() {
-                alert('next');
                 listScroll("next");
                 return false;
             });
             botCarousel.on( "swiperight", function() {
-                alert('prev');
                 listScroll("prev");
                 return false;
             });
@@ -348,7 +345,6 @@ $(document).ready(function () {
 
         //-- addJS_Node is a standard(ish) function
         function addJS_Node (text, s_URL, funcToRun, runOnLoad) {
-            alert('works');
             var D = document;
             var scriptNode = D.createElement ('script');
             if(runOnLoad) {
@@ -362,14 +358,6 @@ $(document).ready(function () {
             var targ = D.getElementsByTagName ('head')[0] || D.body || D.documentElement;
             targ.appendChild (scriptNode);
         }
-        // botCarousel.on( "swipeleft", function() {
-        //     listScroll("next");
-        //     return false;
-        // });
-        // botCarousel.on( "swiperight", function() {
-        //     listScroll("prev");
-        //     return false;
-        // });
     }
 
     alignMessengerTextHeight();
