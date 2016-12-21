@@ -27,6 +27,41 @@ var initBarObj = function () {
     });
 };
 
+var swipeInit = function () {
+    alert('swiping initialized');
+    var botCarousel = $('#botUsesCard');
+    botCarousel.on( "swipeleft", function(e) {
+        listScroll("next");
+        return false;
+    });
+    botCarousel.on( "swiperight", function(e) {
+        listScroll("prev");
+        return false;
+    });
+};
+
+var loadScript = function(url, callback) {
+
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+
+    if (script.readyState) { //IE
+        script.onreadystatechange = function() {
+            if (script.readyState == "loaded" || script.readyState == "complete") {
+                script.onreadystatechange = null;
+                callback();
+            }
+        };
+    } else { //Others
+        script.onload = function() {
+            callback();
+        };
+    }
+
+    script.src = url;
+    document.getElementsByTagName("head")[0].appendChild(script);
+};
+
 $(document).ready(function () {
     var barInitialized = false;
     var bar;
@@ -43,18 +78,9 @@ $(document).ready(function () {
 
     //if mobile include jquery.mobile and add swipe for mssenger carousel
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        var botCarousel = $('#botUsesCard');
-        $.event.special.swipe.horizontalDistanceThreshold = 10;
-        botCarousel.on( "swipeleft", function(e) {
-            alert('it worked');
-            listScroll("next");
-            return false;
-        });
-        botCarousel.on( "swiperight", function(e) {
-            alert('it worked');
-            listScroll("prev");
-            return false;
-        });
+        setTimeout(function() {
+            (window.jQuery && init()) || loadScript("js/jquery.mobile-events.min.js", swipeInit);
+        }, 1000);
     }
 
     //.bot-example scripts
