@@ -318,27 +318,40 @@ $(document).ready(function () {
     alignPricingBlocks();
     autosize($('textarea'));
 
+    $('#botUsesCard').on( "swipeleft", function() {
+        // $.mobile.changePage( next + ".html", { transition: "slide" });
+        alert('swipe left is working');
+        listScroll("prev");
+        return false;
+    });
+    $('#botUsesCard').on( "swiperight", function() {
+        // $.mobile.changePage( next + ".html", { transition: "slide" });
+        alert('swipe right is working');
+        listScroll("next");
+        return false;
+    });
+
     // if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    setTimeout(function() {
-        $( document ).on( "mobileinit", function() {
-            $.mobile.autoInitializePage = false; // This one does the job
-        });
-        (window.jQuery && alignPricingBlocks()) || loadScript("http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js", function() {
-            alert('script loaded');
-            $('#botUsesCard').on( "swipeleft", function() {
-                // $.mobile.changePage( next + ".html", { transition: "slide" });
-                alert('swipe left is working');
-                listScroll("prev");
-                return false;
-            });
-            $('#botUsesCard').on( "swiperight", function() {
-                // $.mobile.changePage( next + ".html", { transition: "slide" });
-                alert('swipe right is working');
-                listScroll("next");
-                return false;
-            });
-        });
-    }, 1000);
+    // setTimeout(function() {
+    //     $( document ).on( "mobileinit", function() {
+    //         $.mobile.autoInitializePage = false; // This one does the job
+    //     });
+    //     (window.jQuery && alignPricingBlocks()) || loadScript("http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js", function() {
+    //         alert('script loaded');
+    //         $('#botUsesCard').on( "swipeleft", function() {
+    //             // $.mobile.changePage( next + ".html", { transition: "slide" });
+    //             alert('swipe left is working');
+    //             listScroll("prev");
+    //             return false;
+    //         });
+    //         $('#botUsesCard').on( "swiperight", function() {
+    //             // $.mobile.changePage( next + ".html", { transition: "slide" });
+    //             alert('swipe right is working');
+    //             listScroll("next");
+    //             return false;
+    //         });
+    //     });
+    // }, 1000);
 
     function loadScript(url, callback) {
 
