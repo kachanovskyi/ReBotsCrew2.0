@@ -124,6 +124,11 @@ $(document).ready(function () {
         listItem.removeClass('active');
         $(listItemLink[counter]).addClass('active');
         $($(listItemLink[counter]).parent()).addClass('active');
+        if(bar) {
+            console.log('progress bar existst');
+            bar.stop();
+            bar.set(0.0);
+        }
         bar = initBarObj();
 
         bar.animate(1.0, function() {
@@ -138,12 +143,12 @@ $(document).ready(function () {
 
         console.log(progressSlide);
         listItemLink.removeClass('active');
-        bar.stop();
-        bar.set(0.0);
+        // bar.stop();
+        // bar.set(0.0);
         counter = (listItemLink.index(this));
         progressSlide = counter - 1;
         // console.log(progressSlide);
-        bar = initBarObj();
+        // bar = initBarObj();
         progressBarInit();
 
         return false;
@@ -200,11 +205,11 @@ $(document).ready(function () {
         counter = 1;
         progressSlide = counter - 1;
         $('#botUsesCard').carousel(progressSlide);
-        bar.stop();
-        bar.set(0.0);
+        // bar.stop();
+        // bar.set(0.0);
         $('.slide-4 .bottom ul>li .progressbar-container').remove();
         $(listElem[counter]).append('<div class="progressbar-container"></div>');
-        bar = initBarObj();
+        // bar = initBarObj();
         progressBarInit();
 
         var middle = $('.slide-4 .middle');
@@ -255,11 +260,11 @@ $(document).ready(function () {
                     }
                 }
             }
-            bar.stop();
-            bar.set(0.0);
+            // bar.stop();
+            // bar.set(0.0);
             $('.slide-4 .bottom ul>li .progressbar-container').remove();
             $(listElem[counter]).append('<div class="progressbar-container"></div>');
-            bar = initBarObj();
+            // bar = initBarObj();
             progressBarInit();
         } else {
             counter--;
@@ -294,9 +299,9 @@ $(document).ready(function () {
                     }
                 }
             }
-            bar.stop();
-            bar.set(0.0);
-            bar = initBarObj();
+            // bar.stop();
+            // bar.set(0.0);
+            // bar = initBarObj();
             progressBarInit();
         }
     };
