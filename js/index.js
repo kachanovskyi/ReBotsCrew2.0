@@ -329,14 +329,47 @@ $(document).ready(function () {
     });
 
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        botCarousel.on( "swipeleft", function() {
-            listScroll("next");
-            return false;
-        });
-        botCarousel.on( "swiperight", function() {
-            listScroll("prev");
-            return false;
-        });
+        addJS_Node (null, "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js", null, fireAfterLoad);
+
+        function fireAfterLoad () {
+            alert('mobile loaded');
+            var botCarousel = $('#botUsesCard');
+            botCarousel.on( "swipeleft", function() {
+                alert('next');
+                listScroll("next");
+                return false;
+            });
+            botCarousel.on( "swiperight", function() {
+                alert('prev');
+                listScroll("prev");
+                return false;
+            });
+        }
+
+        //-- addJS_Node is a standard(ish) function
+        function addJS_Node (text, s_URL, funcToRun, runOnLoad) {
+            alert('works');
+            var D = document;
+            var scriptNode = D.createElement ('script');
+            if(runOnLoad) {
+                scriptNode.addEventListener ("load", runOnLoad, false);
+            }
+            scriptNode.type                         = "text/javascript";
+            if (text)       scriptNode.textContent  = text;
+            if (s_URL)      scriptNode.src          = s_URL;
+            if (funcToRun)  scriptNode.textContent  = '(' + funcToRun.toString() + ')()';
+
+            var targ = D.getElementsByTagName ('head')[0] || D.body || D.documentElement;
+            targ.appendChild (scriptNode);
+        }
+        // botCarousel.on( "swipeleft", function() {
+        //     listScroll("next");
+        //     return false;
+        // });
+        // botCarousel.on( "swiperight", function() {
+        //     listScroll("prev");
+        //     return false;
+        // });
     }
 
     alignMessengerTextHeight();
