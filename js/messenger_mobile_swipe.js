@@ -4,11 +4,11 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 
 $(document).ready(function() {
     console.log('script working');
-    $('').on( "swipeleft", function() {
+    $('#botUsesCard').on( "swipeleft", function() {
         // $.mobile.changePage( next + ".html", { transition: "slide" });
         alert('swipe left is working');
     });
-    $('').on( "swiperight", function() {
+    $('#botUsesCard').on( "swiperight", function() {
         // $.mobile.changePage( next + ".html", { transition: "slide" });
         alert('swipe right is working');
     });
