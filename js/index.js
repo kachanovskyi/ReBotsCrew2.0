@@ -293,7 +293,7 @@ $(document).ready(function () {
                     }
                 }
             }
-            
+
             progressBarInit();
         }
     };
