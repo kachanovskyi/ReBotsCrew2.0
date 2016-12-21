@@ -324,7 +324,7 @@ $(document).ready(function () {
         return false;
     });
 
-    if( true ) {
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         console.log('here we are');
 
         addJS_Node (null, "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js", null, fireAfterLoad);
@@ -343,8 +343,8 @@ $(document).ready(function () {
 
         //-- addJS_Node is a standard(ish) function
         function addJS_Node (text, s_URL, funcToRun, runOnLoad) {
-            $.mobile.ajaxEnabled = false;
             var D = document;
+            // D.mobile.ajaxEnabled = false;
             var scriptNode = D.createElement ('script');
             if(runOnLoad) {
                 scriptNode.addEventListener ("load", runOnLoad, false);
@@ -353,6 +353,10 @@ $(document).ready(function () {
             if (text)       scriptNode.textContent  = text;
             if (s_URL)      scriptNode.src          = s_URL;
             if (funcToRun)  scriptNode.textContent  = '(' + funcToRun.toString() + ')()';
+
+            $( document ).on( "mobileinit", function() {
+                $.mobile.autoInitializePage = false; // This one does the job
+            });
 
             var targ = D.getElementsByTagName ('head')[0] || D.body || D.documentElement;
             targ.appendChild (scriptNode);
