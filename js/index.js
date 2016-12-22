@@ -203,6 +203,7 @@ $(document).ready(function () {
     };
 
     $(window).on("orientationchange",function(){
+        alert('orienation changed');
         messengerListResize();
     });
 
@@ -230,8 +231,7 @@ $(document).ready(function () {
             $(listElem[listElem.length - 1]).css('display', 'none');
         }
 
-        if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Chrome/i.test(navigator.userAgent)) {
-            alert('mobile phone');
+        if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             messengerListResize();
         }
 
@@ -331,12 +331,6 @@ $(document).ready(function () {
     });
 
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        //for videos to work correctly
-        var video = document.getElementById('video');
-        video.addEventListener('click',function(){
-            video.play();
-        },false);
-
         //uploading jquery.mobile scripts only for mobile for swipe event to work
         addJS_Node (null, "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js", null, fireAfterLoad);
 
