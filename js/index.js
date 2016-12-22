@@ -186,6 +186,27 @@ $(document).ready(function () {
     });
 
     var messengerListResize = function () {
+        var listElem = $('.slide-4 .bottom ul>li');
+        var windowWidth = $(window).width();
+        var scrollBarWidth = getScrollBarWidth();
+
+        $(listElem[0]).css('display', 'block');
+        $(listElem[listElem.length - 1]).css('display', 'block');
+
+        if(windowWidth <= (379 - scrollBarWidth)) {
+            displayAmount = 1;
+        } else if(windowWidth <= (575 - scrollBarWidth)) {
+            displayAmount = 2;
+        } else if(windowWidth <= (767 - scrollBarWidth)) {
+            displayAmount = 3;
+        } else if(windowWidth <= (999 - scrollBarWidth)) {
+            displayAmount = 4;
+        } else if(windowWidth > (999 - scrollBarWidth)) {
+            displayAmount = 6;
+            $(listElem[0]).css('display', 'none');
+            $(listElem[listElem.length - 1]).css('display', 'none');
+        }
+        
         for (var i = 1; i < listElem.length - 1; i++) {
             if (i <= displayAmount) {
                 $(listElem[i]).css('display', 'block');
@@ -210,27 +231,6 @@ $(document).ready(function () {
 
     var $rw = $(window).resize(function(){
         console.log('resized');
-        var listElem = $('.slide-4 .bottom ul>li');
-        var windowWidth = $(window).width();
-        var scrollBarWidth = getScrollBarWidth();
-
-        $(listElem[0]).css('display', 'block');
-        $(listElem[listElem.length - 1]).css('display', 'block');
-
-        if(windowWidth <= (379 - scrollBarWidth)) {
-            displayAmount = 1;
-        } else if(windowWidth <= (575 - scrollBarWidth)) {
-            displayAmount = 2;
-        } else if(windowWidth <= (767 - scrollBarWidth)) {
-            displayAmount = 3;
-        } else if(windowWidth <= (999 - scrollBarWidth)) {
-            displayAmount = 4;
-        } else if(windowWidth > (999 - scrollBarWidth)) {
-            displayAmount = 6;
-            $(listElem[0]).css('display', 'none');
-            $(listElem[listElem.length - 1]).css('display', 'none');
-        }
-
         if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             messengerListResize();
         }
