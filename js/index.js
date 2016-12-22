@@ -246,23 +246,6 @@ $(document).ready(function () {
         progressBarInit();
     };
 
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        $(window).resize(function()
-        {
-            if(document_width!=$(document).width() || document_height!=$(document).height())
-            {
-                document_width=$(document).width(); document_height=$(document).height();
-                alert('function will be called now');
-                messengerListResize();
-            }
-        });
-        // messengerListResize();
-    }
-    // $(window).on("orientationchange",function(){
-    //     messengerListResize();
-    // });
-
-
     var $rw = $(window).resize(function(){
         console.log('resized');
         if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
@@ -365,6 +348,17 @@ $(document).ready(function () {
     });
 
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        //displaying correct amount of messenger list items when resized on mobile
+        $(window).resize(function()
+        {
+            if(document_width!=$(document).width() || document_height!=$(document).height())
+            {
+                document_width=$(document).width(); document_height=$(document).height();
+                alert('function will be called now');
+                messengerListResize();
+            }
+        });
+
         //uploading jquery.mobile scripts only for mobile for swipe event to work
         addJS_Node (null, "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js", null, fireAfterLoad);
 
