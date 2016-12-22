@@ -215,7 +215,7 @@ $(document).ready(function () {
             }
         }
 
-        alert('it worked! Display amount: ' + displayAmount);
+        // alert('it worked! Display amount: ' + displayAmount);
 
         counter = 1;
         progressSlide = counter - 1;
