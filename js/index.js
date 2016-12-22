@@ -344,6 +344,16 @@ $(document).ready(function () {
                 listScroll("prev");
                 return false;
             });
+
+            var botCardCarousel = $('#carouselBotCard');
+            botCardCarousel.on( "swipeleft", function() {
+                $(this).carousel("next");
+                return false;
+            });
+            botCardCarousel.on( "swiperight", function() {
+                $(this).carousel("prev");
+                return false;
+            });
         }
 
         //-- addJS_Node is a standard(ish) function
