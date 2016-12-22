@@ -155,7 +155,7 @@ $(document).ready(function () {
 
         console.log(progressSlide);
         listItemLink.removeClass('active');
-        counter = (listItemLink.index(this));
+        counter = (listItemLink.index(this) + 1);
         progressSlide = counter - 1;
 
         progressBarInit();
@@ -231,8 +231,6 @@ $(document).ready(function () {
 
     $(window).on("orientationchange",function(){
         messengerListResize();
-        $('#listScrollPrev').trigger("click");
-        $('#listScrollNext').trigger("click");
     });
 
 
