@@ -135,8 +135,8 @@ $(document).ready(function () {
         $(listItem[counter]).append('<div class="progressbar-container"></div>');
         listItemLink.removeClass('active');
         listItem.removeClass('active');
-        $(listItemLink[counter]).addClass('active');
-        $($(listItemLink[counter]).parent()).addClass('active');
+        $(listItemLink[counter - 1]).addClass('active');
+        $($(listItem[counter])).addClass('active');
         if(bar) {
             bar.stop();
             bar.set(0.0);
@@ -164,6 +164,10 @@ $(document).ready(function () {
     });
 
     $('.bottom-list-item').click(function (e) {
+        if($(this).attr('id') === 'listSrollPrev') {
+            console.log('button previous clicked');
+            return;
+        }
         $($(this).find('a')).trigger("click");
         return false;
     });
