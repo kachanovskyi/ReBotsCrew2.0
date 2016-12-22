@@ -1,0 +1,33 @@
+<svg width="216" height="216" viewBox="0 0 216 216" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>3rd</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="matrix(2 0 0 2 1550 -1036)" figma:type="canvas">
+<g id="3rd" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Vector (Stroke)" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(-770.2 518)" fill="#2F80ED" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector (Stroke)" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="matrix(6.12323e-17 -1 1 6.12323e-17 -775 621.2)" fill="#2F80ED" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector 2 (Stroke)" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path1_fill" transform="translate(-770.32 520.16)" fill="#2F80ED" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector 2 (Stroke)" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path2_fill" transform="translate(-770.44 569.12)" fill="#2F80ED" fill-opacity="0.5" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path3_fill" transform="translate(-709.72 562.4)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse (Stroke)" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path4_fill" transform="translate(-710.92 561.2)" fill="#2F80ED" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 1.2 0C 1.86274 0 2.4 0.537258 2.4 1.2L 2.4 106.8C 2.4 107.463 1.86274 108 1.2 108C 0.537258 108 0 107.463 0 106.8L 0 1.2C 0 0.537258 0.537258 0 1.2 0Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 100.323 0.0564807C 100.955 0.256852 101.304 0.9314 101.104 1.56313L 87.5562 44.2766C 85.4971 50.7684 77.5876 53.2051 72.2324 48.9974C 68.918 46.3933 64.0975 47.1021 61.6731 50.5501L 50.1025 67.0061C 45.8202 71.8403 41.0545 72.265 36.8443 69.0803C 32.4492 65.7558 26.12 68.6446 25.7519 74.1431L 25.1755 82.7529C 24.9376 86.3057 22.8851 89.485 19.7451 91.1641L 1.76612 100.779C 1.18169 101.091 0.454566 100.871 0.142039 100.286C -0.170488 99.7018 0.0499296 98.9746 0.634355 98.6621L 18.6133 89.0477C 21.0231 87.7591 22.5983 85.3192 22.7808 82.5926L 23.3572 73.9828C 23.8528 66.5795 32.3745 62.6901 38.2921 67.1662C 41.4191 69.5315 45.8841 68.833 48.1393 65.6256L 59.7098 49.1697C 62.9254 44.5964 69.3192 43.6562 73.7151 47.1102C 77.7527 50.2826 83.7161 48.4455 85.2685 43.551L 98.8164 0.837518C 99.0168 0.205792 99.6913 -0.143891 100.323 0.0564807Z"/>
+<path id="path2_fill" fill-rule="evenodd" d="M 102.155 0.378196C 102.609 0.861132 102.585 1.62056 102.102 2.07444L 88.218 15.123C 85.0909 18.0619 80.4088 18.608 76.6892 16.4677C 72.0987 13.8262 66.3068 16.7673 65.7311 22.0322L 65.7241 22.0968C 65.1377 27.4595 60.3208 31.3355 54.9568 30.7608L 44.889 29.6821C 41.1666 29.2833 37.9203 32.2004 37.9203 35.9441C 37.9203 39.9147 35.2314 43.3812 31.3855 44.3687L 1.49872 52.0423C 0.856797 52.2071 0.202807 51.8204 0.0379897 51.1784C -0.126828 50.5365 0.259941 49.8825 0.901861 49.7177L 30.7887 42.0441C 33.5733 41.3291 35.5203 38.8191 35.5203 35.9441C 35.5203 30.7737 40.0038 26.7449 45.1447 27.2958L 55.2125 28.3744C 59.2606 28.8082 62.8958 25.8831 63.3383 21.8359L 63.3453 21.7713C 64.1092 14.7851 71.7948 10.8823 77.8862 14.3875C 80.6893 16.0005 84.2178 15.5889 86.5744 13.3741L 100.458 0.325571C 100.941 -0.128301 101.701 -0.10474 102.155 0.378196Z"/>
+<path id="path3_fill" d="M 9.6 4.8C 9.6 7.45097 7.45097 9.6 4.8 9.6C 2.14903 9.6 0 7.45097 0 4.8C 0 2.14903 2.14903 0 4.8 0C 7.45097 0 9.6 2.14903 9.6 4.8Z"/>
+<path id="path4_fill" fill-rule="evenodd" d="M 6 2.4C 4.01178 2.4 2.4 4.01178 2.4 6C 2.4 7.98822 4.01178 9.6 6 9.6C 7.98822 9.6 9.6 7.98822 9.6 6C 9.6 4.01178 7.98822 2.4 6 2.4ZM 0 6C 0 2.68629 2.68629 0 6 0C 9.31371 0 12 2.68629 12 6C 12 9.31371 9.31371 12 6 12C 2.68629 12 0 9.31371 0 6Z"/>
+</defs>
+</svg>

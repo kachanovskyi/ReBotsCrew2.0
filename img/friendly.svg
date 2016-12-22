@@ -1,0 +1,48 @@
+<svg width="126" height="198" viewBox="0 0 126 198" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>2nd</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="matrix(2 0 0 2 2318 -1054)" figma:type="canvas">
+<g id="2nd" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Ellipse 4 (Stroke)" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(-1157.25 554.849)" fill="#91B9EF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 5" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path1_fill" transform="translate(-1156.05 563.454)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 5" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path1_fill" transform="translate(-1103.35 563.454)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 3 (Stroke)" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path2_fill" transform="translate(-1151.05 544.332)" fill="#91B9EF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 4 (Stroke)" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path3_fill" transform="translate(-1135.78 535.727)" fill="#91B9EF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path4_fill" transform="translate(-1138.65 576.6)" fill="#91B9EF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path4_fill" transform="translate(-1122.43 576.6)" fill="#91B9EF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 3" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path5_fill" transform="translate(-1131.96 588.073)" fill="#91B9EF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse 3 (Stroke)" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path6_fill" transform="translate(-1133.16 586.878)" fill="#91B9EF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 2 (Stroke)" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path7_fill" transform="translate(-1158.2 527.6)" fill="#2F80ED" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 30.0462 2.39024C 14.7691 2.39024 2.38462 14.804 2.38462 30.1171C 2.38462 45.4302 14.7691 57.8439 30.0462 57.8439C 45.3232 57.8439 57.7077 45.4302 57.7077 30.1171C 57.7077 14.804 45.3232 2.39024 30.0462 2.39024ZM 0 30.1171C 0 13.4839 13.4521 0 30.0462 0C 46.6402 0 60.0923 13.4839 60.0923 30.1171C 60.0923 46.7502 46.6402 60.2341 30.0462 60.2341C 13.4521 60.2341 0 46.7502 0 30.1171Z"/>
+<path id="path1_fill" d="M 0 0L 5.00769 0L 5.00769 42.3073L 0 42.3073L 0 0Z"/>
+<path id="path2_fill" fill-rule="evenodd" d="M 0 2.15122C 0 0.963133 0.960866 0 2.14615 0L 45.5462 0C 46.7314 0 47.6923 0.963133 47.6923 2.15122L 47.6923 79.117C 47.6923 80.3051 46.7314 81.2682 45.5462 81.2682L 2.14615 81.2682C 0.960866 81.2682 0 80.3051 0 79.117L 0 2.15122ZM 2.38462 2.39024L 2.38462 78.878L 45.3077 78.878L 45.3077 2.39024L 2.38462 2.39024Z"/>
+<path id="path3_fill" fill-rule="evenodd" d="M 1.43077 0C 0.640577 0 0 0.642089 0 1.43415C 0 2.2262 0.640577 2.86829 1.43077 2.86829L 15.7385 2.86829C 16.5287 2.86829 17.1692 2.2262 17.1692 1.43415C 17.1692 0.642089 16.5287 0 15.7385 0L 1.43077 0Z"/>
+<path id="path4_fill" d="M 6.67692 3.34634C 6.67692 5.19447 5.18224 6.69268 3.33846 6.69268C 1.49468 6.69268 0 5.19447 0 3.34634C 0 1.49821 1.49468 0 3.33846 0C 5.18224 0 6.67692 1.49821 6.67692 3.34634Z"/>
+<path id="path5_fill" d="M 4.76365 4.78049C 7.31768 4.78049 9.4028 2.76815 9.52703 0.238991C 9.5335 0.107142 9.42612 0 9.29442 0L 0.232884 0C 0.101185 0 -0.00619795 0.107142 0.000278375 0.238992C 0.124508 2.76815 2.20963 4.78049 4.76365 4.78049Z"/>
+<path id="path6_fill" fill-rule="evenodd" d="M 2.58251 2.39024C 3.07345 3.78254 4.39872 4.78049 5.95605 4.78049C 7.51338 4.78049 8.83865 3.78254 9.32959 2.39024L 2.58251 2.39024ZM 9.52856 1.37534C 9.52855 1.37553 9.52854 1.37573 9.52853 1.37592ZM 0.00180996 1.49288C -0.0400719 0.640221 0.651153 0 1.42528 0L 10.4868 0C 11.2609 0 11.9522 0.640218 11.9103 1.49289C 11.755 4.65531 9.14893 7.17073 5.95605 7.17073C 2.76317 7.17073 0.157145 4.65531 0.00180996 1.49288Z"/>
+<path id="path7_fill" fill-rule="evenodd" d="M 0 5.97561C 0 2.67537 2.66907 0 5.96154 0L 56.0385 0C 59.3309 0 62 2.67537 62 5.97561L 62 96.8048C 62 97.4649 61.4662 98 60.8077 98C 60.1492 98 59.6154 97.4649 59.6154 96.8048L 59.6154 5.97561C 59.6154 3.99547 58.0139 2.39024 56.0385 2.39024L 5.96154 2.39024C 3.98606 2.39024 2.38462 3.99547 2.38462 5.97561L 2.38462 96.8048C 2.38462 97.4649 1.8508 98 1.19231 98C 0.533814 98 0 97.4649 0 96.8048L 0 5.97561Z"/>
+</defs>
+</svg>
