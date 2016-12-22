@@ -230,7 +230,8 @@ $(document).ready(function () {
             $(listElem[listElem.length - 1]).css('display', 'none');
         }
 
-        if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Chrome/i.test(navigator.userAgent)) {
+            alert('mobile phone');
             messengerListResize();
         }
 
