@@ -207,7 +207,6 @@ $(document).ready(function () {
             $(listElem[listElem.length - 1]).css('display', 'none');
         }
 
-        alert('it worked! Display amount: ' + displayAmount);
         for (var i = 1; i < listElem.length - 1; i++) {
             if (i <= displayAmount) {
                 $(listElem[i]).css('display', 'block');
@@ -215,6 +214,8 @@ $(document).ready(function () {
                 $(listElem[i]).css('display', 'none');
             }
         }
+
+        alert('it worked! Display amount: ' + displayAmount);
 
         counter = 1;
         progressSlide = counter - 1;
@@ -225,7 +226,6 @@ $(document).ready(function () {
     };
 
     $(window).on("orientationchange",function(){
-        alert('orienation changed');
         messengerListResize();
     });
 
