@@ -40,8 +40,13 @@ var initBarObj = function () {
 };
 
 $(document).ready(function () {
-    var figure = $(".item").hover(hoverVideo, hideVideo);
-    var figure1 = $(".item").click(hoverVideo);
+    var slide2 = $(".slide-2");
+    var figure2 = slide2.hover(hoverVideo, hideVideo);
+    var figure21 = slide2.click(hoverVideo);
+
+    var slide6 = $(".slide-6");
+    var figure6 = slide6.hover(hoverVideo, hideVideo);
+    var figure61 = slide6.click(hoverVideo);
 
     function hoverVideo(e) {
         $('video', this).get(0).play();
@@ -354,7 +359,6 @@ $(document).ready(function () {
             if(document_width!=$(document).width() || document_height!=$(document).height())
             {
                 document_width=$(document).width(); document_height=$(document).height();
-                alert('function will be called now');
                 messengerListResize();
             }
         });
