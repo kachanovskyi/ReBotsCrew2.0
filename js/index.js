@@ -39,6 +39,21 @@ var initBarObj = function () {
     });
 };
 
+var myVar = 0;
+
+Object.defineProperty(this, 'displayAmount', {
+    get: function () { return myVar; },
+    set: function (v) {
+        myVar = v;
+        console.log('Value changed! New value: ' + v);
+        alert(v);
+    }
+});
+
+// console.log(varWatch);
+// varWatch = 456;
+// console.log(varWatch);
+
 $(document).ready(function () {
     var figure = $(".video").hover(hoverVideo, hideVideo);
     var figure1 = $(".video").click(hoverVideo);
@@ -61,7 +76,7 @@ $(document).ready(function () {
     var counter = 1;
     var listElem = $('.slide-4 .bottom ul>li');
     var botCarousel = $('#botUsesCard');
-    var displayAmount = 0;
+    // var displayAmount = 0;
     for (var i = 1; i < listElem.length - 1; i++) {
         if($(listElem[i]).css('display') === 'block') {
             displayAmount++;
