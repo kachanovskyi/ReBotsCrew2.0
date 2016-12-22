@@ -231,6 +231,8 @@ $(document).ready(function () {
 
     $(window).on("orientationchange",function(){
         messengerListResize();
+        $('#listScrollPrev').trigger("click");
+        $('#listScrollNext').trigger("click");
     });
 
 
