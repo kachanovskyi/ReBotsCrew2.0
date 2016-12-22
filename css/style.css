@@ -254,6 +254,7 @@ nav ul>li.careers{margin-right:15px}
     float: left;
     position: relative;
     background-color: #205EB4;
+    overflow: hidden;
 }
 .slide-4 .bottom ul>li.active {
     background: #448EEF;
@@ -458,9 +459,9 @@ nav ul>li.careers{margin-right:15px}
     display: block;
     position: absolute;
     left: 0;
-    bottom: 35px;
+    bottom: 41%;
     width: 100%;
-    height: 6px;
+    height: 6%;
 }
 
 .slide-7 {
