@@ -39,21 +39,6 @@ var initBarObj = function () {
     });
 };
 
-var myVar = 0;
-
-Object.defineProperty(this, 'displayAmount', {
-    get: function () { return myVar; },
-    set: function (v) {
-        myVar = v;
-        console.log('Value changed! New value: ' + v);
-        alert(v);
-    }
-});
-
-// console.log(varWatch);
-// varWatch = 456;
-// console.log(varWatch);
-
 $(document).ready(function () {
     var figure = $(".video").hover(hoverVideo, hideVideo);
     var figure1 = $(".video").click(hoverVideo);
@@ -69,6 +54,9 @@ $(document).ready(function () {
     $("video").prop('muted', true);
 
 
+    var document_width, document_height;
+    document_width=$(document).width(); document_height=$(document).height();
+
     var barInitialized = false;
     var bar;
     var timer;
@@ -76,7 +64,7 @@ $(document).ready(function () {
     var counter = 1;
     var listElem = $('.slide-4 .bottom ul>li');
     var botCarousel = $('#botUsesCard');
-    // var displayAmount = 0;
+    var displayAmount = 0;
     for (var i = 1; i < listElem.length - 1; i++) {
         if($(listElem[i]).css('display') === 'block') {
             displayAmount++;
@@ -258,14 +246,26 @@ $(document).ready(function () {
         progressBarInit();
     };
 
-    $(window).on("orientationchange",function(){
-        messengerListResize();
-    });
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        $(window).resize(function()
+        {
+            if(document_width!=$(document).width() || document_height!=$(document).height())
+            {
+                document_width=$(document).width(); document_height=$(document).height();
+                alert('function will be called now');
+                messengerListResize();
+            }
+        });
+        // messengerListResize();
+    }
+    // $(window).on("orientationchange",function(){
+    //     messengerListResize();
+    // });
 
 
     var $rw = $(window).resize(function(){
         console.log('resized');
-        if( !/webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             messengerListResize();
         }
 
