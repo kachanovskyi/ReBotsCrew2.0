@@ -40,6 +40,20 @@ var initBarObj = function () {
 };
 
 $(document).ready(function () {
+    var figure = $(".video").hover(hoverVideo, hideVideo);
+    var figure1 = $(".video").click(hoverVideo);
+
+    function hoverVideo(e) {
+        $('video', this).get(0).play();
+    }
+
+    function hideVideo(e) {
+        $('video', this).get(0).pause();
+    }
+
+    $("video").prop('muted', true);
+
+
     var barInitialized = false;
     var bar;
     var timer;
