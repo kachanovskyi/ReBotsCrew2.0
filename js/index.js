@@ -206,7 +206,8 @@ $(document).ready(function () {
             $(listElem[0]).css('display', 'none');
             $(listElem[listElem.length - 1]).css('display', 'none');
         }
-        
+
+        alert('it worked! Display amount: ' + displayAmount);
         for (var i = 1; i < listElem.length - 1; i++) {
             if (i <= displayAmount) {
                 $(listElem[i]).css('display', 'block');
