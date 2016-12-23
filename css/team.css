@@ -22,7 +22,10 @@ p {
     color: #2F80ED;
 }
 .learn-more-link:hover, .learn-more-link:visited {
-    color: #2F80ED;
+    color: #205EB4;
+}
+.learn-more-link:hover {
+    text-decoration: underline !important;
 }
 
 .bot-btn.white {

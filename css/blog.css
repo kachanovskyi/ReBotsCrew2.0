@@ -59,6 +59,10 @@ h1, h2, p, a {
     width: 100%;
 }
 
+.article .preview-text h2:hover {
+    text-decoration: underline;
+}
+
 .article.article-5 .preview-img {
     background: url("../img/musement_contract.jpg");
 }

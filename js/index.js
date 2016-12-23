@@ -40,25 +40,6 @@ var initBarObj = function (time) {
 };
 
 $(document).ready(function () {
-    var slide2 = $(".slide-2");
-    var figure2 = slide2.hover(hoverVideo, hideVideo);
-    var figure21 = slide2.click(hoverVideo);
-
-    var slide6 = $(".slide-6");
-    var figure6 = slide6.hover(hoverVideo, hideVideo);
-    var figure61 = slide6.click(hoverVideo);
-
-    function hoverVideo(e) {
-        $('video', this).get(0).play();
-    }
-
-    function hideVideo(e) {
-        $('video', this).get(0).pause();
-    }
-
-    $("video").prop('muted', true);
-
-
     var document_width, document_height;
     document_width=$(document).width(); document_height=$(document).height();
 
@@ -78,7 +59,7 @@ $(document).ready(function () {
 
     //.bot-example scripts
 
-    var slideTimes = [18000, 10000, 8000, 18000, 8000, 4000];
+    var slideTimes = [18000, 10000, 8000, 18000, 8000, 12000];
     var phrases = [
         [
             { type: 'person', phrase: 'Hello! I want to order a table for me and my friend' },
@@ -126,16 +107,16 @@ $(document).ready(function () {
             { type: 'bot', phrase: 'Dunkirk is an upcoming British epic war film written, co-produced and directed by Christopher Nolan. The story is set in World War II during the Dunkirk evacuation. ' },
         ],
         [
-            { type: 'person', phrase: 'Hi' },
-            { type: 'bot', phrase: 'Hey' },
-            { type: 'person', phrase: 'Hi' },
-            { type: 'bot', phrase: 'Hey' },
-            { type: 'person', phrase: 'Hi' }
+            { type: 'person', phrase: 'Hey, I want to book a room in your hotel.' },
+            { type: 'bot', phrase: 'Sure, when are you going to check-in?' },
+            { type: 'person', phrase: 'Tomorrow' },
+            { type: 'bot', phrase: 'And what is your check-out date?' },
+            { type: 'person', phrase: '4 January' },
+            { type: 'bot', phrase: 'Great, your room was successfully booked' }
         ]
     ];
     var current;
 
-    console.log((listElem.length - 1));
     for (i = 0; i < (listElem.length - 2); i++) {
         for (var j = 0; j < phrases[i].length; j++) {
             // console.log('bot-example should have number ' + (i-1));
@@ -221,10 +202,10 @@ $(document).ready(function () {
         $('#botUsesCard').carousel(+$(this).attr('data-id'));
         var listItemLink = $('.slide-4 .bottom ul>li>a');
 
-        console.log(progressSlide);
         listItemLink.removeClass('active');
         counter = (listItemLink.index(this) + 1);
         progressSlide = counter - 1;
+        console.log(progressSlide);
 
         progressBarInit();
 
@@ -325,7 +306,6 @@ $(document).ready(function () {
             counter++;
             if(counter > 6) {
                 counter = 1;
-                console.log('counter = 1!!!');
             }
             progressSlide = counter - 1;
             $('#listScrollNext').each(function (){
@@ -397,6 +377,26 @@ $(document).ready(function () {
         return false;
     });
 
+    if(/Android/i.test(navigator.userAgent)) {
+        var slide2 = $(".slide-2");
+        var figure2 = slide2.hover(hoverVideo, hideVideo);
+        var figure21 = slide2.click(hoverVideo);
+
+        var slide6 = $(".slide-6");
+        var figure6 = slide6.hover(hoverVideo, hideVideo);
+        var figure61 = slide6.click(hoverVideo);
+
+        function hoverVideo(e) {
+            $('video', this).get(0).play();
+        }
+
+        function hideVideo(e) {
+            $('video', this).get(0).pause();
+        }
+
+        $("video").prop('muted', true);
+    }
+
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         //displaying correct amount of messenger list items when resized on mobile
         $(window).resize(function()
@@ -461,10 +461,20 @@ $(document).ready(function () {
 
     //disable budgetSelect if selected smth else, but creating bot
     $('#purposeSelect').change(function() {
-        if ($(this).val() === $($(this)[0][0]).val()){
+        if($(this).val() === $($(this)[0][0]).val()){
             document.getElementById("budgetSelect").disabled = false;
-        } else {
-            document.getElementById("budgetSelect").disabled = true;
+            return;
         }
-    })
+        document.getElementById("budgetSelect").disabled = true;
+    });
+
+    $('#enterprise').click(function () {
+        $('#budgetSelect').val("Enterprise");
+    });
+    $('#prototype').click(function () {
+        $('#budgetSelect').val("Prototype");
+    });
+    $('#startup').click(function () {
+        $('#budgetSelect').val("Startup");
+    });
 });

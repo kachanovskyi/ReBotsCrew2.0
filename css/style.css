@@ -837,7 +837,8 @@ nav ul>li.careers{margin-right:15px}
 
 .slide-10 .social-icon.right {
     width: 48px;
-    margin: 4% 0 2% 5%
+    margin: 4% 0 2% 5%;
+    padding: 0 6px 6px 6px;
 }
 
 #footer {
@@ -1402,6 +1403,10 @@ nav ul>li.careers{margin-right:15px}
         padding-left: 0;
     }
 
+    .slide-3 {
+        padding-bottom: 60px;
+    }
+
     .slide-3 .top {
         text-align: left;
     }
@@ -1653,7 +1658,7 @@ nav ul>li.careers{margin-right:15px}
     }
 
     .carousel-control.left, .carousel-control.right {
-        padding-top: 500px;
+        padding-top: 600px;
     }
 }
 
