@@ -163,7 +163,7 @@ nav ul>li.careers{margin-right:15px}
     font-size: 18px;
     line-height: 140%;
     color: #828282;
-    margin: 0 auto 55px auto;
+    margin: 0 auto 60px auto;
 }
 
 .slide-3 .bots-advantages {
@@ -405,6 +405,7 @@ nav ul>li.careers{margin-right:15px}
     font-size: 28px;
     line-height: 100%;
     color: #4F4F4F;
+    margin-top: 18%;
 }
 
 .slide-6 p {
@@ -1032,8 +1033,8 @@ nav ul>li.careers{margin-right:15px}
         width: 50%;
     }
 
-    .musement {
-        margin-top: 33px;
+    .musement{
+        margin-top: 60px;
     }
 
     .menu-item.bot-btn.blue-dark-blue.messenger {
@@ -1250,9 +1251,14 @@ nav ul>li.careers{margin-right:15px}
 
     .slide-6 .bot-card p.description {
         width: 100%;
+        margin-bottom: 30px;
     }
     .slide-6 .bot-card p, .slide-6 .bot-card h2 {
         margin: 20px auto;
+    }
+
+    .slide-6 .top p {
+        margin-bottom: 0;
     }
 
     .slide-7 .content p {
@@ -1270,6 +1276,10 @@ nav ul>li.careers{margin-right:15px}
 
     .slide-8 .pricing .block .top-subblock {
         background: #2F80ED;
+    }
+
+    .slide-10 .top {
+        padding-top: 0;
     }
 
     .bot-btn.select-side {

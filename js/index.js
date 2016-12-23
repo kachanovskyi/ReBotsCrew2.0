@@ -28,10 +28,10 @@ var getScrollBarWidth = function () {
     return 100 - widthWithScroll;
 };
 
-var initBarObj = function () {
+var initBarObj = function (time) {
     return new ProgressBar.Line('.progressbar-container', {
         strokeWidth: 1,
-        duration: 16000,
+        duration: time,
         color: '#2F80ED',
         trailColor: '#DFDFDF',
         trailWidth: 6,
@@ -77,25 +77,69 @@ $(document).ready(function () {
     }
 
     //.bot-example scripts
+
+    var slideTimes = [18000, 10000, 8000, 18000, 8000, 4000];
     var phrases = [
-        { type: 'person', phrase: '1.You dude!' },
-        { type: 'bot', phrase: '2.Aloha! How can I help You?' },
-        { type: 'person', phrase: '3.Can you book a table in one of the nearest 5-stars rated pizzerias?' },
-        { type: 'bot', phrase: '4.Sure! Let\'s find the best one for You' },
-        { type: 'person', phrase: '5.You dude!' },
-        { type: 'bot', phrase: '6.Aloha! How can I help You?' },
-        { type: 'person', phrase: '7.Can you book a table in one of the nearest 5-stars rated pizzerias?' },
-        { type: 'bot', phrase: '8.Sure! Let\'s find the best one for You' }
+        [
+            { type: 'person', phrase: 'Hello! I want to order a table for me and my friend' },
+            { type: 'bot', phrase: 'Sure. When are you going to come?' },
+            { type: 'person', phrase: 'Today at 5:00 PM.' },
+            { type: 'bot', phrase: 'Got it. You want a table for 2 at 5:00 PM today.' },
+            { type: 'bot', phrase: 'What will you be having?' },
+            { type: 'person', phrase: '2 Vella Burgers please' },
+            { type: 'bot', phrase: ' Got it! Anything else?' },
+            { type: 'person', phrase: 'No, thanks.' },
+            { type: 'bot', phrase: 'Great! Your table successfully booked. We’ll be waiting for you' }
+        ],
+        [
+            { type: 'person', phrase: 'Hey, my internet connection isn’t working. How can fix that issue?' },
+            { type: 'bot', phrase: 'Hmm.. Let me check that for you.  Have you tried to reload your router?' },
+            { type: 'person', phrase: 'One moment' },
+            { type: 'person', phrase: 'Oh thanks. Everything is okay right now.' },
+            { type: 'bot', phrase: 'You’re welcome!' }
+        ],
+        [
+            { type: 'person', phrase: 'Hi, I am going to visit Milan this week. Can you change my payment limit to $2.000?' },
+            { type: 'bot', phrase: 'Of course. Your limit will be changed shortly.' },
+            { type: 'person', phrase: 'Great, show me what is my current balance?' },
+            { type: 'bot', phrase: 'Your balance: $23.000.' },
+            { type: 'person', phrase: 'And how much I spent last month?' },
+            { type: 'bot', phrase: 'You outcome: $2840. Do you want to check more details?' },
+            { type: 'person', phrase: 'No, thanks.' },
+            { type: 'bot', phrase: 'You’re welcome' }
+        ],
+        [
+            { type: 'person', phrase: 'Yo. I wanna black Nike Kaishi sneakers.' },
+            { type: 'bot', phrase: 'This one?' },
+            { type: 'bot', phrase: '{photo}' },
+            { type: 'person', phrase: 'Yes, absolutely.' },
+            { type: 'bot', phrase: 'Specify your size please.' },
+            { type: 'person', phrase: '7' },
+            { type: 'bot', phrase: 'Got it! Where need to be delivered, home or office?' },
+            { type: 'person', phrase: 'Home please' },
+            { type: 'bot', phrase: 'Thanks for your order. Our courier will contact you shortly.' }
+        ],
+        [
+            { type: 'person', phrase: 'What is the best TV show of 2016?' },
+            { type: 'bot', phrase: 'According to IMDB rating the best TV show of is Game Of Thrones' },
+            { type: 'person', phrase: 'What is the movie Dunkirk about?' },
+            { type: 'bot', phrase: 'Dunkirk is an upcoming British epic war film written, co-produced and directed by Christopher Nolan. The story is set in World War II during the Dunkirk evacuation. ' },
+        ],
+        [
+            { type: 'person', phrase: 'Hi' },
+            { type: 'bot', phrase: 'Hey' }
+        ]
     ];
     var current;
 
-    for (i = 1; i < (listElem.length - 1); i++) {
-        for (var j = 0; j < phrases.length; j++) {
+    console.log((listElem.length - 1));
+    for (i = 0; i < (listElem.length - 2); i++) {
+        for (var j = 0; j < phrases[i].length; j++) {
             // console.log('bot-example should have number ' + (i-1));
-            var example = $($('.bot-example')[i - 1]);
+            var example = $($('.bot-example')[i]);
             var div = document.createElement('div');
-            div.className = "phrase-box " + phrases[j].type;
-            div.innerHTML = phrases[j].phrase;
+            div.className = "phrase-box " + phrases[i][j].type;
+            div.innerHTML = phrases[i][j].phrase;
             $(div).appendTo(example);
         }
     }
@@ -105,13 +149,12 @@ $(document).ready(function () {
         clearTimeout(timer);
 
         var example = $($('.bot-example')[progressSlide]);
-        for (var i = 0; i < phrases.length; i++) {
+        for (var i = 0; i < phrases[progressSlide].length; i++) {
             $(example.children()[i]).css('visibility', 'visible');
         }
         example.css('visibility', 'visible');
         var bottom = example.outerHeight();
         example.css('bottom', -bottom);
-
         timer = setTimeout(function message() {
             if ( ($w.scrollTop() > $('.slide-5').offset().top) ) {
                 clearTimeout(timer);
@@ -163,7 +206,7 @@ $(document).ready(function () {
             bar.stop();
             bar.set(0.0);
         }
-        bar = initBarObj();
+        bar = initBarObj(slideTimes[progressSlide]);
 
         bar.animate(1.0, function() {
             listScroll("next");
