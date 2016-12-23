@@ -377,7 +377,7 @@ $(document).ready(function () {
         return false;
     });
 
-    if(/Android/i.test(navigator.userAgent)) {
+    if(/Android|IEMobile/i.test(navigator.userAgent)) {
         var slide2 = $(".slide-2");
         var figure2 = slide2.hover(hoverVideo, hideVideo);
         var figure21 = slide2.click(hoverVideo);
@@ -385,6 +385,20 @@ $(document).ready(function () {
         var slide6 = $(".slide-6");
         var figure6 = slide6.hover(hoverVideo, hideVideo);
         var figure61 = slide6.click(hoverVideo);
+
+        function hoverVideo(e) {
+            $('video', this).get(0).play();
+        }
+
+        function hideVideo(e) {
+            $('video', this).get(0).pause();
+        }
+
+        $("video").prop('muted', true);
+    } else if( /webOS|iPhone|iPad|iPod|BlackBerry|Opera Mini/i.test(navigator.userAgent) ) {
+        var video = $(".video");
+        var figure = video.hover(hoverVideo, hideVideo);
+        var figure1 = video.click(hoverVideo);
 
         function hoverVideo(e) {
             $('video', this).get(0).play();
