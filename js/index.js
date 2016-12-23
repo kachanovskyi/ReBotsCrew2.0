@@ -127,7 +127,10 @@ $(document).ready(function () {
         ],
         [
             { type: 'person', phrase: 'Hi' },
-            { type: 'bot', phrase: 'Hey' }
+            { type: 'bot', phrase: 'Hey' },
+            { type: 'person', phrase: 'Hi' },
+            { type: 'bot', phrase: 'Hey' },
+            { type: 'person', phrase: 'Hi' }
         ]
     ];
     var current;
@@ -179,7 +182,7 @@ $(document).ready(function () {
             example.animate({
                 bottom: "+=" + ($(phraseObj).outerHeight() + 10)
             }, 244, function () {
-                for (var i = 0; i < phrases.length; i++) {
+                for (var i = 0; i < phrases[progressSlide].length; i++) {
                     if ($(example.children()[i]).offset().top <= $($('.bot-example-wrapper')[progressSlide]).offset().top) {
                         $(example.children()[i]).css('visibility', 'hidden');
                     }
