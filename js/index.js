@@ -58,7 +58,6 @@ $(document).ready(function () {
     }
 
     //.bot-example scripts
-
     var slideTimes = [18000, 10000, 8000, 18000, 8000, 12000];
     var phrases = [
         [
@@ -92,7 +91,7 @@ $(document).ready(function () {
         [
             { type: 'person', phrase: 'Yo. I wanna black Nike Kaishi sneakers.' },
             { type: 'bot', phrase: 'This one?' },
-            { type: 'bot', phrase: '<img style="width: 222px" src="img/kaishi.png"/>' },
+            { type: 'bot', phrase: '<img style="width: 222px; max-width: 100%;" src="img/kaishi.png"/>' },
             { type: 'person', phrase: 'Yes, absolutely.' },
             { type: 'bot', phrase: 'Specify your size please.' },
             { type: 'person', phrase: '7' },
@@ -377,6 +376,14 @@ $(document).ready(function () {
         return false;
     });
 
+    function hoverVideo(e) {
+        $('video', this).get(0).play();
+    }
+
+    function hideVideo(e) {
+        $('video', this).get(0).pause();
+    }
+
     if(/Android|IEMobile/i.test(navigator.userAgent)) {
         var slide2 = $(".slide-2");
         var figure2 = slide2.hover(hoverVideo, hideVideo);
@@ -386,27 +393,10 @@ $(document).ready(function () {
         var figure6 = slide6.hover(hoverVideo, hideVideo);
         var figure61 = slide6.click(hoverVideo);
 
-        function hoverVideo(e) {
-            $('video', this).get(0).play();
-        }
-
-        function hideVideo(e) {
-            $('video', this).get(0).pause();
-        }
-
-        $("video").prop('muted', true);
     } else if( /webOS|iPhone|iPad|iPod|BlackBerry|Opera Mini/i.test(navigator.userAgent) ) {
         var video = $(".video");
         var figure = video.hover(hoverVideo, hideVideo);
         var figure1 = video.click(hoverVideo);
-
-        function hoverVideo(e) {
-            $('video', this).get(0).play();
-        }
-
-        function hideVideo(e) {
-            $('video', this).get(0).pause();
-        }
 
         $("video").prop('muted', true);
     }

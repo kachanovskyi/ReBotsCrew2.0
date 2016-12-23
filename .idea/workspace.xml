@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b84ffc62-3f88-4b9b-862e-881918df00ee" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/careers.html" afterPath="$PROJECT_DIR$/careers.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/index.js" afterPath="$PROJECT_DIR$/js/index.js" />
     </list>
     <ignored path="botscrew 2.0.iws" />
@@ -43,11 +41,12 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="400" column="36" selection-start-line="400" selection-start-column="36" selection-end-line="400" selection-end-column="36" />
+            <state relative-caret-position="68">
+              <caret line="93" column="78" selection-start-line="93" selection-start-column="78" selection-end-line="93" selection-end-column="78" />
               <folding>
-                <marker date="1482510183633" expanded="true" signature="4012:4024" placeholder="..." />
-                <marker date="1482510183633" expanded="true" signature="4022:4024" placeholder="..." />
+                <marker date="1482510511667" expanded="true" signature="4011:4023" placeholder="..." />
+                <marker date="1482510511667" expanded="true" signature="4011:4041" placeholder="..." />
+                <marker date="1482510511667" expanded="true" signature="4021:4023" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -416,12 +415,12 @@
       <workItem from="1482335721369" duration="36000" />
       <workItem from="1482335819440" duration="1061000" />
       <workItem from="1482396105809" duration="21522000" />
-      <workItem from="1482478794551" duration="20543000" />
+      <workItem from="1482478794551" duration="20871000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="730682000" />
+    <option name="totallyTimeSpent" value="731010000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -788,11 +787,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="400" column="36" selection-start-line="400" selection-start-column="36" selection-end-line="400" selection-end-column="36" />
+        <state relative-caret-position="68">
+          <caret line="93" column="78" selection-start-line="93" selection-start-column="78" selection-end-line="93" selection-end-column="78" />
           <folding>
-            <marker date="1482510183633" expanded="true" signature="4012:4024" placeholder="..." />
-            <marker date="1482510183633" expanded="true" signature="4022:4024" placeholder="..." />
+            <marker date="1482510511667" expanded="true" signature="4011:4023" placeholder="..." />
+            <marker date="1482510511667" expanded="true" signature="4011:4041" placeholder="..." />
+            <marker date="1482510511667" expanded="true" signature="4021:4023" placeholder="..." />
           </folding>
         </state>
       </provider>
