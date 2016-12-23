@@ -92,7 +92,7 @@ $(document).ready(function () {
         [
             { type: 'person', phrase: 'Yo. I wanna black Nike Kaishi sneakers.' },
             { type: 'bot', phrase: 'This one?' },
-            { type: 'bot', phrase: '{photo}' },
+            { type: 'bot', phrase: '<img style="width: 222px" src="img/kaishi.png"/>' },
             { type: 'person', phrase: 'Yes, absolutely.' },
             { type: 'bot', phrase: 'Specify your size please.' },
             { type: 'person', phrase: '7' },
