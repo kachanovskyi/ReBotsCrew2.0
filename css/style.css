@@ -781,6 +781,9 @@ nav ul>li.careers{margin-right:15px}
     font-weight: 300;
     color: #FFFFFF;
 }
+#contact-form select:hover {
+    cursor: pointer;
+}
 #contact-form select option.background{
     background: #205EB4;
     font-weight: 300;
