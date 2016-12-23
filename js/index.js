@@ -252,7 +252,6 @@ $(document).ready(function () {
     };
 
     var $rw = $(window).resize(function(){
-        console.log('resized');
         if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             messengerListResize();
         }
@@ -413,4 +412,13 @@ $(document).ready(function () {
     alignMessengerTextHeight();
     alignPricingBlocks();
     autosize($('textarea'));
+
+    //disable budgetSelect if selected smth else, but creating bot
+    $('#purposeSelect').change(function() {
+        if ($(this).val() === $($(this)[0][0]).val()){
+            document.getElementById("budgetSelect").disabled = false;
+        } else {
+            document.getElementById("budgetSelect").disabled = true;
+        }
+    })
 });

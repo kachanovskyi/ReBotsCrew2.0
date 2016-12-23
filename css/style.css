@@ -144,20 +144,19 @@ nav ul>li.careers{margin-right:15px}
 
 .slide-3 .top {
     text-align: center;
-    padding-top: 40px;
 }
 
 .slide-3 h2 {
     font-size: 28px;
     line-height: 100%;
     color: #4F4F4F;
-    padding-top: 11px;
-    padding-bottom: 22px;
+    margin: 60px auto 30px auto;
 }
 
 .slide-3 h3 {
     color: #828282;
     font-size: 22px;
+    margin-bottom: 60px;
 }
 
 .slide-3 p {
@@ -175,10 +174,10 @@ nav ul>li.careers{margin-right:15px}
     height: 144px;
 }
 .slide-3 .bots-advantages p {
-    margin: 44px 20px 12px 20px;
+    margin: 30px 20px 20px 20px;
 }
 .slide-3 .bots-advantages.middle p {
-    margin: 44px 88px 12px 88px;
+    margin: 30px 88px 20px 88px;
 }
 
 .light-blue-text {
@@ -211,6 +210,7 @@ nav ul>li.careers{margin-right:15px}
 .slide-4 {
     padding-top: 133px;
     padding-bottom: 66px;
+    overflow: hidden;
 }
 
 .slide-4 h2 {
@@ -347,8 +347,7 @@ nav ul>li.careers{margin-right:15px}
     float: left;
     width: 100%;
     border-bottom: 1px solid #CCCCCC;
-    padding-top: 73px;
-    padding-bottom: 105px;
+    padding-bottom: 60px;
 }
 
 .slide-5 p {
@@ -363,6 +362,7 @@ nav ul>li.careers{margin-right:15px}
     font-size: 28px;
     line-height: 100%;
     color: #4F4F4F;
+    margin: 60px auto 30px auto;
 }
 
 .slide-5 .we-do-img>img {
@@ -370,13 +370,12 @@ nav ul>li.careers{margin-right:15px}
 }
 
 .slide-5 .top {
-    margin-bottom: 90px;
+    margin-bottom: 60px;
 }
 
 .slide-5 .top p {
     width: 55%;
     margin: auto;
-    margin-top: 20px;
 }
 
 .slide-5 .using-description {
@@ -417,11 +416,12 @@ nav ul>li.careers{margin-right:15px}
 
 .slide-6 .top p {
     width: 55%;
-    margin: 33px auto;
+    margin: 0 auto 60px auto;
 }
 
 .slide-6 .top h2 {
-    margin-top: 30px;
+    margin-top: 60px;
+    margin-bottom: 30px;
 }
 
 .slide-6 .col-lg-1>a .carousel-control {
@@ -460,7 +460,7 @@ nav ul>li.careers{margin-right:15px}
     display: block;
     position: absolute;
     left: 0;
-    bottom: 41%;
+    bottom: 39%;
     width: 100.3%;
     height: 6%;
 }
@@ -514,6 +514,15 @@ nav ul>li.careers{margin-right:15px}
     margin: 10% 3% 2% 3%;
 }
 
+.slide-7 .video-play-btn {
+    /*display: block;*/
+    /*background: #2F80ED;*/
+    /*width: 14%;*/
+    /*height: 12%;*/
+    /*border-radius: 100%;*/
+    /*margin: -30% auto 0 auto;*/
+}
+
 .slide-7 .content .col-lg-4 {
     margin-bottom: 5%;
 }
@@ -535,14 +544,18 @@ nav ul>li.careers{margin-right:15px}
     padding-right: 0;
 }
 
+.slide-8 h2 {
+    margin: 60px auto 0 auto;
+}
+
 .slide-8 .pricing .block {
     background: #FFFFFF;
-    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
     margin-top: 13px;
 }
 .slide-8 .pricing.center {
     z-index: 3;
-    box-shadow: 0 5px 40px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 40px 10px rgba(0, 0, 0, 0.1);
 }
 .slide-8 .pricing.center .block  {
     margin-top: 0;
@@ -612,9 +625,9 @@ nav ul>li.careers{margin-right:15px}
     display: block;
     float: left;
     width: 100%;
-    background-color: #FAFAFA;
-    margin-bottom: 44px;
-    padding-bottom: 33px;
+    background-color: #FFFFFF;
+    margin-bottom: 60px;
+    padding-bottom: 60px;
 }
 
 .slide-8 .middle h2 {
@@ -633,7 +646,7 @@ nav ul>li.careers{margin-right:15px}
 
 .slide-8 .top .top-text {
     width: 55%;
-    margin: 20px auto;
+    margin: 30px auto 60px auto;
     color: #828282;
 }
 
@@ -655,7 +668,7 @@ nav ul>li.careers{margin-right:15px}
 
 .slide-8 .middle p {
     width: 36%;
-    padding: 1% 0 30px 0;
+    padding: 30px 0 50px 0;
     margin: 0 auto;
 }
 
@@ -672,7 +685,7 @@ nav ul>li.careers{margin-right:15px}
 }
 
 .slide-9 .top {
-    min-height: 200px;
+    min-height: 160px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) -30%, #FFFFFF 79%), url("../img/map.png");
     background-size: cover;
 }
@@ -685,7 +698,7 @@ nav ul>li.careers{margin-right:15px}
     font-size: 28px;
     line-height: 100%;
     color: #4F4F4F;
-    margin: 30px auto 20px;
+    margin: 30px auto;
 }
 
 .slide-9 .middle p {
@@ -694,13 +707,13 @@ nav ul>li.careers{margin-right:15px}
     letter-spacing: 0.0166px;
     color: #828282;
     width: 55%;
-    margin: 20px auto;
+    margin: 0px auto 30px auto;
     padding-bottom: 20px;
 }
 
 .slide-9 .bottom {
     /*min-height: 55vh;*/
-    margin: 50px auto;
+    margin: 80px auto;
 }
 
 .slide-9 .team-img {
@@ -717,13 +730,14 @@ nav ul>li.careers{margin-right:15px}
 }
 
 .slide-10 .top {
-    padding-top: 12%;
+    padding-top: 100px;
 }
 
 .slide-10 .top h2 {
     font-size: 28px;
     line-height: 100%;
     color: #FFFFFF;
+    margin-top: 60px;
 }
 
 .slide-10 .top p {
@@ -732,7 +746,7 @@ nav ul>li.careers{margin-right:15px}
     letter-spacing: 0.0166px;
     color: #FFFFFF;
     width: 55%;
-    margin: 20px auto;
+    margin: 30px auto;
     padding-bottom: 20px;
 }
 
@@ -747,7 +761,6 @@ nav ul>li.careers{margin-right:15px}
 
 #contact-form {
     margin-top: 30px;
-    margin-bottom: 10px;
 }
 
 #contact-form input[type=text],
@@ -777,6 +790,10 @@ nav ul>li.careers{margin-right:15px}
     line-height: 140%;
 }
 
+#contact-form select:disabled {
+    opacity: .5;
+}
+
 /*#contact-form input[type=text]:-webkit-autofill,*/
 /*#contact-form input[type=text]:-webkit-autofill:hover,*/
 /*#contact-form input[type=text]:-webkit-autofill:focus,*/
@@ -800,18 +817,26 @@ nav ul>li.careers{margin-right:15px}
 }
 
 #contact-form input[type=submit] {
-    margin-top: 25px;
+    margin: 30px auto;
+}
+
+.slide-10 .socials-bottom {
+    margin: 0 auto 30px auto;
 }
 
 .slide-10 .social-icon {
     width: 30px;
     display: inline-block;
-    margin: 4% 5%;
+    margin: 0 5%;
+}
+.slide-10 .social-icon:hover {
+    -webkit-filter: drop-shadow( 0px 4px 8px rgba(0, 0, 0, 0.4) );
+    filter: drop-shadow( 0px 4px 8px rgba(0, 0, 0, 0.4) );
 }
 
 .slide-10 .social-icon.right {
     width: 48px;
-    margin: 4% 5% 2% 5%
+    margin: 4% 0 2% 5%
 }
 
 #footer {
