@@ -1,0 +1,24 @@
+<svg width="271" height="270" viewBox="0 0 271 270" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>eng-icn</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(1532 -2592)" figma:type="canvas">
+<g id="eng-icn" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="bg" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path0_fill" transform="translate(-1531.62 2592)" fill="#2D9CDB" style="mix-blend-mode:normal;"/>
+</g>
+<g id="bg" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path1_fill" transform="translate(-1451.62 2687)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="icon" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path2_fill" transform="matrix(1 0 0 1 -1416.62 2712)" fill="#2D9CDB" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path3_fill" transform="matrix(1 0 0 1 -1416.62 2712)" fill="#2D9CDB" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 4C 0 1.79086 1.79086 0 4 0L 266 0C 268.209 0 270 1.79086 270 4L 270 266C 270 268.209 268.209 270 266 270L 4 270C 1.79086 270 0 268.209 0 266L 0 4Z"/>
+<path id="path1_fill" d="M 0 6C 0 2.68629 2.68629 0 6 0L 104 0C 107.314 0 110 2.68629 110 6L 110 74C 110 77.3137 107.314 80 104 80L 6 80C 2.68629 80 0 77.3137 0 74L 0 6Z"/>
+<path id="path2_fill" d="M 0.804269 29.1619C 1.87674 30.2793 3.61549 30.2793 4.68785 29.1619L 16.3386 17.023C 17.4109 15.9058 17.4109 14.0942 16.3386 12.9768L 4.68785 0.837891C 3.61549 -0.279297 1.87674 -0.279297 0.804269 0.837891C -0.26809 1.95532 -0.26809 3.76709 0.804269 4.88428L 10.5132 15L 0.804269 25.1157C -0.26809 26.2332 -0.26809 28.0447 0.804269 29.1619Z"/>
+<path id="path3_fill" d="M 40 27C 40 28.6567 38.7208 30 37.1429 30L 20 30C 18.422 30 17.1429 28.6567 17.1429 27C 17.1429 25.3433 18.422 24 20 24L 37.1429 24C 38.7208 24 40 25.3433 40 27Z"/>
+</defs>
+</svg>

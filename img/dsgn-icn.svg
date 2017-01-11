@@ -1,0 +1,18 @@
+<svg width="270" height="270" viewBox="0 0 270 270" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>dsgn-icn</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(1832 -2592)" figma:type="canvas">
+<g id="dsgn-icn" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="bg" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path0_fill" transform="translate(-1832 2592)" fill="#56CCF2" style="mix-blend-mode:normal;"/>
+</g>
+<g id="icon" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path1_fill" transform="translate(-1737 2687)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 4C 0 1.79086 1.79086 0 4 0L 266 0C 268.209 0 270 1.79086 270 4L 270 266C 270 268.209 268.209 270 266 270L 4 270C 1.79086 270 0 268.209 0 266L 0 4Z"/>
+<path id="path1_fill" d="M 75.2 61.6053C 77.851 61.6053 80 59.535 80 56.8L 80 4.95223C 80 2.21719 77.851 0 75.2 0L 4.8 0C 2.14903 0 0 2.21719 0 4.95223L 0 61.6053L 0 78.3459C 0 79.8329 1.75611 80.5618 2.75422 79.4891L 17.7832 63.2749C 18.6883 62.3021 19.9388 61.6053 21.2458 61.6053L 75.2 61.6053Z"/>
+</defs>
+</svg>

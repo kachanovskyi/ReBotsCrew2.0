@@ -7,10 +7,9 @@ nav ul>li.careers{margin-right:15px}
 }
 
 .bot-btn.white-snow {
-    background: #FFFFFF;
+    background: #FCFCFC;
     color: #2F80ED;
     border: none;
-    border-radius: 4px;
     margin: 7px;
     padding: 15px 23px;
 }
@@ -28,9 +27,8 @@ nav ul>li.careers{margin-right:15px}
     background: #2F80ED;
     color: #FFF;
     border: 1px solid #2F80ED;
-    border-radius: 4px;
-    margin: 7px 7px 7px 0;
-    padding: 14px 23px;
+    /*margin: 7px 7px 7px 0;*/
+    padding: 14px 28px;
 }
 .bot-btn.blue-dark-blue.contact {
     border-color: #FFF;
@@ -109,25 +107,26 @@ nav ul>li.careers{margin-right:15px}
     top: 50%;
     transform: translateY(-50%);
     text-align: left;
-    padding-bottom: 30px;
+    padding: 0 5% 30px 5%;
 }
 
 .slide-2 h2 {
-    font-size: 28px;
-    line-height: 100%;
+    font-size: 36px;
+    line-height: 140%;
     letter-spacing: 0.0166px;
     color: #4F4F4F;
     text-align: left;
+    width: 60%;
 }
 
 .slide-2 p {
-    font-size: 19px;
+    font-size: 18px;
     line-height: 140%;
     letter-spacing: 0.0166px;
     color: #828282;
     text-align: left;
-    margin-top: 20px;
-    font-weight: 300;
+    margin: 20px auto;
+    /*font-weight: 300;*/
 }
 
 .slide-2, .slide-3 {
@@ -139,7 +138,7 @@ nav ul>li.careers{margin-right:15px}
     width: 100%;
     display: block;
     float: left;
-    padding-bottom: 33px;
+    /*padding-bottom: 33px;*/
 }
 
 .slide-3 .top {
@@ -147,37 +146,37 @@ nav ul>li.careers{margin-right:15px}
 }
 
 .slide-3 h2 {
-    font-size: 28px;
+    font-size: 32px;
     line-height: 100%;
     color: #4F4F4F;
     margin: 60px auto 30px auto;
-}
-
-.slide-3 h3 {
-    color: #828282;
-    font-size: 22px;
-    margin-bottom: 60px;
 }
 
 .slide-3 p {
     font-size: 18px;
     line-height: 140%;
     color: #828282;
-    margin: 0 auto 60px auto;
+}
+
+.slide-3 p.heading {
+    margin: 30px auto 10px auto;
 }
 
 .slide-3 .bots-advantages {
-    padding: 22px 12px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.slide-3 .bots-advantages p {
+    /*padding: 22px 12px;*/
+    text-align: left;
 }
 .slide-3 .bots-advantages>img {
-    width: 144px;
-    height: 144px;
+    width: 100%;
 }
-.slide-3 .bots-advantages p {
-    margin: 30px 20px 20px 20px;
-}
-.slide-3 .bots-advantages.middle p {
-    margin: 30px 88px 20px 88px;
+
+.slide-3 .description {
+    margin-bottom: 60px;
 }
 
 .light-blue-text {
@@ -396,7 +395,7 @@ nav ul>li.careers{margin-right:15px}
     display: block;
     float: left;
     width: 100%;
-    background-color: #FAFAFA;
+    background-color: #FFFFFF;
     padding-right: 0;
     position: relative;
 }
@@ -405,7 +404,7 @@ nav ul>li.careers{margin-right:15px}
     font-size: 28px;
     line-height: 100%;
     color: #4F4F4F;
-    margin-top: 18%;
+    margin: 18% auto 0 auto;
 }
 
 .slide-6 p {
@@ -440,8 +439,9 @@ nav ul>li.careers{margin-right:15px}
 }
 
 .slide-6 .bot-card p.description {
-    width: 48%;
+    width: 50%;
     font-weight: 300;
+    margin: 20px 0;
 }
 
 .musement .inner {
@@ -538,7 +538,7 @@ nav ul>li.careers{margin-right:15px}
 }
 
 .slide-8 {
-    max-width: 100%;
+    width: 100%;
     display: block;
     float: left;
     padding-left: 0;
@@ -635,7 +635,7 @@ nav ul>li.careers{margin-right:15px}
     font-size: 28px;
     line-height: 100%;
     color: #FFFFFF;
-    padding-top: 33px;
+    /*padding-top: 33px;*/
 }
 
 .slide-8 p {
@@ -660,8 +660,7 @@ nav ul>li.careers{margin-right:15px}
 
 .slide-8 .bottom {
     text-align: center;
-    margin-top: 55px;
-    margin-bottom: 45px;
+    margin: 44px auto 30px auto;
 }
 .slide-8 .bottom p{
     margin-right: 20px;
@@ -683,6 +682,7 @@ nav ul>li.careers{margin-right:15px}
     min-height: 100vh;
     display: block;
     float: left;
+    border-top: 1px solid #E5E5E5;
 }
 
 .slide-9 .top {
@@ -693,13 +693,14 @@ nav ul>li.careers{margin-right:15px}
 
 .slide-9 .middle {
     min-height: 30vh;
+    margin-bottom: 60px;
 }
 
 .slide-9 .middle h2 {
-    font-size: 28px;
+    font-size: 36px;
     line-height: 100%;
     color: #4F4F4F;
-    margin: 30px auto;
+    margin: 60px auto 0 auto;
 }
 
 .slide-9 .middle p {
@@ -708,13 +709,7 @@ nav ul>li.careers{margin-right:15px}
     letter-spacing: 0.0166px;
     color: #828282;
     width: 55%;
-    margin: 0px auto 30px auto;
-    padding-bottom: 20px;
-}
-
-.slide-9 .bottom {
-    /*min-height: 55vh;*/
-    margin: 80px auto;
+    margin: 30px auto 44px auto;
 }
 
 .slide-9 .team-img {
@@ -756,7 +751,7 @@ nav ul>li.careers{margin-right:15px}
 }
 
 .fb-messenger-img {
-    padding-bottom: 3px;
+    padding: 2px;
     height: 22px;
 }
 
@@ -849,19 +844,41 @@ nav ul>li.careers{margin-right:15px}
     min-height: 12vh;
     display: block;
     float: left;
+    background: #FFFFFF;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, .11);
 }
 
-#footerInner {
-    width: 100%;
-    min-height: 12vh;
-    background: #FAFAFA;
-    text-align: center;
+.footer-inner {
+    margin-top: 60px;
+}
+.footer-inner a,
+.footer-inner p {
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.8);
+}
+.footer-inner .heading {
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+}
+.footer-inner .location {
+    padding-right: 80px;
+}
+
+.footer-copyright {
+    color: rgba(0, 0, 0, 0.2);
+    margin: 60px auto 30px auto;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 #footer-logo {
     width: 50px;
-    height: auto;
-    margin: 20px auto;
+    height: 50px;
 }
 
 .botscrew-color {
@@ -1094,8 +1111,8 @@ nav ul>li.careers{margin-right:15px}
     }
 
     .menu-item.bot-btn.blue-dark-blue.messenger {
-        margin-bottom: 20px;
         text-align: center;
+        padding: 12px 28px;
     }
 }
 

@@ -1,12 +1,14 @@
-<svg width="80" height="80" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
-<title>footer logo</title>
+<svg width="50" height="50" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>logo</title>
 <desc>Created using Figma</desc>
-<g id="Canvas" transform="matrix(2 0 0 2 2024 -15120)" figma:type="canvas">
-<g id="footer logo" style="mix-blend-mode:normal;" figma:type="vector">
-<use xlink:href="#path0_fill" transform="translate(-1012 7560)" fill="#BDBDBD" style="mix-blend-mode:normal;"/>
+<g id="Canvas" transform="translate(1832 -7669)" figma:type="canvas">
+<g id="logo" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(-1832 7669)" fill="#000000" fill-opacity="0.2" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path1_fill" transform="translate(-1832 7669)" fill="#000000" fill-opacity="0.2" style="mix-blend-mode:normal;"/>
 </g>
 </g>
 <defs>
-<path id="path0_fill" fill-rule="evenodd" d="M 20 40C 31.0457 40 40 31.0457 40 20C 40 8.95427 31.0457 0 20 0C 8.95427 0 0 8.95427 0 20C 0 23.8143 1.0677 27.3796 2.92071 30.4126L 0 33.3333C 3.3333 35.5559 12 40 20 40ZM 23.3333 15C 23.3333 15.9205 22.5871 16.6666 21.6667 16.6666C 20.7462 16.6666 20 15.9205 20 15C 20 14.0796 20.7462 13.3333 21.6667 13.3333C 22.5871 13.3333 23.3333 14.0796 23.3333 15ZM 31.6667 16.6666C 32.5871 16.6666 33.3333 15.9205 33.3333 15C 33.3333 14.0796 32.5871 13.3333 31.6667 13.3333C 30.7463 13.3333 30 14.0796 30 15C 30 15.9205 30.7463 16.6666 31.6667 16.6666ZM 20 20C 20 22.2222 21.3334 26.6667 26.6666 26.6667C 32 26.6667 33.3333 22.2222 33.3333 20L 20 20Z"/>
+<path id="path0_fill" d="M 21.875 25L 21.875 28.125C 21.875 29.8509 23.2741 31.25 25 31.25C 26.7259 31.25 28.125 29.8509 28.125 28.125C 28.125 26.3991 26.7259 25 25 25L 21.875 25Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 50 25C 50 38.8072 38.8072 50 25.0001 50C 14.9999 50 4.16663 44.4448 0 41.6667L 3.65089 38.0157C 1.33463 34.2245 0 29.7678 0 25C 0 11.1928 11.1928 0 25.0001 0C 38.8072 0 50 11.1928 50 25ZM 18.9484 12.5062C 20.5818 12.6085 21.875 13.9657 21.875 15.625L 21.875 17.1113L 21.8564 17.0833L 21.8564 21.6667L 22.5834 18.75L 25 18.75C 30.1777 18.75 34.375 22.9473 34.375 28.125C 34.375 33.3027 30.1777 37.5 25 37.5C 19.8223 37.5 15.625 33.3027 15.625 28.125L 15.625 21.875L 15.625 15.8333L 15.625 15.625L 15.625 13.3333C 15.625 12.8731 15.997 12.5 16.4559 12.5L 18.75 12.5L 18.9484 12.5L 18.9484 12.5062Z"/>
 </defs>
 </svg>

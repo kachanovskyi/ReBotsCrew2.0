@@ -2,10 +2,12 @@ h2 {
     font-size: 28px;
     letter-spacing: 0.0166px;
     color: #4F4F4F;
+    margin-bottom: 30px;
 }
 
 p {
     font-size: 18px;line-height: 140%;letter-spacing: 0.0166px;color: #828282;
+    margin-bottom: 60px;
 }
 
 .standard-menu-item {
@@ -30,7 +32,9 @@ p {
 
 .bot-btn.white {
     border: 1px solid #FFFFFF;
-    color:#FFFFFF!important
+    color:#FFFFFF!important;
+    background-color: rgba(256, 256, 256, .11) !important;
+    padding: 14px 28px;
 }
 .bot-btn.white:hover {
     background-color:transparent!important;
@@ -56,13 +60,11 @@ p {
 
 .content {
     text-align: left;
-    margin-top: 44px;
+    margin-top: 60px;
 }
-.content h2 {
-    margin-top: 24px;
-}
+
 .content .article {
-    padding-top: 6px;
+    /*padding-top: 6px;*/
 }
 
 .members {

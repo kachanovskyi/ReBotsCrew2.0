@@ -220,22 +220,22 @@ $(document).ready(function () {
         return false;
     });
 
-    var middleBotAdvantage = $('.slide-3 .bots-advantages.middle');
-    var targetOffset = (middleBotAdvantage.offset().top);
-    var $w = $(window).scroll(function() {
-        var slide5 = $('.slide-5');
-        if ( !barInitialized && ($w.scrollTop() > targetOffset) && ($w.scrollTop() < slide5.offset().top) ) {
-            progressBarInit();
-            barInitialized = true;
-        }
-
-        if ( barInitialized && (($w.scrollTop() > slide5.offset().top) || $w.scrollTop() < targetOffset)) {
-            clearTimeout(timer);
-            bar.stop();
-            bar.set(0.0);
-            barInitialized = false;
-        }
-    });
+    // var middleBotAdvantage = $('.slide-3 .bots-advantages.middle');
+    // var targetOffset = (middleBotAdvantage.offset().top);
+    // var $w = $(window).scroll(function() {
+    //     var slide5 = $('.slide-5');
+    //     if ( !barInitialized && ($w.scrollTop() > targetOffset) && ($w.scrollTop() < slide5.offset().top) ) {
+    //         progressBarInit();
+    //         barInitialized = true;
+    //     }
+    //
+    //     if ( barInitialized && (($w.scrollTop() > slide5.offset().top) || $w.scrollTop() < targetOffset)) {
+    //         clearTimeout(timer);
+    //         bar.stop();
+    //         bar.set(0.0);
+    //         barInitialized = false;
+    //     }
+    // });
 
     var messengerListResize = function () {
         var listElem = $('.slide-4 .bottom ul>li');
@@ -461,7 +461,7 @@ $(document).ready(function () {
 
     alignMessengerTextHeight();
     alignPricingBlocks();
-    autosize($('textarea'));
+    // autosize($('textarea'));
 
     //disable budgetSelect if selected smth else, but creating bot
     $('#purposeSelect').change(function() {

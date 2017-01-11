@@ -58,7 +58,7 @@ p, li {
 
 .content {
     text-align: left;
-    margin-top: 44px;
+    margin-top: 60px;
 }
 .content p {
     padding: 20px 0;
@@ -120,6 +120,56 @@ p, li {
 
 .social-share .fb, .social-share .in, .social-share .tw {
     margin-left: 8px;
+}
+
+.subscribe-block {
+    width: 100%;
+    height: 92px;
+    background: #2F80ED;
+}
+.subscribe-block .inner {
+    padding: 13px;
+}
+.subscribe-block .inner p {
+    padding: 10px 30px 14px 14px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+    display: inline-block;
+}
+.subscribe-block .inner input {
+    padding: 0 8px;
+    font-size: 18px;
+    background: #2F80ED;
+    border: 1px solid rgba(255, 255, 255, .7);
+    color: #FFFFFF;
+}
+.subscribe-block .inner ::-webkit-input-placeholder {
+    color: #FFFFFF;
+    opacity: .7;
+    font-weight: 300;
+}
+
+.bot-btn.white {
+    border: 1px solid #FFFFFF;
+    color:#FFFFFF!important;
+    background-color: rgba(256, 256, 256, .11) !important;
+    padding: 14px 28px;
+}
+.bot-btn.white:hover {
+    background-color:transparent!important;
+}
+.bot-btn.white.subscribe {
+    padding: 13px 20px;
+    margin-left: -14px;
+    border: 1px solid rgba(255, 255, 255, .6);
+    border-left: none;
+    border-radius: 0;
+    color: #FFFFFF !important;
+}
+
+.bottom {
+    margin: 60px 0;
 }
 
 .article {

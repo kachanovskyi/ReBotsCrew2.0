@@ -1,0 +1,20 @@
+<svg width="271" height="270" viewBox="0 0 271 270" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>qap-icn</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(1232 -2592)" figma:type="canvas">
+<g id="qap-icn" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="bg" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path0_fill" transform="translate(-1231.23 2592)" fill="#2F80ED" style="mix-blend-mode:normal;"/>
+</g>
+<g id="icon" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path1_fill" transform="translate(-1136.23 2687)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path2_fill" transform="translate(-1136.23 2687)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 4C 0 1.79086 1.79086 0 4 0L 266 0C 268.209 0 270 1.79086 270 4L 270 266C 270 268.209 268.209 270 266 270L 4 270C 1.79086 270 0 268.209 0 266L 0 4Z"/>
+<path id="path1_fill" d="M 38.1767 7.46436C 38.1767 5.35593 36.4625 3.62665 34.3643 3.83467C 15.0699 5.7476 0 22.0255 0 41.8233C 0 62.9078 17.0923 80 38.1767 80C 57.9744 80 74.2524 64.9302 76.1653 45.6357C 76.3734 43.5375 74.6441 41.8233 72.5356 41.8233L 41.9943 41.8233C 39.8859 41.8233 38.1767 40.1141 38.1767 38.0057L 38.1767 7.46436Z"/>
+<path id="path2_fill" d="M 76.3533 38.0057C 78.4617 38.0057 80.191 36.2915 79.983 34.1934C 78.1944 16.1528 63.8472 1.80561 45.8066 0.0170015C 43.7085 -0.191018 41.9943 1.53826 41.9943 3.6467L 41.9943 34.188C 41.9943 36.2965 43.7035 38.0057 45.812 38.0057L 76.3533 38.0057Z"/>
+</defs>
+</svg>
