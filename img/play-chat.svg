@@ -1,0 +1,18 @@
+<svg width="121" height="120" viewBox="0 0 121 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>play</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(990 -3469)" figma:type="canvas">
+<g id="play" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Ellipse" style="mix-blend-mode:normal;" figma:type="ellipse">
+<use xlink:href="#path0_fill" transform="translate(-989.5 3469)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Polygon" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path1_fill" transform="translate(-944.5 3509)" fill="#448EEF" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 120 60C 120 93.1371 93.1371 120 60 120C 26.8629 120 0 93.1371 0 60C 0 26.8629 26.8629 0 60 0C 93.1371 0 120 26.8629 120 60Z"/>
+<path id="path1_fill" d="M 33.8978 23.6157C 36.7007 22.0087 36.7007 17.9913 33.8978 16.3843L 6.30657 0.56558C 3.50365 -1.0414 -1.9818e-16 0.967325 0 4.18129L 0 35.8187C 1.9818e-16 39.0327 3.50365 41.0414 6.30657 39.4344L 33.8978 23.6157Z"/>
+</defs>
+</svg>

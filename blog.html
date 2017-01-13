@@ -180,11 +180,10 @@
   function closeSubscribeBlock() {
     $('.subscribe-block').animate({
       marginTop: '-=92px'
-    }, 300, function () {
-      $('body').animate({
-        paddingTop: '-=92px'
-      }, 100);
-    })
+    }, { duration: 200, queue: false })
+    $('body').animate({
+      paddingTop: '-=92px'
+    }, { duration: 200, queue: false });
   }
 </script>
 </body>

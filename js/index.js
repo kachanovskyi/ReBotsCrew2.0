@@ -1,13 +1,3 @@
-var alignPricingBlocks = function () {
-    if ($(window).width() > 767) {
-        var centerPricingBlock = $('.slide-8 .pricing.center .block');
-        var pricingBlock = $('.slide-8 .pricing .block');
-        var diff = centerPricingBlock.outerHeight() - $(pricingBlock[1]).outerHeight();
-        for (var i = 1; i < pricingBlock.length; i++) {
-            $(pricingBlock[i]).css('margin-top', (diff / 2));
-        }
-    }
-};
 var alignMessengerTextHeight = function () {
     var textElem = $('.slide-4 p');
     var maxHeight = $(textElem).height();
@@ -28,23 +18,12 @@ var getScrollBarWidth = function () {
     return 100 - widthWithScroll;
 };
 
-var initBarObj = function (time) {
-    return new ProgressBar.Line('.progressbar-container', {
-        strokeWidth: 1,
-        duration: time,
-        color: '#2F80ED',
-        trailColor: '#DFDFDF',
-        trailWidth: 6,
-        svgStyle: {width: '100%', height: '100%'}
-    });
-};
-
 $(document).ready(function () {
     var document_width, document_height;
     document_width=$(document).width(); document_height=$(document).height();
 
-    var barInitialized = false;
-    var bar;
+    // var barInitialized = false;
+    // var bar;
     var timer;
     var progressSlide = 0;
     var counter = 1;
@@ -58,7 +37,6 @@ $(document).ready(function () {
     }
 
     //.bot-example scripts
-    var slideTimes = [18000, 10000, 8000, 18000, 8000, 12000];
     var phrases = [
         [
             { type: 'person', phrase: 'Hello! I want to order a table for me and my friend' },
@@ -118,7 +96,6 @@ $(document).ready(function () {
 
     for (i = 0; i < (listElem.length - 2); i++) {
         for (var j = 0; j < phrases[i].length; j++) {
-            // console.log('bot-example should have number ' + (i-1));
             var example = $($('.bot-example')[i]);
             var div = document.createElement('div');
             div.className = "phrase-box " + phrases[i][j].type;
@@ -126,6 +103,13 @@ $(document).ready(function () {
             $(div).appendTo(example);
         }
     }
+
+    $('.play-chat-btn').click(function () {
+        $(this).css('display', 'none');
+        $($('.slide-4 .bot-example')[progressSlide]).removeClass('blurred');
+
+        addMessages();
+    });
 
     var addMessages = function() {
         current = 0;
@@ -139,9 +123,6 @@ $(document).ready(function () {
         var bottom = example.outerHeight();
         example.css('bottom', -bottom);
         timer = setTimeout(function message() {
-            if ( ($w.scrollTop() > $('.slide-5').offset().top) ) {
-                clearTimeout(timer);
-            }
 
             var example = $($('.bot-example')[progressSlide]);
             displayOne(example.children()[current]);
@@ -151,6 +132,10 @@ $(document).ready(function () {
                 timer = setTimeout(message, 2000);
             } else {
                 current = 0;
+                setTimeout(function () {
+                    $($('.play-chat-btn')[progressSlide]).css('display', 'block');
+                    $($('.slide-4 .bot-example')[progressSlide]).addClass('blurred');
+                }, 400)
             }
 
         }, 400);
@@ -169,45 +154,31 @@ $(document).ready(function () {
                 }
             });
         }
-        // example.scrollTop(example[progressSlide].scrollHeight);
     };
-
-
 
     var progressBarInit = function () {
         var listItem = $('.slide-4 .bottom ul>li');
         var listItemLink = $('.slide-4 .bottom ul>li>a');
-        addMessages();
 
-        $($('.slide-4 .bottom ul>li .progressbar-container')[0]).remove();
-        $(listItem[counter]).append('<div class="progressbar-container"></div>');
         listItemLink.removeClass('active');
         listItem.removeClass('active');
         $(listItemLink[counter - 1]).addClass('active');
         $($(listItem[counter])).addClass('active');
-        if(bar) {
-            bar.stop();
-            bar.set(0.0);
-        }
-        bar = initBarObj(slideTimes[progressSlide]);
-
-        bar.animate(1.0, function() {
-            listScroll("next");
-            progressBarInit();
-        });
     };
 
     $('.slide-4 .bottom ul>li>a').click(function (e) {
         $('#botUsesCard').carousel(+$(this).attr('data-id'));
         var listItemLink = $('.slide-4 .bottom ul>li>a');
 
+        $($('.play-chat-btn')[progressSlide]).css('display', 'block');
+        $($('.slide-4 .bot-example')[progressSlide]).addClass('blurred');
+        clearTimeout(timer);
+
         listItemLink.removeClass('active');
         counter = (listItemLink.index(this) + 1);
         progressSlide = counter - 1;
-        console.log(progressSlide);
 
         progressBarInit();
-
         return false;
     });
 
@@ -272,9 +243,9 @@ $(document).ready(function () {
         counter = 1;
         progressSlide = counter - 1;
         $('#botUsesCard').carousel(progressSlide);
-        $('.slide-4 .bottom ul>li .progressbar-container').remove();
-        $(listElem[counter]).append('<div class="progressbar-container"></div>');
-        progressBarInit();
+        // $('.slide-4 .bottom ul>li .progressbar-container').remove();
+        // $(listElem[counter]).append('<div class="progressbar-container"></div>');
+        // progressBarInit();
     };
 
     var $rw = $(window).resize(function(){
@@ -287,8 +258,6 @@ $(document).ready(function () {
         if($(window).width() < 767) {
             middle.css('max-height', (maxHeight * 2));
         }
-
-        alignPricingBlocks();
     });
 
     var listScroll = function (param) {
@@ -296,8 +265,16 @@ $(document).ready(function () {
         var listElem = $('.slide-4 .bottom ul>li');
         var botCarousel = $('#botUsesCard');
 
+        $($('.play-chat-btn')[progressSlide]).css('display', 'block');
+        $($('.slide-4 .bot-example')[progressSlide]).addClass('blurred');
+        clearTimeout(timer);
+
         botCarousel.bind('slid.bs.carousel', function (e) {
             $('#listScrollPrev, #listScrollNext').each(function (){
+                this.style.pointerEvents = 'auto';
+            });
+
+            $('#botUsesPrev, #botUsesNext').each(function (){
                 this.style.pointerEvents = 'auto';
             });
         });
@@ -327,8 +304,8 @@ $(document).ready(function () {
                     }
                 }
             }
-            $('.slide-4 .bottom ul>li .progressbar-container').remove();
-            $(listElem[counter]).append('<div class="progressbar-container"></div>');
+            // $('.slide-4 .bottom ul>li .progressbar-container').remove();
+            // $(listElem[counter]).append('<div class="progressbar-container"></div>');
 
             progressBarInit();
         } else {
@@ -374,6 +351,19 @@ $(document).ready(function () {
     $('#listScrollNext').click(function (e) {
         listScroll("next");
         return false;
+    });
+
+    $('#botUsesNext').click(function () {
+        $('#listScrollNext').trigger("click");
+        $(this).each(function (){
+            this.style.pointerEvents = 'none';
+        });
+    });
+    $('#botUsesPrev').click(function () {
+        $('#listScrollPrev').trigger("click");
+        $(this).each(function (){
+            this.style.pointerEvents = 'none';
+        });
     });
 
     function hoverVideo(e) {
@@ -460,7 +450,7 @@ $(document).ready(function () {
     }
 
     alignMessengerTextHeight();
-    alignPricingBlocks();
+    // alignPricingBlocks();
     // autosize($('textarea'));
 
     //disable budgetSelect if selected smth else, but creating bot
