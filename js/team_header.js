@@ -1,10 +1,11 @@
-var targetOffset = $('.content').offset().top;
+var targetOffset = $('.content').offset().top - 60;
 $(window).on('resize', function(){
-    var targetOffset = $('.content').offset().top;
+    targetOffset = $('.content').offset().top - 60;
 }());
-console.log(targetOffset, 'targetOffset');
 var $w = $(window).scroll(function(){
-    if ( $w.scrollTop() > (targetOffset - 44*2)) {
+    console.log(targetOffset, 'targetOffset');
+
+    if ( $w.scrollTop() > (targetOffset)) {
         console.log('header styles updated');
         $('.menu-item').addClass('standard-menu-item');
         $('.header .menu-item.bot-btn').removeClass('white');
@@ -19,7 +20,7 @@ var $w = $(window).scroll(function(){
         $('.icon-bar').addClass('white');
     }
 
-    if ( $w.scrollTop() > targetOffset - 66) {
+    if ( $w.scrollTop() > targetOffset) {
         $('.navbar-default').css('border-bottom', '1px solid #E5E5E5');
         $('.navbar').css('background', '#FFFFFF');
     } else {

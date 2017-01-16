@@ -59,7 +59,7 @@ p, li {
 
 .content {
     text-align: left;
-    /*margin-top: 60px;*/
+    padding-top: 60px;
 }
 .content p {
     padding: 20px 0;

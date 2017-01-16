@@ -33,12 +33,19 @@ p {
 .bot-btn.white {
     border: 1px solid #FFFFFF;
     color:#FFFFFF!important;
-    background-color: rgba(256, 256, 256, .11) !important;
+    background-color: rgba(256, 256, 256, .18) !important;
     padding: 14px 28px;
 }
-.bot-btn.white:hover {
-    background-color:transparent!important;
-}
+    .bot-btn.white:hover {
+        background-color:#F2F2F2!important;
+    }
+    .bot-btn.white.border-white {
+        border: 1px solid #FFFFFF;
+    }
+        .bot-btn.white.border-white:hover {
+            background-color:#F2F2F2!important;
+        }
+
 
 .top {
     background: url("../img/team_top_image.png");
@@ -60,7 +67,7 @@ p {
 
 .content {
     text-align: left;
-    margin-top: 60px;
+    padding-top: 60px;
 }
 
 .content .article {
