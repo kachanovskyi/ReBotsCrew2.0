@@ -36,24 +36,38 @@ h1, h2, p, a {
             .subscribe-block .inner .close-btn:hover {
                 cursor: pointer;
             }
+.bot-btn.white.subscribe {
+    padding: 10px 16px 8px 16px;
+    margin-left: -5px;
+    border: 1px solid rgba(255, 255, 255, .6);
+    border-left: none;
+    color: #FFFFFF !important;
+    font-size: 16px;
+}
+.bot-btn.white.subscribe:hover {
+    background-color:transparent !important;
+}
 
-.bot-btn.white {
-    border: 1px solid #FFFFFF;
-    color:#FFFFFF!important;
-    background-color: rgba(256, 256, 256, .11) !important;
-    padding: 14px 28px;
-}
-.bot-btn.white:hover {
-    background-color:transparent!important;
-}
-    .bot-btn.white.subscribe {
-        padding: 10px 16px 8px 16px;
-        margin-left: -5px;
-        border: 1px solid rgba(255, 255, 255, .6);
-        border-left: none;
-        color: #FFFFFF !important;
-        font-size: 16px;
-    }
+/*.bot-btn.white {*/
+    /*border: 1px solid #FFFFFF;*/
+    /*color:#FFFFFF!important;*/
+    /*background-color: rgba(256, 256, 256, .11) !important;*/
+    /*padding: 14px 28px;*/
+/*}*/
+/*.bot-btn.white:hover {*/
+    /*background-color:transparent!important;*/
+/*}*/
+    /*.bot-btn.white.subscribe {*/
+        /*padding: 10px 16px 8px 16px;*/
+        /*margin-left: -5px;*/
+        /*border: 1px solid rgba(255, 255, 255, .6);*/
+        /*border-left: none;*/
+        /*color: #FFFFFF !important;*/
+        /*font-size: 16px;*/
+    /*}*/
+    /*.bot-btn.white.subscribe:hover {*/
+        /*background-color:transparent !important;*/
+    /*}*/
 
 .top {
     text-align: center;

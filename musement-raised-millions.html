@@ -74,29 +74,22 @@
       color: #FFFFFF!important
     }
 
-    .bot-btn {
-      border: 1px solid #2F80ED;
-      border-radius: 4px;
-      transition-duration: .2s;
-      padding: 14px 23px
+    .bot-btn.white {
+      border: 1px solid #FFFFFF;
+      color:#FFFFFF!important;
+      background-color: rgba(256, 256, 256, .11) !important;
+      padding: 14px 28px;
     }
-
-    .bot-btn:hover {
-      transition-duration: .5s;
-      text-decoration: none
+    .bot-btn.white:hover {
+      background-color:transparent!important;
     }
-
-    .bot-btn:active {
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), inset 0 4px 0 rgba(0, 0, 0, 0.05)
-    }
-
-    .bot-btn.white-blue {
-      color: #2F80ED!important
-    }
-
-    .bot-btn.white-blue:hover {
-      background-color: #2F80ED!important;
-      color: #FFF!important
+    .bot-btn.white.subscribe {
+      padding: 10px 16px 8px 16px;
+      margin-left: -5px;
+      border: 1px solid rgba(255, 255, 255, .6);
+      border-left: none;
+      color: #FFFFFF !important;
+      font-size: 16px;
     }
 
     #middle {
@@ -220,7 +213,7 @@
           <div class="inner row">
             <p>Subscribe to BotsCrew newsletter. No spam, no nasty stuff</p>
             <input type="text" placeholder="Your E-Mail">
-            <a href="#" class="menu-item bot-btn white subscribe noborder">Subscribe</a>
+            <a href="#" class="menu-item bot-btn white subscribe">Subscribe</a>
           </div>
         </div>
       </div>

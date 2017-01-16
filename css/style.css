@@ -210,10 +210,10 @@ a:active {
     border-radius: 2px;
     font-size: 18px;
     font-weight: 400;
+    background-color: rgba(256, 256, 256, .14) !important;
 }
     .bot-btn.white {
         background: #FCFCFC;
-        /*background-color: rgba(256, 256, 256, .18) !important;*/
         color: #2F80ED;
         border: none;
         /*margin: 7px;*/
@@ -230,6 +230,9 @@ a:active {
         .bot-btn.white.border-white {
             border: 1px solid #FFFFFF;
         }
+            .bot-btn.white.border-white:hover {
+                background-color: rgba(256, 256, 256, .22) !important;
+            }
     .bot-btn.blue {
         background: #2F80ED;
         border-color: #2F80ED;
@@ -1082,9 +1085,16 @@ a:active {
 .footer-inner {
     margin-top: 60px;
 }
+.footer-inner a {
+    float: left;
+    clear: both;
+}
+    .footer-inner a:hover {
+        text-decoration: underline;
+    }
 .footer-inner a,
 .footer-inner p {
-    display: block;
+    /*display: block;*/
     text-decoration: none;
     font-size: 16px;
     margin-bottom: 8px;

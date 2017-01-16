@@ -29,13 +29,13 @@ p, li {
     color: #2F80ED;
 }
 
-.bot-btn.white {
-    border: 1px solid #FFFFFF;
-    color:#FFFFFF!important
-}
-.bot-btn.white:hover {
-    background-color:transparent!important;
-}
+/*.bot-btn.white {*/
+    /*border: 1px solid #FFFFFF;*/
+    /*color:#FFFFFF!important*/
+/*}*/
+/*.bot-btn.white:hover {*/
+    /*background-color:transparent!important;*/
+/*}*/
 
 .top {
     background-position: center;
@@ -52,8 +52,7 @@ p, li {
 .top>h1 {
     font-size: 42px;
     color: #FFFFFF;
-    margin: auto;
-    margin-top: 50vh;
+    margin: 50vh auto 30px auto;
     width: 77%;
 }
 
@@ -111,7 +110,7 @@ p, li {
     margin-left: 6px;
 }
 .footer-fixed .inner img, .social-share>div img {
-    padding-top: 12px;
+    /*padding-top: 12px;*/
     width: 100%;
 }
 
@@ -126,22 +125,24 @@ p, li {
 
 .subscribe-block {
     width: 100%;
-    height: 92px;
+    height: 88px;
     background: #2F80ED;
+    font-size: 16px;
 }
 .subscribe-block .inner {
-    padding: 13px;
+    padding: 20px 18px 18px 18px;
 }
 .subscribe-block .inner p {
-    padding: 10px 30px 14px 14px;
-    font-size: 18px;
-    font-weight: 400;
+    padding: 14px 30px 14px 14px;
+    font-size: 16px;
+    font-weight: 300;
     color: #FFFFFF;
     display: inline-block;
 }
 .subscribe-block .inner input {
-    padding: 0 16px;
-    font-size: 18px;
+    height: 36px;
+    padding: 7px 10px 5px 10px;
+    font-size: 16px;
     background: #2F80ED;
     border: 1px solid rgba(255, 255, 255, .7);
     color: #FFFFFF;
@@ -151,24 +152,35 @@ p, li {
     opacity: .7;
     font-weight: 300;
 }
-
-.bot-btn.white {
-    border: 1px solid #FFFFFF;
-    color:#FFFFFF!important;
-    background-color: rgba(256, 256, 256, .11) !important;
-    padding: 14px 28px;
-}
-.bot-btn.white:hover {
-    background-color:transparent!important;
-}
 .bot-btn.white.subscribe {
-    padding: 13px 20px;
-    margin-left: -14px;
+    padding: 10px 16px 8px 16px;
+    margin-left: -5px;
     border: 1px solid rgba(255, 255, 255, .6);
     border-left: none;
-    border-radius: 0;
     color: #FFFFFF !important;
+    font-size: 16px;
 }
+.bot-btn.white.subscribe:hover {
+    background-color:transparent !important;
+}
+
+/*.bot-btn.white {*/
+    /*border: 1px solid #FFFFFF;*/
+    /*color:#FFFFFF!important;*/
+    /*background-color: rgba(256, 256, 256, .11) !important;*/
+    /*padding: 14px 28px;*/
+/*}*/
+/*.bot-btn.white.subscribe:hover {*/
+    /*background-color:transparent !important;*/
+/*}*/
+/*.bot-btn.white.subscribe {*/
+    /*!*padding: 13px 20px;*!*/
+    /*!*margin-left: -14px;*!*/
+    /*border: 1px solid rgba(255, 255, 255, .6);*/
+    /*border-left: none;*/
+    /*border-radius: 0;*/
+    /*color: #FFFFFF !important;*/
+/*}*/
 
 .bottom {
     margin: 30px 0 60px 0;
@@ -234,7 +246,7 @@ p, li {
     background: url("../img/blog_6_1.jpg");
 }
 
-.recent p{
+.recent p {
     font-size: 18px;color: #828282;
     float: left;
     padding: 0 32px;
@@ -321,7 +333,11 @@ p, li {
     }
         .heading .title {
             margin-bottom: 0;
+            padding: 0;
         }
         .heading .right {
             padding-top: 12px;
+        }
+        .heading .subtitle {
+            padding: 0;
         }

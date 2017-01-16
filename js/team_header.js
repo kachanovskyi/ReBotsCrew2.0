@@ -8,14 +8,14 @@ var $w = $(window).scroll(function(){
     if ( $w.scrollTop() > (targetOffset)) {
         console.log('header styles updated');
         $('.menu-item').addClass('standard-menu-item');
-        $('.header .menu-item.bot-btn').removeClass('white');
-        $('.header .menu-item.bot-btn').addClass('white-blue');
+        $('.header .menu-item.bot-btn').removeClass('border-white');
+        $('.header .menu-item.bot-btn').addClass('text-blue');
         $('.logo').attr('src', "img/logo.svg");
         $('.icon-bar').removeClass('white');
     } else {
         $('.menu-item').removeClass('standard-menu-item');
-        $('.header .menu-item.bot-btn').removeClass('white-blue');
-        $('.header .menu-item.bot-btn').addClass('white');
+        $('.header .menu-item.bot-btn').removeClass('text-blue');
+        $('.header .menu-item.bot-btn').addClass('border-white');
         $('.logo').attr('src', "img/logo_white.svg");
         $('.icon-bar').addClass('white');
     }
