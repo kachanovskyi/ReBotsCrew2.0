@@ -152,17 +152,6 @@ p, li {
     opacity: .7;
     font-weight: 300;
 }
-.bot-btn.white.subscribe {
-    padding: 10px 16px 8px 16px;
-    margin-left: -5px;
-    border: 1px solid rgba(255, 255, 255, .6);
-    border-left: none;
-    color: #FFFFFF !important;
-    font-size: 16px;
-}
-.bot-btn.white.subscribe:hover {
-    background-color:transparent !important;
-}
 
 /*.bot-btn.white {*/
     /*border: 1px solid #FFFFFF;*/

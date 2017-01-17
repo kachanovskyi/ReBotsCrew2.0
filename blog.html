@@ -290,12 +290,16 @@
 <script src="js/index.js"></script>
 <script>
   function closeSubscribeBlock() {
-    $('.subscribe-block').animate({
-      marginTop: '-=92px'
-    }, { duration: 200, queue: false })
+    var subscribeBlock = $('.subscribe-block');
+    subscribeBlock.animate({
+      marginTop: '-=92px',
+      display: 'none'
+    }, { duration: 200, queue: false });
     $('body').animate({
       paddingTop: '-=92px'
-    }, { duration: 200, queue: false });
+    }, 200, function () {
+      subscribeBlock.css('display', 'none');
+    });
   }
 </script>
 </body>
