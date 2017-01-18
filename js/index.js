@@ -451,7 +451,6 @@ $(document).ready(function () {
 
     alignMessengerTextHeight();
     // alignPricingBlocks();
-    // autosize($('textarea'));
 
     //disable budgetSelect if selected smth else, but creating bot
     $('#purposeSelect').change(function() {
