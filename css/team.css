@@ -46,25 +46,6 @@ p {
             /*background-color:#F2F2F2!important;*/
         /*}*/
 
-
-.top {
-    background: url("../img/team_top_image.png");
-    background-size: cover;
-    background-position: center;
-    display: block;
-    float: left;
-    width: 100%;
-    height: 100vh;
-    padding-right: 0;
-    padding-left: 0;
-}
-
-.top>h1 {
-    font-size: 42px;
-    color: #FFFFFF;
-    margin-top: 50vh;
-}
-
 .content {
     text-align: left;
     padding-top: 60px;
@@ -87,11 +68,11 @@ p {
     margin-bottom: 2px;
 }
 
-.bottom {
+.insta-block {
     margin-top: 60px;
     position: relative;
 }
-.bottom .follow {
+.insta-block .follow {
     background: #FFFFFF;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
     border: 1px solid #FFFFFF;
@@ -108,24 +89,24 @@ p {
     transition: .2s;
     /*z-index: 2;*/
 }
-.bottom .follow:hover {
+.insta-block .follow:hover {
     cursor: pointer;
     border: 1px solid #2F80ED;
 }
-.bottom .follow>img {
+.insta-block .follow>img {
     padding-bottom: 2px;
 }
-.bottom .block {
+.insta-block .block {
     padding-left: 0;
     padding-right: 0;
 }
-.bottom .block>img {
+.insta-block .block>img {
     width: 100%;
     height: auto;
 }
 
 @media (max-width: 991px) {
-    .bottom .follow {
+    .insta-block .follow {
         transform: translate(-50%, 0);
         margin-top: 22%;
     }
