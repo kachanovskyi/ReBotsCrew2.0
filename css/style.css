@@ -291,7 +291,7 @@ a:active {
     border-top: 1px solid #CCCCCC;
     border-bottom: 1px solid #CCCCCC;
     position: relative;
-    min-height: 333px;
+    min-height: 440px;
 }
 
 .slide-2 .bot-preview-block {
@@ -344,8 +344,8 @@ a:active {
 }
 
 .slide-2, .slide-3 {
-    padding-left: 0;
-    padding-right: 0;
+    /*padding-left: 0;*/
+    /*padding-right: 0;*/
 }
 
 .slide-3 {
@@ -518,6 +518,7 @@ a:active {
     color: #e0e0e0;
     text-align: center;
     text-decoration: none;
+    vertical-align: middle;
 }
 
 .slide-4 .bottom ul>li a.active {
@@ -1637,7 +1638,7 @@ a:active {
     }
 
     .slide-2 .right {
-        height: 444px;
+        height: 488px;
     }
 
     .slide-3 .bots-advantages {
@@ -1676,7 +1677,7 @@ a:active {
     }
 
     .container-fluid {
-        padding: 0;
+        /*padding: 0;*/
     }
 
     .customer-img {
@@ -1708,6 +1709,7 @@ a:active {
     .slide-2 h2 {
         margin-left: 2%;
         text-align: left;
+        margin-top: 10px;
     }
 
     .slide-2, .slide-2 .bot-preview-block, .slide-2 .col-lg-7 {
@@ -1873,6 +1875,12 @@ a:active {
     }
 }
 
+@media (max-width: 522px) {
+    .slide-2 .right {
+        height: 593px;
+    }
+}
+
 @media (max-width: 467px) {
     .nav.navbar-nav.navbar-right > li.careers {
         /*margin-right: 2%;*/
@@ -1918,9 +1926,6 @@ a:active {
         margin: 0 auto;
     }
 
-    .slide-2 .right {
-        height: 593px;
-    }
     .slide-2 .description {
         margin-bottom: 0;
         padding-bottom: 100px;

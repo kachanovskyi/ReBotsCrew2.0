@@ -125,7 +125,7 @@ p, li {
 
 .subscribe-block {
     width: 100%;
-    height: 88px;
+    /*height: 88px;*/
     background: #2F80ED;
     font-size: 16px;
 }
@@ -138,6 +138,7 @@ p, li {
     font-weight: 300;
     color: #FFFFFF;
     display: inline-block;
+    margin: 0;
 }
 .subscribe-block .inner input {
     height: 36px;
@@ -312,13 +313,13 @@ p, li {
 }
 
 /*CASE.html additional styles*/
-.heading {
+.content .heading {
     border-bottom: 1px solid rgba(0, 0, 0, .11);
+    padding: 0 15px 60px 15px;
 }
     .heading > div {
         padding-right: 20px;
-        margin-top: 60px;
-        margin-bottom: 60px;
+        /*margin-bottom: 60px;*/
     }
         .heading .title {
             margin-bottom: 0;
