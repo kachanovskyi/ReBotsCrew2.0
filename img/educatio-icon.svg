@@ -1,0 +1,71 @@
+<svg width="100" height="100" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>educatio-icon</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-5863 -3123)" figma:type="canvas">
+<g id="educatio-icon" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="bg" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path0_fill" transform="translate(5863 3123)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+<mask id="mask0_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(5863 3123)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(5863 3123)" fill="#000000" fill-opacity="0.1" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Ellipse 3" style="mix-blend-mode:normal;" figma:type="ellipse">
+<mask id="mask1_outline_out">
+<rect id="mask1_outline_inv" fill="white" x="-2" y="-2" width="64" height="34" transform="translate(5883 3158)"/>
+<use xlink:href="#path2_fill" fill="black" transform="translate(5883 3158)"/>
+</mask>
+<g mask="url(#mask1_outline_out)">
+<use xlink:href="#path3_stroke_2x" transform="translate(5883 3158)" fill="#E5E5E5" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Ellipse 3" style="mix-blend-mode:normal;" figma:type="ellipse">
+<mask id="mask2_outline_out">
+<rect id="mask2_outline_inv" fill="white" x="-2" y="-2" width="64" height="34" transform="matrix(6.12323e-17 -1 1 6.12323e-17 5898 3203)"/>
+<use xlink:href="#path2_fill" fill="black" transform="matrix(6.12323e-17 -1 1 6.12323e-17 5898 3203)"/>
+</mask>
+<g mask="url(#mask2_outline_out)">
+<use xlink:href="#path3_stroke_2x" transform="matrix(6.12323e-17 -1 1 6.12323e-17 5898 3203)" fill="#E5E5E5" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Ellipse 3" style="mix-blend-mode:normal;" figma:type="ellipse">
+<use xlink:href="#path4_fill" transform="matrix(0.707107 -0.707107 0.707107 0.707107 5905.93 3173)" fill="#E5E5E5" style="mix-blend-mode:normal;"/>
+<mask id="mask3_outline_out">
+<rect id="mask3_outline_inv" fill="white" x="-2" y="-2" width="14" height="14" transform="matrix(0.707107 -0.707107 0.707107 0.707107 5905.93 3173)"/>
+<use xlink:href="#path4_fill" fill="black" transform="matrix(0.707107 -0.707107 0.707107 0.707107 5905.93 3173)"/>
+</mask>
+<g mask="url(#mask3_outline_out)">
+<use xlink:href="#path5_stroke_2x" transform="matrix(0.707107 -0.707107 0.707107 0.707107 5905.93 3173)" fill="#2F80ED" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Ellipse 3" style="mix-blend-mode:normal;" figma:type="ellipse">
+<mask id="mask4_outline_out">
+<rect id="mask4_outline_inv" fill="white" x="-2" y="-2" width="64" height="34" transform="matrix(0.707107 -0.707107 0.707107 0.707107 5881.18 3183.61)"/>
+<use xlink:href="#path2_fill" fill="black" transform="matrix(0.707107 -0.707107 0.707107 0.707107 5881.18 3183.61)"/>
+</mask>
+<g mask="url(#mask4_outline_out)">
+<use xlink:href="#path3_stroke_2x" transform="matrix(0.707107 -0.707107 0.707107 0.707107 5881.18 3183.61)" fill="#2F80ED" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Ellipse 3" style="mix-blend-mode:normal;" figma:type="ellipse">
+<mask id="mask5_outline_out">
+<rect id="mask5_outline_inv" fill="white" x="-2" y="-2" width="64" height="34" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 5944.82 3183.61)"/>
+<use xlink:href="#path2_fill" fill="black" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 5944.82 3183.61)"/>
+</mask>
+<g mask="url(#mask5_outline_out)">
+<use xlink:href="#path3_stroke_2x" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 5944.82 3183.61)" fill="#2F80ED" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 6C 0 2.68629 2.68629 0 6 0L 94 0C 97.3137 0 100 2.68629 100 6L 100 94C 100 97.3137 97.3137 100 94 100L 6 100C 2.68629 100 0 97.3137 0 94L 0 6Z"/>
+<path id="path1_stroke_2x" d="M 6 0.5L 94 0.5L 94 -0.5L 6 -0.5L 6 0.5ZM 99.5 6L 99.5 94L 100.5 94L 100.5 6L 99.5 6ZM 94 99.5L 6 99.5L 6 100.5L 94 100.5L 94 99.5ZM 0.5 94L 0.5 6L -0.5 6L -0.5 94L 0.5 94ZM 6 -0.5C 2.41015 -0.5 -0.5 2.41015 -0.5 6L 0.5 6C 0.5 2.96243 2.96243 0.5 6 0.5L 6 -0.5ZM 94 0.5C 97.0376 0.5 99.5 2.96243 99.5 6L 100.5 6C 100.5 2.41015 97.5899 -0.5 94 -0.5L 94 0.5ZM 99.5 94C 99.5 97.0376 97.0376 99.5 94 99.5L 94 100.5C 97.5899 100.5 100.5 97.5899 100.5 94L 99.5 94ZM 6 99.5C 2.96243 99.5 0.5 97.0376 0.5 94L -0.5 94C -0.5 97.5899 2.41015 100.5 6 100.5L 6 99.5Z"/>
+<path id="path2_fill" d="M 60 15C 60 23.2843 46.5685 30 30 30C 13.4315 30 0 23.2843 0 15C 0 6.71573 13.4315 0 30 0C 46.5685 0 60 6.71573 60 15Z"/>
+<path id="path3_stroke_2x" d="M 58 15C 58 17.9765 55.5351 21.2096 50.3188 23.8177C 45.1136 26.4369 38.0645 28.0121 30 28L 30 32C 38.5041 31.9879 46.4549 30.2053 52.1076 27.3955C 57.7492 24.5747 62 20.3078 62 15L 58 15ZM 30 28C 21.9355 28.0121 14.8864 26.4369 9.68122 23.8177C 4.4649 21.2096 2 17.9765 2 15L -2 15C -2 20.3078 2.25083 24.5747 7.89237 27.3955C 13.5451 30.2053 21.4959 31.9879 30 32L 30 28ZM 2 15C 2 12.0235 4.4649 8.79041 9.68122 6.18225C 14.8864 3.56315 21.9355 1.98789 30 2L 30 -2C 21.4959 -1.98789 13.5451 -0.205282 7.89237 2.60454C 2.25083 5.42531 -2 9.69221 -2 15L 2 15ZM 30 2C 38.0645 1.98789 45.1136 3.56315 50.3188 6.18225C 55.5351 8.79041 58 12.0235 58 15L 62 15C 62 9.69221 57.7492 5.42531 52.1076 2.60454C 46.4549 -0.205282 38.5041 -1.98789 30 -2L 30 2Z"/>
+<path id="path4_fill" d="M 10 5C 10 7.76142 7.76142 10 5 10C 2.23858 10 0 7.76142 0 5C 0 2.23858 2.23858 0 5 0C 7.76142 0 10 2.23858 10 5Z"/>
+<path id="path5_stroke_2x" d="M 8 5C 8 6.65685 6.65685 8 5 8L 5 12C 8.86599 12 12 8.86599 12 5L 8 5ZM 5 8C 3.34315 8 2 6.65685 2 5L -2 5C -2 8.86599 1.13401 12 5 12L 5 8ZM 2 5C 2 3.34315 3.34315 2 5 2L 5 -2C 1.13401 -2 -2 1.13401 -2 5L 2 5ZM 5 2C 6.65685 2 8 3.34315 8 5L 12 5C 12 1.13401 8.86599 -2 5 -2L 5 2Z"/>
+</defs>
+</svg>

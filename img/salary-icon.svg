@@ -1,0 +1,45 @@
+<svg width="100" height="100" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>salary-icon</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-5863 -2863)" figma:type="canvas">
+<g id="salary-icon" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Rectangle 2" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path0_fill" transform="translate(5863 2863)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+<mask id="mask0_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(5863 2863)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(5863 2863)" fill="#000000" fill-opacity="0.1" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Rectangle 3" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path2_fill" transform="translate(5883 2895)" fill="#2F80ED" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 3" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path3_fill" transform="translate(5885 2897)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Union" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path4_fill" transform="translate(5885 2897)" fill="#E5E5E5" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 4" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path5_fill" transform="translate(5906 2895)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+<mask id="mask1_outline_out">
+<rect id="mask1_outline_inv" fill="white" x="-2" y="-2" width="20" height="40" transform="translate(5906 2895)"/>
+<use xlink:href="#path5_fill" fill="black" transform="translate(5906 2895)"/>
+</mask>
+<g mask="url(#mask1_outline_out)">
+<use xlink:href="#path6_stroke_2x" transform="translate(5906 2895)" fill="#2F80ED" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 6C 0 2.68629 2.68629 0 6 0L 94 0C 97.3137 0 100 2.68629 100 6L 100 94C 100 97.3137 97.3137 100 94 100L 6 100C 2.68629 100 0 97.3137 0 94L 0 6Z"/>
+<path id="path1_stroke_2x" d="M 6 0.5L 94 0.5L 94 -0.5L 6 -0.5L 6 0.5ZM 99.5 6L 99.5 94L 100.5 94L 100.5 6L 99.5 6ZM 94 99.5L 6 99.5L 6 100.5L 94 100.5L 94 99.5ZM 0.5 94L 0.5 6L -0.5 6L -0.5 94L 0.5 94ZM 6 -0.5C 2.41015 -0.5 -0.5 2.41015 -0.5 6L 0.5 6C 0.5 2.96243 2.96243 0.5 6 0.5L 6 -0.5ZM 94 0.5C 97.0376 0.5 99.5 2.96243 99.5 6L 100.5 6C 100.5 2.41015 97.5899 -0.5 94 -0.5L 94 0.5ZM 99.5 94C 99.5 97.0376 97.0376 99.5 94 99.5L 94 100.5C 97.5899 100.5 100.5 97.5899 100.5 94L 99.5 94ZM 6 99.5C 2.96243 99.5 0.5 97.0376 0.5 94L -0.5 94C -0.5 97.5899 2.41015 100.5 6 100.5L 6 99.5Z"/>
+<path id="path2_fill" d="M 0 0L 60 0L 60 36L 0 36L 0 0Z"/>
+<path id="path3_fill" d="M 0 0L 56 0L 56 32L 0 32L 0 0Z"/>
+<path id="path4_fill" fill-rule="evenodd" d="M 52 0L 44 0L 12 0L 10 0L 2 0L 0 0L 0 12L 0 20L 0 32L 2 32L 7 32L 12 32L 44 32L 49 32L 56 32L 56 20L 56 12L 56 0L 52 0ZM 2 20.166C 7.02539 21.009 10.9907 24.9749 11.834 30L 44.166 30C 45.0093 24.9749 48.9746 21.009 54 20.166L 54 11.834C 48.9746 10.991 45.0093 7.02515 44.166 2L 11.834 2C 10.9907 7.02515 7.02539 10.991 2 11.834L 2 20.166Z"/>
+<path id="path5_fill" d="M 0 0L 16 0L 16 36L 0 36L 0 0Z"/>
+<path id="path6_stroke_2x" d="M 0 0L 0 -2L -2 -2L -2 0L 0 0ZM 16 0L 18 0L 18 -2L 16 -2L 16 0ZM 16 36L 16 38L 18 38L 18 36L 16 36ZM 0 36L -2 36L -2 38L 0 38L 0 36ZM 0 2L 16 2L 16 -2L 0 -2L 0 2ZM 14 0L 14 36L 18 36L 18 0L 14 0ZM 16 34L 0 34L 0 38L 16 38L 16 34ZM 2 36L 2 0L -2 0L -2 36L 2 36Z"/>
+</defs>
+</svg>

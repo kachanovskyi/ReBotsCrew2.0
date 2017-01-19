@@ -1,13 +1,58 @@
-body {
-    padding-top: 5vh;
+.nopadding-vertical {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.no-bottom-margin {
+    margin-bottom: 0;
+}
+.margin-top-small {
+    margin-top: 30px;
+}
+.margin-bottom-small {
+    margin-bottom: 30px;
 }
 
-.top {
-    text-align: center;
+.bot-btn.blue.learn {
+    margin: 30px 0;
 }
-.top h1 {
-    font-size: 42px;
-    color: #333333;
+
+.benefits {
+    background: #F9F9F9 !important;
+    padding: 60px 0 30px 0;
+    margin-bottom: 60px;
+}
+    .benefits .benefit {
+        margin: 0 0 30px 20px;
+    }
+    .benefits .benefit.right {
+        margin-left: 40px;
+    }
+    .benefits img,
+    .benefits .text{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .benefits .text {
+        max-width: 66%;
+    }
+        .benefits .benefit.right .text {
+            max-width: 74%;
+        }
+    .benefits .title,
+    .benefits .description {
+        margin: 0;
+        padding: 0 0 10px 0;
+    }
+    .benefits .description {
+        padding-bottom: 0;
+    }
+
+.role {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.role.last {
+    border: none;
+    margin-bottom: 30px;
 }
 
 .vacancy {

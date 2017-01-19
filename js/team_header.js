@@ -3,10 +3,8 @@ $(window).on('resize', function(){
     targetOffset = $('.content').offset().top - 60;
 }());
 var $w = $(window).scroll(function(){
-    console.log(targetOffset, 'targetOffset');
 
     if ( $w.scrollTop() > (targetOffset)) {
-        console.log('header styles updated');
         $('.menu-item').addClass('standard-menu-item');
         $('.header .menu-item.bot-btn').removeClass('border-white');
         $('.header .menu-item.bot-btn').addClass('text-blue');

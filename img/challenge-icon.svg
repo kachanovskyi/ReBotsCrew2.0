@@ -1,0 +1,77 @@
+<svg width="100" height="100" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>challenge-icon</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-6433 -2993)" figma:type="canvas">
+<g id="challenge-icon" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Rectangle 2" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path0_fill" transform="translate(6433 2993)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+<mask id="mask0_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(6433 2993)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(6433 2993)" fill="#000000" fill-opacity="0.1" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Rectangle" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path2_fill" transform="translate(6453 3040)" fill="#E5E5E5" style="mix-blend-mode:normal;"/>
+<mask id="mask1_outline_out">
+<rect id="mask1_outline_inv" fill="white" x="-2" y="-2" width="64" height="10" transform="translate(6453 3040)"/>
+<use xlink:href="#path2_fill" fill="black" transform="translate(6453 3040)"/>
+</mask>
+<g mask="url(#mask1_outline_out)">
+<use xlink:href="#path3_stroke_2x" transform="translate(6453 3040)" fill="#2F80ED" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Rectangle" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path4_fill" transform="matrix(6.12323e-17 -1 1 6.12323e-17 6453 3052)" fill="#E5E5E5" style="mix-blend-mode:normal;"/>
+<mask id="mask2_outline_out">
+<rect id="mask2_outline_inv" fill="white" x="-2" y="-2" width="22" height="10" transform="matrix(6.12323e-17 -1 1 6.12323e-17 6453 3052)"/>
+<use xlink:href="#path4_fill" fill="black" transform="matrix(6.12323e-17 -1 1 6.12323e-17 6453 3052)"/>
+</mask>
+<g mask="url(#mask2_outline_out)">
+<use xlink:href="#path5_stroke_2x" transform="matrix(6.12323e-17 -1 1 6.12323e-17 6453 3052)" fill="#2F80ED" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Rectangle" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path6_fill" transform="matrix(6.12323e-17 -1 1 6.12323e-17 6461 3057)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+<mask id="mask3_outline_out">
+<rect id="mask3_outline_inv" fill="white" x="-2" y="-2" width="32" height="10" transform="matrix(6.12323e-17 -1 1 6.12323e-17 6461 3057)"/>
+<use xlink:href="#path6_fill" fill="black" transform="matrix(6.12323e-17 -1 1 6.12323e-17 6461 3057)"/>
+</mask>
+<g mask="url(#mask3_outline_out)">
+<use xlink:href="#path7_stroke_2x" transform="matrix(6.12323e-17 -1 1 6.12323e-17 6461 3057)" fill="#2F80ED" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Rectangle" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path4_fill" transform="matrix(-6.12323e-17 -1 -1 6.12323e-17 6513 3052)" fill="#E5E5E5" style="mix-blend-mode:normal;"/>
+<mask id="mask4_outline_out">
+<rect id="mask4_outline_inv" fill="white" x="-2" y="-2" width="22" height="10" transform="matrix(-6.12323e-17 -1 -1 6.12323e-17 6513 3052)"/>
+<use xlink:href="#path4_fill" fill="black" transform="matrix(-6.12323e-17 -1 -1 6.12323e-17 6513 3052)"/>
+</mask>
+<g mask="url(#mask4_outline_out)">
+<use xlink:href="#path5_stroke_2x" transform="matrix(-6.12323e-17 -1 -1 6.12323e-17 6513 3052)" fill="#2F80ED" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Rectangle" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path6_fill" transform="matrix(-6.12323e-17 -1 -1 6.12323e-17 6505 3057)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+<mask id="mask5_outline_out">
+<rect id="mask5_outline_inv" fill="white" x="-2" y="-2" width="32" height="10" transform="matrix(-6.12323e-17 -1 -1 6.12323e-17 6505 3057)"/>
+<use xlink:href="#path6_fill" fill="black" transform="matrix(-6.12323e-17 -1 -1 6.12323e-17 6505 3057)"/>
+</mask>
+<g mask="url(#mask5_outline_out)">
+<use xlink:href="#path7_stroke_2x" transform="matrix(-6.12323e-17 -1 -1 6.12323e-17 6505 3057)" fill="#2F80ED" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 6C 0 2.68629 2.68629 0 6 0L 94 0C 97.3137 0 100 2.68629 100 6L 100 94C 100 97.3137 97.3137 100 94 100L 6 100C 2.68629 100 0 97.3137 0 94L 0 6Z"/>
+<path id="path1_stroke_2x" d="M 6 0.5L 94 0.5L 94 -0.5L 6 -0.5L 6 0.5ZM 99.5 6L 99.5 94L 100.5 94L 100.5 6L 99.5 6ZM 94 99.5L 6 99.5L 6 100.5L 94 100.5L 94 99.5ZM 0.5 94L 0.5 6L -0.5 6L -0.5 94L 0.5 94ZM 6 -0.5C 2.41015 -0.5 -0.5 2.41015 -0.5 6L 0.5 6C 0.5 2.96243 2.96243 0.5 6 0.5L 6 -0.5ZM 94 0.5C 97.0376 0.5 99.5 2.96243 99.5 6L 100.5 6C 100.5 2.41015 97.5899 -0.5 94 -0.5L 94 0.5ZM 99.5 94C 99.5 97.0376 97.0376 99.5 94 99.5L 94 100.5C 97.5899 100.5 100.5 97.5899 100.5 94L 99.5 94ZM 6 99.5C 2.96243 99.5 0.5 97.0376 0.5 94L -0.5 94C -0.5 97.5899 2.41015 100.5 6 100.5L 6 99.5Z"/>
+<path id="path2_fill" d="M 0 0L 60 0L 60 6L 0 6L 0 0Z"/>
+<path id="path3_stroke_2x" d="M 0 0L 0 -2L -2 -2L -2 0L 0 0ZM 60 0L 62 0L 62 -2L 60 -2L 60 0ZM 60 6L 60 8L 62 8L 62 6L 60 6ZM 0 6L -2 6L -2 8L 0 8L 0 6ZM 0 2L 60 2L 60 -2L 0 -2L 0 2ZM 58 0L 58 6L 62 6L 62 0L 58 0ZM 60 4L 0 4L 0 8L 60 8L 60 4ZM 2 6L 2 0L -2 0L -2 6L 2 6Z"/>
+<path id="path4_fill" d="M 0 0L 18 0L 18 6L 0 6L 0 0Z"/>
+<path id="path5_stroke_2x" d="M 0 0L 0 -2L -2 -2L -2 0L 0 0ZM 18 0L 20 0L 20 -2L 18 -2L 18 0ZM 18 6L 18 8L 20 8L 20 6L 18 6ZM 0 6L -2 6L -2 8L 0 8L 0 6ZM 0 2L 18 2L 18 -2L 0 -2L 0 2ZM 16 0L 16 6L 20 6L 20 0L 16 0ZM 18 4L 0 4L 0 8L 18 8L 18 4ZM 2 6L 2 0L -2 0L -2 6L 2 6Z"/>
+<path id="path6_fill" d="M 0 0L 28 0L 28 6L 0 6L 0 0Z"/>
+<path id="path7_stroke_2x" d="M 0 0L 0 -2L -2 -2L -2 0L 0 0ZM 28 0L 30 0L 30 -2L 28 -2L 28 0ZM 28 6L 28 8L 30 8L 30 6L 28 6ZM 0 6L -2 6L -2 8L 0 8L 0 6ZM 0 2L 28 2L 28 -2L 0 -2L 0 2ZM 26 0L 26 6L 30 6L 30 0L 26 0ZM 28 4L 0 4L 0 8L 28 8L 28 4ZM 2 6L 2 0L -2 0L -2 6L 2 6Z"/>
+</defs>
+</svg>

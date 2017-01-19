@@ -251,7 +251,7 @@ a:active {
     .bot-btn.blue {
         background: #2F80ED !important;
         border-color: #2F80ED;
-        color: #FFFFFF;
+        color: #FFFFFF !important;
     }
         .bot-btn.blue:hover {
             background: #2374C4 !important;
