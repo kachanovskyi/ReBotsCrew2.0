@@ -21,6 +21,10 @@ a:active {
     text-decoration: none;
 }
 
+.navbar-toggle {
+    margin: 30px;
+}
+
 .header {
     width: 100%;
     /*height: 12vh;*/
@@ -518,7 +522,6 @@ a:active {
     color: #e0e0e0;
     text-align: center;
     text-decoration: none;
-    vertical-align: middle;
 }
 
 .slide-4 .bottom ul>li a.active {
@@ -1154,7 +1157,7 @@ a:active {
     }
 
     .slide-4 .bottom ul>li:nth-child(3), .slide-4 .bottom ul>li:nth-child(7) {
-        padding: 10px 0;
+        /*padding: 10px 0;*/
     }
 
     .slide-3 .advantages-list {
@@ -1199,6 +1202,12 @@ a:active {
         display: none;
         padding: 10px 15px;
     }
+    .slide-4 .bottom ul>li:first-child>img, .slide-4 .bottom ul>li:last-child>img {
+        padding-top: 0;
+    }
+        .slide-4 .bottom ul>li a {
+            vertical-align: middle;
+        }
     .slide-4 .bottom ul>li:nth-child(2), .slide-4 .bottom ul>li:nth-child(3),
     .slide-4 .bottom ul>li:nth-child(4), .slide-4 .bottom ul>li:nth-child(5) {
         display: block;
@@ -1288,6 +1297,9 @@ a:active {
     /*.slide-3 .bots-advantages.middle p {*/
         /*margin: 44px 44px 12px 44px;*/
     /*}*/
+    .slide-3 .bots-advantages.clear {
+        clear: both;
+    }
     .slide-3 .bots-advantages p {
         margin: 12px 6px 60px 6px;
     }
