@@ -4,7 +4,7 @@ h1, h2, p, a {
 
 .subscribe-block {
     width: 100%;
-    height: 88px;
+    /*height: 88px;*/
     background: #2F80ED;
 }
     .subscribe-block .inner {
@@ -75,6 +75,7 @@ h1, h2, p, a {
 .top h1 {
     font-size: 42px;
     color: #333333;
+    margin-top: 42px;
 }
 
 #middle {
@@ -165,8 +166,9 @@ h1, h2, p, a {
         margin-top: 30px;
     }
     .article {
-        padding: 0 33px;
+        padding: 0 15px;
     }
+    .article.article-5 .preview-img,
     .article.article-4 .preview-img, .article.article-3 .preview-img,
     .article.article-2 .preview-img, .article.article-1 .preview-img {
         background-size: cover;
@@ -174,6 +176,12 @@ h1, h2, p, a {
 }
 
 @media (max-width: 515px) {
+    .subscribe-block .inner input {
+        width: 44%;
+    }
+    .subscribe-block .inner .close-btn {
+        margin-left: 10%;
+    }
     .article {
         height: auto;
     }
