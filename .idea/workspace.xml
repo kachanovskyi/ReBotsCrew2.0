@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b84ffc62-3f88-4b9b-862e-881918df00ee" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog.html" afterPath="$PROJECT_DIR$/blog.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots-commerce.html" afterPath="$PROJECT_DIR$/bots-commerce.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/careers.html" afterPath="$PROJECT_DIR$/careers.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case.html" afterPath="$PROJECT_DIR$/case.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chatbots-got-payments.html" afterPath="$PROJECT_DIR$/chatbots-got-payments.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crafting-a-great-branding-delivery.html" afterPath="$PROJECT_DIR$/crafting-a-great-branding-delivery.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/blog.css" afterPath="$PROJECT_DIR$/css/blog.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/blog_article.css" afterPath="$PROJECT_DIR$/css/blog_article.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/careers.css" afterPath="$PROJECT_DIR$/css/careers.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/musement-raised-millions.html" afterPath="$PROJECT_DIR$/musement-raised-millions.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/retail-needs-updating.html" afterPath="$PROJECT_DIR$/retail-needs-updating.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/team.html" afterPath="$PROJECT_DIR$/team.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/what-are-chatbots.html" afterPath="$PROJECT_DIR$/what-are-chatbots.html" />
     </list>
     <ignored path="botscrew 2.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,7 +35,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="careers.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="careers.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/careers.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="100">
@@ -119,6 +104,28 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="305">
+              <caret line="1405" column="24" selection-start-line="1405" selection-start-column="24" selection-end-line="1405" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="159">
+              <caret line="119" column="24" selection-start-line="119" selection-start-column="20" selection-end-line="119" selection-end-column="24" />
+              <folding>
+                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -159,7 +166,6 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/blog_article.css" />
         <option value="$PROJECT_DIR$/team.html" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/css/blog.css" />
         <option value="$PROJECT_DIR$/blog.html" />
         <option value="$PROJECT_DIR$/css/team.css" />
@@ -172,6 +178,7 @@
         <option value="$PROJECT_DIR$/case.html" />
         <option value="$PROJECT_DIR$/css/careers.css" />
         <option value="$PROJECT_DIR$/careers.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -441,12 +448,12 @@
       <workItem from="1485150069974" duration="7162000" />
       <workItem from="1485178087492" duration="3959000" />
       <workItem from="1485241470747" duration="14012000" />
-      <workItem from="1485330791867" duration="11744000" />
+      <workItem from="1485330791867" duration="12108000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="897874000" />
+    <option name="totallyTimeSpent" value="898238000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -696,31 +703,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="364" column="131" selection-start-line="364" selection-start-column="100" selection-end-line="364" selection-end-column="131" />
-          <folding>
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#4;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#textarea#0;n#form#0;n#div#1;n#div#1;n#div#3;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/blog_article.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="118">
           <caret line="58" column="10" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="1451" column="5" selection-start-line="1451" selection-start-column="5" selection-end-line="1451" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -847,6 +833,24 @@
         <state relative-caret-position="100">
           <caret line="168" column="5" selection-start-line="168" selection-start-column="5" selection-end-line="168" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="1405" column="24" selection-start-line="1405" selection-start-column="24" selection-end-line="1405" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="119" column="24" selection-start-line="119" selection-start-column="20" selection-end-line="119" selection-end-column="24" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

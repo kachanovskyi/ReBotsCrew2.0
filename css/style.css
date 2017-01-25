@@ -553,7 +553,7 @@ a:active {
 
 .slide-4 .middle {
     overflow: hidden;
-    margin-bottom: 160px;
+    margin-bottom: 60px;
 }
 
 .phrase-box {
@@ -1398,6 +1398,12 @@ a:active {
     .menu-item.bot-btn.blue-dark-blue.messenger {
         text-align: center;
         padding: 12px 28px;
+    }
+}
+
+@media (max-width: 830px) and (min-width: 768px) {
+    .bot-btn.white.text-blue.case-study {
+        padding: 14px 71px;
     }
 }
 
