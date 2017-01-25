@@ -48,12 +48,43 @@
     }
 
 .role {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-.role.last {
-    border: none;
+    background: #FFFFFF;
+    opacity: 1.00;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.05);
+    border-radius: 2px;
+    margin-top: 10px;
+    padding: 0 20px;
     margin-bottom: 30px;
 }
+    .role .preview-img {
+        /*margin: 12px;*/
+        display: block;
+        /*width: 250px;*/
+        height: 250px;
+        margin: 20px auto;
+        background: #2F80ED;
+        position: relative;
+    }
+        .role .preview-img > img {
+            display: block;
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    .role .heading {
+        font-weight: 700;
+        margin: 20px 10px 6px 0;
+        border: none;
+        padding: 0;
+    }
+    .role .sub-heading {
+        padding: 0;
+        margin-bottom: 30px;
+    }
 
 .vacancy {
     display: block;
@@ -93,9 +124,61 @@
     padding-left: 0;
 }
 
+@media (max-width: 991px) {
+    .perks {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .role:nth-child(odd) {
+        margin-left: calc(16.66666667% - 15px);
+    }
+    .role:nth-child(even) {
+        margin-left: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    .role:nth-child(odd) {
+        margin-left: calc(8.33333333% - 10px);
+    }
+    .role:nth-child(even) {
+        margin-left: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .role:nth-child(odd) {
+        margin-left: calc(16.66666667% - 15px);
+    }
+    .role:nth-child(even) {
+        margin-left: 30px;
+    }
+}
+
 @media (min-width: 575px) {
     .vacancy .demands p, .vacancy .offers p {
         padding-left: 66px;
+    }
+}
+@media (max-width: 575px) {
+    .role:nth-child(even) {
+        /*margin-left: auto;*/
+    }
+    .role:nth-child(odd) {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 515px) {
+    .subscribe-block .inner input {
+        width: 44%;
+    }
+
+    .subscribe-block .inner .close-btn {
+        margin-left: 10%;
     }
 }
 

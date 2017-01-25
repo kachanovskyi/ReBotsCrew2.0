@@ -201,7 +201,7 @@ a:active {
             border: 1px solid #2F80ED !important;
         }
             .bot-btn.white.text-blue.get-started {
-                padding: 14px 92.3px;
+                padding: 14px 28px;
             }
         .bot-btn.white.border-white {
             border: 1px solid #FFFFFF;
@@ -644,7 +644,7 @@ a:active {
     font-size: 28px;
     line-height: 100%;
     color: #4F4F4F;
-    margin: 18% auto 0 auto;
+    margin: 60px auto 0 auto;
 }
 
 .slide-6 p {
@@ -1011,6 +1011,7 @@ a:active {
     background: transparent;
     border: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0;
     margin: auto;
     font-family: "Roboto", sans-serif;
     font-size: 18px;
@@ -1447,7 +1448,7 @@ a:active {
     }
 
     .navbar li>.menu-item.bot-btn {
-        border: none;
+        /*border: none;*/
     }
     .navbar li>.menu-item.bot-btn:hover {
         background: transparent !important;
@@ -1960,7 +1961,7 @@ a:active {
         margin: 0 1%;
     }
     .nav.navbar-nav.navbar-right > li.careers {
-        margin-right: 10px;
+        margin-right: 1%;
     }
 
     .menu-item.bot-btn.white.text-blue.noborder {
@@ -2100,6 +2101,10 @@ a:active {
     .bot-btn.blue.join {
         margin-bottom: 10px;
         /*padding: 14px 30px;*/
+    }
+    .bot-btn.blue.border-white.contact,
+    .bot-btn.white.text-blue.request {
+        padding: 14px 24px;
     }
 }
 

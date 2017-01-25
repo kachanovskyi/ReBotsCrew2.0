@@ -172,6 +172,7 @@ h1, h2, p, a {
     .article.article-4 .preview-img, .article.article-3 .preview-img,
     .article.article-2 .preview-img, .article.article-1 .preview-img {
         background-size: cover;
+        background-position: center;
     }
 }
 
@@ -186,7 +187,7 @@ h1, h2, p, a {
         height: auto;
     }
     .article .preview-img {
-        display: none;
+        /*display: none;*/
     }
     .article .preview-text {
         height: 100%;

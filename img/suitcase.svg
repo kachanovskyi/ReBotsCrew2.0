@@ -1,0 +1,49 @@
+<svg width="110" height="100" viewBox="0 0 110 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>Group</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-17002 -4272)" figma:type="canvas">
+<g id="Group" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Rectangle" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="matrix(1 0 0 -1 17006 4372)" fill="#B1D2FF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle 3" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path1_stroke" transform="translate(17038.5 4274)" fill="#B1D2FF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path2_fill" transform="translate(17006 4292)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+<mask id="mask0_outline_out">
+<rect id="mask0_outline_inv" fill="white" x="-4" y="-4" width="110" height="52" transform="translate(17006 4292)"/>
+<use xlink:href="#path2_fill" fill="black" transform="translate(17006 4292)"/>
+</mask>
+<g mask="url(#mask0_outline_out)">
+<use xlink:href="#path3_stroke_2x" transform="translate(17006 4292)" fill="#2F80ED" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Rectangle 2" style="mix-blend-mode:normal;" figma:type="rounded-rectangle">
+<use xlink:href="#path4_fill" transform="translate(17052 4326.64)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+<mask id="mask1_outline_out">
+<rect id="mask1_outline_inv" fill="white" x="-4" y="-4" width="18" height="26" transform="translate(17052 4326.64)"/>
+<use xlink:href="#path4_fill" fill="black" transform="translate(17052 4326.64)"/>
+</mask>
+<g mask="url(#mask1_outline_out)">
+<use xlink:href="#path5_stroke_2x" transform="translate(17052 4326.64)" fill="#2F80ED" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Ellipse" style="mix-blend-mode:normal;" figma:type="ellipse">
+<use xlink:href="#path6_fill" transform="translate(17036.5 4286)" fill="#B1D2FF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Ellipse" style="mix-blend-mode:normal;" figma:type="ellipse">
+<use xlink:href="#path6_fill" transform="translate(17073.5 4286)" fill="#B1D2FF" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 4C 0 1.79086 1.79086 0 4 0L 98 0C 100.209 0 102 1.79086 102 4L 102 76C 102 78.2091 100.209 80 98 80L 4 80C 1.79086 80 0 78.2091 0 76L 0 4Z"/>
+<path id="path1_stroke" d="M 10 2L 27 2L 27 -2L 10 -2L 10 2ZM 35 10L 35 18L 39 18L 39 10L 35 10ZM 2 18L 2 10L -2 10L -2 18L 2 18ZM 10 -2C 3.37258 -2 -2 3.37258 -2 10L 2 10C 2 5.58172 5.58172 2 10 2L 10 -2ZM 27 2C 31.4183 2 35 5.58172 35 10L 39 10C 39 3.37258 33.6274 -2 27 -2L 27 2Z"/>
+<path id="path2_fill" d="M 0 4C 0 1.79086 1.79086 0 4 0L 98 0C 100.209 0 102 1.79086 102 4L 102 13.6364C 102 30.2049 88.5685 43.6364 72 43.6364L 30 43.6364C 13.4315 43.6364 0 30.2049 0 13.6364L 0 4Z"/>
+<path id="path3_stroke_2x" d="M 4 4L 98 4L 98 -4L 4 -4L 4 4ZM 98 4L 98 13.6364L 106 13.6364L 106 4L 98 4ZM 72 39.6364L 30 39.6364L 30 47.6364L 72 47.6364L 72 39.6364ZM 4 13.6364L 4 4L -4 4L -4 13.6364L 4 13.6364ZM 4 -4C -0.418278 -4 -4 -0.418278 -4 4L 4 4L 4 -4ZM 98 4L 106 4C 106 -0.418278 102.418 -4 98 -4L 98 4ZM 98 13.6364C 98 27.9958 86.3594 39.6364 72 39.6364L 72 47.6364C 90.7777 47.6364 106 32.414 106 13.6364L 98 13.6364ZM 30 39.6364C 15.6406 39.6364 4 27.9958 4 13.6364L -4 13.6364C -4 32.414 11.2223 47.6364 30 47.6364L 30 39.6364Z"/>
+<path id="path4_fill" d="M 0 4C 0 1.79086 1.79086 0 4 0L 6 0C 8.20914 0 10 1.79086 10 4L 10 14C 10 16.2091 8.20914 18 6 18L 4 18C 1.79086 18 0 16.2091 0 14L 0 4Z"/>
+<path id="path5_stroke_2x" d="M 4 4L 6 4L 6 -4L 4 -4L 4 4ZM 6 4L 6 14L 14 14L 14 4L 6 4ZM 6 14L 4 14L 4 22L 6 22L 6 14ZM 4 14L 4 4L -4 4L -4 14L 4 14ZM 4 -4C -0.418278 -4 -4 -0.418278 -4 4L 4 4L 4 -4ZM 6 4L 14 4C 14 -0.418278 10.4183 -4 6 -4L 6 4ZM 6 14L 6 22C 10.4183 22 14 18.4183 14 14L 6 14ZM 4 14L -4 14C -4 18.4183 -0.418278 22 4 22L 4 14Z"/>
+<path id="path6_fill" d="M 4 2C 4 3.10457 3.10457 4 2 4C 0.895431 4 0 3.10457 0 2C 0 0.895431 0.895431 0 2 0C 3.10457 0 4 0.895431 4 2Z"/>
+</defs>
+</svg>
