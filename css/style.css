@@ -1446,14 +1446,17 @@ a:active {
         margin: 12px;
     }
 
+    .navbar-collapse {
+        padding: 0;
+    }
     .navbar-nav {
-        margin: 0;
+        margin: 0 -15px;
         padding: 24px 0;
         text-align: center;
     }
     .navbar-default .navbar-nav>li {
         margin: 0 3.3%;
-        display: inline-block;
+        /*display: inline-block;*/
     }
 
     .navbar li>.menu-item.bot-btn {
