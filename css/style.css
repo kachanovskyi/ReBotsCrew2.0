@@ -368,6 +368,9 @@ a:active {
 
 .slide-3 p.heading {
     margin: 30px auto 10px auto;
+    font-weight: 500;
+    line-height: 100%;
+    color: rgba(0, 0, 0, 0.8);
 }
 
 .slide-3 .bots-advantages {
@@ -675,7 +678,7 @@ a:active {
 
 .carousel-control.left, .carousel-control.right {
     background: none;
-    padding-top: 200px;
+    padding-top: 120px;
 }
 
 .slide-6 .bot-card .description-block{
@@ -1303,7 +1306,7 @@ a:active {
     }
 
     .carousel-control.left, .carousel-control.right {
-        padding-top: 570px;
+        padding-top: 630px;
     }
 
     .slide-6 .musement>img {
@@ -2056,7 +2059,7 @@ a:active {
     }
 
     .carousel-control.left, .carousel-control.right {
-        padding-top: 600px;
+        padding-top: 680px;
     }
 }
 
