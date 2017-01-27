@@ -214,13 +214,16 @@ a:active {
                 background-color: rgba(256, 256, 256, .22) !important;
             }
         .bot-btn.white.subscribe {
-            padding: 10px 16px 8px 16px;
+            padding: 4px 16px 8px 16px;
             margin-left: -5px;
             border: 1px solid rgba(255, 255, 255, .6);
             border-left: none;
             color: #FFFFFF !important;
             font-size: 16px;
             background-color: rgba(256, 256, 256, .14) !important;
+            height: 30px;
+            vertical-align: middle;
+            line-height: normal;
         }
         .bot-btn.white.subscribe:hover {
             background-color:transparent !important;
@@ -1361,7 +1364,7 @@ a:active {
     }
 
     .nav.navbar-nav.navbar-right>li>a.menu-item {
-        padding: 14px 20px;
+        padding: 21px 20px;
     }
     .nav.navbar-nav.navbar-right > li.careers {
         margin-right: 20px;
@@ -1417,6 +1420,16 @@ a:active {
 }
 
 @media (max-width: 767px) {
+    .logo {
+        width: 40px;
+    }
+    .nav.navbar-nav .page-scroll.menu-item.bot-btn.white.text-blue {
+        border: none !important;
+        border-radius: 0;
+        background-color: #2F80ED !important;
+        color: #FFFFFF !important;
+        transition-duration: 0.5s;
+    }
     .slide-1 .heading {
         font-size: 24px;
     }
@@ -1446,17 +1459,53 @@ a:active {
         margin: 12px;
     }
 
+    .navbar.navbar-default {
+        /*display: block;*/
+        height: 60px;
+    }
+    .navbar-default .navbar-collapse {
+        border: none;
+    }
+    .navbar.navbar-default .navbar-toggle {
+        margin-top: 12px;
+        margin-bottom: 12px;
+        border: none;
+    }
+    .navbar.navbar-default .navbar-toggle {
+        background: transparent;
+    }
+    .navbar.navbar-default .navbar-brand {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .navbar .container-fluid>.navbar-header {
+        height: 60px;
+    }
     .navbar-collapse {
         padding: 0;
     }
-    .navbar-nav {
-        margin: 0 -15px;
-        padding: 24px 0;
+    .nav.navbar-nav {
+        /*margin: 0 -15px;*/
+        padding-top: 0;
+        padding-bottom: 0;
         text-align: center;
     }
     .navbar-default .navbar-nav>li {
-        margin: 0 3.3%;
+        background: #FFFFFF;
+        /*margin: 0 3.3%;*/
         /*display: inline-block;*/
+    }
+    .nav.navbar-nav.navbar-right>li>a.menu-item {
+        height: 60px;
+        border-bottom: 1px solid rgba(229, 229, 229, .2);
+        /*display: block;*/
+        /*width: 100%;*/
+    }
+    .nav.navbar-nav.navbar-right>li:last-child {
+        padding-right: 0;
+    }
+    .nav.navbar-nav.navbar-right > li.careers {
+        margin-right: 0;
     }
 
     .navbar li>.menu-item.bot-btn {
@@ -1634,13 +1683,6 @@ a:active {
     .type-it {
         font-size: 82px;
     }
-
-    .nav.navbar-nav.navbar-right>li>a.menu-item {
-        padding: 14px !important;
-    }
-    .nav.navbar-nav.navbar-right > li.careers {
-        margin-right: 30px;
-    }
 }
 
 @media (min-width: 576px) and (max-width: 991px) {
@@ -1652,30 +1694,42 @@ a:active {
 }
 
 @media (max-width: 575px) {
+    .navbar.navbar-default {
+        height: 50px;
+    }
+    .navbar .container-fluid>.navbar-header {
+        height: 50px;
+    }
     .navbar-default .navbar-collapse, .navbar-default .navbar-form {
         padding-left: 0;
         padding-right: 0;
     }
     .navbar.navbar-default .navbar-brand {
-        margin: 10px 24px 10px 34px;
+        margin: 0 24px 0 34px;
+    }
+    .navbar.navbar-default .navbar-toggle {
+        margin-top: 9px;
+        margin-bottom: 9px;
+        border: none;
     }
     .navbar-toggle {
-        margin: 18px 34px 12px 30px;
+        margin: 18px 24px 12px 30px;
     }
     .nav.navbar-nav {
-        padding: 12px;
+        padding: 0;
     }
     .nav.navbar-nav.navbar-right>li>a.menu-item {
-        padding: 14px 6px !important;
+        padding: 16px 6px !important;
+        height: 50px;
     }
     .nav.navbar-nav.navbar-right>li:last-child {
         padding-right: 0;
     }
     .navbar-default .navbar-nav>li {
-        margin: 0 2%;
+        margin: 0;
     }
     .nav.navbar-nav.navbar-right > li.careers {
-        margin-right: 20px;
+        margin-right: 0;
     }
 
     .slide-1 .heading {
@@ -1767,10 +1821,6 @@ a:active {
 
     .slide-6 .bot-card .description-block {
         margin-bottom: 30px;
-    }
-
-    .navbar-default .navbar-nav>li {
-        display: inline-block;
     }
 
     .navbar .container-fluid {
@@ -2098,14 +2148,6 @@ a:active {
 }
 
 @media (max-width: 369px) {
-    .nav.navbar-nav {
-        padding: 12px 0;
-    }
-    .navbar-default .navbar-nav>li {
-        /*margin: 0 2.3%;*/
-        /*display: inline-block;*/
-    }
-
     .carousel-control > img {
         width: 32px;
     }

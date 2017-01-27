@@ -16,6 +16,7 @@ h1, h2, p, a {
             font-weight: 300;
             color: #FFFFFF;
             display: inline-block;
+            height: 30px;
         }
         .subscribe-block .inner input {
             padding: 7px 10px 5px 10px;
@@ -23,6 +24,8 @@ h1, h2, p, a {
             background: #2F80ED;
             border: 1px solid rgba(255, 255, 255, .7);
             color: #FFFFFF;
+            height: 30px;
+            vertical-align: middle;
         }
         .subscribe-block .inner ::-webkit-input-placeholder {
             color: #FFFFFF;
@@ -43,6 +46,8 @@ h1, h2, p, a {
     border-left: none;
     color: #FFFFFF !important;
     font-size: 16px;
+    height: 30px;
+    vertical-align: middle;
 }
 .bot-btn.white.subscribe:hover {
     background-color:transparent !important;

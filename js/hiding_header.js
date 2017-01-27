@@ -36,6 +36,7 @@ function hasScrolled() {
 
     if (st > lastScrollTop && st > navbarHeight) {
         $('.navbar-fixed-top').removeClass('nav-down').addClass('nav-up');
+        $('#navbar').removeClass('in');
     } else {
         if(st + $(window).height() < $(document).height()) {
             $('.navbar-fixed-top').removeClass('nav-up').addClass('nav-down');
