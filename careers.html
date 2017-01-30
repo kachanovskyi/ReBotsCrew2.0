@@ -100,15 +100,6 @@
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), inset 0 4px 0 rgba(0, 0, 0, 0.05)
     }
 
-    #middle {
-      font-size: 48px;
-      line-height: 100%;
-      letter-spacing: .0166px;
-      color: #4F4F4F;
-      text-align: center;
-      width: 100%
-    }
-
     .top {
       background: linear-gradient(90deg, #1464D0 0%, #4D99FF 100%);
     }
@@ -151,7 +142,7 @@
 </header>
 
 <section id="wrapper">
-  <div id="middle">
+  <div>
     <div class="row">
       <div class="top col-md-12">
         <h1>Live. Dream. Achieve. <span style="display: inline-block">With us.</span></h1>
@@ -193,7 +184,7 @@
         <p>We define “delivery” as the work sent to a client at the end of each production cycle, and the “deliverable” as that work in document format. At Focus Lab, we deliver batches of work weekly, so a branding deliverable gets shipped every Friday for at least six consecutive weeks, starting in the concepting round (week 1) and ending with the final system (week 6+). There are sometimes midweek concepts delivered, but this discussion is more about the larger, more complete. Anything delivered midweek is usually simply screenshots or sketches in order to get quick feedback, which is also valuable. We’ll address that topic in a later post.
         </p>
       </div>
-      <div class="benefits col-xs-12">
+      <div class="benefits col-xs-12 hidden-xs">
         <div class="col-sm-offset-1 col-sm-10">
           <div class="row">
             <div class="benefit col-sm-6">
@@ -203,7 +194,7 @@
                 <p class="description">We define “delivery” as the work sent to a client at the end of each production cycle</p>
               </div>
             </div>
-            <div class="benefit right col-sm-6 col-md-offset-1 col-md-5">
+            <div class="benefit right col-sm-6 col-md-6">
               <img src="img/workplace-icon.svg">
               <div class="text">
                 <p class="title"><b>Comfortable workplace</b></p>
@@ -219,7 +210,7 @@
                 <p class="description">We define “delivery” as the work sent to a client at the end of each production cycle</p>
               </div>
             </div>
-            <div class="benefit right col-sm-6 col-md-offset-1 col-md-5">
+            <div class="benefit right col-sm-6 col-md-6">
               <img src="img/challenge-icon.svg">
               <div class="text">
                 <p class="title"><b>Tons of challenges</b></p>
@@ -235,7 +226,7 @@
                 <p class="description">We define “delivery” as the work sent to a client at the end of each production cycle</p>
               </div>
             </div>
-            <div class="benefit right col-sm-6 col-md-offset-1 col-md-5">
+            <div class="benefit right col-sm-6 col-md-6">
               <img src="img/team-icon.svg">
               <div class="text">
                 <p class="title"><b>Friendly and loyal team</b></p>
@@ -245,6 +236,89 @@
           </div>
         </div>
       </div>
+
+      <!--<div class="my-slider row col-xs-12">-->
+        <!--<ul>-->
+          <!--<li>My slide</li>-->
+          <!--<li>Another slide</li>-->
+          <!--<li>My last slide</li>-->
+        <!--</ul>-->
+      <!--</div>-->
+
+      <div class="container benefits-carousel hidden-sm hidden-md hidden-lg">
+        <br>
+        <div id="benefitsCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#benefitsCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#benefitsCarousel" data-slide-to="1"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <div class="row">
+                <div class="benefit first col-sm-6">
+                  <img src="img/salary-icon.svg">
+                  <div class="text">
+                    <p class="title"><b>Competetive salary</b></p>
+                    <p class="description">We define “delivery” as the work sent to a client at the end of each production cycle</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="benefit col-sm-6">
+                  <img src="img/vacation-icon.svg">
+                  <div class="text">
+                    <p class="title"><b>Paid vacation</b></p>
+                    <p class="description">We define “delivery” as the work sent to a client at the end of each production cycle</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="benefit col-sm-6">
+                  <img src="img/educatio-icon.svg">
+                  <div class="text">
+                    <p class="title"><b>Education $ Self-improvement</b></p>
+                    <p class="description">We define “delivery” as the work sent to a client at the end of each production cycle</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="row">
+                <div class="benefit first col-sm-6 col-md-6">
+                  <img src="img/workplace-icon.svg">
+                  <div class="text">
+                    <p class="title"><b>Comfortable workplace</b></p>
+                    <p class="description">We define “delivery” as the work sent to a client at the end of each production cycle</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="benefit col-sm-6 col-md-6">
+                  <img src="img/challenge-icon.svg">
+                  <div class="text">
+                    <p class="title"><b>Tons of challenges</b></p>
+                    <p class="description">We define “delivery” as the work sent to a client at the end of each production cycle</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="benefit col-sm-6 col-md-6">
+                  <img src="img/team-icon.svg">
+                  <div class="text">
+                    <p class="title"><b>Friendly and loyal team</b></p>
+                    <p class="description">We define “delivery” as the work sent to a client at the end of each production cycle</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="row col-md-offset-2 col-md-8">
         <h1>Open roles</h1>
         <p class="no-bottom-margin">We define “delivery” as the work sent to a client at the end of each production cycle, and the “deliverable” as that work in document format. At Focus Lab, we deliver batches of work weekly, so a branding deliverable gets shipped every Friday for at least six consecutive weeks, starting in the concepting round (week 1) and ending with the final system (week 6+).
@@ -280,7 +354,7 @@
       <!--</div>-->
     </div>
     <div class="row">
-      <div class="bottom col-sm-12 nopadding no-bottom-margin">
+      <div class="bottom col-sm-12 no-bottom-margin">
         <div class="subscribe-block">
           <div class="inner row text-center">
             <p class="hidden-xs">Subscribe to BotsCrew newsletter<span class="hidden-sm">. No spam, no nasty stuff</span></p>
@@ -345,6 +419,5 @@
 <script src="js/index.js"></script>
 <script src="js/hiding_header.js"></script>
 <script src="js/team_header.js"></script>
-<!--<script src="js/blog_footer.js"></script>-->
 </body>
 </html>

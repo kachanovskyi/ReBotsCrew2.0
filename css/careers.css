@@ -19,33 +19,52 @@
 .benefits {
     background: #F9F9F9 !important;
     padding: 60px 0 30px 0;
-    margin-bottom: 60px;
+    margin: 0 -15px 60px -15px;
+    width: calc(100% + 30px);
 }
-    .benefits .benefit {
-        margin: 0 0 30px 20px;
+    .benefit {
+        margin-bottom: 30px;
     }
     .benefits .benefit.right {
-        margin-left: 40px;
+        padding-left: 7%;
     }
-    .benefits img,
-    .benefits .text{
+    .benefit img,
+    .benefit .text{
         display: inline-block;
         vertical-align: middle;
     }
-    .benefits .text {
-        max-width: 66%;
+    .benefit .text {
+        max-width: 69%;
     }
-        .benefits .benefit.right .text {
-            max-width: 74%;
-        }
-    .benefits .title,
-    .benefits .description {
+    .benefit .title,
+    .benefit .description {
         margin: 0;
         padding: 0 0 10px 0;
     }
-    .benefits .description {
+    .benefit .description {
         padding-bottom: 0;
     }
+
+.perks > h1 {
+    margin-top: 60px;
+}
+
+.benefits-carousel {
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-bottom: 30px;
+    width: calc(100% + 30px);
+    background: #F9F9F9;
+}
+    .benefits-carousel .carousel-indicators {
+        bottom: -30px;
+    }
+        .benefits-carousel .carousel-indicators li {
+            background: #CCCCCC;
+        }
+        .benefits-carousel .carousel-indicators .active {
+            background: #2F80ED;
+        }
 
 .role {
     background: #FFFFFF;
@@ -124,10 +143,22 @@
     padding-left: 0;
 }
 
+@media (max-width: 1065px) {
+    .benefits .text {
+        max-width: 66%;
+    }
+    .benefit img {
+        vertical-align: top;
+    }
+}
+
 @media (max-width: 991px) {
     .perks {
         padding-left: 30px;
         padding-right: 30px;
+    }
+    .benefits .text {
+        max-width: 55%;
     }
 }
 
@@ -137,6 +168,30 @@
     }
     .role:nth-child(even) {
         margin-left: 30px;
+    }
+}
+@media (max-width: 767px) {
+    .benefit {
+        width: 86%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .benefit.first {
+        margin-top: 60px;
+    }
+        .benefit .text {
+            max-width: 75%;
+        }
+
+    .benefits .benefit.right {
+        padding-left: 15px;
+    }
+
+    .perks {
+        background: #FFFFFF;
+        width: calc(100% + 30px);
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
 
@@ -164,6 +219,10 @@
     }
 }
 @media (max-width: 575px) {
+    .benefit .text {
+        max-width: 66%;
+    }
+
     .role:nth-child(even) {
         /*margin-left: auto;*/
     }
@@ -172,13 +231,19 @@
     }
 }
 
-@media (max-width: 515px) {
-    .subscribe-block .inner input {
-        width: 44%;
-    }
+/*@media (max-width: 515px) {*/
+    /*.subscribe-block .inner input {*/
+        /*width: 44%;*/
+    /*}*/
 
-    .subscribe-block .inner .close-btn {
-        margin-left: 10%;
+    /*.subscribe-block .inner .close-btn {*/
+        /*margin-left: 10%;*/
+    /*}*/
+/*}*/
+
+@media (max-width: 444px) {
+    .benefit .text {
+        max-width: 51%;
     }
 }
 
