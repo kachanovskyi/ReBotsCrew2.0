@@ -586,6 +586,10 @@ a:active {
     color: #4F4F4F;
     float: left;
 }
+    .phrase-box.bot.transparent {
+        background: transparent;
+        margin-left: 0;
+    }
 
 .slide-5 {
     display: block;
@@ -1362,10 +1366,6 @@ a:active {
     .nav.navbar-nav {
         padding: 24px 0;
     }
-
-    .nav.navbar-nav.navbar-right>li>a.menu-item {
-        padding: 21px 20px;
-    }
     .nav.navbar-nav.navbar-right > li.careers {
         margin-right: 20px;
     }
@@ -1426,8 +1426,8 @@ a:active {
     .nav.navbar-nav .page-scroll.menu-item.bot-btn.white.text-blue {
         border: none !important;
         border-radius: 0;
-        background-color: #2F80ED !important;
-        color: #FFFFFF !important;
+        background-color: #FFFFFF !important;
+        color: #4F4F4F !important;
         transition-duration: 0.5s;
     }
     .slide-1 .heading {
@@ -1453,7 +1453,7 @@ a:active {
         right: 2%;
     }
     .navbar-default .navbar-nav>li:first-child {
-        display: none;
+        /*display: none;*/
     }
     .navbar-brand {
         margin: 12px;
@@ -1506,6 +1506,9 @@ a:active {
     }
     .nav.navbar-nav.navbar-right > li.careers {
         margin-right: 0;
+    }
+    .nav.navbar-nav.navbar-right>li>a.menu-item {
+        padding: 21px 20px;
     }
 
     .navbar li>.menu-item.bot-btn {
@@ -1669,6 +1672,7 @@ a:active {
         }
     .footer-copyright {
         margin-top: 0;
+        padding: 0 6px;
     }
     #footer-logo {
         margin-left: 0;

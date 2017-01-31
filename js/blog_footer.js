@@ -1,4 +1,5 @@
 var targetOffsetHide = $('.social-share').offset().top;
+console.log(targetOffsetHide);
 var firstP = $('.content p:first-child');
 var targetOffsetShow = (firstP.offset().top + firstP.height());
 console.log(targetOffsetShow);

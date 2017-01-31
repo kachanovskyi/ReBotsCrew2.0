@@ -146,7 +146,7 @@
     <div class="row">
       <div class="top col-md-12">
         <h1>Live. Dream. Achieve. <span style="display: inline-block">With us.</span></h1>
-        <a href="#" class="menu-item bot-btn white border-white transparent"><span class="text">See our openings</span></a>
+        <a href="#openRoles" class="page-scroll menu-item bot-btn white border-white transparent"><span class="text">See our openings</span></a>
       </div>
     </div>
     <div class="content">
@@ -247,7 +247,7 @@
 
       <div class="container benefits-carousel hidden-sm hidden-md hidden-lg">
         <br>
-        <div id="benefitsCarousel" class="carousel slide" data-ride="carousel">
+        <div id="benefitsCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
           <!-- Indicators -->
           <ol class="carousel-indicators">
             <li data-target="#benefitsCarousel" data-slide-to="0" class="active"></li>
@@ -320,18 +320,18 @@
       </div>
 
       <div class="row col-md-offset-2 col-md-8">
-        <h1>Open roles</h1>
+        <h1 id="openRoles">Open roles</h1>
         <p class="no-bottom-margin">We define “delivery” as the work sent to a client at the end of each production cycle, and the “deliverable” as that work in document format. At Focus Lab, we deliver batches of work weekly, so a branding deliverable gets shipped every Friday for at least six consecutive weeks, starting in the concepting round (week 1) and ending with the final system (week 6+).
         </p>
         <div class="row">
-          <div class="role col-xs-offset-2 col-xs-8 col-sm-offset-2 col-sm-4 col-md-offset-1 col-md-5 col-lg-offset-2 col-lg-4">
+          <div id="roleSalesManager" data-toggle="modal" data-target="#modalSalesManager" class="role col-xs-offset-2 col-xs-8 col-sm-offset-2 col-sm-4 col-md-5 col-lg-offset-2 col-lg-4">
             <div class="preview-img">
               <img src="img/suitcase.svg">
             </div>
             <p class="heading">Sales Manager</p>
             <p class="sub-heading">Full-Time, Lviv</p>
           </div>
-          <div class="role col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-4 col-md-5 col-lg-4">
+          <div id="roleJavaDev" data-toggle="modal" data-target="#modalJavaDev" class="role col-xs-offset-2 col-xs-8 col-sm-offset-0 col-sm-4 col-md-5 col-lg-4">
             <div class="preview-img">
               <img src="img/console.svg">
             </div>
@@ -368,16 +368,13 @@
 </section>
 
 <footer id="footer">
-  <!--<div id="footerInner">-->
-  <!--<img src="img/footer_logo.svg" id="footer-logo">-->
-  <!--</div>-->
   <div class="col-xs-12 text-left footer-inner">
     <div class="col-sm-3 logo-container hidden-xs">
       <img src="img/footer_logo.svg" id="footer-logo">
     </div>
     <div class="col-xs-offset-1 col-xs-6 col-sm-offset-0 col-sm-2">
       <p class="heading"><b>BotsCrew</b></p>
-      <a href="cases.html">Cases</a>
+      <a href="case.html">Cases</a>
       <a href="blog.html">Blog</a>
       <a href="team.html">Team</a>
       <a href="careers.html">Careers</a>
@@ -385,8 +382,8 @@
     </div>
     <div class="col-xs-5 col-sm-2">
       <p class="heading"><b>Cases</b></p>
-      <a href="#">Musement</a>
-      <a href="#">Hungry</a>
+      <a href="https://www.m.me/musement" target="_blank">Musement</a>
+      <a href="https://www.m.me/hungrychat" target="_blank">Hungry</a>
       <a href="#">Poncho</a>
       <a href="#">Visario</a>
       <a href="#">Trello</a>
@@ -405,9 +402,37 @@
     </div>
   </div>
   <div class="row col-sm-offset-3 col-sm-6">
-    <p class="footer-copyright">Copyright © 2017 BotsCrew. All rights reserved.</p>
+    <p class="footer-copyright">Copyright © 2016 - 2017 BotsCrew. All rights reserved.</p>
   </div>
 </footer>
+
+<div class="modal fade" id="modalSalesManager" tabindex="-1" role="dialog" aria-labelledby="modalInfoLabel">
+  <div class="modal-dialog" role="document">
+    <form action="#">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="section_title invert">Senior Java Developer</h1>
+        </div>
+        <div class="modal-body">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dignissim, ipsum et condimentum imperdiet, magna metus interdum sapien, sit amet venenatis sapien dui ullamcorper felis. Pellentesque sed risus eget diam tristique bibendum ut vehicula libero. Nulla facilisi. Praesent eu aliquam sapien, a porttitor est. Maecenas maximus metus volutpat justo mollis, fringilla tempus metus consectetur. Aliquam pulvinar orci mauris, et iaculis ex viverra a. Quisque sit amet semper eros. Nam aliquet lectus eget mi auctor condimentum. Ut lobortis ut mi nec aliquam. Proin sed cursus augue, posuere condimentum nibh. Aliquam molestie lorem sit amet malesuada maximus. Proin posuere mollis purus. Maecenas hendrerit, lorem vitae dapibus maximus, augue magna pellentesque nunc, non vestibulum mauris mi et ipsum. Phasellus semper, lectus id elementum ultrices, orci elit suscipit nunc, quis finibus leo felis sed metus. Donec nunc nunc, iaculis nec bibendum nec, laoreet eu risus. Sed eros purus, lobortis id augue non, vulputate imperdiet tortor.
+          </p>
+
+          <p>
+            Curabitur euismod nunc ac eros venenatis, eu lobortis diam viverra. Curabitur luctus nibh eu metus pellentesque tincidunt. Integer laoreet, ex sit amet vestibulum posuere, tortor augue interdum sapien, id convallis enim tellus id mauris. Quisque dapibus in augue non mattis. Suspendisse eget nibh in sem vulputate tempor sed non felis. Sed tempor lorem pellentesque pulvinar tincidunt. Suspendisse erat risus, sagittis ac blandit id, pulvinar nec orci. Nam efficitur malesuada augue, eu posuere risus fringilla nec. In hac habitasse platea dictumst. Praesent faucibus nec sem at dapibus. Donec odio ligula, mattis at gravida et, sollicitudin quis enim. Aenean id tempor massa. Ut ac enim eu turpis pharetra euismod vitae sit amet dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+          </p>
+
+          <p>
+            Ut fringilla, lectus id rutrum lobortis, ligula sem accumsan massa, vitae volutpat risus nisi ac velit. Nam semper, risus non interdum posuere, turpis arcu porta erat, vulputate varius massa massa vitae tellus. Vivamus dictum tortor id neque lacinia ornare. Mauris at mollis augue, et molestie metus. Donec porttitor viverra erat, et pharetra enim fermentum ac. Duis rutrum nibh a dignissim tempus. Vivamus auctor magna felis. Vestibulum facilisis, sem non malesuada mollis, diam orci vehicula nunc, in lacinia lorem mi nec ex. Cras hendrerit dolor hendrerit porta tempor. Proin eu ullamcorper nulla, ac posuere velit. Nam tempor orci porta lacus euismod pretium. Maecenas laoreet commodo mi, viverra laoreet nunc aliquet at. Nunc a magna ex. Vestibulum tellus mauris, efficitur sit amet orci nec, pellentesque luctus ligula. Aenean libero eros, lobortis ut commodo tincidunt, luctus eget orci.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-custom-1  invert m0px" data-dismiss="modal">Закрити</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div><!--#modalContract-->
 
 <link rel="stylesheet" href="css/blog_article.css">
 <link rel="stylesheet" href="css/careers.css">
@@ -419,5 +444,20 @@
 <script src="js/index.js"></script>
 <script src="js/hiding_header.js"></script>
 <script src="js/team_header.js"></script>
+<script defer>
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    addJS_Node(null, "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js", null, function () {
+      var benefitsCarousel = $('#benefitsCarousel');
+      benefitsCarousel.on("swipeleft", function () {
+        $(this).carousel("next");
+        return false;
+      });
+      benefitsCarousel.on("swiperight", function () {
+        $(this).carousel("prev");
+        return false;
+      });
+    });
+  }
+</script>
 </body>
 </html>

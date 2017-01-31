@@ -18,6 +18,27 @@ var getScrollBarWidth = function () {
     return 100 - widthWithScroll;
 };
 
+//-- addJS_Node is a standard(ish) function
+var addJS_Node = function (text, s_URL, funcToRun, runOnLoad) {
+    var D = document;
+    // D.mobile.ajaxEnabled = false;
+    var scriptNode = D.createElement ('script');
+    if(runOnLoad) {
+        scriptNode.addEventListener ("load", runOnLoad, false);
+    }
+    scriptNode.type                         = "text/javascript";
+    if (text)       scriptNode.textContent  = text;
+    if (s_URL)      scriptNode.src          = s_URL;
+    if (funcToRun)  scriptNode.textContent  = '(' + funcToRun.toString() + ')()';
+
+    $( document ).on( "mobileinit", function() {
+        $.mobile.autoInitializePage = false; // This one does the job
+    });
+
+    var targ = D.getElementsByTagName ('head')[0] || D.body || D.documentElement;
+    targ.appendChild (scriptNode);
+}
+
 $(document).ready(function () {
     var document_width, document_height;
     document_width=$(document).width(); document_height=$(document).height();
@@ -69,7 +90,7 @@ $(document).ready(function () {
         [
             { type: 'person', phrase: 'Yo. I wanna black Nike Kaishi sneakers.' },
             { type: 'bot', phrase: 'This one?' },
-            { type: 'bot', phrase: '<img style="width: 120px; max-width: 100%;" src="img/kaishi.png"/>' },
+            { type: 'bot', phrase: '<img style="width: 160px; max-width: 100%; border-radius: 16px;" src="img/kaishi.png"/>', class: 'transparent' },
             { type: 'person', phrase: 'Yes, absolutely.' },
             { type: 'bot', phrase: 'Specify your size please.' },
             { type: 'person', phrase: '7' },
@@ -99,6 +120,10 @@ $(document).ready(function () {
             var example = $($('.bot-example')[i]);
             var div = document.createElement('div');
             div.className = "phrase-box " + phrases[i][j].type;
+            if(phrases[i][j].class) {
+                console.log('transparent class added');
+                div.className += " transparent";
+            }
             div.innerHTML = phrases[i][j].phrase;
             $(div).appendTo(example);
         }
@@ -425,27 +450,6 @@ $(document).ready(function () {
                 $(this).carousel("prev");
                 return false;
             });
-        }
-
-        //-- addJS_Node is a standard(ish) function
-        function addJS_Node (text, s_URL, funcToRun, runOnLoad) {
-            var D = document;
-            // D.mobile.ajaxEnabled = false;
-            var scriptNode = D.createElement ('script');
-            if(runOnLoad) {
-                scriptNode.addEventListener ("load", runOnLoad, false);
-            }
-            scriptNode.type                         = "text/javascript";
-            if (text)       scriptNode.textContent  = text;
-            if (s_URL)      scriptNode.src          = s_URL;
-            if (funcToRun)  scriptNode.textContent  = '(' + funcToRun.toString() + ')()';
-
-            $( document ).on( "mobileinit", function() {
-                $.mobile.autoInitializePage = false; // This one does the job
-            });
-
-            var targ = D.getElementsByTagName ('head')[0] || D.body || D.documentElement;
-            targ.appendChild (scriptNode);
         }
     }
 

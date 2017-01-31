@@ -16,6 +16,21 @@
     margin: 30px 0;
 }
 
+.modal-backdrop
+{
+    opacity:0.9 !important;
+}
+.modal-header {
+    height: 250px;
+    background: url("../img/careersPopupBack.png") center;
+    text-align: center;
+}
+    .modal-header h1 {
+        font-size: 48px;
+        line-height: 110%;
+        color: rgba(0, 0, 0, 0.8);
+    }
+
 .benefits {
     background: #F9F9F9 !important;
     padding: 60px 0 30px 0;
@@ -76,6 +91,11 @@
     margin-top: 10px;
     padding: 0 20px;
     margin-bottom: 30px;
+    transition: .2s ease-in-out;
+}
+.role:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
 }
     .role .preview-img {
         /*margin: 12px;*/
@@ -169,7 +189,29 @@
     .role:nth-child(even) {
         margin-left: 30px;
     }
+
+    .modal-dialog {
+        width: 88%;
+        margin: 60px auto;
+    }
 }
+@media (min-width: 992px) {
+    .role:nth-child(odd) {
+        margin-left: calc(8.33333333% - 10px);
+    }
+    .role:nth-child(even) {
+        margin-left: 20px;
+    }
+}
+@media (min-width: 1200px) {
+    .role:nth-child(odd) {
+        margin-left: calc(15.66666667% - 15px);
+    }
+    .role:nth-child(even) {
+        margin-left: 30px;
+    }
+}
+
 @media (max-width: 767px) {
     .benefit {
         width: 86%;
@@ -181,6 +223,7 @@
     }
         .benefit .text {
             max-width: 75%;
+            padding-left: 6px;
         }
 
     .benefits .benefit.right {
@@ -193,23 +236,13 @@
         padding-left: 30px;
         padding-right: 30px;
     }
-}
 
-@media (min-width: 992px) {
-    .role:nth-child(odd) {
-        margin-left: calc(8.33333333% - 10px);
+    .modal-dialog {
+        margin: 0;
+        width: 100%;
     }
-    .role:nth-child(even) {
-        margin-left: 20px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .role:nth-child(odd) {
-        margin-left: calc(16.66666667% - 15px);
-    }
-    .role:nth-child(even) {
-        margin-left: 30px;
+    .modal-content {
+        border-radius: 0;
     }
 }
 
@@ -219,13 +252,13 @@
     }
 }
 @media (max-width: 575px) {
-    .benefit .text {
-        max-width: 66%;
+    .benefit {
+        width: 100%;
     }
+        .benefit .text {
+            max-width: 74%;
+        }
 
-    .role:nth-child(even) {
-        /*margin-left: auto;*/
-    }
     .role:nth-child(odd) {
         margin-right: 0;
     }
@@ -243,7 +276,7 @@
 
 @media (max-width: 444px) {
     .benefit .text {
-        max-width: 51%;
+        max-width: 62%;
     }
 }
 
