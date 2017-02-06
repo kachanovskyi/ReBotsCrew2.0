@@ -1,0 +1,98 @@
+.case {
+    text-align: left;
+    display: inline-block;
+    margin: 10px auto;
+    padding: 20px;
+}
+.case h2 {
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 0.0166px;
+    color: #4F4F4F;
+}
+.case p, .case a {
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.0166px;
+}
+
+.case p {
+    color: #828282;
+}
+.case .read-more {
+    color: #2F80ED;
+}
+
+.case .preview-img {
+    display: block;
+    height: 300px;
+    width: 100%;
+    border-radius: 4px;
+    background-size: cover;
+}
+.case .preview-text {
+    display: block;
+    height: 40%;
+    width: 100%;
+}
+
+.case .preview-text h2:hover {
+    text-decoration: underline;
+}
+
+.case.case-2 .preview-img {
+    background: url("../img/musement_case.png");
+}
+.case.case-1 .preview-img {
+    background: url("../img/tecinstore_case.png");
+    border: 1px solid #CCCCCC;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .case {
+        margin: 40px auto;
+    }
+    #footer {
+        margin-top: 44px;
+    }
+}
+
+@media (min-width: 992px) {
+    .case.case-4 .preview-img, .case.case-3 .preview-img,
+    .case.case-2 .preview-img, .case.case-1 .preview-img {
+        background-position: center;
+    }
+}
+
+@media (max-width: 991px) {
+    #middle {
+        margin-top: 30px;
+    }
+    .case {
+        padding: 0 15px;
+    }
+    .case.case-5 .preview-img,
+    .case.case-4 .preview-img, .case.case-3 .preview-img,
+    .case.case-2 .preview-img, .case.case-1 .preview-img {
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (max-width: 515px) {
+    .subscribe-block .inner input {
+        width: 44%;
+    }
+    .subscribe-block .inner .close-btn {
+        margin-left: 10%;
+    }
+    .case {
+        height: auto;
+    }
+    .case .preview-img {
+        /*display: none;*/
+    }
+    .case .preview-text {
+        height: 100%;
+    }
+}

@@ -40,18 +40,22 @@ var addJS_Node = function (text, s_URL, funcToRun, runOnLoad) {
 };
 
 $(document).ready(function () {
-    // var navbar = $('#navbar');
-    // navbar.on('shown.bs.collapse', function () {
-    //     console.log('111');
-    //     $('<div class="overlay dimmed">')
+    // $('.navbar-toggle').on('click', function () {
+    //     $('<div class="overlay">')
     //         .on("click", function () {
+    //             $(this).removeClass('dimmed');
     //             navbar.collapse('hide');
     //             $(this).remove();
     //         })
     //         .appendTo('#wrapper');
     // });
+    // var navbar = $('#navbar');
+    // navbar.on('shown.bs.collapse', function () {
+    //     $('.overlay').addClass('dimmed');
+    // });
     // navbar.on('hidden.bs.collapse', function () {
-    //     // do something…
+    //     $('.overlay').removeClass('dimmed');
+    //     $('.overlay').remove();
     // });
 
     var document_width, document_height;
