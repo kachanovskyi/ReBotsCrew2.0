@@ -16,20 +16,105 @@
     margin: 30px 0;
 }
 
+.modal-close-btn {
+    position: fixed;
+    top: 60px;
+    right: 60px;
+    cursor: pointer;
+    /*display: none;*/
+}
+
 .modal-backdrop
 {
     opacity:0.9 !important;
 }
 .modal-header {
+    position: relative;
     height: 250px;
     background: url("../img/careersPopupBack.png") center;
-    text-align: center;
+    border-radius: 6px 6px 0 0;
 }
-    .modal-header h1 {
-        font-size: 48px;
-        line-height: 110%;
-        color: rgba(0, 0, 0, 0.8);
+    .modal-header .inner {
+        text-align: center;
+        padding: 6% 18px 30px;
     }
+        .modal-header .inner h1 {
+            font-size: 48px;
+            line-height: 110%;
+            color: rgba(0, 0, 0, 0.8);
+            margin-bottom: 10px;
+        }
+        .modal-header .inner p {
+            font-size: 18px;
+            color: #2F80ED;
+            margin-top: 0;
+            font-weight: 600;
+        }
+.modal-body h1 {
+    font-size: 48px;
+    line-height: 110%;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px;
+}
+.modal-body .vacancy {
+    width: 76%;
+    margin: 0 12%;
+}
+    .modal-body .vacancy p {
+       margin: 0 0 20px;
+    }
+.modal-header .inner p {
+    font-size: 18px;
+    color: #2F80ED;
+    margin-top: 0;
+    font-weight: 600;
+}
+
+.apply-heading {
+    margin-top: 60px;
+}
+
+.apply-body .header {
+    padding-top: 30px;
+    background: none;
+}
+
+.apply-body #apply-form {
+    margin-top: 30px;
+}
+#apply-form input[type=text],
+#apply-form input[type=email],
+#apply-form textarea
+{
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #E8E8E8;
+    border-radius: 0;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    line-height: 100%;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.5);
+}
+#apply-form textarea {
+    padding-top: 22px;
+    padding-bottom: 18px;
+    line-height: 140%;
+}
+#apply-form input:focus, #apply-form select:focus, #apply-form textarea:focus{
+    outline: none;
+}
+
+#apply-form input::-webkit-input-placeholder, #apply-form textarea::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#apply-form input[type=submit] {
+    margin: 30px auto;
+}
 
 .benefits {
     background: #F9F9F9 !important;
@@ -127,8 +212,7 @@
 
 .vacancy {
     display: block;
-    padding: 20px 50px;
-    padding-bottom: 50px;
+    padding: 20px 30px 30px;
     border-bottom: 1px solid #C4C4C4;
 }
 .vacancy:last-child {
@@ -153,7 +237,7 @@
     margin-top: 20px;
 }
 .vacancy .demands, .vacancy .offers {
-    padding-top: 33px;
+    /*padding-top: 33px;*/
 }
 .vacancy .offers {
     margin-bottom: 44px;
@@ -162,6 +246,16 @@
 .vacancy .demands .heading, .vacancy .offers .heading {
     padding-left: 0;
 }
+
+.vacancy .skills-list {
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+    .vacancy .skills-list > li {
+        line-height: 150%;
+        color: rgba(0, 0, 0, 0.5);
+        padding-left: 30px;
+    }
 
 @media (max-width: 1065px) {
     .benefits .text {
@@ -179,6 +273,10 @@
     }
     .benefits .text {
         max-width: 55%;
+    }
+
+    .modal-header .inner {
+        padding-top: 7%;
     }
 }
 
@@ -262,6 +360,10 @@
     .role:nth-child(odd) {
         margin-right: 0;
     }
+
+    .modal-header .inner {
+        padding-top: 3%;
+    }
 }
 
 /*@media (max-width: 515px) {*/
@@ -277,6 +379,10 @@
 @media (max-width: 444px) {
     .benefit .text {
         max-width: 62%;
+    }
+
+    .modal-header .inner {
+        padding: 3% 8px 8px;
     }
 }
 

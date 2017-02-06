@@ -21,6 +21,19 @@ a:active {
     text-decoration: none;
 }
 
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left:0;
+    bottom: 0;
+    z-index: 2;
+    transition: .3s ease-in-out;
+}
+.overlay.dimmed {
+    background:rgba(0,0,0,0.7);
+}
+
 .navbar-toggle {
     margin: 30px;
 }
@@ -1014,8 +1027,7 @@ a:active {
 #contact-form input[type=text],
 #contact-form input[type=email],
 #contact-form textarea,
-#contact-form select
-{
+#contact-form select {
     width: 100%;
     height: 60px;
     background: transparent;
@@ -1560,10 +1572,19 @@ a:active {
         padding: 12px 12px 24px 12px;
     }
     .slide-3 .bots-advantages p {
-        margin: 22px 66px 6px 0;
+        display: none;
+        /*margin: 22px 66px 6px 0;*/
     }
     .slide-3 .bots-advantages.middle p {
         margin: 22px 66px 6px 66px;
+    }
+
+    .slide-3 .xs-description .heading {
+        margin-top: 12px;
+    }
+    .slide-3 .xs-full-width {
+        width: 100%;
+        float: left;
     }
 
     .slide-4 h2 {
@@ -1795,7 +1816,6 @@ a:active {
     }
 
     .slide-3 .bots-advantages {
-        padding: 15px;
         padding-bottom: 24px;
     }
         .slide-3 .bots-advantages p {

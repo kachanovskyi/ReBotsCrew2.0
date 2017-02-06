@@ -37,9 +37,23 @@ var addJS_Node = function (text, s_URL, funcToRun, runOnLoad) {
 
     var targ = D.getElementsByTagName ('head')[0] || D.body || D.documentElement;
     targ.appendChild (scriptNode);
-}
+};
 
 $(document).ready(function () {
+    // var navbar = $('#navbar');
+    // navbar.on('shown.bs.collapse', function () {
+    //     console.log('111');
+    //     $('<div class="overlay dimmed">')
+    //         .on("click", function () {
+    //             navbar.collapse('hide');
+    //             $(this).remove();
+    //         })
+    //         .appendTo('#wrapper');
+    // });
+    // navbar.on('hidden.bs.collapse', function () {
+    //     // do something…
+    // });
+
     var document_width, document_height;
     document_width=$(document).width(); document_height=$(document).height();
 
