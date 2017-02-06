@@ -373,6 +373,10 @@
     .modal-header .inner {
         padding-top: 3%;
     }
+
+    .apply-heading {
+        text-align: center;
+    }
 }
 
 /*@media (max-width: 515px) {*/
