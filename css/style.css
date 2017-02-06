@@ -1586,6 +1586,9 @@ a:active {
         width: 100%;
         float: left;
     }
+    .slide-3 .xs-full-width:last-child {
+        margin-bottom: 60px;
+    }
 
     .slide-4 h2 {
         text-align: left;

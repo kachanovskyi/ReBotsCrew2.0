@@ -19,7 +19,7 @@
 .modal-close-btn {
     position: fixed;
     top: 60px;
-    right: 60px;
+    right: 3%;
     cursor: pointer;
     /*display: none;*/
 }
@@ -267,7 +267,7 @@
 }
 
 @media (max-width: 991px) {
-    .perks {
+    .perks, .roles {
         padding-left: 30px;
         padding-right: 30px;
     }
