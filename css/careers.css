@@ -79,12 +79,12 @@
     background: none;
 }
 
-.apply-body #apply-form {
+.apply-body .apply-form {
     margin-top: 30px;
 }
-#apply-form input[type=text],
-#apply-form input[type=email],
-#apply-form textarea
+.apply-form input[type=text],
+.apply-form input[type=email],
+.apply-form textarea
 {
     width: 100%;
     height: 60px;
@@ -99,20 +99,20 @@
     font-weight: 300;
     color: rgba(0, 0, 0, 0.5);
 }
-#apply-form textarea {
+.apply-form textarea {
     padding-top: 22px;
     padding-bottom: 18px;
     line-height: 140%;
 }
-#apply-form input:focus, #apply-form select:focus, #apply-form textarea:focus{
+.apply-form input:focus, .apply-form select:focus, .apply-form textarea:focus{
     outline: none;
 }
 
-#apply-form input::-webkit-input-placeholder, #apply-form textarea::-webkit-input-placeholder {
+.apply-form input::-webkit-input-placeholder, .apply-form textarea::-webkit-input-placeholder {
     color: rgba(0, 0, 0, 0.5);
 }
 
-#apply-form input[type=submit] {
+.apply-form input[type=submit] {
     margin: 30px auto;
 }
 
@@ -342,6 +342,15 @@
     .modal-content {
         border-radius: 0;
     }
+
+    .modal-body .vacancy {
+        width: 100%;
+        margin: 0;
+    }
+
+    .vacancy .skills-list {
+        margin-left: 0;
+    }
 }
 
 @media (min-width: 575px) {
@@ -383,6 +392,10 @@
 
     .modal-header .inner {
         padding: 3% 8px 8px;
+    }
+
+    .vacancy .skills-list > li {
+        padding-left: 6px;
     }
 }
 
