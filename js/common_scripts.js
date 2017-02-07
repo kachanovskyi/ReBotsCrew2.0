@@ -17,6 +17,7 @@ function toggleNavOverlay() {
 
 $(document).ready(function () {
     //Modile navigation bar scripts
+    toggleLandscapeNavbar();
 
     //icon transformation
     $(".navbar-toggle").on("click", function () {
@@ -28,23 +29,8 @@ $(document).ready(function () {
     console.log($(window).innerHeight());
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         $( window ).on( "orientationchange", function(event) {
-            alert('You entered ' + event.orientation + ' mode');
-            if(matchMedia('all and (orientation:landscape)').matches) {
-                calcMenuItemHeight();
-                $(window).on("resize", function () {
-                    calcMenuItemHeight()
-                })
-            } else if(matchMedia('(max-width:575px) and (orientation:portrait)').matches) {
-                $('.nav.navbar-nav.navbar-right>li>a.menu-item').each(function () {
-                    $(this).css('height', '50px');
-                    $(this).css('padding-top', '16px')
-                })
-            } else if(matchMedia('(max-width:767px) and (orientation:portrait)').matches) {
-                $('.nav.navbar-nav.navbar-right>li>a.menu-item').each(function () {
-                    $(this).css('height', '60px');
-                    $(this).css('padding-top', '21px')
-                })
-            }
+            alert('You entered landscape mode');
+            toggleLandscapeNavbar();
         });
     }
 
@@ -61,5 +47,25 @@ $(document).ready(function () {
             $(this).css('height', itemHeight);
             $(this).css('padding-top', paddingTop)
         })
+    }
+
+    function toggleLandscapeNavbar() {
+        if(matchMedia('all and (orientation:landscape)').matches) {
+            calcMenuItemHeight();
+            $(window).on("resize", function () {
+                calcMenuItemHeight();
+                console.log('menu items heights recalculated');
+            })
+        } else if(matchMedia('(max-width:575px) and (orientation:portrait)').matches) {
+            $('.nav.navbar-nav.navbar-right>li>a.menu-item').each(function () {
+                $(this).css('height', '50px');
+                $(this).css('padding-top', '16px')
+            })
+        } else if(matchMedia('(max-width:767px) and (orientation:portrait)').matches) {
+            $('.nav.navbar-nav.navbar-right>li>a.menu-item').each(function () {
+                $(this).css('height', '60px');
+                $(this).css('padding-top', '21px')
+            })
+        }
     }
 });
