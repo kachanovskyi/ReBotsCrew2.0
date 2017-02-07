@@ -17,7 +17,6 @@ function toggleNavOverlay() {
 
 $(document).ready(function () {
     //Modile navigation bar scripts
-    toggleLandscapeNavbar();
 
     //icon transformation
     $(".navbar-toggle").on("click", function () {
@@ -28,6 +27,7 @@ $(document).ready(function () {
     console.log($(window).height());
     console.log($(window).innerHeight());
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        toggleLandscapeNavbar();
         $( window ).on( "orientationchange", function(event) {
             alert('You entered landscape mode');
             toggleLandscapeNavbar();
