@@ -37,6 +37,7 @@ function hasScrolled() {
     if (st > lastScrollTop && st > navbarHeight) {
         $('.navbar-fixed-top').removeClass('nav-down').addClass('nav-up');
         $('#navbar').removeClass('in');
+        $(".navbar-toggle").removeClass('active');
         
         document.getElementById("navOverlay").style.height = "0%";
     } else {
