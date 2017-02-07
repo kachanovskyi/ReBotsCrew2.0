@@ -38,8 +38,8 @@ function hasScrolled() {
         $('.navbar-fixed-top').removeClass('nav-down').addClass('nav-up');
         $('#navbar').removeClass('in');
         $(".navbar-toggle").removeClass('active');
-        
-        document.getElementById("navOverlay").style.height = "0%";
+
+        $("#navOverlay").css("height", "0%");
     } else {
         if(st + $(window).height() < $(document).height()) {
             $('.navbar-fixed-top').removeClass('nav-up').addClass('nav-down');
