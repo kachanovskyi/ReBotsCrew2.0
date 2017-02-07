@@ -1,4 +1,29 @@
+//mobile navbar background overlay
+function toggleNavOverlay() {
+    if(document.getElementById("navOverlay").style.height === '100%') {
+        document.getElementById('toggleNavBtn').style.pointerEvents = 'none';
+        document.getElementById("navOverlay").style.height = "0%";
+        $('.navbar-collapse').on('hidden.bs.collapse', function() {
+            document.getElementById('toggleNavBtn').style.pointerEvents = 'auto';
+        });
+    } else {
+        document.getElementById('toggleNavBtn').style.pointerEvents = 'none';
+        document.getElementById("navOverlay").style.height = "100%";
+        $('.navbar-collapse').on('shown.bs.collapse', function() {
+            document.getElementById('toggleNavBtn').style.pointerEvents = 'auto';
+        });
+    }
+}
+
 $(document).ready(function () {
+    //Modile navigation bar scripts
+
+    //icon transformation
+    $(".navbar-toggle").on("click", function () {
+        $(this).toggleClass("active");
+    });
+
+    //menu height
     console.log($(window).height());
     console.log($(window).innerHeight());
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
