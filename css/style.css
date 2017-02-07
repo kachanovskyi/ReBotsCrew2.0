@@ -58,7 +58,7 @@ a:active {
 }
     .navbar.navbar-default {
         border-color: #E5E5E5;
-        border-bottom: 1px solid rgba(229, 229, 229, .2) !important;
+        border-bottom: 1px solid #E5E5E5 !important;
     }
         .navbar.navbar-default .navbar-brand {
             padding: 0;
@@ -1515,7 +1515,7 @@ a:active {
     }
     .nav.navbar-nav.navbar-right>li>a.menu-item {
         height: 60px;
-        border-bottom: 1px solid rgba(229, 229, 229, .2);
+        border-bottom: 1px solid #E5E5E5;
         /*display: block;*/
         /*width: 100%;*/
     }
@@ -2012,10 +2012,6 @@ a:active {
     }
     .bot-btn.white.text-blue.more-about {
         padding: 14px 28px;
-    }
-
-    .nav>li>a {
-        padding: 0 !important;
     }
 
     .carousel-inner .bot-card .left {

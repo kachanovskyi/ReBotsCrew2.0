@@ -17,6 +17,12 @@ $(document).ready(function () {
                     $(this).css('padding-top', paddingTop)
                 })
             }
+            // else if(matchMedia('(max-width:575px) and (orientation:portrait)').matches) {
+            //     $('.nav.navbar-nav.navbar-right>li>a.menu-item').each(function () {
+            //         $(this).css('height', '50px');
+            //         $(this).css('padding-top', paddingTop)
+            //     })
+            // }
         });
     }
 });
