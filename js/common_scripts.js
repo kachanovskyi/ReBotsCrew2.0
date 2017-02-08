@@ -37,10 +37,15 @@ $(document).ready(function () {
     function calcMenuItemHeight() {
         $('.navbar-collapse').css('min-height', $(window).height());
         $('#navbar').css('height', $(window).height());
-        $('.nav.navbar-nav').css('overflow', 'auto');
+        $('.nav.navbar-nav').css('overflow', 'visible');
         $('.nav.navbar-nav').css('max-height', 'none');
 
-        var itemHeight = (($(window).height() - 50) / 5);
+        var itemHeight = ($(window).height() - 50);
+        if(matchMedia('(max-width:767px) and (orientation:landscape)').matches) {
+            itemHeight -= 30;
+        }
+        itemHeight /=5;
+        
         var paddingTop = ((itemHeight - 18) / 2);
         // console.log(paddingTop);
         $('.nav.navbar-nav.navbar-right>li>a.menu-item').each(function () {
