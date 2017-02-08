@@ -37,7 +37,7 @@ $(document).ready(function () {
     function calcMenuItemHeight() {
         $('.navbar-collapse').css('min-height', $(window).height());
         $('#navbar').css('height', $(window).height());
-        $('.nav.navbar-nav').css('overflow', 'visible');
+        $('.nav.navbar-nav').css('overflow', 'auto');
         $('.nav.navbar-nav').css('max-height', 'none');
 
         var itemHeight = (($(window).height() - 50) / 5);
