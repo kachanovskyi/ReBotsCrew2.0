@@ -32,7 +32,7 @@
     padding: 5px 15px;
     background: #FFFFFF;
     border-bottom: 1px solid #e5e5e5;
-    z-index: 1030;
+    z-index: 1051;
     display: none;
 }
     .modal-mobile-header .logo > img {
@@ -358,10 +358,6 @@
         width: calc(100% + 30px);
         padding-left: 30px;
         padding-right: 30px;
-    }
-
-    .modal-mobile-header {
-        display: block;
     }
 
     .modal-dialog {

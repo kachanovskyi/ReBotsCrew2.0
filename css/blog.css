@@ -27,6 +27,7 @@ h1, h2, p, a {
             color: #FFFFFF;
             height: 30px;
             vertical-align: middle;
+            border-radius: 2px 0 0 2px;
         }
         .subscribe-block .inner ::-webkit-input-placeholder {
             color: #FFFFFF;

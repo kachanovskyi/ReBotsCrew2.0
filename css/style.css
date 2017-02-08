@@ -237,6 +237,7 @@ a:active {
             height: 30px;
             vertical-align: middle;
             line-height: normal;
+            border-radius: 0 2px 2px 0;
         }
         .bot-btn.white.subscribe:hover {
             background-color:transparent !important;

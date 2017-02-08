@@ -145,10 +145,12 @@
       <nav class="navbar navbar-default navbar-fixed-top nav-down">
         <div class="subscribe-block">
           <div class="inner row text-center">
-            <p class="hidden-xs">Subscribe to BotsCrew newsletter<span class="hidden-sm">. No spam, no nasty stuff</span></p>
-            <input type="text" placeholder="Your E-Mail">
-            <a href="#" class="menu-item bot-btn white subscribe">Subscribe</a>
-            <a onclick="closeSubscribeBlock()" class="close-btn"><img src="img/close.svg"></a>
+            <form name="subscribeForm" id="subscribe-form" role="form" action="https://b9f0f07d.ngrok.io/mail_subscribe" onsubmit="submissionCheck()" method="POST" target="mock_frame" autocomplete="off">
+              <p class="hidden-xs">Subscribe to BotsCrew newsletter<span class="hidden-sm">. No spam, no nasty stuff</span></p>
+              <input name="email" type="email" placeholder="Your E-Mail" id="emailInput">
+              <button type="submit" class="menu-item bot-btn white subscribe">Subscribe</button>
+              <a class="close-btn" onclick="closeSubscribeBlock()"><img src="img/close.svg"></a>
+            </form>
           </div>
         </div>
         <div class="container-fluid">
@@ -297,19 +299,6 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/hiding_header.js"></script>
 <script src="js/index.js"></script>
-<script>
-  function closeSubscribeBlock() {
-    var subscribeBlock = $('.subscribe-block');
-    subscribeBlock.animate({
-      marginTop: '-=72px',
-      display: 'none'
-    }, { duration: 200, queue: false });
-    $('body').animate({
-      paddingTop: '-=72px'
-    }, 200, function () {
-      subscribeBlock.css('display', 'none');
-    });
-  }
-</script>
+<script src="js/subscribe_mockup.js"></script>
 </body>
 </html>

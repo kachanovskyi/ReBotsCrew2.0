@@ -141,6 +141,15 @@
   </div>
 </header>
 
+<div class="modal-mobile-header">
+  <a href="index.html" class="logo">
+    <img src="img/logo.png">
+  </a>
+  <a class="close-icon">
+    <img src="img/modal_close_mobile.svg" id="modalCloseBtn">
+  </a>
+</div>
+
 <section id="wrapper">
   <div>
     <div class="row">
@@ -408,14 +417,6 @@
 
 <div class="modal fade" id="modalSalesManager" tabindex="-1" role="dialog" aria-labelledby="modalInfoLabel">
   <a class="modal-close-btn hidden-xs" data-dismiss="modal"><img src="img/close_modal.svg"></a>
-  <div class="modal-mobile-header">
-    <a href="index.html" class="logo">
-      <img src="img/logo.png">
-    </a>
-    <a class="close-icon">
-      <img src="img/modal_close_mobile.svg" data-dismiss="modal">
-    </a>
-  </div>
   <div class="modal-dialog" role="document">
     <form action="#">
       <div class="modal-content">
@@ -510,14 +511,14 @@
 
 <div class="modal fade" id="modalJavaDev" tabindex="-1" role="dialog" aria-labelledby="modalInfoLabel">
   <a class="modal-close-btn hidden-xs" data-dismiss="modal"><img src="img/close_modal.svg"></a>
-  <div class="modal-mobile-header">
-    <a href="index.html" class="logo">
-      <img src="img/logo.png">
-    </a>
-    <a class="close-icon">
-      <img src="img/modal_close_mobile.svg" data-dismiss="modal">
-    </a>
-  </div>
+  <!--<div class="modal-mobile-header">-->
+    <!--<a href="index.html" class="logo">-->
+      <!--<img src="img/logo.png">-->
+    <!--</a>-->
+    <!--<a class="close-icon">-->
+      <!--<img src="img/modal_close_mobile.svg" data-dismiss="modal">-->
+    <!--</a>-->
+  <!--</div>-->
   <div class="modal-dialog" role="document">
     <form action="#">
       <div class="modal-content">
@@ -637,10 +638,7 @@
       });
     });
   }
-
-  $('#modalSalesManager, #modalJavaDev').on('shown.bs.modal', function() {
-    autosize($('textarea'));
-  })
 </script>
+<script src="js/careers_scripts.js"></script>
 </body>
 </html>
