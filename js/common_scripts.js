@@ -56,16 +56,17 @@ $(document).ready(function () {
                 calcMenuItemHeight();
                 console.log('menu items heights recalculated');
             })
-        } else if(matchMedia('(max-width:575px)').matches) {
-            $('.nav.navbar-nav.navbar-right>li>a.menu-item').each(function () {
-                $(this).css('height', '50px');
-                $(this).css('padding-top', '16px')
-            })
         } else if(matchMedia('(max-width:767px)').matches) {
             $('.nav.navbar-nav.navbar-right>li>a.menu-item').each(function () {
-                $(this).css('height', '60px');
-                $(this).css('padding-top', '21px')
+                $(this).css('height', '50px');
+                $(this).css('padding-top', '16px');
             })
         }
+        // else if(matchMedia('(max-width:767px)').matches) {
+        //     $('.nav.navbar-nav.navbar-right>li>a.menu-item').each(function () {
+        //         $(this).css('height', '60px');
+        //         $(this).css('padding-top', '21px')
+        //     })
+        // }
     }
 });
