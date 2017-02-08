@@ -8,8 +8,8 @@ var validateEmail = function () {
     return re.test($('#emailInput').val());
 };
 
-var submissionCheck = function () {
-    if(validateEmail()) {
+var submissionCheck = function (param) {
+    if(validateEmail() && param === 'close') {
         closeSubscribeBlock();
     }
 };

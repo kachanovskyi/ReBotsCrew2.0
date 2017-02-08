@@ -30,7 +30,6 @@ $(document).ready(function () {
         console.log('should work only for mobile');
         toggleLandscapeNavbar();
         $( window ).on( "orientationchange", function(event) {
-            alert('You entered landscape mode');
             toggleLandscapeNavbar();
         });
     }
@@ -51,22 +50,23 @@ $(document).ready(function () {
     }
 
     function toggleLandscapeNavbar() {
-        if(matchMedia('all and (orientation:landscape)').matches) {
+        if(matchMedia('(max-width:767px)').matches) {
             calcMenuItemHeight();
             $(window).on("resize", function () {
                 calcMenuItemHeight();
                 console.log('menu items heights recalculated');
             })
-        } else if(matchMedia('(max-width:575px) and (orientation:portrait)').matches) {
-            $('.nav.navbar-nav.navbar-right>li>a.menu-item').each(function () {
-                $(this).css('height', '50px');
-                $(this).css('padding-top', '16px')
-            })
-        } else if(matchMedia('(max-width:767px) and (orientation:portrait)').matches) {
-            $('.nav.navbar-nav.navbar-right>li>a.menu-item').each(function () {
-                $(this).css('height', '60px');
-                $(this).css('padding-top', '21px')
-            })
         }
+        // else if(matchMedia('(max-width:575px) and (orientation:portrait)').matches) {
+        //     $('.nav.navbar-nav.navbar-right>li>a.menu-item').each(function () {
+        //         $(this).css('height', '50px');
+        //         $(this).css('padding-top', '16px')
+        //     })
+        // } else if(matchMedia('(max-width:767px) and (orientation:portrait)').matches) {
+        //     $('.nav.navbar-nav.navbar-right>li>a.menu-item').each(function () {
+        //         $(this).css('height', '60px');
+        //         $(this).css('padding-top', '21px')
+        //     })
+        // }
     }
 });
