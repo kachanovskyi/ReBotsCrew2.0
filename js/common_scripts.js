@@ -43,7 +43,7 @@ $(document).ready(function () {
         var itemHeight = (($(window).height() - 50) / 5);
         // console.log(paddingTop);
         if(matchMedia('(orientation: landscape)').matches) {
-            itemHeight = (($(window).height() - 80) / 5)
+            itemHeight = (($(window).height() - 100) / 5)
         }
         var paddingTop = ((itemHeight - 18) / 2);
 
@@ -60,12 +60,13 @@ $(document).ready(function () {
                 calcMenuItemHeight();
                 console.log('menu items heights recalculated');
             })
-        } else if(matchMedia('(max-width:767px)').matches) {
-            $('.nav.navbar-nav.navbar-right>li>a.menu-item').each(function () {
-                $(this).css('height', '50px');
-                $(this).css('padding-top', '16px');
-            })
         }
+        // else if(matchMedia('(max-width:767px)').matches) {
+        //     $('.nav.navbar-nav.navbar-right>li>a.menu-item').each(function () {
+        //         $(this).css('height', '50px');
+        //         $(this).css('padding-top', '16px');
+        //     })
+        // }
         // else if(matchMedia('(max-width:767px)').matches) {
         //     $('.nav.navbar-nav.navbar-right>li>a.menu-item').each(function () {
         //         $(this).css('height', '60px');
