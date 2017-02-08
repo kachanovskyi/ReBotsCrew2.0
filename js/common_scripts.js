@@ -40,12 +40,7 @@ $(document).ready(function () {
         $('.nav.navbar-nav').css('overflow', 'visible');
         $('.nav.navbar-nav').css('max-height', 'none');
 
-        var itemHeight = ($(window).height() - 50);
-        if(matchMedia('(max-width:767px) and (orientation:landscape)').matches) {
-            itemHeight -= 30;
-        }
-        itemHeight /=5;
-        
+        var itemHeight = (($(window).height() - 50) / 5);
         var paddingTop = ((itemHeight - 18) / 2);
         // console.log(paddingTop);
         $('.nav.navbar-nav.navbar-right>li>a.menu-item').each(function () {
@@ -55,23 +50,22 @@ $(document).ready(function () {
     }
 
     function toggleLandscapeNavbar() {
-        if(matchMedia('(max-width:767px)').matches) {
+        if(matchMedia('(max-width:767px) and (orientation:portrait)').matches) {
             calcMenuItemHeight();
             $(window).on("resize", function () {
                 calcMenuItemHeight();
                 console.log('menu items heights recalculated');
             })
+        } else if(matchMedia('(max-width:575px)').matches) {
+            $('.nav.navbar-nav.navbar-right>li>a.menu-item').each(function () {
+                $(this).css('height', '50px');
+                $(this).css('padding-top', '16px')
+            })
+        } else if(matchMedia('(max-width:767px)').matches) {
+            $('.nav.navbar-nav.navbar-right>li>a.menu-item').each(function () {
+                $(this).css('height', '60px');
+                $(this).css('padding-top', '21px')
+            })
         }
-        // else if(matchMedia('(max-width:575px) and (orientation:portrait)').matches) {
-        //     $('.nav.navbar-nav.navbar-right>li>a.menu-item').each(function () {
-        //         $(this).css('height', '50px');
-        //         $(this).css('padding-top', '16px')
-        //     })
-        // } else if(matchMedia('(max-width:767px) and (orientation:portrait)').matches) {
-        //     $('.nav.navbar-nav.navbar-right>li>a.menu-item').each(function () {
-        //         $(this).css('height', '60px');
-        //         $(this).css('padding-top', '21px')
-        //     })
-        // }
     }
 });
