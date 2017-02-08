@@ -41,8 +41,12 @@ $(document).ready(function () {
         $('.nav.navbar-nav').css('max-height', 'none');
 
         var itemHeight = (($(window).height() - 50) / 5);
-        var paddingTop = ((itemHeight - 18) / 2);
         // console.log(paddingTop);
+        if(matchMedia('(orientation: landscape)').matches) {
+            itemHeight = (($(window).height() - 80) / 5)
+        }
+        var paddingTop = ((itemHeight - 18) / 2);
+
         $('.nav.navbar-nav.navbar-right>li>a.menu-item').each(function () {
             $(this).css('height', itemHeight);
             $(this).css('padding-top', paddingTop)
@@ -50,7 +54,7 @@ $(document).ready(function () {
     }
 
     function toggleLandscapeNavbar() {
-        if(matchMedia('(max-width:767px) and (orientation:portrait)').matches) {
+        if(matchMedia('(max-width:767px)').matches) {
             calcMenuItemHeight();
             $(window).on("resize", function () {
                 calcMenuItemHeight();
