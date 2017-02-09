@@ -9,6 +9,7 @@ var validateEmail = function () {
 };
 
 var submissionCheck = function (param) {
+    $('#timezoneInput').val(-(new Date().getTimezoneOffset())/60);
     if(validateEmail() && param === 'close') {
         closeSubscribeBlock();
     }
