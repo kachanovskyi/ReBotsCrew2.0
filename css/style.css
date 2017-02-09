@@ -34,6 +34,12 @@ a:active {
     /*background:rgba(0,0,0,0.7);*/
 /*}*/
 
+#timezoneInput {
+    display: none;
+}
+#subscribeAtTop {
+    padding-top: 166px;
+}
 .navbar-toggle {
     margin: 30px;
 }

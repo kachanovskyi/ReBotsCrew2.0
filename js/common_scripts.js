@@ -24,8 +24,6 @@ $(document).ready(function () {
     });
 
     //menu height
-    console.log($(window).height());
-    console.log($(window).innerHeight());
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         console.log('should work only for mobile');
         toggleLandscapeNavbar();

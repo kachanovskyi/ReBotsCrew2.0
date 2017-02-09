@@ -137,7 +137,7 @@
     }
   </style>
 </head>
-<body style="padding-top: 166px;">
+<body id="subscribeAtTop">
 
 <header class="header">
   <div id="headerInner">
@@ -180,6 +180,15 @@
   </div>
   <div class="blur"></div>
 </header>
+<script>
+//  localStorage.setItem('subscriptionBotsCrew', 0);
+  if(localStorage.getItem('subscriptionBotsCrew') == 1) {
+    document.getElementsByClassName('subscribe-block')[0].style.display = 'none';
+    if(document.getElementById("subscribeAtTop")) {
+      document.getElementById("subscribeAtTop").style.paddingTop = '94px';
+    }
+  }
+</script>
 
 <section id="wrapper" class="container">
   <div class="top">
@@ -300,6 +309,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/hiding_header.js"></script>
 <script src="js/index.js"></script>
+<script defer src="js/common_scripts.js"></script>
 <script src="js/subscribe_mockup.js"></script>
 </body>
 </html>

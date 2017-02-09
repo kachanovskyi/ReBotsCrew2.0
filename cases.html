@@ -85,7 +85,7 @@
     }
   </style>
 </head>
-<body style="padding-top: 166px;">
+<body id="subscribeAtTop">
 
 <header class="header">
   <div id="headerInner">
@@ -93,10 +93,13 @@
       <nav class="navbar navbar-default navbar-fixed-top nav-down">
         <div class="subscribe-block">
           <div class="inner row text-center">
-            <p class="hidden-xs">Subscribe to BotsCrew newsletter<span class="hidden-sm">. No spam, no nasty stuff</span></p>
-            <input type="text" placeholder="Your E-Mail">
-            <a href="#" class="menu-item bot-btn white subscribe">Subscribe</a>
-            <a onclick="closeSubscribeBlock()" class="close-btn"><img src="img/close.svg"></a>
+            <form name="subscribeForm" id="subscribe-form" role="form" action="https://b9f0f07d.ngrok.io/mail_subscribe" onsubmit="submissionCheck('close')" method="POST" target="mock_frame" autocomplete="off">
+              <p class="hidden-xs">Subscribe to BotsCrew newsletter<span class="hidden-sm">. No spam, no nasty stuff</span></p>
+              <input name="email" type="email" placeholder="Your E-Mail" id="emailInput">
+              <input name="timezone" type="text" id="timezoneInput">
+              <button type="submit" class="menu-item bot-btn white subscribe">Subscribe</button>
+              <a class="close-btn" onclick="closeSubscribeBlock()"><img src="img/close.svg"></a>
+            </form>
           </div>
         </div>
         <div class="container-fluid">
@@ -125,6 +128,14 @@
   </div>
   <div class="blur"></div>
 </header>
+<script>
+  if(localStorage.getItem('subscriptionBotsCrew') == 1) {
+    document.getElementsByClassName('subscribe-block')[0].style.display = 'none';
+    if(document.getElementById("subscribeAtTop")) {
+      document.getElementById("subscribeAtTop").style.paddingTop = '94px';
+    }
+  }
+</script>
 
 <section id="wrapper" class="container">
   <div class="top">
@@ -148,7 +159,7 @@
           </a>
         </div>
         <div class="case case-1 col-xs-12 col-md-6">
-          <a href="chatbots-got-payments.html">
+          <a href="404.html">
             <div class="preview-img"></div>
             <div class="preview-text">
               <h2>TecInStore</h2>
@@ -210,19 +221,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/hiding_header.js"></script>
 <script src="js/index.js"></script>
-<script>
-  function closeSubscribeBlock() {
-    var subscribeBlock = $('.subscribe-block');
-    subscribeBlock.animate({
-      marginTop: '-=72px',
-      display: 'none'
-    }, { duration: 200, queue: false });
-    $('body').animate({
-      paddingTop: '-=72px'
-    }, 200, function () {
-      subscribeBlock.css('display', 'none');
-    });
-  }
-</script>
+<script src="js/common_scripts.js"></script>
+<script src="js/subscribe_mockup.js"></script>
 </body>
 </html>

@@ -1,6 +1,5 @@
 $(document).ready(function () {
     $('<iframe name="mock_frame" style="display: none; visibility: hidden;"></iframe>').appendTo('body');
-    console.log('worked mockup');
 });
 
 var validateEmail = function () {
@@ -11,6 +10,8 @@ var validateEmail = function () {
 var submissionCheck = function (param) {
     $('#timezoneInput').val(-(new Date().getTimezoneOffset())/60);
     if(validateEmail() && param === 'close') {
+        console.log(localStorage.getItem('subscriptionBotsCrew'));
+        localStorage.setItem('subscriptionBotsCrew', 1);
         closeSubscribeBlock();
     }
 };
