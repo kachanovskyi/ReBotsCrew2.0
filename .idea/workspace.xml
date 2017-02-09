@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b84ffc62-3f88-4b9b-862e-881918df00ee" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog.html" afterPath="$PROJECT_DIR$/blog.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots-commerce.html" afterPath="$PROJECT_DIR$/bots-commerce.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/careers.html" afterPath="$PROJECT_DIR$/careers.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/case-musement.html" afterPath="$PROJECT_DIR$/case-musement.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cases.html" afterPath="$PROJECT_DIR$/cases.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chatbots-got-payments.html" afterPath="$PROJECT_DIR$/chatbots-got-payments.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crafting-a-great-branding-delivery.html" afterPath="$PROJECT_DIR$/crafting-a-great-branding-delivery.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/console.svg" afterPath="$PROJECT_DIR$/img/console.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/common_scripts.js" afterPath="$PROJECT_DIR$/js/common_scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/musement-raised-millions.html" afterPath="$PROJECT_DIR$/musement-raised-millions.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/retail-needs-updating.html" afterPath="$PROJECT_DIR$/retail-needs-updating.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/team.html" afterPath="$PROJECT_DIR$/team.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/what-are-chatbots.html" afterPath="$PROJECT_DIR$/what-are-chatbots.html" />
     </list>
     <ignored path="botscrew 2.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -129,8 +116,8 @@
       <file leaf-file-name="common_scripts.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/common_scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
+            <state relative-caret-position="289">
+              <caret line="35" column="45" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -512,12 +499,12 @@
       <workItem from="1486359571495" duration="21236000" />
       <workItem from="1486454322194" duration="18181000" />
       <workItem from="1486543982119" duration="21702000" />
-      <workItem from="1486628922007" duration="12868000" />
+      <workItem from="1486628922007" duration="13246000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1053048000" />
+    <option name="totallyTimeSpent" value="1053426000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -934,8 +921,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/common_scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
+        <state relative-caret-position="289">
+          <caret line="35" column="45" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
           <folding />
         </state>
       </provider>
