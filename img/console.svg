@@ -1,12 +1,30 @@
-<svg width="102" height="64" viewBox="0 0 102 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
-<title>Rectangle</title>
+<svg width="102" height="85" viewBox="0 0 102 85" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>Group</title>
 <desc>Created using Figma</desc>
-<g id="Canvas" transform="translate(-17306 -4301)" figma:type="canvas">
+<g id="Canvas" transform="translate(-17306 -4280)" figma:type="canvas">
+<g id="Group" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Group" style="mix-blend-mode:normal;" figma:type="frame">
 <g id="Rectangle" style="mix-blend-mode:normal;" figma:type="vector">
 <use xlink:href="#path0_fill" transform="matrix(1 0 0 -1 17306 4365)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Rectangle" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path1_fill" transform="translate(17306 4280)" fill="#B1D2FF" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+<g id="Group" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Vector 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path2_stroke" transform="translate(17342 4320)" fill="#2F80ED" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector 3" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path3_stroke" transform="translate(17358.7 4346)" fill="#2F80ED" style="mix-blend-mode:normal;"/>
+</g>
+</g>
 </g>
 </g>
 <defs>
 <path id="path0_fill" d="M 0 4C 0 1.79086 1.79086 0 4 0L 98 0C 100.209 0 102 1.79086 102 4L 102 60C 102 62.2091 100.209 64 98 64L 4 64C 1.79086 64 0 62.2091 0 60L 0 4Z"/>
+<path id="path1_fill" d="M 0 4C 0 1.79086 1.79086 0 4 0L 98 0C 100.209 0 102 1.79086 102 4L 102 12C 102 14.2091 100.209 16 98 16L 4 16C 1.79086 16 0 14.2091 0 12L 0 4Z"/>
+<path id="path2_stroke" d="M -1.3962 24.568C -2.18707 25.3391 -2.2031 26.6053 -1.432 27.3962C -0.6609 28.1871 0.605328 28.2031 1.3962 27.432L -1.3962 24.568ZM 13.3333 13L 14.7295 14.432C 15.1156 14.0556 15.3333 13.5392 15.3333 13C 15.3333 12.4608 15.1156 11.9444 14.7295 11.568L 13.3333 13ZM 1.3962 -1.432C 0.605328 -2.2031 -0.6609 -2.18707 -1.432 -1.3962C -2.2031 -0.605328 -2.18707 0.6609 -1.3962 1.432L 1.3962 -1.432ZM 1.3962 27.432L 14.7295 14.432L 11.9371 11.568L -1.3962 24.568L 1.3962 27.432ZM 14.7295 11.568L 1.3962 -1.432L -1.3962 1.432L 11.9371 14.432L 14.7295 11.568Z"/>
+<path id="path3_stroke" d="M 0 -2C -1.10457 -2 -2 -1.10457 -2 0C -2 1.10457 -1.10457 2 0 2L 0 -2ZM 13.3333 2C 14.4379 2 15.3333 1.10457 15.3333 0C 15.3333 -1.10457 14.4379 -2 13.3333 -2L 13.3333 2ZM 0 2L 13.3333 2L 13.3333 -2L 0 -2L 0 2Z"/>
 </defs>
 </svg>
