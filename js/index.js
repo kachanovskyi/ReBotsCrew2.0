@@ -450,12 +450,14 @@ $(document).ready(function () {
 
         function fireAfterLoad () {
             var botCarousel = $('#botUsesCard');
-            botCarousel.on( "swipeleft", function() {
+            botCarousel.on( "swipeleft", function(e) {
                 listScroll("next");
+                e.preventDefault();
                 return false;
             });
-            botCarousel.on( "swiperight", function() {
+            botCarousel.on( "swiperight", function(e) {
                 listScroll("prev");
+                e.preventDefault();
                 return false;
             });
 
