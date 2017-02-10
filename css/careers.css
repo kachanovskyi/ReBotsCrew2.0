@@ -16,6 +16,10 @@
     margin: 30px 0;
 }
 
+.modal {
+    -webkit-overflow-scrolling: auto;
+}
+
 .modal-close-btn {
     position: fixed;
     top: 60px;
