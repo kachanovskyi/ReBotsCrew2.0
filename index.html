@@ -13,7 +13,7 @@
     }
   </style>
 </head>
-<body>
+<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);" ontouchmove="BlockMove(event);">
 <header class="header">
   <div id="headerInner">
     <div class="container">
@@ -505,6 +505,11 @@
     , loop: true
     , startDelay: 100
   });
+
+  function BlockMove(event) {
+    // Tell Safari not to move the window.
+    event.preventDefault();
+  }
 </script>
 <script defer src="js/hiding_header.js"></script>
 <script src="js/bootstrap.min.js"></script>
