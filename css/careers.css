@@ -17,7 +17,7 @@
 }
 
 .modal {
-    -webkit-overflow-scrolling: auto !important;
+    /*-webkit-overflow-scrolling: auto !important;*/
 }
 
 .modal-close-btn {
