@@ -434,7 +434,7 @@ $(document).ready(function () {
         $("video").prop('muted', true);
     }
 
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    // if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         //displaying correct amount of messenger list items when resized on mobile
         $(window).resize(function()
         {
@@ -449,6 +449,7 @@ $(document).ready(function () {
         addJS_Node (null, "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js", null, fireAfterLoad);
 
         function fireAfterLoad () {
+            console.log('swipes added');
             var botCarousel = $('#botUsesCard');
             botCarousel.on( "swipeleft", function(e) {
                 listScroll("next");
@@ -471,7 +472,7 @@ $(document).ready(function () {
                 return false;
             });
         }
-    }
+    // }
 
     alignMessengerTextHeight();
     // alignPricingBlocks();

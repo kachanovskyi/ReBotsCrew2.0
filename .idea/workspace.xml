@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b84ffc62-3f88-4b9b-862e-881918df00ee" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/index.js" afterPath="$PROJECT_DIR$/js/index.js" />
     </list>
     <ignored path="botscrew 2.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="511" column="3" selection-start-line="511" selection-start-column="3" selection-end-line="511" selection-end-column="3" />
+            <state relative-caret-position="508">
+              <caret line="510" column="9" selection-start-line="510" selection-start-column="9" selection-end-line="510" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -113,15 +115,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="459" column="35" selection-start-line="459" selection-start-column="35" selection-end-line="459" selection-end-column="35" />
+            <state relative-caret-position="236">
+              <caret line="451" column="40" selection-start-line="451" selection-start-column="40" selection-end-line="451" selection-end-column="40" />
               <folding>
-                <marker date="1486720376328" expanded="true" signature="4670:4700" placeholder="..." />
-                <marker date="1486720376328" expanded="true" signature="4670:4720" placeholder="..." />
-                <marker date="1486720376328" expanded="true" signature="4670:4721" placeholder="..." />
+                <marker date="1486721974514" expanded="true" signature="4670:4700" placeholder="..." />
+                <marker date="1486721974514" expanded="true" signature="4670:4720" placeholder="..." />
+                <marker date="1486721974514" expanded="true" signature="4670:4721" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -188,8 +190,8 @@
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/js/common_scripts.js" />
         <option value="$PROJECT_DIR$/css/blog.css" />
-        <option value="$PROJECT_DIR$/js/index.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/index.js" />
       </list>
     </option>
   </component>
@@ -506,12 +508,12 @@
       <workItem from="1486628922007" duration="15704000" />
       <workItem from="1486669758935" duration="601000" />
       <workItem from="1486685663477" duration="643000" />
-      <workItem from="1486718957602" duration="1635000" />
+      <workItem from="1486718957602" duration="2365000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1058763000" />
+    <option name="totallyTimeSpent" value="1059493000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -880,23 +882,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/index.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="459" column="35" selection-start-line="459" selection-start-column="35" selection-end-line="459" selection-end-column="35" />
-          <folding>
-            <marker date="1486720376328" expanded="true" signature="4670:4700" placeholder="..." />
-            <marker date="1486720376328" expanded="true" signature="4670:4720" placeholder="..." />
-            <marker date="1486720376328" expanded="true" signature="4670:4721" placeholder="..." />
-          </folding>
+        <state relative-caret-position="508">
+          <caret line="510" column="9" selection-start-line="510" selection-start-column="9" selection-end-line="510" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="511" column="3" selection-start-line="511" selection-start-column="3" selection-end-line="511" selection-end-column="3" />
-          <folding />
+        <state relative-caret-position="236">
+          <caret line="451" column="40" selection-start-line="451" selection-start-column="40" selection-end-line="451" selection-end-column="40" />
+          <folding>
+            <marker date="1486721974514" expanded="true" signature="4670:4700" placeholder="..." />
+            <marker date="1486721974514" expanded="true" signature="4670:4720" placeholder="..." />
+            <marker date="1486721974514" expanded="true" signature="4670:4721" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
