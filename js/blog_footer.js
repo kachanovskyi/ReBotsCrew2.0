@@ -1,12 +1,11 @@
 var targetOffsetHide = $('.social-share').offset().top;
-console.log(targetOffsetHide);
+// console.log(targetOffsetHide);
 var firstP = $('.content p:first-child');
 var targetOffsetShow = (firstP.offset().top + firstP.height());
-console.log(targetOffsetShow);
+// console.log(targetOffsetShow);
 
 $(window).on('resize', function(){
     targetOffsetHide = $('.social-share').offset().top;
-    console.log('resized');
 });
 // console.log(targetOffsetHide, 'targetOffset');
 var $w = $(window).scroll(function(){

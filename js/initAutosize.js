@@ -1,3 +1,4 @@
-$(document).ready(function () {
-    autosize($('textarea')); 
+$(document).ready(function (e) {
+    autosize($('textarea'));
+    e.preventDefault();
 });

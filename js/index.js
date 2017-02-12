@@ -449,14 +449,13 @@ $(document).ready(function () {
         addJS_Node (null, "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js", null, fireAfterLoad);
 
         function fireAfterLoad () {
-            console.log('swipes added');
             var botCarousel = $('#botUsesCard');
             botCarousel.on( "swipeleft", function(e) {
                 listScroll("next");
                 e.preventDefault();
                 return false;
             });
-            botCarousel.on( "swiperight", function(e) {
+            botCarousel.on("swiperight", function(e) {
                 listScroll("prev");
                 e.preventDefault();
                 return false;
