@@ -420,9 +420,9 @@
     <div class="middle">
       <div class="col-lg-4"></div>
       <div class="col-lg-4">
-        <form name="contactForm" id="contact-form" autocomplete="off" action="https://formspree.io/info@botscrew.com" method="POST" target="_blank">
-          <input type="text" name="Name" placeholder="Your name">
-          <input type="email" name="Email" placeholder="Your e-mail address">
+        <form name="contactForm" id="contact-form" onsubmit="clearContactForm()" autocomplete="off" action="https://formspree.io/info@botscrew.com" method="POST" target="_blank">
+          <input type="text" name="Name" placeholder="Your name" required>
+          <input type="email" name="Email" placeholder="Your e-mail address" required>
 
           <select name="Purpose" id="purposeSelect">
             <option value="I want to develop a bot" selected class="background">I want to develop a bot</option>
@@ -438,7 +438,8 @@
           </select>
 
           <!--<input type="text" placeholder="Project description" required>-->
-          <textarea placeholder="Project description" rows="1" cols="33" name="Project" style="resize:none"></textarea>
+          <textarea placeholder="Project description" rows="1" cols="33" name="Project" style="resize:none" required></textarea>
+
           <input type="button" onclick="validateContactForm()" value="Send Message" class="menu-item bot-btn white text-blue">
         </form>
         <div class="row socials-bottom">

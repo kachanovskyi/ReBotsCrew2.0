@@ -37,13 +37,15 @@ a:active {
 /*}*/
 
 .alert {
-    position: absolute;
+    position: fixed;
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
     width: 33%;
     margin: 0 auto;
     font-size: 18px;
+    z-index: 600;
+    display: none;
 }
     .alert p {
         font-weight: 400;

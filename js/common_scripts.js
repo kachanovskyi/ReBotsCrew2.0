@@ -7,7 +7,15 @@ var validateEmail = function () {
     return true;
 };
 
+var timeout;
+
 var customAlert = function (text, type) {
+    if($('.alert')) {
+        $('.alert').remove();
+        window.clearTimeout(timeout);
+    }
+
+    console.log('custom alert');
     var alert = $('<div class="alert" role="alert">')
         .append(
             $('<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>')
@@ -34,8 +42,11 @@ var customAlert = function (text, type) {
     }
     alert.appendTo('#wrapper');
 
-    window.setTimeout(function() {
-        $(".alert").fadeTo(500, 0).slideUp(500, function(){
+    console.log(alert);
+
+    $(".alert").slideDown(150);
+    timeout = window.setTimeout(function() {
+        $(".alert").slideUp(500, function(){
             $(this).remove();
         });
     }, 3000);

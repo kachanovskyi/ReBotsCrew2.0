@@ -7,7 +7,7 @@ var validateContactForm = function() {
         return false;
     }
 
-    // if( document.contactForm.Email.value == "" )
+    if( document.contactForm.Email.value == "" )
     if(!re.test(document.contactForm.Email.value)) {
         customAlert("Please provide correct e-mail", 2);
         document.contactForm.Email.focus();
@@ -20,7 +20,13 @@ var validateContactForm = function() {
         return false;
     }
 
-    return( true );
+    document.contactForm.submit();
+};
+
+var clearContactForm = function () {
+    document.contactForm.Name.value = "";
+    document.contactForm.Email.value = "";
+    document.contactForm.Project.value = ""
 };
 
 var alignMessengerTextHeight = function () {
