@@ -1,3 +1,28 @@
+var validateContactForm = function() {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    if( document.contactForm.Name.value == "" ) {
+        customAlert("Please provide your name", 2);
+        document.contactForm.Name.focus();
+        return false;
+    }
+
+    // if( document.contactForm.Email.value == "" )
+    if(!re.test(document.contactForm.Email.value)) {
+        customAlert("Please provide correct e-mail", 2);
+        document.contactForm.Email.focus();
+        return false;
+    }
+
+    if( document.contactForm.Project.value == "" ) {
+        customAlert("Please provide project description", 2);
+        document.contactForm.Project.focus();
+        return false;
+    }
+
+    return( true );
+};
+
 var alignMessengerTextHeight = function () {
     var textElem = $('.slide-4 p');
     var maxHeight = $(textElem).height();
@@ -485,13 +510,13 @@ $(document).ready(function () {
         document.getElementById("budgetSelect").disabled = true;
     });
 
-    $('#enterprise').click(function () {
-        $('#budgetSelect').val("Enterprise");
-    });
-    $('#prototype').click(function () {
-        $('#budgetSelect').val("Prototype");
-    });
-    $('#startup').click(function () {
-        $('#budgetSelect').val("Startup");
-    });
+    // $('#enterprise').click(function () {
+    //     $('#budgetSelect').val("Enterprise");
+    // });
+    // $('#prototype').click(function () {
+    //     $('#budgetSelect').val("Prototype");
+    // });
+    // $('#startup').click(function () {
+    //     $('#budgetSelect').val("Startup");
+    // });
 });

@@ -1,4 +1,6 @@
 /*above-the-fold styles end*/
+@import url("twemoji-awesome.css");
+
 body, html {
     width: 100%;
     overflow-x: hidden;
@@ -33,6 +35,19 @@ a:active {
 /*.overlay.dimmed {*/
     /*background:rgba(0,0,0,0.7);*/
 /*}*/
+
+.alert {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 33%;
+    margin: 0 auto;
+    font-size: 18px;
+}
+    .alert p {
+        font-weight: 400;
+    }
 
 #timezoneInput {
     display: none;
@@ -1073,7 +1088,7 @@ a:active {
     color: #FFFFFF;
 }
 
-#contact-form input[type=submit] {
+#contact-form input[type=button] {
     margin: 30px auto;
 }
 
@@ -1804,6 +1819,10 @@ a:active {
 }
 
 @media (max-width: 575px) {
+    .alert {
+        width: 88%;
+    }
+
     .navbar.navbar-default {
         height: 50px;
     }

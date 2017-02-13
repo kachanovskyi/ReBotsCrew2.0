@@ -1,3 +1,46 @@
+var validateEmail = function () {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if(!re.test($('#emailInput').val())) {
+        customAlert("Please provide correct e-mail", 2);
+        return false;
+    }
+    return true;
+};
+
+var customAlert = function (text, type) {
+    var alert = $('<div class="alert" role="alert">')
+        .append(
+            $('<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>')
+        );
+
+    if(type === 1) {
+        alert
+            .addClass('alert-success')
+            .append(
+                $('<p>')
+                    .append($('<strong>Success! </strong>'))
+                    .append(text + " ")
+                    .append($('<i class="twa twa-heart-eyes"></i>'))
+            )
+    } else {
+        alert
+            .addClass('alert-warning')
+            .append(
+                $('<p>')
+                    .append($('<strong>Oh! </strong>'))
+                    .append(text + " ")
+                    .append($('<i class="twa twa-confused"></i>'))
+            )
+    }
+    alert.appendTo('#wrapper');
+
+    window.setTimeout(function() {
+        $(".alert").fadeTo(500, 0).slideUp(500, function(){
+            $(this).remove();
+        });
+    }, 3000);
+};
+
 //mobile navbar background overlay
 function toggleNavOverlay() {
     if(document.getElementById("navOverlay").style.height === '100%') {
