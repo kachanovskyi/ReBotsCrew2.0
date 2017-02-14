@@ -1,0 +1,189 @@
+.vacancy-header {
+    position: relative;
+    height: 250px;
+    background: url("../img/careersPopupBack.png") center;
+    border-radius: 6px 6px 0 0;
+}
+.vacancy-header .inner {
+    text-align: center;
+    padding: 6% 18px 30px;
+}
+.vacancy-header .inner h1 {
+    font-size: 48px;
+    line-height: 110%;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 10px;
+}
+.vacancy-header .inner p {
+    font-size: 18px;
+    color: #2F80ED;
+    margin-top: 0;
+    font-weight: 600;
+}
+
+.vacancy-body .inner {
+    width: 76%;
+    margin: 0 12%;
+}
+.vacancy-body .inner h1 {
+    font-size: 48px;
+    line-height: 110%;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px;
+}
+.vacancy-body .inner p {
+    margin: 0 0 20px;
+}
+
+.vacancy-body .inner {
+    display: block;
+    padding: 0 30px 30px;
+    border-bottom: 1px solid #C4C4C4;
+}
+/*.vacancy:last-child {*/
+/*border: none;*/
+/*}*/
+.vacancy-body .inner h2 {
+    font-size: 28px;
+    letter-spacing: 0.0166px;
+    color: #2F80ED;
+}
+.vacancy-body .inner p {
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0.0166px;
+    color: #828282;
+}
+.vacancy-body .inner p>b {
+    color: #000000;
+}
+
+.vacancy-body .inner .description {
+    margin-top: 20px;
+}
+.vacancy-body .inner .demands, .vacancy .offers {
+    /*padding-top: 33px;*/
+}
+.vacancy-body .inner .offers {
+    margin-bottom: 44px;
+}
+
+.vacancy-body .inner .demands .heading, .vacancy .offers .heading {
+    padding-left: 0;
+}
+
+.vacancy-body .inner .skills-list {
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.vacancy-body .inner .skills-list > li {
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.5);
+    padding-left: 30px;
+}
+
+.vacancy-body .inner .apply-heading {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.apply-body .header {
+    padding-top: 30px;
+    background: none;
+}
+
+.apply-body .apply-form {
+    margin-top: 30px;
+}
+.apply-form input[type=text],
+.apply-form input[type=email],
+.apply-form textarea
+{
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #E8E8E8;
+    border-radius: 0;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    line-height: 100%;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.5);
+}
+.apply-form textarea {
+    padding-top: 22px;
+    padding-bottom: 18px;
+    line-height: 140%;
+}
+.apply-form input:focus, .apply-form select:focus, .apply-form textarea:focus{
+    outline: none;
+}
+
+.apply-form input::-webkit-input-placeholder, .apply-form textarea::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.apply-form input[type=submit] {
+    margin: 30px auto;
+}
+
+@media (max-width: 767px) {
+    #wrapper {
+        padding-top: 60px;
+    }
+    .vacancy-body .inner {
+        width: 100%;
+        margin: 0;
+    }
+
+    .vacancy-body .inner .skills-list {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 576px) {
+    .vacancy-body .inner .demands p, .vacancy-body .inner .offers p {
+        padding-left: 66px;
+    }
+}
+
+@media (max-width: 575px) {
+    #wrapper {
+        padding-top: 50px;
+    }
+    .apply-heading,
+    .vacancy-body .inner h1{
+        text-align: center;
+    }
+}
+
+@media (max-width: 444px) {
+    .demands h1 {
+        font-size: 36px;
+    }
+
+    .vacancy-header .inner {
+        padding: 3% 8px 8px;
+    }
+
+    .vacancy-body .inner .skills-list > li {
+        padding-left: 6px;
+    }
+    .vacancy-body .inner {
+        padding: 20px 5px;
+    }
+}
+
+@media (max-width: 383px) {
+    .middle .form-container {
+        padding: 0;
+    }
+    .bot-btn.white.text-blue.contact-modal {
+        margin-left: -12px;
+        margin-right: -12px;
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+}

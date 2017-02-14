@@ -16,10 +16,6 @@
     margin: 30px 0;
 }
 
-.modal {
-    /*-webkit-overflow-scrolling: auto !important;*/
-}
-
 .modal-close-btn {
     position: fixed;
     top: 60px;
@@ -243,9 +239,9 @@
     padding: 20px 30px 30px;
     border-bottom: 1px solid #C4C4C4;
 }
-.vacancy:last-child {
-    border: none;
-}
+/*.vacancy:last-child {*/
+    /*border: none;*/
+/*}*/
 .vacancy h2 {
     font-size: 28px;
     letter-spacing: 0.0166px;

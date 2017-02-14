@@ -9,12 +9,19 @@ $(document).ready(function () {
 
     $('#roleSalesManager').on("click", function () {
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-            window.open("sometab");
+            window.open("vacancySalesManager.html");
         } else {
             $('#modalSalesManager').modal('show');
         }
     });
-    
+    $('#roleJavaDev').on("click", function () {
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            window.open("vacancyJavaDev.html");
+        } else {
+            $('#modalJavaDev').modal('show');
+        }
+    });
+
     $('#roleSalesManager, #roleJavaDev').on("click", function () {
         if(matchMedia('(max-width:767px)').matches) {
             $('.modal-mobile-header').css('display', 'block');
