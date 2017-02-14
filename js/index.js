@@ -113,15 +113,15 @@ $(document).ready(function () {
             { type: 'bot', phrase: 'Sure. When are you going to come?' },
             { type: 'person', phrase: 'Today at 5:00 PM.' },
             { type: 'bot', phrase: 'Got it. You want a table for 2 at 5:00 PM today.' },
-            { type: 'bot', phrase: 'What will you be having?' },
-            { type: 'person', phrase: '2 Vella Burgers please' },
+            { type: 'bot', phrase: 'What would you like to order?' },
+            { type: 'person', phrase: '2 Vella Burgers, please' },
             { type: 'bot', phrase: ' Got it! Anything else?' },
             { type: 'person', phrase: 'No, thanks.' },
             { type: 'bot', phrase: 'Great! Your table successfully booked. We’ll be waiting for you' }
         ],
         [
-            { type: 'person', phrase: 'Hey, my internet connection isn’t working. How can fix that issue?' },
-            { type: 'bot', phrase: 'Hmm.. Let me check that for you.  Have you tried to reload your router?' },
+            { type: 'person', phrase: 'Hey, my internet connection isn’t working. How can I fix this issue?' },
+            { type: 'bot', phrase: 'Hmm.. Let me check that for you. Have you tried to reload your router?' },
             { type: 'person', phrase: 'One moment' },
             { type: 'person', phrase: 'Oh thanks. Everything is okay right now.' },
             { type: 'bot', phrase: 'You’re welcome!' }
@@ -129,29 +129,29 @@ $(document).ready(function () {
         [
             { type: 'person', phrase: 'Hi, I am going to visit Milan this week. Can you change my payment limit to $2.000?' },
             { type: 'bot', phrase: 'Of course. Your limit will be changed shortly.' },
-            { type: 'person', phrase: 'Great, show me what is my current balance?' },
+            { type: 'person', phrase: 'Great, show me what is my current balance.' },
             { type: 'bot', phrase: 'Your balance: $23.000.' },
-            { type: 'person', phrase: 'And how much I spent last month?' },
-            { type: 'bot', phrase: 'You outcome: $2840. Do you want to check more details?' },
+            { type: 'person', phrase: 'And how much did I spend last month?' },
+            { type: 'bot', phrase: 'Your outcome: $2840. Do you want to check more details?' },
             { type: 'person', phrase: 'No, thanks.' },
             { type: 'bot', phrase: 'You’re welcome' }
         ],
         [
             { type: 'person', phrase: 'Yo. I wanna black Nike Kaishi sneakers.' },
-            { type: 'bot', phrase: 'This one?' },
+            { type: 'bot', phrase: 'These?' },
             { type: 'bot', phrase: '<img style="width: 160px; max-width: 100%; border-radius: 16px;" src="img/kaishi.png"/>', class: 'transparent' },
             { type: 'person', phrase: 'Yes, absolutely.' },
             { type: 'bot', phrase: 'Specify your size please.' },
             { type: 'person', phrase: '7' },
-            { type: 'bot', phrase: 'Got it! Where need to be delivered, home or office?' },
-            { type: 'person', phrase: 'Home please' },
+            { type: 'bot', phrase: 'Got it! Where should they be delivered, home or office?' },
+            { type: 'person', phrase: 'Home, please' },
             { type: 'bot', phrase: 'Thanks for your order. Our courier will contact you shortly.' }
         ],
         [
             { type: 'person', phrase: 'What is the best TV show of 2016?' },
-            { type: 'bot', phrase: 'According to IMDB rating the best TV show of is Game Of Thrones' },
+            { type: 'bot', phrase: 'According to IMDB rating the best TV show is Game Of Thrones' },
             { type: 'person', phrase: 'What is the movie Dunkirk about?' },
-            { type: 'bot', phrase: 'Dunkirk is an upcoming British epic war film written, co-produced and directed by Christopher Nolan. The story is set in World War II during the Dunkirk evacuation. ' },
+            { type: 'bot', phrase: 'Dunkirk is an upcoming British epic war film written, co-produced and directed by Christopher Nolan. The story is set in World War II during the Dunkirk evacuation.' }
         ],
         [
             { type: 'person', phrase: 'Hey, I want to book a room in your hotel.' },
