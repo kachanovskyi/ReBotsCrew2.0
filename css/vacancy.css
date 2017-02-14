@@ -1,3 +1,6 @@
+#wrapper {
+    padding-top: 98px;
+}
 .vacancy-header {
     position: relative;
     height: 250px;
@@ -125,7 +128,7 @@
     color: rgba(0, 0, 0, 0.5);
 }
 
-.apply-form input[type=submit] {
+.apply-form input[type=button] {
     margin: 30px auto;
 }
 

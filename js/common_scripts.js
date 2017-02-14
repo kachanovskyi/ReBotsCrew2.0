@@ -1,7 +1,7 @@
 var validateEmail = function () {
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if(!re.test($('#emailInput').val())) {
-        customAlert("Please provide correct e-mail", 2);
+        customAlert("Please provide correct email", 2);
         return false;
     }
     return true;
@@ -15,7 +15,6 @@ var customAlert = function (text, type) {
         window.clearTimeout(timeout);
     }
 
-    console.log('custom alert');
     var alert = $('<div class="alert" role="alert">')
         .append(
             $('<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>')
@@ -32,7 +31,7 @@ var customAlert = function (text, type) {
             )
     } else {
         alert
-            .addClass('alert-warning')
+            .addClass('alert-danger')
             .append(
                 $('<p>')
                     .append($('<strong>Oh! </strong>'))
@@ -40,16 +39,16 @@ var customAlert = function (text, type) {
                     .append($('<i class="twa twa-confused"></i>'))
             )
     }
-    alert.appendTo('#wrapper');
+    alert.appendTo('.header');
 
     console.log(alert);
 
-    $(".alert").slideDown(150);
+    $(".alert").fadeIn(250);
     timeout = window.setTimeout(function() {
-        $(".alert").slideUp(500, function(){
+        $(".alert").fadeOut(250, function(){
             $(this).remove();
         });
-    }, 3000);
+    }, 2000);
 };
 
 //mobile navbar background overlay
@@ -70,32 +69,6 @@ function toggleNavOverlay() {
 }
 
 $(document).ready(function () {
-    $('form').submit(function(){
-        $('input[required]').css("border-color", "red");
-        $('input[required="true"]').css("border-color", "blue");
-        $('input[required="required"]').css("border-color", "green");
-        $('input:required').css("border-color", "yello");
-        var required = $('#emailInput'); // change to [required] if not using true option as part of the attribute as it is not really needed.
-        var error = false;
-
-        console.log($('input[required]'));
-
-        for(var i = 0; i <= (required.length - 1);i++)
-        {
-            if(required[i].value == '') // tests that each required value does not equal blank, you could put in more stringent checks here if you wish.
-            {
-                required[i].style.borderColor = 'rgb(255,155,155)';
-                $('.bot-btn.white.subscribe')[0].style.borderColor = 'rgb(255,155,155)'
-                $('.bot-btn.white.subscribe')[0].style.opacity = '1';
-                error = true; // if any inputs fail validation then the error variable will be set to true;
-            }
-        }
-
-        if(error) // if error is true;
-        {
-            return false; // stop the form from being submitted.
-        }
-    });
     //Modile navigation bar scripts
 
     //icon transformation

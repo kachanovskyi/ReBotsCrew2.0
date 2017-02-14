@@ -344,11 +344,22 @@
     </div>
     <div class="row">
       <div class="bottom col-sm-12 no-bottom-margin">
+        <!--<div class="inner row text-center">-->
+          <!--<form name="subscribeForm" id="subscribe-form" role="form" action="https://769dff9b.ngrok.io/mail_subscribe" onsubmit="submissionCheck()" method="POST" target="mock_frame" autocomplete="off">-->
+            <!--<p class="hidden-xs">Subscribe to BotsCrew newsletter<span class="hidden-sm">. No spam, no nasty stuff</span></p>-->
+            <!--<input name="email" type="email" placeholder="Your E-Mail" id="emailInput">-->
+            <!--<input name="timezone" type="text" id="timezoneInput">-->
+            <!--<button type="submit" class="menu-item bot-btn white subscribe">Subscribe</button>-->
+          <!--</form>-->
+        <!--</div>-->
         <div class="subscribe-block">
           <div class="inner row text-center">
-            <p class="hidden-xs">Subscribe to BotsCrew newsletter<span class="hidden-sm">. No spam, no nasty stuff</span></p>
-            <input type="text" placeholder="Your E-Mail">
-            <a href="#" class="menu-item bot-btn white subscribe">Subscribe</a>
+            <form name="subscribeForm" id="subscribe-form" role="form" action="https://769dff9b.ngrok.io/mail_subscribe" onsubmit="submissionCheck()" method="POST" target="mock_frame" autocomplete="off">
+              <p class="hidden-xs">Subscribe to BotsCrew newsletter<span class="hidden-sm">. No spam, no nasty stuff</span></p>
+              <input name="email" type="email" placeholder="Your E-Mail" id="emailInput">
+              <input name="timezone" type="text" id="timezoneInput">
+              <button type="submit" class="menu-item bot-btn white subscribe">Subscribe</button>
+            </form>
           </div>
         </div>
       </div>
@@ -604,5 +615,6 @@
   }
 </script>
 <script src="js/careers_scripts.js"></script>
+<script src="js/subscribe_mockup.js"></script>
 </body>
 </html>

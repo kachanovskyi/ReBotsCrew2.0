@@ -9,16 +9,18 @@ $(document).ready(function () {
 
     $('#roleSalesManager').on("click", function () {
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-            window.open("vacancySalesManager.html");
+            window.open("careers/sales.html");
         } else {
             $('#modalSalesManager').modal('show');
+            autosize($('textarea'));
         }
     });
     $('#roleJavaDev').on("click", function () {
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-            window.open("vacancyJavaDev.html");
+            window.open("careers/java-junior.html");
         } else {
             $('#modalJavaDev').modal('show');
+            autosize($('textarea'));
         }
     });
 
