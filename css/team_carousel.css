@@ -9,7 +9,7 @@
 .frame {
     height: 400px;
     /*line-height: 300px;*/
-    overflow: hidden;
+    overflow: visible !important;
 }
 
 .frame ul {
