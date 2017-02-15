@@ -1,3 +1,11 @@
+var subFolder = false,
+    root = 'img/';
+
+if($('#subFolderScript')[0]) {
+    subFolder = true;
+    root = '../img/';
+}
+
 var targetOffset = $('.content').offset().top - 60;
 $(window).on('resize', function(){
     targetOffset = $('.content').offset().top - 60;
@@ -8,13 +16,13 @@ var $w = $(window).scroll(function(){
         $('.menu-item').addClass('standard-menu-item');
         $('.header .menu-item.bot-btn').removeClass('border-white');
         $('.header .menu-item.bot-btn').addClass('text-blue');
-        $('.logo').attr('src', "img/logo.svg");
+        $('.logo').attr('src', root + "logo.svg");
         $('.icon-bar').removeClass('white');
     } else {
         $('.menu-item').removeClass('standard-menu-item');
         $('.header .menu-item.bot-btn').removeClass('text-blue');
         $('.header .menu-item.bot-btn').addClass('border-white');
-        $('.logo').attr('src', "img/logo_white.svg");
+        $('.logo').attr('src', root + "logo_white.svg");
         $('.icon-bar').addClass('white');
     }
 
@@ -32,7 +40,7 @@ var menuDefaultStyles = function () {
     $('.menu-item').addClass('standard-menu-item');
     $('.header .menu-item.bot-btn').removeClass('border-white');
     $('.header .menu-item.bot-btn').addClass('text-blue');
-    $('.logo').attr('src', "img/logo.svg");
+    $('.logo').attr('src', root + "logo.svg");
     $('.icon-bar').removeClass('white');
 };
 
@@ -41,7 +49,7 @@ $(document).ready(function () {
         $('.menu-item').removeClass('standard-menu-item');
         $('.header .menu-item.bot-btn').removeClass('text-blue');
         $('.header .menu-item.bot-btn').addClass('border-white');
-        $('.logo').attr('src', "img/logo_white.svg");
+        $('.logo').attr('src', root + "logo_white.svg");
         $('.icon-bar').addClass('white');
         $('.navbar').css('background', 'transparent');
     })
