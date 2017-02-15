@@ -501,6 +501,16 @@ $(document).ready(function () {
                 $(this).carousel("prev");
                 return false;
             });
+
+            var connectCarousel = $('#connectCarousel');
+            connectCarousel.on("swipeleft", function () {
+                $(this).carousel("next");
+                return false;
+            });
+            connectCarousel.on("swiperight", function () {
+                $(this).carousel("prev");
+                return false;
+            });
         }
     // }
 
