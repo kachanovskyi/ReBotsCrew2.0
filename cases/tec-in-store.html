@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>BotsCrew Chatbots Development</title>
+  <link rel="icon" type="image/png" href="../img/logo.png">
+  <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+  <style>
+    body,html{width:100%;overflow-x:hidden}
+    a, p {
+      font-weight: 300;
+    }
+    h1, h2 {
+      font-weight: 400;
+    }
+    h1,
+    h2,
+    p,
+    a {
+      font-family: "Roboto", sans-serif;
+    }
+
+    p {
+      /*padding-left: 15px;*/
+      /*padding-right: 15px;*/
+    }
+
+    a,
+    a:hover,
+    a:visited,
+    a:active {
+      text-decoration: none!important
+    }
+
+    .header {
+      width: 100%
+    }
+
+    .nav-up {
+      top: -201px
+    }
+
+    .navbar {
+      border: none;
+      background-color: transparent;
+      transition: top .3s ease-in-out;
+    }
+
+    /*.navbar-nav {*/
+      /*margin: 0 auto;*/
+      /*padding: 24px*/
+    /*}*/
+
+    /*.navbar-nav>li:last-child {*/
+      /*padding-right: 100px*/
+    /*}*/
+
+    /*.navbar-default {*/
+      /*border-bottom: 1px solid rgba(256, 256, 256, .11) !important;*/
+    /*}*/
+
+    /*.navbar-brand {*/
+      /*padding: 0 0 0 100px;*/
+      /*display: flex;*/
+      /*align-items: center;*/
+      /*margin: 24px*/
+    /*}*/
+
+    /*.navbar-brand>img {*/
+      /*!*height: 50px;*!*/
+      /*padding: 7px 14px;*/
+      /*!*width: auto*!*/
+    /*}*/
+
+    .menu-item {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 100%;
+      color: #FFFFFF!important
+    }
+
+    .bot-btn {
+      border: 1px solid #2F80ED;
+      border-radius: 4px;
+      transition-duration: .2s;
+      padding: 14px 23px
+    }
+
+    .bot-btn:hover {
+      transition-duration: .5s;
+      text-decoration: none
+    }
+
+    .bot-btn:active {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), inset 0 4px 0 rgba(0, 0, 0, 0.05)
+    }
+
+    .bot-btn.white-blue {
+      color: #2F80ED!important
+    }
+
+    .bot-btn.white-blue:hover {
+      background-color: #2F80ED!important;
+      color: #FFF!important
+    }
+
+    #middle {
+      font-size: 48px;
+      line-height: 100%;
+      letter-spacing: .0166px;
+      color: #4F4F4F;
+      text-align: center;
+      width: 100%
+    }
+
+    .botDemo .iphoneWrapper {
+      background-image: url('../img/iphone6Gray.png');
+      background-size: 260px;
+      background-repeat: no-repeat;
+      margin: 0 auto;
+      width: 260px;
+      padding-bottom: 111px;
+    }
+
+    .top {
+      background: url("../img/MusementCase.jpg");
+    }
+  </style>
+</head>
+<body>
+<header class="header">
+  <div id="headerInner">
+    <div class="container">
+      <nav class="navbar navbar-default navbar-fixed-top nav-down">
+        <!--<div class="background"></div>-->
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type = "button" class = "navbar-toggle" onclick="menuDefaultStyles()"
+                    data-toggle = "collapse" data-target = "#navbar">
+              <span class = "sr-only">Toggle navigation</span>
+              <span class = "icon-bar white"></span>
+              <span class = "icon-bar white"></span>
+              <span class = "icon-bar white"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html"><img class="logo" src="../img/logo_white.svg" alt="BotsCrew logo"><span class="menu-item">BotsCrew</span></a>
+          </div>
+          <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="../cases.html" class="menu-item">Cases</a></li>
+              <li><a href="../blog.html" class="menu-item">Blog</a></li>
+              <li><a href="../team.html" class="menu-item">Team</a></li>
+              <li class="careers"><a href="../careers.html" class="menu-item">Careers</a></li>
+              <li><a href="../index.html#contact" class="menu-item page-scroll bot-btn white border-white transparent">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<section id="wrapper">
+  <div>
+    <div class="row">
+      <div class="top col-md-12">
+        <h1>TecInStore - repair your phone instantly</h1>
+        <a href="https://www.m.me/musement" target="_blank" class="menu-item bot-btn white border-white transparent"><img src="../img/messenger_icon.svg" class="fb-messenger-img"> <span class="text">Open in messenger</span></a>
+      </div>
+    </div>
+    <div class="content">
+      <div class="row heading text-left">
+        <div class="col-md-offset-2 col-md-5 left">
+          <h1 style="margin-top: 0">“There are more than 80% less requests to the customer support center thanks to the chatbot”</h1>
+        </div>
+        <div class="col-md-offset-1 col-md-4 right">
+          <p class="title"><b>Client</b></p>
+          <p class="subtitle">TecInStore</p>
+          <p class="title"><b>Branch</b></p>
+          <p class="subtitle">Customer Support</p>
+          <p class="title"><b>Technologies</b></p>
+          <p class="subtitle">NLP, Java, Spring Data</p>
+        </div>
+      </div>
+      <div class="col-md-offset-2 col-md-8">
+        <h2>Introduction</h2>
+        <p>Musement is a ticketing platform and travel company, which helps to enjoy the fullest experience of destinations. Recently it has raised $10 million in Series B funding. The company was founded in 2013 in Italy as the online platform for tours, activities, shows, museums, and art events. Service at first focused in Europe and then constantly expanding to the rest of the world. The main purpose of the company was to consolidate the tours and activities market by providing a single online destination to discover and book in-destination activities.</p>
+        <img src="../img/musementCase1.png" style="width:100%" alt="botscrew.com" class="img-full">
+        <h2>Challange
+        </h2>
+        <p>As a big repair center of the phones, Tec InStore always had a lot of requests from their customers. They were describing their problems with the phone, asking typical questions to the customer support center. It took a lot of money and affords to satisfy every customer and answer on his question. And it was hard to scale.</p>
+
+        <h2>Solution
+        </h2>
+        <p>Musement’s founders engaged BotsCrew to help with the clarifying of the idea and developing  of a Facbook Messenger Chatbot. We`ve started with the prototyping and creating the right flow for the final users based on the analytics of the data provided.  Musement and the team decided to add the functionality of search of attractions, thinks to do in any place in the world. And to help users to get there. Also, we gave users the ablility to buy a ticket for the events or activities in a click. For the NLP part we have used external tool recommended by Facebook called wit.ai.  Chtbot is able to understand  misspelings or mistakes in the locations users input. Also you can just type “what” you want to do and “where” to do it and Musement chatbot will understand.</p>
+      
+         <div class="bot-card">
+                  <div class="row">
+                    <div class="col-xs-offset-1 col-xs-10 col-md-offset-4 col-md-4 musement demo">
+                      <div class="inner video">
+                        <video class="bot-video" autoplay loop muted poster="img/musement.jpg">
+                          <source src="../video/MusementBot.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p style="padding-top:100px;"> For the NLP part we have used external tool recommended by Facebook called wit.ai.  Chtbot is able to understand  misspelings or mistakes in the locations users input. Also you can just type “what” you want to do and “where” to do it and Musement chatbot will understand.</p>
+
+        <h2 >Result
+        </h2>
+        <p>As the result the FB chatbot was created and new channel for Musement`s customers was opened. Musemened has raised $10m of investments and was highlited in the <a href="https://techcrunch.com/2016/11/15/for-your-musement/">TechCrunch</a>.</p>
+        <img src="../img/musementCase3.png" style="width:100%" alt="botscrew.com" class="img-full">
+
+
+        <div class="social-share">
+          <div class="text">Share with friends and community:</div>
+          <div class="fb">
+            <a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=https://kachanovskyi.github.io/case-musement.html&title=BotsCrew Musement Bot"><img src="../img/fb.svg"/></a>
+          </div>
+          <div class="in">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://kachanovskyi.github.io/case-musement.html&title=Musement - travel chatbot
+          &summary=BotsCrew Musement Chatbot&source=BotsCrew" target="_blank"><img src="../img/in.svg"/></a>
+          </div>
+          <div class="tw">
+            <a href="https://twitter.com/intent/tweet?url=https://kachanovskyi.github.io/case-musement.html" target="_blank"><img src="../img/tw.svg"/></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="bottom col-sm-12 nopadding">
+        <div class="subscribe-block">
+          <div class="inner row text-center">
+            <form name="subscribeForm" id="subscribe-form" role="form" action="https://769dff9b.ngrok.io/mail_subscribe" onsubmit="submissionCheck()" method="POST" target="mock_frame" autocomplete="off">
+              <p class="hidden-xs">Subscribe to BotsCrew newsletter<span class="hidden-sm">. No spam, no nasty stuff</span></p>
+              <input name="email" type="email" placeholder="Your E-Mail" id="emailInput">
+              <input name="timezone" type="text" id="timezoneInput">
+              <button type="submit" class="menu-item bot-btn white subscribe">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-fixed hidden hidden-xs hidden-sm">
+      <div class="background"></div>
+      <div class="inner">
+        <div class="text">Share <span class="hidden-xs">with friends and community:</span></div>
+        <div class="fb">
+          <a href="http://www.facebook.com/sharer/sharer.php?u=https://kachanovskyi.github.io/case-musement.html&title=Musement - travel chatbot" target="_blank"><img src="../img/fb.svg"/></a>
+        </div>
+        <div class="in">
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://kachanovskyi.github.io/case-musement.html&title=Musement - travel chatbot
+          &summary=BotsCrew Musement Chatbot&source=BotsCrew" target="_blank"><img src="../img/in.svg"/></a>
+        </div>
+        <div class="tw">
+          <a href="https://twitter.com/intent/tweet?url=https://kachanovskyi.github.io/case-musement.html" target="_blank"><img src="../img/tw.svg"/></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-md-offset-1 col-md-10">
+      <div class="row">
+        <div class="article article-3 col-xs-12 col-md-6">
+          <a href="../blog/bots-commerce.html">
+            <div class="preview-img"></div>
+            <div class="preview-text">
+              <h2>How bots will change commerce for the better</h2>
+              <p>Nowadays you can hear a lot of talk about chatbots. What are chatbots? It`s virtual assistants created to answer users, control payments, get orders, accumulate contacts of potential clients. These mini-apps can mimick human conversation and let customers, for example, order a pizza or book a hotel effortlessly. Of course technology is constantly evolving and companies are working on how to improve chatbots and how to best use it. Here…
+                <span class="read-more"> Read more</span></p>
+            </div>
+          </a>
+        </div>
+        <div class="article article-2 col-xs-12 col-md-6">
+          <a href="../blog/what-are-chatbots.html">
+            <div class="preview-img"></div>
+            <div class="preview-text">
+              <h2>What are bots?  How do they work? Why do they give a big opportunity?</h2>
+              <p>In this article we are going to answer the most popular questions about chatbots. What are bots?  How do they work? Why do they give a big opportunity? Chatbot is a computer program created as a conversational agent, designed to simulate an intelligent conversation with one or more human users via auditory or textual methods. “People are now spending more time in messaging apps than in social media and that is a huge turning point. Messaging apps are the platforms of the future and bots will be how their users access all sorts of services.” ...
+                <span class="read-more"> Read more</span></p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+<footer id="footer">
+  <div class="col-xs-12 text-left footer-inner">
+    <div class="col-sm-3 logo-container hidden-xs">
+      <img src="../img/footer_logo.svg" id="footer-logo">
+    </div>
+    <div class="col-xs-offset-1 col-xs-6 col-sm-offset-0 col-sm-2">
+      <p class="heading"><b>BotsCrew</b></p>
+      <a href="../cases.html">Cases</a>
+      <a href="../blog.html">Blog</a>
+      <a href="../team.html">Team</a>
+      <a href="../careers.html">Careers</a>
+      <a href="../index.html#contact">Contact Us</a>
+    </div>
+    <div class="col-xs-5 col-sm-2">
+      <p class="heading"><b>Cases</b></p>
+      <a href="https://www.m.me/musement" target="_blank">Musement</a>
+      <a href="https://www.m.me/hungrychat" target="_blank">Hungry</a>
+      <a href="#">Poncho</a>
+      <a href="#">Visario</a>
+      <a href="#">Trello</a>
+    </div>
+    <div class="col-xs-offset-1 col-xs-6 col-sm-offset-0 col-sm-2 links">
+      <p class="heading"><b>Links</b></p>
+      <a href="https://www.facebook.com/botsmarket" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/bots.crew/" target="_blank">Instagram</a>
+      <a href="https://www.linkedin.com/company/15139837" target="_blank">LinkedIn</a>
+      <a href="https://twitter.com/Bots_Crew" target="_blank">Twitter</a>
+    </div>
+    <div class="col-xs-5 col-sm-3 location">
+      <p class="heading"><b>Location</b></p>
+      <p>80 Franklin Street, Suite 1
+        New York, NY 10013, USA</p>
+    </div>
+  </div>
+  <div class="row col-sm-offset-3 col-sm-6">
+    <p class="footer-copyright">Copyright © 2016 - 2017 BotsCrew. All rights reserved.</p>
+  </div>
+</footer>
+
+<link rel="stylesheet" href="../css/blog_article.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/index.js"></script>
+<script id="subFolderScript" src="../js/team_header.js"></script>
+<script src="../js/hiding_header.js"></script>
+<script src="../js/blog_footer.js"></script>
+<script defer src="../js/common_scripts.js"></script>
+<script defer src="../js/subscribe_mockup.js"></script>
+<!--Twitter SDK-->
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+          t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+
+<!--FB SDK-->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '421602991515605',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+</body>
+</html>
