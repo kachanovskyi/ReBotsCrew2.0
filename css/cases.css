@@ -47,6 +47,14 @@
     background: url("../img/tecinstore_case.png");
     border: 1px solid #CCCCCC;
 }
+.case.case-3 .preview-img {
+	background: url("../img/HungryLogo.png");
+	background-size: 90%;
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 1px solid #CCCCCC;
+	padding: 10px;
+}
 
 @media (min-width: 992px) and (max-width: 1199px) {
     .case {
