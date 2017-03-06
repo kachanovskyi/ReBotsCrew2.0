@@ -10,7 +10,8 @@ var targetOffset = $('.content').offset().top - 60;
 $(window).on('resize', function(){
     targetOffset = $('.content').offset().top - 60;
 }());
-var $w = $(window).scroll(function(){
+
+function styleNavbar(){
 
     if ( $w.scrollTop() > (targetOffset)) {
         $('.menu-item').addClass('standard-menu-item');
@@ -30,18 +31,29 @@ var $w = $(window).scroll(function(){
         $('.navbar-default').css('border-bottom', '1px solid #E5E5E5');
         $('.navbar').css('background', '#FFFFFF');
     } else {
-        $('.navbar-default').css('border-bottom', 'none');
-        $('.navbar').css('background', 'transparent');
+        // $('.navbar-default').css('border-bottom', 'none');
+        $('.navbar').css('background', 'rgba(0, 0, 0, .5)');
     }
-});
+}
+
+var $w = $(window).scroll(styleNavbar);
 
 var menuDefaultStyles = function () {
-    $('.navbar').css('background', '#FFFFFF');
-    $('.menu-item').addClass('standard-menu-item');
-    $('.header .menu-item.bot-btn').removeClass('border-white');
-    $('.header .menu-item.bot-btn').addClass('text-blue');
-    $('.logo').attr('src', root + "logo.svg");
-    $('.icon-bar').removeClass('white');
+    if($('#navbar').hasClass('collapse in')) {
+        // if($('.navbar-toggle').hasClass('active')) {
+        //     $('.navbar-toggle').removeClass('active');
+        // }
+        styleNavbar();
+    } else {
+        // $('.navbar-toggle').addClass('active');
+        $('.navbar').css('background', '#FFFFFF');
+        $('.navbar').css('background', '#FFFFFF');
+        $('.menu-item').addClass('standard-menu-item');
+        $('.header .menu-item.bot-btn').removeClass('border-white');
+        $('.header .menu-item.bot-btn').addClass('text-blue');
+        $('.logo').attr('src', root + "logo.svg");
+        $('.icon-bar').removeClass('white');
+    }
 };
 
 $(document).ready(function () {
@@ -51,6 +63,6 @@ $(document).ready(function () {
         $('.header .menu-item.bot-btn').addClass('border-white');
         $('.logo').attr('src', root + "logo_white.svg");
         $('.icon-bar').addClass('white');
-        $('.navbar').css('background', 'transparent');
+        $('.navbar').css('background', 'rgba(0, 0, 0, .5)');
     })
 });

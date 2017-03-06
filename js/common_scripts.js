@@ -73,6 +73,7 @@ $(document).ready(function () {
 
     //icon transformation
     $(".navbar-toggle").on("click", function () {
+        console.log('worked');
         $(this).toggleClass("active");
     });
 
