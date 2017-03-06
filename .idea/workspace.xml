@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b84ffc62-3f88-4b9b-862e-881918df00ee" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/common_scripts.js" afterPath="$PROJECT_DIR$/js/common_scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/team_header.js" afterPath="$PROJECT_DIR$/js/team_header.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/team_carousel.css" afterPath="$PROJECT_DIR$/css/team_carousel.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/index.js" afterPath="$PROJECT_DIR$/js/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/team_carousel.js" afterPath="$PROJECT_DIR$/js/team_carousel.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/team.html" afterPath="$PROJECT_DIR$/team.html" />
     </list>
     <ignored path="botscrew 2.0.iws" />
@@ -29,7 +30,7 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
+            <state relative-caret-position="27455">
               <caret line="1615" column="17" selection-start-line="1615" selection-start-column="17" selection-end-line="1615" selection-end-column="17" />
               <folding>
                 <marker date="1487171646625" expanded="false" signature="48259:48318" placeholder="..." />
@@ -38,21 +39,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="team.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="team.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/team.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="389" column="41" selection-start-line="389" selection-start-column="41" selection-end-line="389" selection-end-column="41" />
+            <state relative-caret-position="345">
+              <caret line="401" column="3" selection-start-line="399" selection-start-column="20" selection-end-line="401" selection-end-column="3" />
               <folding>
-                <marker date="1488803349632" expanded="false" signature="5689:5771" placeholder="..." />
-                <marker date="1488803349632" expanded="false" signature="6003:6087" placeholder="..." />
-                <marker date="1488803349632" expanded="false" signature="6320:6409" placeholder="..." />
-                <marker date="1488803349632" expanded="false" signature="6643:6732" placeholder="..." />
-                <marker date="1488803349632" expanded="false" signature="6964:7050" placeholder="..." />
-                <marker date="1488803349632" expanded="false" signature="7293:7378" placeholder="..." />
-                <marker date="1488803349632" expanded="false" signature="7621:7706" placeholder="..." />
-                <marker date="1488803349632" expanded="false" signature="7949:8033" placeholder="..." />
-                <marker date="1488803349632" expanded="false" signature="8276:8365" placeholder="..." />
+                <element signature="n#style#0;n#div#3;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -61,7 +54,7 @@
       <file leaf-file-name="team.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/team.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1394">
+            <state relative-caret-position="1479">
               <caret line="87" column="16" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
               <folding />
             </state>
@@ -71,8 +64,8 @@
       <file leaf-file-name="team_carousel.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/team_carousel.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+            <state relative-caret-position="221">
+              <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -81,7 +74,7 @@
       <file leaf-file-name="common_scripts.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/common_scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
+            <state relative-caret-position="1275">
               <caret line="75" column="30" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
               <folding />
             </state>
@@ -101,7 +94,7 @@
       <file leaf-file-name="team_header.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/team_header.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
+            <state relative-caret-position="816">
               <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
               <folding />
             </state>
@@ -111,8 +104,32 @@
       <file leaf-file-name="musement.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cases/musement.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
+            <state relative-caret-position="5780">
               <caret line="340" column="27" selection-start-line="340" selection-start-column="27" selection-end-line="340" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="172" column="51" selection-start-line="172" selection-start-column="51" selection-end-line="172" selection-end-column="51" />
+              <folding>
+                <marker date="1488803434525" expanded="true" signature="5691:5721" placeholder="..." />
+                <marker date="1488803434525" expanded="true" signature="5691:5741" placeholder="..." />
+                <marker date="1488803434525" expanded="true" signature="5691:5742" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="team_carousel.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/team_carousel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -139,7 +156,6 @@
         <option value="$PROJECT_DIR$/css/404_styles.css" />
         <option value="$PROJECT_DIR$/js/messenger_mobile_swipe.js" />
         <option value="$PROJECT_DIR$/js/darsa_plugins.js" />
-        <option value="$PROJECT_DIR$/js/team_carousel.js" />
         <option value="$PROJECT_DIR$/css/team.css" />
         <option value="$PROJECT_DIR$/case.html" />
         <option value="$PROJECT_DIR$/css/cases.css" />
@@ -178,14 +194,15 @@
         <option value="$PROJECT_DIR$/cases/musement.html" />
         <option value="$PROJECT_DIR$/css/blog_article.css" />
         <option value="$PROJECT_DIR$/blog/musement-raised-millions.html" />
-        <option value="$PROJECT_DIR$/js/index.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/css/team_carousel.css" />
         <option value="$PROJECT_DIR$/careers.html" />
         <option value="$PROJECT_DIR$/js/common_scripts.js" />
         <option value="$PROJECT_DIR$/js/team_header.js" />
+        <option value="$PROJECT_DIR$/js/index.js" />
+        <option value="$PROJECT_DIR$/css/team_carousel.css" />
         <option value="$PROJECT_DIR$/team.html" />
+        <option value="$PROJECT_DIR$/js/team_carousel.js" />
       </list>
     </option>
   </component>
@@ -225,6 +242,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -330,7 +348,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -559,12 +576,14 @@
       <workItem from="1487951090041" duration="2858000" />
       <workItem from="1488034954076" duration="611000" />
       <workItem from="1488036355695" duration="307000" />
-      <workItem from="1488799797141" duration="3550000" />
+      <workItem from="1488799797141" duration="3634000" />
+      <workItem from="1488803458685" duration="37000" />
+      <workItem from="1488804223455" duration="2090000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1131702000" />
+    <option name="totallyTimeSpent" value="1133913000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -573,7 +592,6 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16443452" sideWeight="0.49429038" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32463294" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3267974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -585,6 +603,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3267974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -728,13 +747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/team_carousel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5117">
-          <caret line="352" column="3" selection-start-line="352" selection-start-column="3" selection-end-line="352" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/sectional.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -858,22 +870,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/team.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
+        <state relative-caret-position="1479">
           <caret line="87" column="16" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/team_carousel.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -882,7 +885,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="409">
           <caret line="614" column="46" selection-start-line="614" selection-start-column="46" selection-end-line="614" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -900,21 +902,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="29" column="54" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
-          <folding>
-            <marker date="1487082030899" expanded="true" signature="72:106" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="236" column="40" selection-start-line="236" selection-start-column="34" selection-end-line="236" selection-end-column="40" />
-          <folding>
-            <marker date="1487170770706" expanded="true" signature="5691:5721" placeholder="..." />
-            <marker date="1487170770706" expanded="true" signature="5691:5741" placeholder="..." />
-            <marker date="1487170770706" expanded="true" signature="5691:5742" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -928,7 +915,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
+        <state relative-caret-position="27455">
           <caret line="1615" column="17" selection-start-line="1615" selection-start-column="17" selection-end-line="1615" selection-end-column="17" />
           <folding>
             <marker date="1487171646625" expanded="false" signature="48259:48318" placeholder="..." />
@@ -940,13 +927,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cases/musement.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="5780">
           <caret line="340" column="27" selection-start-line="340" selection-start-column="27" selection-end-line="340" selection-end-column="27" />
           <folding />
         </state>
@@ -962,7 +948,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/common_scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
+        <state relative-caret-position="1275">
           <caret line="75" column="30" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
           <folding />
         </state>
@@ -970,27 +956,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/team_header.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
+        <state relative-caret-position="816">
           <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="172" column="51" selection-start-line="172" selection-start-column="51" selection-end-line="172" selection-end-column="51" />
+          <folding>
+            <marker date="1488803434525" expanded="true" signature="5691:5721" placeholder="..." />
+            <marker date="1488803434525" expanded="true" signature="5691:5741" placeholder="..." />
+            <marker date="1488803434525" expanded="true" signature="5691:5742" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/team_carousel.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/team.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="389" column="41" selection-start-line="389" selection-start-column="41" selection-end-line="389" selection-end-column="41" />
+        <state relative-caret-position="345">
+          <caret line="401" column="3" selection-start-line="399" selection-start-column="20" selection-end-line="401" selection-end-column="3" />
           <folding>
-            <marker date="1488803349632" expanded="false" signature="5689:5771" placeholder="..." />
-            <marker date="1488803349632" expanded="false" signature="6003:6087" placeholder="..." />
-            <marker date="1488803349632" expanded="false" signature="6320:6409" placeholder="..." />
-            <marker date="1488803349632" expanded="false" signature="6643:6732" placeholder="..." />
-            <marker date="1488803349632" expanded="false" signature="6964:7050" placeholder="..." />
-            <marker date="1488803349632" expanded="false" signature="7293:7378" placeholder="..." />
-            <marker date="1488803349632" expanded="false" signature="7621:7706" placeholder="..." />
-            <marker date="1488803349632" expanded="false" signature="7949:8033" placeholder="..." />
-            <marker date="1488803349632" expanded="false" signature="8276:8365" placeholder="..." />
+            <element signature="n#style#0;n#div#3;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/team_carousel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>

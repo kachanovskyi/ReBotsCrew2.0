@@ -170,7 +170,7 @@ $(document).ready(function () {
             var div = document.createElement('div');
             div.className = "phrase-box " + phrases[i][j].type;
             if(phrases[i][j].class) {
-                console.log('transparent class added');
+                // console.log('transparent class added');
                 div.className += " transparent";
             }
             div.innerHTML = phrases[i][j].phrase;

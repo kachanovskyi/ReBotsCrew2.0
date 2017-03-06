@@ -38,6 +38,8 @@
     height: 300px;
     background: #2F80ED;
     border-radius: 4px;
+    background: center no-repeat;
+    background-size: 100%
 }
     .frame ul li p {
         text-align: left;

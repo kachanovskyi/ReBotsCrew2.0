@@ -72,6 +72,10 @@ jQuery(function($) {
         $wrap.find('.remove').on('click', function() {
             $frame.sly('remove', -1);
         });
+
+        $frame.sly('on', 'change', function () {
+            $('.lazy').lazy();
+        });
     }());
 
     // -------------------------------------------------------------
