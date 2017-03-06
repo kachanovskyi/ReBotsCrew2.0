@@ -104,6 +104,11 @@ p {
     width: 100%;
     height: auto;
 }
+.member-photo{
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
 
 @media (max-width: 991px) {
     .insta-block .follow {
