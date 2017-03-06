@@ -73,6 +73,9 @@ jQuery(function($) {
             $frame.sly('remove', -1);
         });
 
+        $frame.sly('on', 'change', function () {
+            $('.lazy').lazy();
+        });
         $frame.sly('on', 'moveEnd', function () {
             $('.lazy').lazy();
         });
