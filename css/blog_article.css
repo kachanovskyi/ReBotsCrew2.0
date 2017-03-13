@@ -110,6 +110,7 @@ p, li {
     display: block;
     float: left;
     border-top: 1px solid #CCCCCC;
+    z-index: 999;
 }
 .footer-fixed .background {
     width:100%;

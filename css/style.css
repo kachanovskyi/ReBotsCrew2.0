@@ -739,6 +739,10 @@ a:active {
     position: relative; margin-bottom: -66px; height: 600px; background: url('../img/iphone6full.png') no-repeat center;
 }
 
+.musement.case .inner {
+    background-size: 100%;
+}
+
 .bot-video {
     width: 254px;
     position: absolute;
@@ -746,6 +750,9 @@ a:active {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 999;
+}
+.case .bot-video {
+    width: 222px;
 }
 
 .progressbar-container {
