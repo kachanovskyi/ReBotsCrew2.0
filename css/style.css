@@ -23,19 +23,6 @@ a:active {
     text-decoration: none;
 }
 
-/*.overlay {*/
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*right: 0;*/
-    /*left:0;*/
-    /*bottom: 0;*/
-    /*z-index: 1029;*/
-    /*transition: .1s ease-in-out;*/
-/*}*/
-/*.overlay.dimmed {*/
-    /*background:rgba(0,0,0,0.7);*/
-/*}*/
-
 .alert {
     position: fixed;
     left: 50%;
@@ -63,7 +50,6 @@ a:active {
 
 .header {
     width: 100%;
-    /*height: 12vh;*/
 }
 
 .nav-up {
@@ -140,7 +126,6 @@ a:active {
 
 #middle {
     font-size: 48px;
-    /*line-height: 100%;*/
     letter-spacing: .0166px;
     color: #4F4F4F;
     text-align: center;
@@ -283,26 +268,25 @@ a:active {
                 background: #2374C4;
             }
 
-/*.bot-btn.white-snow.message-send {*/
-    /*padding: 17px 23px;*/
-/*}*/
-
-/*.bot-btn.blue-dark-blue {*/
-    /*background: #2F80ED;*/
-    /*color: #FFF;*/
-    /*border: 1px solid #2F80ED;*/
-    /*!*margin: 7px 7px 7px 0;*!*/
-    /*padding: 14px 28px;*/
-/*}*/
-/*.bot-btn.blue-dark-blue.contact {*/
-    /*border-color: #FFF;*/
-    /*background: transparent;*/
-/*}*/
 .bot-btn.blue-dark-blue:hover {
     background: #2374C4;
     transition-duration: 0.5s;
     text-decoration: none;
 }
+
+/*.overlay {*/
+/*position: absolute;*/
+/*top: 0;*/
+/*right: 0;*/
+/*left:0;*/
+/*bottom: 0;*/
+/*z-index: 1029;*/
+/*transition: .1s ease-in-out;*/
+/*}*/
+/*.overlay.dimmed {*/
+/*background:rgba(0,0,0,0.7);*/
+/*}*/
+
 
 .slide-2 .right {
     border-top: 1px solid #CCCCCC;
