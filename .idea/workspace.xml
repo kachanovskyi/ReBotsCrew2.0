@@ -2,14 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b84ffc62-3f88-4b9b-862e-881918df00ee" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/team/maxFinal.jpg" afterPath="$PROJECT_DIR$/img/team/maxFinal.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/team/teamandrih_h.jpg" afterPath="$PROJECT_DIR$/img/team/teamandrih_h.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/team/teammisha_s.jpg" afterPath="$PROJECT_DIR$/img/team/teammisha_s.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/team/teamoleh_m.jpg" afterPath="$PROJECT_DIR$/img/team/teamoleh_m.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/team/teamoleh_p.jpg" afterPath="$PROJECT_DIR$/img/team/teamoleh_p.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/team/teamrostyslav_p.jpg" afterPath="$PROJECT_DIR$/img/team/teamrostyslav_p.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/team/teamserhiy_l.jpg" afterPath="$PROJECT_DIR$/img/team/teamserhiy_l.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/team/teamvolodymur_k.jpg" afterPath="$PROJECT_DIR$/img/team/teamvolodymur_k.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/team.html" afterPath="$PROJECT_DIR$/team.html" />
     </list>
     <ignored path="botscrew 2.0.iws" />
@@ -44,8 +36,8 @@
       <file leaf-file-name="team.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/team.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="226" column="47" selection-start-line="226" selection-start-column="47" selection-end-line="226" selection-end-column="47" />
+            <state relative-caret-position="340">
+              <caret line="247" column="48" selection-start-line="247" selection-start-column="48" selection-end-line="247" selection-end-column="48" />
               <folding>
                 <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -596,12 +588,12 @@
       <workItem from="1488878986614" duration="5000" />
       <workItem from="1489410778351" duration="5608000" />
       <workItem from="1489501885442" duration="662000" />
-      <workItem from="1489741400429" duration="11282000" />
+      <workItem from="1489741400429" duration="11902000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1151783000" />
+    <option name="totallyTimeSpent" value="1152403000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1010,8 +1002,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/team.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="226" column="47" selection-start-line="226" selection-start-column="47" selection-end-line="226" selection-end-column="47" />
+        <state relative-caret-position="340">
+          <caret line="247" column="48" selection-start-line="247" selection-start-column="48" selection-end-line="247" selection-end-column="48" />
           <folding>
             <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
