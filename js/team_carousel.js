@@ -4,7 +4,10 @@ jQuery(function($) {
     // -------------------------------------------------------------
     //   Basic Navigation
     // -------------------------------------------------------------
+	
+
     (function() {
+		
         var $frame = $('#basic');
         var $slidee = $frame.children('ul').eq(0);
         var $wrap = $frame.parent();
