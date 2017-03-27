@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b84ffc62-3f88-4b9b-862e-881918df00ee" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog.html" afterPath="$PROJECT_DIR$/blog.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/young-audience-4.png" afterPath="$PROJECT_DIR$/img/young-audience-4.png" />
     </list>
     <ignored path="botscrew 2.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -94,7 +93,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="young-audience-to-news-media.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="young-audience-to-news-media.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blog/young-audience-to-news-media.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="253">
@@ -106,7 +105,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blog.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="blog.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="254">
@@ -577,12 +576,12 @@
       <workItem from="1490342001427" duration="2798000" />
       <workItem from="1490348272888" duration="817000" />
       <workItem from="1490623163417" duration="708000" />
-      <workItem from="1490626575375" duration="6569000" />
+      <workItem from="1490626575375" duration="6805000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1163376000" />
+    <option name="totallyTimeSpent" value="1163612000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -988,6 +987,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/blog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="165" column="69" selection-start-line="165" selection-start-column="69" selection-end-line="165" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/blog/young-audience-to-news-media.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -995,14 +1002,6 @@
           <folding>
             <element signature="n#style#0;n#span#0;n#p#2;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="165" column="69" selection-start-line="165" selection-start-column="69" selection-end-line="165" selection-end-column="69" />
-          <folding />
         </state>
       </provider>
     </entry>
