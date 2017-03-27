@@ -135,6 +135,10 @@ h1, h2, p, a {
     text-decoration: underline;
 }
 
+.article.article-6 .preview-img {
+    background: url("../img/young-audience-cover.jpeg");
+    background-size: 100%;
+}
 .article.article-5 .preview-img {
     background: url("../img/musement_contract.jpg");
 }
