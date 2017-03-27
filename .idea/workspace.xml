@@ -2,27 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b84ffc62-3f88-4b9b-862e-881918df00ee" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/young-audience-1.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/young-audience-2.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/young-audience-3.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/young-audience-4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/young-audience-cover.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/young-audience-to-news-media.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog.html" afterPath="$PROJECT_DIR$/blog.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/bots-commerce.html" afterPath="$PROJECT_DIR$/blog/bots-commerce.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/chatbots-got-payments.html" afterPath="$PROJECT_DIR$/blog/chatbots-got-payments.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/musement-raised-millions.html" afterPath="$PROJECT_DIR$/blog/musement-raised-millions.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/retail-needs-updating.html" afterPath="$PROJECT_DIR$/blog/retail-needs-updating.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/what-are-chatbots.html" afterPath="$PROJECT_DIR$/blog/what-are-chatbots.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/careers.html" afterPath="$PROJECT_DIR$/careers.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/careers/java-junior.html" afterPath="$PROJECT_DIR$/careers/java-junior.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/careers/sales.html" afterPath="$PROJECT_DIR$/careers/sales.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cases.html" afterPath="$PROJECT_DIR$/cases.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cases/musement.html" afterPath="$PROJECT_DIR$/cases/musement.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cases/tec-in-store.html" afterPath="$PROJECT_DIR$/cases/tec-in-store.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/blog.css" afterPath="$PROJECT_DIR$/css/blog.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
     </list>
     <ignored path="botscrew 2.0.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -116,8 +97,8 @@
       <file leaf-file-name="young-audience-to-news-media.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/young-audience-to-news-media.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="170" column="0" selection-start-line="170" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
+            <state relative-caret-position="253">
+              <caret line="159" column="63" selection-start-line="159" selection-start-column="12" selection-end-line="159" selection-end-column="63" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#p#2;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -125,21 +106,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blog.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="blog.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blog.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="171" column="23" selection-start-line="171" selection-start-column="23" selection-end-line="171" selection-end-column="23" />
+            <state relative-caret-position="254">
+              <caret line="165" column="69" selection-start-line="165" selection-start-column="69" selection-end-line="165" selection-end-column="69" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blog.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="blog.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/blog.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="139" column="25" selection-start-line="139" selection-start-column="25" selection-end-line="139" selection-end-column="25" />
+            <state relative-caret-position="195">
+              <caret line="135" column="1" selection-start-line="135" selection-start-column="1" selection-end-line="135" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -211,8 +192,8 @@
         <option value="$PROJECT_DIR$/careers/sales.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/blog/young-audience-to-news-media.html" />
-        <option value="$PROJECT_DIR$/blog.html" />
         <option value="$PROJECT_DIR$/css/blog.css" />
+        <option value="$PROJECT_DIR$/blog.html" />
       </list>
     </option>
   </component>
@@ -596,12 +577,12 @@
       <workItem from="1490342001427" duration="2798000" />
       <workItem from="1490348272888" duration="817000" />
       <workItem from="1490623163417" duration="708000" />
-      <workItem from="1490626575375" duration="6296000" />
+      <workItem from="1490626575375" duration="6569000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1163103000" />
+    <option name="totallyTimeSpent" value="1163376000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -872,10 +853,7 @@
         <state relative-caret-position="10829">
           <caret line="637" column="0" selection-start-line="637" selection-start-column="0" selection-end-line="637" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#div#4;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#2;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#textarea#0;n#form#0;n#div#1;n#div#1;n#div#3;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#4;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -884,20 +862,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4199">
           <caret line="247" column="48" selection-start-line="247" selection-start-column="48" selection-end-line="247" selection-end-column="48" />
-          <folding>
-            <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#li#2;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#li#3;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#li#4;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#li#5;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#li#6;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#li#7;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#li#8;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#li#9;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#li#10;n#ul#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1015,10 +980,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/blog.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="135" column="1" selection-start-line="135" selection-start-column="1" selection-end-line="135" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/blog/young-audience-to-news-media.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="170" column="0" selection-start-line="170" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
+        <state relative-caret-position="253">
+          <caret line="159" column="63" selection-start-line="159" selection-start-column="12" selection-end-line="159" selection-end-column="63" />
           <folding>
             <element signature="n#style#0;n#span#0;n#p#2;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -1027,16 +1000,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="171" column="23" selection-start-line="171" selection-start-column="23" selection-end-line="171" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/blog.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="139" column="25" selection-start-line="139" selection-start-column="25" selection-end-line="139" selection-end-column="25" />
+        <state relative-caret-position="254">
+          <caret line="165" column="69" selection-start-line="165" selection-start-column="69" selection-end-line="165" selection-end-column="69" />
           <folding />
         </state>
       </provider>
