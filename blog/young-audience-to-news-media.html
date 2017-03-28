@@ -9,10 +9,13 @@
   <style>
     body,html{width:100%;overflow-x:hidden}
     a, p {
-      font-weight: 300;
+      font-weight: 400 !important;
     }
     h1, h2 {
-      font-weight: 400;
+      font-weight: 600 !important;
+    }
+    h2 {
+      font-size: 24px !important;
     }
     h1,
     h2,
@@ -21,11 +24,29 @@
       font-family: "Roboto", sans-serif;
     }
 
+    h2 a {
+      letter-spacing: 0.0166px;
+      color: #4F4F4F;
+      font-size: 24px;
+      text-decoration: underline !important;
+      font-weight: 600 !important;
+    }
+    p a {
+      color: #828282;
+      font-size: 18px;
+      text-decoration: underline !important;
+      font-weight: 400 !important;
+    }
+
     a,
-    a:hover,
     a:visited,
     a:active {
-      text-decoration: none!important
+      text-decoration: none!important;
+      transition: .1s ease-in-out;
+    }
+    a:hover {
+      text-decoration: underline!important;
+      color: #2F80ED;
     }
 
     .header {
@@ -119,6 +140,24 @@
     .recommendations.hyphen{
       list-style-type: "-";
     }
+
+    .whoAreBots p {
+      margin-bottom: 0;
+    }
+
+    b a {
+      font-weight: 700!important;
+    }
+
+    @media (min-width: 768px) {
+      .left-border {
+        border-left: 4px solid;
+        margin-left: -30px;
+      }
+      .left-border span {
+        margin-left: 26px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -166,14 +205,14 @@
           First of all, this article can be interesting for those in which life news media plays an important role, for business people who are owners of some news media and for marketing teams, who want to increase the number of visitors to their resource, but also it’ll be interesting to the ordinary reader.
         </i></p>
 
-        <h2>What is news? What is media? What is <span class="underlined">news media</span>?</h2>
+        <h2>What is news? What is media? What is <a href="https://medium.com/r/?url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNews_media" target="_blank">news media</a>?</h2>
         <p>
           With human development, an opening of the new technologies, particularly the Internet, the word “NEWS” began to gain very extensive concept: starting with news feed in a social network up to news programs on TV.
         </p>
 
         <h2>What is a problem?</h2>
         <p>
-          At first, people got news with reading newspapers, tabloids, magazines and etc. But now, people start <span style="text-decoration: underline">reading press news less</span> because it’s easier to find everything on the Internet instead of reading “kilograms” of a fresh edition.
+          At first, people got news with reading newspapers, tabloids, magazines and etc. But now, people start <a target="_blank" href="https://friendlybit.com/modern-web/why-people-skip-newspapers-and-read-news-on-the-web-instead/">reading press news less</a> because it’s easier to find everything on the Internet instead of reading “kilograms” of a fresh edition.
         </p>
         <p>
           <i>After the appearance of TV</i>, almost in every house, people started to prefer watching NEWS.
@@ -199,7 +238,7 @@
         </div>
 
         <p>
-          The problem is <b>how to <span class="underlined">attract</span> a young audience</b>, so-called millennials (<span class="underlined">Generation Y</span>) and post-millennials (<span class="underlined">Generation Z</span>).
+          The problem is <b>how to <a target="_blank" href="http://www.inma.org/blogs/value-content/post.cfm/media-companies-must-work-harder-smarter-to-attract-college-age-readers">attract</a> a young audience</b>, so-called millennials (<a target="_blank" href="https://en.wikipedia.org/wiki/Millennials">Generation Y</a>) and post-millennials (<a target="_blank" href="https://en.wikipedia.org/wiki/Generation_Z">Generation Z</a>).
         </p>
         <p>
           Years pass and we get more opportunities. Social networks become popular and more attractive, so a lot of people choose it instead of anything else.
@@ -215,7 +254,13 @@
           </div>
           <div class="col-md-5 whoAreBots">
             <p><i>
-              It’s impossible to imagine your day <span class="underlined">without a smartphone</span>. Almost <span class="underlined"><b>2.4 billions</b></span> of people are the <b>owners of smartphones</b> and this number is only increasing. It’s an integral part of our life.
+              It’s impossible to imagine your day <a target="_blank" href="https://www.entrepreneur.com/article/248355">without a smartphone</a>.
+            </i></p>
+            <p><i>
+              Almost <a target="_blank" href="https://www.statista.com/statistics/330695/number-of-smartphone-users-worldwide/"><b>2.4 billions</b></a> of people are the <b>owners of smartphones</b> and this number is only increasing.
+            </i></p>
+            <p><i>
+              It’s an integral part of our life.
               For millennials and post-millennials it is more enjoyable to search through the social networks.
             </i></p>
           </div>
@@ -228,7 +273,8 @@
         <h2>So, how can we solve this problem?</h2>
         <img src="../img/young-audience-3.jpeg" alt="botscrew.com" class="img-full">
         <p>
-          The global leader in journalism, <b>the Poynter Institute</b>, have an advisable article <b>“<span class="underlined">10 Ways to Attract Younger News Consumers</span>”</b>.
+          The global leader in journalism, <b><a target="_blank" href="http://about.poynter.org/about-us/mission-history">the Poynter Institute</a></b>, have an advisable article
+          <b>“<a target="_blank" href="https://www.poynter.org/2010/10-ways-to-attract-younger-news-consumers/105814/">10 Ways to Attract Younger News Consumers</a>”</b>.
         </p>
 
         <p class="no-padding-bottom"><b>If short, they recommend:</b></p>
@@ -250,18 +296,20 @@
 
         <p>Since the early 2000s, brands have experimented with social media platforms and networks to communicate with customers and prospects. First through weblogs, then eventually through social networks such as Facebook and Twitter.</p>
 
-        <p>At the present day, developing technologies are very impressive, especially — <b><span class="underlined">artificial intelligence</span>.</b></p>
-        <p>You may ask: “<b><i>How can Artificial Intelligence concern News Media?</i></b>”.</p>
+        <p>At the present day, developing technologies are very impressive, especially — <b><a target="_blank" href="https://en.wikipedia.org/wiki/Artificial_intelligence">artificial intelligence</a>.</b></p>
+        <p class="left-border"><span>You may ask: “<b><i>How can Artificial Intelligence concern News Media?</i></b>”.</span></p>
 
         <p>It’s very simple. An alternative is the chatbots.</p>
 
         <p>
           A chatbot is a service, powered by rules and sometimes artificial intelligence, that you interact with via a messenger or a chat interface.
-          Now famous media companies like The Wall Street Journal, CNN, Fox News, etc have launched their bots to help you receive the latest news on the go
+          Now famous media companies like <a target="_blank" href="https://chatbottle.co/bots/the-wall-street-journal">The Wall Street Journal</a>,
+          <a target="_blank" href="http://www.thedrum.com/news/2016/11/16/what-cnn-has-learnt-after-six-months-chatbot-experimentation">CNN</a>,
+          <a target="_blank" href="http://www.foxnews.com/us/2016/10/04/make-chats-with-chatbots-work.html">Fox News</a>, etc have launched their bots to help you receive the latest news on the go
         </p>
         <img src="../img/young-audience-4.png" alt="botscrew.com" class="img-full">
 
-        <p><i>So, why famous media companies are using chatbots?</i></p>
+        <p class="left-border"><span><i>So, why famous media companies are using chatbots?</i></span></p>
 
         <p class="no-padding-bottom"><b>Chatbot:</b></p>
         <ul class="recommendations hyphen">
@@ -275,7 +323,7 @@
           <li>is an innovative service and have a clear interface.</li>
         </ul>
 
-        <p>Nearly <span class="underlined">80% of companies</span> have already used or planned to use chatbots by 2020.</p>
+        <p>Nearly <a target="_blank" href="http://www.businessinsider.com/80-of-businesses-want-chatbots-by-2020-2016-12">80% of companies</a> have already used or planned to use chatbots by 2020.</p>
 
         <p><b>Summary: </b>Don’t be scared of new technologies. They place a great part in our lives and in our future! Let’s chat!</p>
 
