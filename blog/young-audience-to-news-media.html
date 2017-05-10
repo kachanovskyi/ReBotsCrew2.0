@@ -9,10 +9,13 @@
   <style>
     body,html{width:100%;overflow-x:hidden}
     a, p {
-      font-weight: 300;
+      font-weight: 400 !important;
     }
     h1, h2 {
-      font-weight: 400;
+      font-weight: 600 !important;
+    }
+    h2 {
+      font-size: 24px !important;
     }
     h1,
     h2,
@@ -21,11 +24,29 @@
       font-family: "Roboto", sans-serif;
     }
 
+    h2 a {
+      letter-spacing: 0.0166px;
+      color: #4F4F4F;
+      font-size: 24px;
+      text-decoration: underline !important;
+      font-weight: 600 !important;
+    }
+    p a {
+      color: #828282;
+      font-size: 18px;
+      text-decoration: underline !important;
+      font-weight: 400 !important;
+    }
+
     a,
-    a:hover,
     a:visited,
     a:active {
-      text-decoration: none!important
+      text-decoration: none!important;
+      transition: .1s ease-in-out;
+    }
+    a:hover {
+      text-decoration: underline!important;
+      color: #2F80ED;
     }
 
     .header {
@@ -44,23 +65,23 @@
     }
 
     /*.navbar-nav {*/
-      /*margin: 0 auto;*/
-      /*padding: 24px*/
+    /*margin: 0 auto;*/
+    /*padding: 24px*/
     /*}*/
 
     /*.navbar-nav>li:last-child {*/
-      /*padding-right: 100px*/
+    /*padding-right: 100px*/
     /*}*/
 
     /*.navbar-default {*/
-      /*border-color: #E5E5E5*/
+    /*border-color: #E5E5E5*/
     /*}*/
 
     /*.navbar-brand {*/
-      /*padding: 0 0 0 100px;*/
-      /*display: flex;*/
-      /*align-items: center;*/
-      /*margin: 24px*/
+    /*padding: 0 0 0 100px;*/
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*margin: 24px*/
     /*}*/
 
     .menu-item {
@@ -80,21 +101,21 @@
       background-color:transparent!important;
     }
     /*.bot-btn.white.subscribe {*/
-      /*padding: 10px 16px 8px 16px;*/
-      /*margin-left: -5px;*/
-      /*border: 1px solid rgba(255, 255, 255, .6);*/
-      /*border-left: none;*/
-      /*color: #FFFFFF !important;*/
-      /*font-size: 16px;*/
+    /*padding: 10px 16px 8px 16px;*/
+    /*margin-left: -5px;*/
+    /*border: 1px solid rgba(255, 255, 255, .6);*/
+    /*border-left: none;*/
+    /*color: #FFFFFF !important;*/
+    /*font-size: 16px;*/
     /*}*/
 
     /*#middle {*/
-      /*font-size: 48px;*/
-      /*line-height: 100%;*/
-      /*letter-spacing: .0166px;*/
-      /*color: #4F4F4F;*/
-      /*text-align: center;*/
-      /*width: 100%*/
+    /*font-size: 48px;*/
+    /*line-height: 100%;*/
+    /*letter-spacing: .0166px;*/
+    /*color: #4F4F4F;*/
+    /*text-align: center;*/
+    /*width: 100%*/
     /*}*/
 
     .botDemo .iphoneWrapper {
@@ -107,7 +128,35 @@
     }
 
     .top {
-      background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/musement_contract.jpg");
+      background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/young-audience-cover-min.jpeg");
+    }
+
+    .recommendations {
+      list-style-type: decimal;
+    }
+      .recommendations > li {
+        padding: 0;
+      }
+    .recommendations.hyphen{
+      list-style-type: "-";
+    }
+
+    .whoAreBots p {
+      margin-bottom: 0;
+    }
+
+    b a {
+      font-weight: 700!important;
+    }
+
+    @media (min-width: 768px) {
+      .left-border {
+        border-left: 4px solid;
+        margin-left: -30px;
+      }
+      .left-border span {
+        margin-left: 26px;
+      }
     }
   </style>
 </head>
@@ -147,49 +196,137 @@
   <div>
     <div class="row">
       <div class="top col-md-12">
-        <h1>Our partners Musement has raised $10 million in Series B funding</h1>
+        <h1>Secret: how to attract young audience to news media</h1>
       </div>
     </div>
     <div class="content">
       <div class="col-md-offset-2 col-md-8">
-        <p><b>Intro: </b><i>We met Fabio(CTO of Musement) at the hackathon in Mallorca on May 2016. He was one of the partners of the hackathon and was presenting their API. We really liked it and used the API to develop a chatbot which helped us to win the first prize. On the afterparty we got into talking and Fabio seemed as a really smart and pleasant to talk with person. He was really interested in chatbots, so we shared our contacts. Few weeks later, we signed our first contract with Musement - guys with a great vision and ambitions.</i></p>
-        <img src="../img/musement_contract.jpg" alt="botcrew.com" class="img-full"/>
+        <p><i>
+          First of all, this article can be interesting for those in which life news media plays an important role, for business people who are owners of some news media and for marketing teams, who want to increase the number of visitors to their resource, but also it’ll be interesting to the ordinary reader.
+        </i></p>
 
-        <p> Musement is a ticketing platform and travel company, which helps to enjoy the fullest experience of destinations. Recently it has raised $10 million in Series B funding. Family fund Micheli Associati, with participation from previous backers P101, and 360 Capital Partners led the round.
-          Musement was founded in 2013 in Italy as the online platform for tours, activities, shows, museums, and art events.  Service at first focused in Europe and then constantly expanding to the rest of the world. Musement can work via the website, FB Messenger chatbot, iOS, and Android. The headquarters of the company is located in Milan.
+        <h2>What is news? What is media? What is <a href="https://medium.com/r/?url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNews_media" target="_blank">news media</a>?</h2>
+        <p>
+          With human development, an opening of the new technologies, particularly the Internet, the word “NEWS” began to gain very extensive concept: starting with news feed in a social network up to news programs on TV.
         </p>
-        <p>The main purpose of the company was to consolidate the tours and activities market by providing a single online destination to discover and book in-destination activities.</p>
-        <img src="../img/musement-645x385.jpg" alt="botcrew.com" class="img-full">
-        <p>“Whether travelers want food, wine or wellness experience, access to nightlife destinations or a specialist guided tour, we wanted Musement to provide a single port of call for all their needs,” explains Musement co-founder and CEO Alessandro Petazzi.</p>
-        <p>The startup provides an end-to-end ticketing service that allows travelers to receive a push notification when close to an attraction and then book a ticket, skip the line at the venue.
+
+        <h2>What is a problem?</h2>
+        <p>
+          At first, people got news with reading newspapers, tabloids, magazines and etc. But now, people start <a target="_blank" href="https://friendlybit.com/modern-web/why-people-skip-newspapers-and-read-news-on-the-web-instead/">reading press news less</a> because it’s easier to find everything on the Internet instead of reading “kilograms” of a fresh edition.
         </p>
-        <p>“The technology pioneered by us performs real-time checks on whether a venue has same day tickets, if there is current availability and if the venue accepts e-tickets allowing travelers to maximize their time at a destination and effectively eliminating one of the tour and activity sector’s biggest growth hurdles to date,” says Petazzi.
+        <p>
+          <i>After the appearance of TV</i>, almost in every house, people started to prefer watching NEWS.
+          Although News on TV is not always about what viewers want to see and mostly based on crime or politics.
         </p>
-        <p>More recently, Musement has launched a chatbot for Messenger to help you look for things to do in a city. However, the key to these consumer experiences are partnerships the company has with major players in the travel industry.</p>
-        <p>“Our bespoke end-to-end platforms that we develop specifically for travel agents, hotels, airlines and venues, have enabled us to ink deals with some of the world’s largest travel industry organizations this year including Travelport, 15below and Trekksoft,” says the Musement CEO.
-        </p>
-        <p>Musement plans to use the new capital to invest further in its technology, and for growth — now it operates in 450 cities across 55 countries in 7 languages. This will include additional offices to complement its HQ in Milan and recently opened Spanish office in Barcelona.
-        </p>
-        <p>Petazzi adds: “Our goal was also to make a seamless booking experience across all verticals, helping consumers to discover things that are relevant to them, whether at home or traveling. Until now, this integrated experience had never been achieved and our new funding round will assist us in executing this vision even further”.
-        </p>
+
         <div class="row">
-          <div class="col-md-6 col-xs-12 botDemo">
-            <div class="iphoneWrapper">
-              <video width="240" autoplay="" loop="" muted style="padding-top: 56px; margin-left: 10px">
-                <source src="../video/MusementBot.mp4" type="video/mp4">
-                <source src="../video/Avel.ogg" type="video/ogg"> Your browser does not support the video tag. </video>
-            </div>
+          <div class="col-md-7 col-xs-12 botDemo">
+            <img src="../img/young-audience-1.jpeg" alt="botscrew.com" class="img-full">
           </div>
-          <div class="col-md-6 whoAreBots">
-            <p>Musement chatbot was built as a part of a massive project for travelers. Its primary goal is to help users find nearest exciting attractions in their area without leaving Messenger. You can discover upcoming events in your city and be redirected to the website, where you can book them in seconds.
-            </p>
-            <p>You can ask bot anything about your chosen city: food, drink, things to do, attractions etc. Just write a simple message like, "Suggest the best coffee in Paris" and bot will send you a list of the places to taste a cup of French coffee with croissants
+          <div class="col-md-5 whoAreBots">
+            <p><i>
+              However, nowadays technologies become more available for users.
+            </i></p>
+            <p>
+              People started to gain information from the Internet when it turned into widespread.
               <!--<br/><img src="img/slightly_smiling_face.png" class="bot-emoji" alt="botscrew.com">-->
             </p>
-            <p>Right now BotsCrew is working on new features to improve the experience of chatting with Musement`s chatbot. As we are a team with a big passion for traveling, we work a lot to make Musement better, faster and smarter.
+            <p>
+              Searching for interesting content makes you tired and bored, even when you are visiting a news website.
             </p>
           </div>
         </div>
+
+        <p>
+          The problem is <b>how to <a target="_blank" href="http://www.inma.org/blogs/value-content/post.cfm/media-companies-must-work-harder-smarter-to-attract-college-age-readers">attract</a> a young audience</b>, so-called millennials (<a target="_blank" href="https://en.wikipedia.org/wiki/Millennials">Generation Y</a>) and post-millennials (<a target="_blank" href="https://en.wikipedia.org/wiki/Generation_Z">Generation Z</a>).
+        </p>
+        <p>
+          Years pass and we get more opportunities. Social networks become popular and more attractive, so a lot of people choose it instead of anything else.
+        </p>
+        <p>
+          The world is always in motion, and we don’t have a lot of time to read newspapers, watch the news on TV or explore different news websites via personal computer.
+        </p>
+        <p><i>Now you can do all of this stuff with your mobile device.</i></p>
+
+        <div class="row">
+          <div class="col-md-7 col-xs-12 botDemo">
+            <img src="../img/young-audience-2.jpeg" alt="botscrew.com" class="img-full">
+          </div>
+          <div class="col-md-5 whoAreBots">
+            <p><i>
+              It’s impossible to imagine your day <a target="_blank" href="https://www.entrepreneur.com/article/248355">without a smartphone</a>.
+            </i></p>
+            <p><i>
+              Almost <a target="_blank" href="https://www.statista.com/statistics/330695/number-of-smartphone-users-worldwide/"><b>2.4 billions</b></a> of people are the <b>owners of smartphones</b> and this number is only increasing.
+            </i></p>
+            <p><i>
+              It’s an integral part of our life.
+              For millennials and post-millennials it is more enjoyable to search through the social networks.
+            </i></p>
+          </div>
+        </div>
+
+        <p>
+          Today users are very demanding, and <i>they don’t need all the content</i>, they want to see <b>only the selected one</b>.
+        </p>
+
+        <h2>So, how can we solve this problem?</h2>
+        <img src="../img/young-audience-3.jpeg" alt="botscrew.com" class="img-full">
+        <p>
+          The global leader in journalism, <b><a target="_blank" href="http://about.poynter.org/about-us/mission-history">the Poynter Institute</a></b>, have an advisable article
+          <b>“<a target="_blank" href="https://www.poynter.org/2010/10-ways-to-attract-younger-news-consumers/105814/">10 Ways to Attract Younger News Consumers</a>”</b>.
+        </p>
+
+        <p class="no-padding-bottom"><b>If short, they recommend:</b></p>
+        <ul class="recommendations">
+          <li>Use road signs and context</li>
+          <li>Offer “wisdom journalism”</li>
+          <li>Personalize</li>
+          <li>Rethink news site design</li>
+          <li>Experiment with new formats</li>
+          <li>Expand “civic journalism” and community coverage</li>
+          <li>Put young people in the news</li>
+          <li>Reinvent, expand news literacy programs</li>
+          <li>Improve sharing features and create self-supporting content</li>
+          <li>Explore new approaches to television news</li>
+        </ul>
+
+        <p class="no-padding-bottom"><b>And they are absolutely right!</b></p>
+        <p class="no-padding-bottom">They tell us to find a modern way to attract the public.</p>
+
+        <p>Since the early 2000s, brands have experimented with social media platforms and networks to communicate with customers and prospects. First through weblogs, then eventually through social networks such as Facebook and Twitter.</p>
+
+        <p>At the present day, developing technologies are very impressive, especially — <b><a target="_blank" href="https://en.wikipedia.org/wiki/Artificial_intelligence">artificial intelligence</a>.</b></p>
+        <p class="left-border"><span>You may ask: “<b><i>How can Artificial Intelligence concern News Media?</i></b>”.</span></p>
+
+        <p>It’s very simple. An alternative is the chatbots.</p>
+
+        <p>
+          A chatbot is a service, powered by rules and sometimes artificial intelligence, that you interact with via a messenger or a chat interface.
+          Now famous media companies like <a target="_blank" href="https://chatbottle.co/bots/the-wall-street-journal">The Wall Street Journal</a>,
+          <a target="_blank" href="http://www.thedrum.com/news/2016/11/16/what-cnn-has-learnt-after-six-months-chatbot-experimentation">CNN</a>,
+          <a target="_blank" href="http://www.foxnews.com/us/2016/10/04/make-chats-with-chatbots-work.html">Fox News</a>, etc have launched their bots to help you receive the latest news on the go
+        </p>
+        <img src="../img/young-audience-4.png" alt="botscrew.com" class="img-full">
+
+        <p class="left-border"><span><i>So, why famous media companies are using chatbots?</i></span></p>
+
+        <p class="no-padding-bottom"><b>Chatbot:</b></p>
+        <ul class="recommendations hyphen">
+          <li>does not need a lot of time to market.</li>
+          <li>is a new contact in your favorite application (Messanger, WhatsApp Viber, Telegram, etc)</li>
+          <li>is an interesting new technology that is very comfortable in use and attracts young people.</li>
+          <li>gives you an immediate answer.</li>
+          <li>is available 24/7.</li>
+          <li>have personalized answers.</li>
+          <li>also, gives user autonomy.</li>
+          <li>is an innovative service and have a clear interface.</li>
+        </ul>
+
+        <p>Nearly <a target="_blank" href="http://www.businessinsider.com/80-of-businesses-want-chatbots-by-2020-2016-12">80% of companies</a> have already used or planned to use chatbots by 2020.</p>
+
+        <p><b>Summary: </b>Don’t be scared of new technologies. They place a great part in our lives and in our future! Let’s chat!</p>
+
         <div class="social-share">
           <div class="text">Share with friends and community:</div>
           <div class="fb">
@@ -218,11 +355,11 @@
           </div>
         </div>
         <!--<div class="subscribe-block">-->
-          <!--<div class="inner row">-->
-            <!--<p>Subscribe to BotsCrew newsletter. No spam, no nasty stuff</p>-->
-            <!--<input type="text" placeholder="Your E-Mail">-->
-            <!--<a href="#" class="menu-item bot-btn white subscribe">Subscribe</a>-->
-          <!--</div>-->
+        <!--<div class="inner row">-->
+        <!--<p>Subscribe to BotsCrew newsletter. No spam, no nasty stuff</p>-->
+        <!--<input type="text" placeholder="Your E-Mail">-->
+        <!--<a href="#" class="menu-item bot-btn white subscribe">Subscribe</a>-->
+        <!--</div>-->
         <!--</div>-->
       </div>
     </div>
@@ -255,7 +392,7 @@
             <div class="preview-text">
               <h2>How bots will change commerce for the better</h2>
               <p>Nowadays you can hear a lot of talk about chatbots. What are chatbots? It`s virtual assistants created to answer users, control payments, get orders, accumulate contacts of potential clients. These mini-apps can mimick human conversation and let customers, for example, order a pizza or book a hotel effortlessly. Of course technology is constantly evolving and companies are working on how to improve chatbots and how to best use it. Here…
-               <span class="read-more"> Read more</span></p>
+                <span class="read-more"> Read more</span></p>
             </div>
           </a>
         </div>
@@ -265,7 +402,7 @@
             <div class="preview-text">
               <h2>What are bots?  How do they work? Why do they give a big opportunity?</h2>
               <p>In this article we are going to answer the most popular questions about chatbots. What are bots?  How do they work? Why do they give a big opportunity? Chatbot is a computer program created as a conversational agent, designed to simulate an intelligent conversation with one or more human users via auditory or textual methods. “People are now spending more time in messaging apps than in social media and that is a huge turning point. Messaging apps are the platforms of the future and bots will be how their users access all sorts of services.” ...
-               <span class="read-more"> Read more</span></p>
+                <span class="read-more"> Read more</span></p>
             </div>
           </a>
         </div>
